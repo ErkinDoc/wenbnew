@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Publications by Dr. Erkinbek Dzhamanbaev | 20+ Medical Books</title>
+    <meta name="description" content="Browse 20+ medical books by Dr. Erkinbek Dzhamanbaev covering pain management, fibromyalgia, neurorehabilitation, chronic pain, and integrative medicine. Author of bestselling guides for patients and professionals.">
+    <meta name="keywords" content="Dr Erkin books, fibromyalgia book, pain management guide, neurorehabilitation handbook, chronic pain treatment, medical books, Dr Erkinbek Dzhamanbaev publications">
+    <meta name="author" content="Dr. Erkinbek Dzhamanbaev">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Medical Publications by Dr. Erkinbek Dzhamanbaev">
+    <meta property="og:description" content="20+ books on pain management, fibromyalgia, rehabilitation, and integrative medicine">
+    <meta property="og:url" content="https://www.drerkin.eu/publications.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.drerkin.eu/publications.html">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a365d;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a365d 0%, #2d4a7c 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .intro {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        
+        .intro-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .intro h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1a365d;
+        }
+        
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+        
+        .categories {
+            padding: 60px 20px;
+        }
+        
+        .category {
+            margin-bottom: 80px;
+        }
+        
+        .category-header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #68a07c;
+        }
+        
+        .category-header h2 {
+            font-size: 2rem;
+            color: #1a365d;
+            margin-bottom: 10px;
+        }
+        
+        .category-header p {
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+        
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .book-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(26, 54, 93, 0.15);
+            border-color: #68a07c;
+        }
+        
+        .book-card h3 {
+            font-size: 1.4rem;
+            color: #1a365d;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .book-card p {
+            color: #4a5568;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .book-topics {
+            margin-bottom: 20px;
+        }
+        
+        .book-topics strong {
+            display: block;
+            color: #1a365d;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .book-topics ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .book-topics li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 5px;
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+        
+        .book-topics li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #68a07c;
+            font-weight: bold;
+        }
+        
+        .book-link {
+            display: inline-block;
+            background: #68a07c;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .book-link:hover {
+            background: #557d65;
+            transform: translateX(5px);
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #1a365d 0%, #2d4a7c 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button-primary {
+            background: #68a07c;
+            color: white;
+        }
+        
+        .cta-button-primary:hover {
+            background: #557d65;
+            transform: translateY(-2px);
+        }
+        
+        .cta-button-secondary {
+            background: white;
+            color: #1a365d;
+        }
+        
+        .cta-button-secondary:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: #1a365d;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        footer p {
+            opacity: 0.9;
+        }
+        
+        footer a {
+            color: #68a07c;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .books-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Publications by Dr. Erkinbek Dzhamanbaev</h1>
+            <p>20+ Medical Books on Pain Management, Rehabilitation & Integrative Medicine</p>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="intro-content">
+            <h2>Bridging Science and Healing</h2>
+            <p>
+                With over 30 years of clinical experience across four continents, I've dedicated my career not only to treating patients but to sharing knowledge that empowers both healthcare professionals and those suffering from complex conditions.
+            </p>
+            <p>
+                My publications span the spectrum from highly technical medical guides for professionals to accessible, patient-friendly handbooks. Each book distills decades of practical experience, integrating Western medicine with traditional healing wisdom.
+            </p>
+            <p>
+                Whether you're a patient seeking to understand your condition, a caregiver supporting a loved one, or a healthcare professional expanding your approach—these books offer evidence-based insights and practical strategies.
+            </p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            
+            <!-- Pain Management & Rehabilitation Books -->
+            <div class="category">
+                <div class="category-header">
+                    <h2>Pain Management & Rehabilitation</h2>
+                    <p>Comprehensive guides for understanding and treating complex pain conditions</p>
+                </div>
+                
+                <div class="books-grid">
+                    <!-- Book 1: Fibromyalgia -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">All You Need to Know About Fibromyalgia & Myofascial Pain</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Pain Management">
+                        <p itemprop="description">
+                            Comprehensive guide addressing why standard diagnostics miss fibromyalgia, integrated treatment approaches, patient success stories, and evidence-based protocols for managing this complex condition.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Why standard tests miss fibromyalgia</li>
+                                <li>Central sensitization explained</li>
+                                <li>6D diagnostic approach</li>
+                                <li>Multimodal treatment strategies</li>
+                                <li>Real patient case studies</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 2: Rehabilitation Handbook Basics -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">The Rehabilitation Handbook: Basics of Neuro Rehabilitation</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Rehabilitation">
+                        <p itemprop="description">
+                            Essential resource for healthcare professionals, patients, and families. Covers neuroplasticity principles, functional recovery protocols, and evidence-based rehabilitation techniques.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Neuroplasticity fundamentals</li>
+                                <li>Evidence-based rehabilitation</li>
+                                <li>Stroke recovery protocols</li>
+                                <li>Brain injury rehabilitation</li>
+                                <li>Family caregiver guidance</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 3: Rehabilitation Handbook Mastering -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">The Rehabilitation Handbook: Mastering Recovery</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Rehabilitation">
+                        <p itemprop="description">
+                            Advanced rehabilitation strategies for complex cases. Detailed protocols for optimizing recovery outcomes and preventing complications in neurological rehabilitation.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Advanced neuroplasticity techniques</li>
+                                <li>Complex case management</li>
+                                <li>Intensive rehabilitation protocols</li>
+                                <li>Long-term recovery planning</li>
+                                <li>Professional development</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 4: Spinal Cord Injuries -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">A Simple Guide to Spinal Cord Injuries: Understanding, Supporting, and Adapting</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Rehabilitation">
+                        <p itemprop="description">
+                            Accessible guide for patients and families navigating spinal cord injury. Covers medical basics, rehabilitation journey, adaptive strategies, and emotional support.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Understanding SCI levels and types</li>
+                                <li>Rehabilitation roadmap</li>
+                                <li>Adaptive equipment and techniques</li>
+                                <li>Emotional and psychological support</li>
+                                <li>Long-term health management</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 5: Shoulder Pain -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Comprehensive Management of Shoulder Pain: A Guide for Professionals</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Orthopedics">
+                        <p itemprop="description">
+                            Professional guide to diagnosing and treating shoulder pain conditions. Evidence-based approaches combining manual therapy, exercise, and integrative techniques.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Differential diagnosis of shoulder pain</li>
+                                <li>Rotator cuff pathologies</li>
+                                <li>Manual therapy techniques</li>
+                                <li>Rehabilitation protocols</li>
+                                <li>Integrative treatment approaches</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 6: Headache Management -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Mastering Headache Management: A Comprehensive Guide</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Neurology">
+                        <p itemprop="description">
+                            Complete guide to understanding and treating various headache types including migraines, tension headaches, and cervicogenic headaches with integrated approaches.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Headache classification and diagnosis</li>
+                                <li>Migraine management strategies</li>
+                                <li>Trigger identification</li>
+                                <li>Medication and non-pharmacological approaches</li>
+                                <li>Preventive protocols</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 7: Neck Pain -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">The Ultimate Guide to Understanding and Managing Neck Pain</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Orthopedics">
+                        <p itemprop="description">
+                            Practical guide to neck pain causes, diagnosis, and treatment. Covers postural correction, ergonomics, manual therapy, and self-care strategies.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Common causes of neck pain</li>
+                                <li>Postural assessment and correction</li>
+                                <li>Cervical spine biomechanics</li>
+                                <li>Self-treatment techniques</li>
+                                <li>Prevention strategies</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 8: Frozen Shoulder -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">The Frozen Shoulder Solution: A Comprehensive Guide</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Orthopedics">
+                        <p itemprop="description">
+                            Specialized guide for adhesive capsulitis (frozen shoulder). Stages, treatment protocols, rehabilitation exercises, and recovery expectations.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Understanding frozen shoulder stages</li>
+                                <li>Evidence-based treatment protocols</li>
+                                <li>Progressive stretching programs</li>
+                                <li>Pain management strategies</li>
+                                <li>Return to function timeline</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 9: Knee Health -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">The Essential Guide to Knee Health: From Prevention to Treatment</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Orthopedics">
+                        <p itemprop="description">
+                            Complete resource on knee health covering injury prevention, common conditions, treatment options, and post-surgical rehabilitation.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Knee anatomy and biomechanics</li>
+                                <li>Common knee injuries and conditions</li>
+                                <li>Conservative treatment approaches</li>
+                                <li>Surgical considerations</li>
+                                <li>Rehabilitation and prevention</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 10: Lower Back Pain -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Lower Back Pain Management</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Spine Care">
+                        <p itemprop="description">
+                            Evidence-based approaches to understanding and managing lower back pain. Covers acute and chronic conditions, treatment options, and prevention strategies.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Spine anatomy and function</li>
+                                <li>Acute vs chronic back pain</li>
+                                <li>Diagnostic approaches</li>
+                                <li>Treatment options spectrum</li>
+                                <li>Core stability and prevention</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 11: Joint Pain -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Find Lasting Freedom from Joint Pain</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Rheumatology">
+                        <p itemprop="description">
+                            Holistic approach to managing joint pain including osteoarthritis, inflammatory conditions, and age-related changes through integrated medicine.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Understanding joint pain causes</li>
+                                <li>Anti-inflammatory nutrition</li>
+                                <li>Movement as medicine</li>
+                                <li>Natural pain relief strategies</li>
+                                <li>Lifestyle modifications</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 12: Spasticity -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Understanding Spasticity: A Simple Guide</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Neurology">
+                        <p itemprop="description">
+                            Patient-friendly guide to understanding and managing spasticity following neurological injury. Treatment options, exercises, and quality of life strategies.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>What is spasticity?</li>
+                                <li>Causes and mechanisms</li>
+                                <li>Treatment options overview</li>
+                                <li>Stretching and positioning</li>
+                                <li>Daily management strategies</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mind-Body & Holistic Health -->
+            <div class="category">
+                <div class="category-header">
+                    <h2>Mind-Body Medicine & Personal Development</h2>
+                    <p>Integrating mental, emotional, and spiritual dimensions of health</p>
+                </div>
+                
+                <div class="books-grid">
+                    <!-- Book 13: Mind Transformation -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Mind Transformation: Theory & Practice</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Self-Help, Psychology">
+                        <p itemprop="description">
+                            Strategic roadmap for personal mastery and mental transformation. Combines neuroscience, practical psychology, and proven strategies for sustainable change.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Neuroplasticity of the mind</li>
+                                <li>Breaking limiting beliefs</li>
+                                <li>Emotional intelligence development</li>
+                                <li>Habit formation science</li>
+                                <li>Sustainable personal transformation</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 14: Energy Awakening -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Energy Awakening: Unleashing Your Inner Strength</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Self-Help, Wellness">
+                        <p itemprop="description">
+                            Guide to cultivating inner energy and vitality through integrating ancient practices with modern understanding of mind-body connection.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Energy systems of the body</li>
+                                <li>Breathing techniques</li>
+                                <li>Meditation practices</li>
+                                <li>Stress management</li>
+                                <li>Vitality optimization</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 15: Ayurveda Fundamentals -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Fundamentals of Ayurveda</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Alternative Medicine, Ayurveda">
+                        <p itemprop="description">
+                            Introduction to Ayurvedic medicine principles for modern practitioners. Bridges ancient wisdom with contemporary medical understanding.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Ayurvedic constitutional types (doshas)</li>
+                                <li>Diagnostic principles</li>
+                                <li>Dietary therapy</li>
+                                <li>Herbal medicine basics</li>
+                                <li>Integration with Western medicine</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Development & Healthcare Management -->
+            <div class="category">
+                <div class="category-header">
+                    <h2>Professional Development & Healthcare Leadership</h2>
+                    <p>Strategic management and organizational excellence in healthcare</p>
+                </div>
+                
+                <div class="books-grid">
+                    <!-- Book 16: Empowering Caregivers -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Empowering Caregivers: A Family's Guide to Navigating the Rehabilitation Journey</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Caregiving">
+                        <p itemprop="description">
+                            Essential resource for family caregivers supporting loved ones through rehabilitation. Practical strategies, emotional support, and self-care guidance.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Understanding the rehabilitation process</li>
+                                <li>Communication with healthcare team</li>
+                                <li>Daily care strategies</li>
+                                <li>Caregiver self-care</li>
+                                <li>Managing emotional challenges</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 17: Management in Healthcare -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Management in Health Care</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Business, Healthcare Management">
+                        <p itemprop="description">
+                            Comprehensive guide to healthcare management combining clinical expertise with business acumen for medical leaders and administrators.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Healthcare organizational structure</li>
+                                <li>Quality improvement methodologies</li>
+                                <li>Financial management</li>
+                                <li>Strategic planning</li>
+                                <li>Leadership in healthcare</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 18: Modern Management Technique -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Modern Management Technique</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Business, Management">
+                        <p itemprop="description">
+                            Contemporary management approaches for healthcare organizations. Lean methodologies, agile practices, and innovation management.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Lean healthcare principles</li>
+                                <li>Process optimization</li>
+                                <li>Change management</li>
+                                <li>Innovation frameworks</li>
+                                <li>Performance metrics</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 19: Consulting Guide -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">How to Choose a Consultant and Consulting Company</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Business, Professional Services">
+                        <p itemprop="description">
+                            Practical guide for organizations seeking consulting services. Evaluation criteria, engagement models, and maximizing consulting value.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Identifying consulting needs</li>
+                                <li>Evaluating consultant credentials</li>
+                                <li>Engagement models and contracts</li>
+                                <li>Working effectively with consultants</li>
+                                <li>Measuring consulting ROI</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 20: Strategic Guide -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">A Strategic Guide for Leaders: A Systematic Approach to Planning</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Business, Leadership">
+                        <p itemprop="description">
+                            Systematic framework for strategic planning in healthcare and beyond. From vision setting to execution and performance measurement.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Strategic planning frameworks</li>
+                                <li>Vision and mission development</li>
+                                <li>SWOT and competitive analysis</li>
+                                <li>Strategy execution</li>
+                                <li>Performance dashboards</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+
+                    <!-- Book 21: Corporate Culture -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Corporate Culture and Branding</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Business, Organizational Culture">
+                        <p itemprop="description">
+                            Building strong organizational culture and authentic branding in healthcare settings. Values alignment and organizational excellence.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Culture assessment and development</li>
+                                <li>Values-based leadership</li>
+                                <li>Employer branding</li>
+                                <li>Patient experience culture</li>
+                                <li>Brand authenticity</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clinical Guides -->
+            <div class="category">
+                <div class="category-header">
+                    <h2>Clinical Guides</h2>
+                    <p>Specialized clinical protocols and emergency care</p>
+                </div>
+                
+                <div class="books-grid">
+                    <!-- Book 22: Therapy of Urgent Conditions -->
+                    <div class="book-card" itemscope itemtype="https://schema.org/Book">
+                        <h3 itemprop="name">Therapy of Some Urgent Conditions</h3>
+                        <meta itemprop="author" content="Dr. Erkinbek Dzhamanbaev">
+                        <meta itemprop="genre" content="Medical, Emergency Medicine">
+                        <p itemprop="description">
+                            Clinical protocols for managing common urgent medical conditions. Evidence-based approaches for emergency and acute care settings.
+                        </p>
+                        <div class="book-topics">
+                            <strong>Key Topics:</strong>
+                            <ul>
+                                <li>Acute pain management</li>
+                                <li>Cardiovascular emergencies</li>
+                                <li>Neurological emergencies</li>
+                                <li>Trauma stabilization</li>
+                                <li>Critical decision-making</li>
+                            </ul>
+                        </div>
+                        <a href="https://ko-fi.com/erkindoc/shop" class="book-link" target="_blank" rel="noopener" itemprop="url">View Book</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Beyond the Books: Personalized Care</h2>
+            <p>
+                While my books provide comprehensive guidance, complex cases often benefit from personalized assessment and treatment planning.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://www.drerkin.eu/#services" class="cta-button cta-button-primary">Schedule 6D Assessment</a>
+                <a href="https://ko-fi.com/erkindoc/shop" class="cta-button cta-button-secondary" target="_blank" rel="noopener">Browse All Books</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>
+                <strong>Dr. Erkinbek Dzhamanbaev, MD, PhD, MBA</strong><br>
+                Pain Management Specialist | Author | Integrative Medicine Expert
+            </p>
+            <p style="margin-top: 20px;">
+                <a href="https://www.drerkin.eu">Website</a> |
+                <a href="https://ko-fi.com/erkindoc">Publications</a> |
+                <a href="https://linkedin.com/in/doctorerkin" target="_blank" rel="noopener">LinkedIn</a> |
+                Email: erkinslovakia@gmail.com
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                © 2026 Dr. Erkinbek Dzhamanbaev. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Schema.org Author Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dr. Erkinbek Dzhamanbaev",
+      "givenName": "Erkinbek",
+      "familyName": "Dzhamanbaev",
+      "honorificPrefix": "Dr.",
+      "jobTitle": "Medical Doctor, Pain Management Specialist, Author",
+      "description": "Medical doctor (MD, PhD, MBA) with 30+ years experience in pain management, rehabilitation, and integrative medicine. Author of 20+ medical books.",
+      "url": "https://www.drerkin.eu",
+      "sameAs": [
+        "https://linkedin.com/in/doctorerkin",
+        "https://www.facebook.com/drerkin.medicine",
+        "https://www.facebook.com/drerkin.europe",
+        "https://www.instagram.com/pain.therapy",
+        "https://www.youtube.com/@DoctorErkin",
+        "https://ko-fi.com/erkindoc"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Kyrgyz State Medical University"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Military Medical Academy, Saint Petersburg"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "University of Groningen"
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "American Academy of Pain Medicine"
+        },
+        {
+          "@type": "Organization",
+          "name": "American Physical Therapy Association"
+        },
+        {
+          "@type": "Organization",
+          "name": "World Confederation for Physical Therapy"
+        }
+      ]
+    }
+    </script>
+
+</body>
+</html>
