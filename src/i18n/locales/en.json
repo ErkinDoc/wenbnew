@@ -8,14 +8,14 @@
   "hero": {
     "title": "Dr. Erkinbek Dzhamanbaev",
     "credentials": "MD, PhD, MBA",
-    "specialty": "Expert in Complex Clinical Cases & Chronic Pain",
-    "headline": "Beyond Standard Diagnostics: Resolving Chronic Pain & Complex Comorbidities",
-    "subheadline": "When conventional medicine sees 'normal' results but the patient still suffers. Specialist in fibromyalgia, neuropathic pain, and multi-system dysfunction with 30+ years of practice.",
-    "ctaAssessment": "Start 6D Assessment",
+    "specialty": "Expert in Complex Comorbidities & Chronic Pain Cases",
+    "headline": "Beyond Standard Diagnostics: Resolving Complex Comorbidities When Tests Show 'Normal'",
+    "subheadline": "Specialist in complex multi-system cases, severe comorbidities, and undiagnosed conditions where conventional medicine reaches its limits. Online consultations available across Europe. 30+ years of clinical practice.",
+    "ctaAssessment": "Start 6D Assessment (Online)",
     "ctaApply": "Apply for Program",
     "badge1": "EU Licensed",
     "badge2": "30+ Years Practice",
-    "badge3": "500+ Patients",
+    "badge3": "5000+ Patients",
     "badge4": "15 Countries"
   },
   "problem": {
@@ -23,71 +23,71 @@
     "problemsTitle": "When conventional medicine reaches its limits",
     "solutionsTitle": "Medicine of Coherence offers a solution",
     "problems": [
-      "Fibromyalgia with 'normal' test results",
-      "Neuropathic pain without apparent cause",
-      "Multi-system dysfunction — each specialist sees only a part",
-      "Psychosomatic symptoms — 'it's all in your head'",
-      "10+ years of chronic pain without relief"
+      "Multiple comorbidities — specialists treat symptoms separately",
+      "Severe cases with unclear diagnosis after years of testing",
+      "Complex multi-system dysfunction — normal tests but severe symptoms",
+      "Treatment-resistant chronic conditions",
+      "Cases that don't fit standard diagnostic categories"
     ],
     "solutions": [
-      "6D systemic analysis — we see what others miss",
+      "6D systemic analysis for complex comorbidities",
       "Integration of clinical evidence + bioenergetic logic",
-      "70-85% symptom reduction in patients with 10+ year history",
-      "Restoring systemic coherence, not just suppressing pain",
-      "Personalized protocol for complex comorbidities"
+      "70-85% symptom reduction in severe refractory cases",
+      "Restoring systemic coherence in multi-system dysfunction",
+      "Personalized protocol for complex cases"
     ],
     "transition": "We don't just treat symptoms. We restore your body's coherence."
   },
   "method6d": {
     "title": "The 6D Navigation System",
-    "subtitle": "Six dimensions of coherence for complex clinical cases",
-    "description": "Integration of Western clinical evidence with bioenergetic and functional logic. For cases where standard medicine sees 'normal' results but the patient still suffers.",
+    "subtitle": "Six dimensions of coherence for complex comorbidities and severe cases",
+    "description": "Integration of Western clinical evidence with bioenergetic and functional logic. For complex cases with multiple comorbidities where standard medicine sees 'normal' results but the patient still suffers.",
     "dimensions": [
       {
         "id": "D1",
         "name": "D1: Diagnosis",
         "subtitle": "Physical",
-        "description": "Biochemical analysis (CRP, vitamin D, cortisol), HRV variability, structural-movement assessment. For patients with 'normal' results but persistent symptoms."
+        "description": "Comprehensive biochemical analysis (CRP, vitamin D, cortisol), HRV variability, structural-movement assessment. For patients with complex comorbidities and 'normal' results but persistent symptoms."
       },
       {
         "id": "D2",
         "name": "D2: Dysfunction",
         "subtitle": "Bioenergetic",
-        "description": "Correction of breathing and movement patterns. Myofascial release, postural correction. Specifically for fibromyalgia and neuropathic pain."
+        "description": "Correction of breathing and movement patterns. Myofascial release, postural correction. Essential for multi-system dysfunction and complex pain syndromes."
       },
       {
         "id": "D3",
         "name": "D3: Disconnection",
         "subtitle": "Emotional",
-        "description": "Restoring brain-body connection. Coherent breathing (5-6 cycles/min), vagus activation. For psychosomatic cases and chronic stress."
+        "description": "Restoring brain-body connection. Coherent breathing (5-6 cycles/min), vagus activation. Critical for psychosomatic comorbidities and chronic stress-related conditions."
       },
       {
         "id": "D4",
         "name": "D4: Direction",
         "subtitle": "Mental",
-        "description": "Biochemical foundation and nutrition. Personalized anti-inflammatory diet, nutraceuticals (D3+K2, magnesium, omega-3). Circadian rhythm optimization."
+        "description": "Biochemical foundation and nutrition. Personalized anti-inflammatory diet, nutraceuticals (D3+K2, magnesium, omega-3). Circadian rhythm optimization for complex cases."
       },
       {
         "id": "D5",
         "name": "D5: Development",
         "subtitle": "Social",
-        "description": "Psychological reprogramming. Pain Neuroscience Education, ACT, cognitive therapy. For patients with 10+ year history of chronic pain."
+        "description": "Psychological reprogramming. Pain Neuroscience Education, ACT, cognitive therapy. For patients with severe, long-standing comorbid conditions."
       },
       {
         "id": "D6",
         "name": "D6: Depth",
         "subtitle": "Integration",
-        "description": "Integrating changes into life. Rituals, mindful movement, existential reevaluation. Relapse prevention and long-term stability."
+        "description": "Integrating changes into life. Rituals, mindful movement, existential reevaluation. Relapse prevention and long-term stability in complex cases."
       }
     ]
   },
   "globalExperience": {
     "title": "International Clinical Practice",
-    "subtitle": "Specialist in complex cases across Slovakia, Europe, and Asia",
+    "subtitle": "Specialist in complex comorbidities across Slovakia, Europe, and Asia",
     "locations": [
       {
         "country": "Slovakia",
-        "details": "Adeli Medical Center, Refit Clinic — neurorehabilitation and chronic pain management"
+        "details": "Adeli Medical Center, Refit Clinic — neurorehabilitation and complex pain management"
       },
       {
         "country": "Kyrgyzstan",
@@ -95,7 +95,7 @@
       },
       {
         "country": "Spain",
-        "details": "Internal Medicine specialization, Barcelona — multi-system cases"
+        "details": "Internal Medicine specialization, Barcelona — multi-system complex cases"
       },
       {
         "country": "Netherlands",
@@ -116,32 +116,33 @@
   },
   "services": {
     "title": "Services & Programs",
-    "subtitle": "For complex cases where standard medicine sees 'normal' results",
+    "subtitle": "For complex comorbidities and severe cases where standard medicine reaches its limits",
     "packages": [
       {
-        "name": "6D Primary Diagnostic",
+        "name": "6D Primary Diagnostic (Online)",
         "subtitle": "60-minute comprehensive analysis",
         "price": "€100",
         "includes": "Includes 6D-Map PDF",
         "features": [
-          "Biochemical analysis (CRP, vitamin D, cortisol)",
+          "Comprehensive analysis of comorbidities",
+          "Biochemical markers review (CRP, vitamin D, cortisol)",
           "HRV variability and autonomic assessment",
           "Structural-movement analysis",
           "Personalized 6D-Map PDF",
           "Recommendations for next steps"
         ],
-        "cta": "Start 6D Assessment",
+        "cta": "Start 6D Assessment (Online)",
         "formUrl": "https://forms.gle/oDEBWUFKi6vLbTmk9"
       },
       {
-        "name": "Coherence Program",
-        "subtitle": "6-week transformational program",
+        "name": "Coherence Program (Online)",
+        "subtitle": "6-week transformational program for complex cases",
         "price": "€300",
         "badge": "Most Popular",
         "features": [
           "6D primary diagnostic",
-          "Personalized 6-week protocol",
-          "Weekly follow-up consultations",
+          "Personalized 6-week protocol for comorbidities",
+          "Weekly online follow-up consultations",
           "Continuous WhatsApp support",
           "Complete 6D-Map with progress tracking"
         ],
@@ -149,13 +150,13 @@
         "formUrl": "https://forms.gle/hKjSMrxBabZ3NYda8"
       },
       {
-        "name": "3-Month Strategic Roadmap",
-        "subtitle": "For complex multi-system cases",
+        "name": "3-Month Strategic Roadmap (Online)",
+        "subtitle": "For severe multi-system comorbidities",
         "price": "€600",
         "features": [
           "Complete 6D diagnostic",
-          "3-month strategic plan",
-          "Monthly review consultations",
+          "3-month strategic plan for complex cases",
+          "Monthly online review consultations",
           "Protocol adjustments based on progress",
           "Long-term maintenance strategy"
         ],
@@ -163,28 +164,28 @@
         "formUrl": "https://forms.gle/hKjSMrxBabZ3NYda8"
       }
     ],
-    "note": "All consultations are conducted online via secure Zoom. Payment before consultation. GDPR compliant."
+    "note": "All consultations are conducted online via secure Zoom (available across Europe). Payment before consultation. GDPR compliant."
   },
   "successStories": {
     "title": "Clinical Results",
-    "subtitle": "Anonymized cases of patients with complex diagnoses",
+    "subtitle": "Anonymized cases of patients with severe comorbidities and complex diagnoses",
     "disclaimer": "All cases are anonymized in accordance with GDPR. Results may vary depending on individual circumstances.",
     "stories": [
       {
-        "condition": "Fibromyalgia + neuropathic pain",
-        "history": "12 years, 15+ specialists, 'normal' results",
-        "approach": "6D systemic analysis, bioenergetic correction, nutrigenomics",
+        "condition": "Multiple comorbidities + severe pain",
+        "history": "12 years, 15+ specialists, conflicting diagnoses",
+        "approach": "6D systemic analysis for comorbidities, bioenergetic correction, nutrigenomics",
         "result": "78% pain reduction after 8 weeks, restoration of sleep and energy"
       },
       {
-        "condition": "Multi-system dysfunction",
-        "history": "Unclear diagnosis, each specialist different opinion",
-        "approach": "Integrative 6D perspective, coherence therapy",
-        "result": "85% improvement in quality of life, identification of hidden triggers"
+        "condition": "Severe multi-system dysfunction",
+        "history": "Unclear diagnosis, each specialist treating separately",
+        "approach": "Integrative 6D perspective, coherence therapy for complex comorbidities",
+        "result": "85% improvement in quality of life, identification of systemic root causes"
       },
       {
-        "condition": "Psychosomatic integrity",
-        "history": "'It's all in your head' — 7 years without help",
+        "condition": "Complex psychosomatic comorbidity",
+        "history": "Treatment-resistant case — 7 years without effective solution",
         "approach": "Brain-body reconnection, vagus therapy, somatic work",
         "result": "72% reduction in somatic symptoms, restoration of autonomy"
       }
@@ -203,7 +204,7 @@
     ],
     "gdpr": "GDPR Compliant — Personal data protection in accordance with European regulations",
     "stats": [
-      { "number": "500+", "label": "Patients with complex cases" },
+      { "number": "5000+", "label": "Patients with complex cases" },
       { "number": "30+", "label": "Years of practice" },
       { "number": "70-85%", "label": "Symptom reduction" },
       { "number": "15", "label": "Countries" }
@@ -214,19 +215,19 @@
     "items": [
       {
         "question": "Who is Medicine of Coherence for?",
-        "answer": "For patients with complex cases where standard diagnostics show 'normal' results but symptoms persist. Especially for fibromyalgia, neuropathic pain, multi-system dysfunction, and psychosomatic cases."
+        "answer": "For patients with severe comorbidities and complex cases where standard diagnostics show 'normal' results but symptoms persist. Especially for multi-system dysfunction, treatment-resistant conditions, and cases that don't fit standard diagnostic categories. Online consultations available across Europe."
       },
       {
         "question": "What results can I expect?",
-        "answer": "Our patients with 10+ year history of chronic pain achieve 70-85% symptom reduction. Results depend on case complexity and your engagement in the process."
+        "answer": "Our patients with severe, long-standing comorbidities achieve 70-85% symptom reduction. Results depend on case complexity and your engagement in the process."
       },
       {
         "question": "How does 6D diagnostic work?",
-        "answer": "6D diagnostic assesses six dimensions of your health: physical, bioenergetic, emotional, mental, social, and integrative. It includes biochemical analysis, HRV measurement, and comprehensive assessment that reveals what standard tests miss."
+        "answer": "6D diagnostic assesses six dimensions of your health: physical, bioenergetic, emotional, mental, social, and integrative. It includes comprehensive analysis of comorbidities, biochemical markers, HRV measurement, and systemic assessment that reveals what standard tests miss."
       },
       {
         "question": "Where do consultations take place?",
-        "answer": "All consultations are conducted online via secure Zoom. For patients near Piešťany and Bratislava, personal contact is also possible."
+        "answer": "All consultations are conducted online via secure Zoom, available across Europe. For patients near Piešťany and Bratislava, personal contact is also possible."
       },
       {
         "question": "Is my data secure?",
@@ -236,11 +237,11 @@
   },
   "finalCta": {
     "title": "Ready to find a solution for your complex case?",
-    "subtitle": "Start with 6D diagnostic — the first step to understanding what standard tests don't see.",
-    "ctaAssessment": "Start 6D Assessment",
+    "subtitle": "Start with online 6D diagnostic — the first step to understanding severe comorbidities that standard tests don't see.",
+    "ctaAssessment": "Start 6D Assessment (Online)",
     "ctaApply": "Apply for Program",
     "trust1": "GDPR Compliant",
-    "trust2": "Secure communication",
+    "trust2": "Secure online communication",
     "trust3": "Anonymized cases"
   },
   "footer": {
@@ -249,10 +250,10 @@
     "contact": "Contact",
     "email": "erkinslovakia@gmail.com",
     "phone": "+421 940 270 511",
-    "location": "Piešťany / Bratislava, Slovakia",
+    "location": "Online consultations (Europe) | Piešťany / Bratislava, Slovakia",
     "copyright": "© 2025 Dr. Erkinbek Dzhamanbaev | Medicine of Coherence"
   },
   "seo": {
-    "keywords": "chronic pain treatment Slovakia, integrative medicine Slovakia, expert on complex clinical cases, fibromyalgia treatment, neuropathic pain, 6D diagnostic, medicine of coherence"
+    "keywords": "complex comorbidities treatment, severe multi-system cases, integrative medicine Slovakia, expert on complex clinical cases, treatment-resistant conditions, online medical consultation Europe, 6D diagnostic, medicine of coherence"
   }
 }
