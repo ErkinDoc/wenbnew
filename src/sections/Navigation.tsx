@@ -25,11 +25,16 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     { label: t('nav.method'), href: '#method6d' },
     { label: t('nav.services'), href: '#services' },
     { label: 'Global Experience', href: '#global' },
+    { label: 'Publications', href: '/publications.html', external: true }, // НОВАЯ ССЫЛКА
     { label: t('nav.faq'), href: '#faq' },
     { label: t('nav.contact'), href: '#contact' },
   ];
 
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href: string, external?: boolean) => {
+    if (external) {
+      window.location.href = href;
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -70,7 +75,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
               {navLinks.map((link) => (
                 <button
                   key={link.href}
-                  onClick={() => scrollToSection(link.href)}
+                  onClick={() => scrollToSection(link.href, link.external)}
                   className="text-[14px] font-sans font-medium text-[#4A5568] hover:text-[#1A365D] transition-colors"
                 >
                   {link.label}
@@ -125,7 +130,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
-                    onClick={() => scrollToSection(link.href)}
+                    onClick={() => scrollToSection(link.href, link.external)}
                     className="block w-full text-left text-[16px] font-medium text-[#1A365D] 
                                hover:text-[#68A07C] py-3 border-b border-[#E2E8F0]"
                   >
