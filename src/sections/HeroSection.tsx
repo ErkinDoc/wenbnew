@@ -19,7 +19,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
   // Ссылки на формы в зависимости от языка
   const formLinks = {
     ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
-    sk: 'https://forms.gle/13N35XNrZKdvnJJPA',
+    sk: 'https://docs.google.com/forms/d/1UsqZBNlHTJ9Y7pmtx9A51-YXuvNQVHe6IjOL_JlAXNI/viewform',
     en: 'https://forms.gle/13N35XNrZKdvnJJPA', // Используем словацкую форму для английского
     de: 'https://forms.gle/13N35XNrZKdvnJJPA'  // Используем словацкую форму для немецкого
   };
