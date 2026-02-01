@@ -13,33 +13,29 @@ import { Footer } from './sections/Footer';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 
-/**
- * Medicine of Coherence - Dr. Erkinbek Dzhamanbaev
- * 
- * Premium CEE-positioned landing page:
- * - Identity: Dr. Erkinbek Dzhamanbaev, MD PhD MBA
- * - Title: Expert in Integrative Pain Management & Medicine of Coherence
- * - Colors: Deep Medical Blue (#1A365D), White, Sage Green (#68A07C)
- * - Typography: Playfair Display (serif) headers, Inter (sans-serif) body
- * - Languages: SK | EN | RU
- * - Forms: Google Forms integration for lead magnets
- * - Pricing: €100 (6D Diagnostic), €600 (Coherence Recovery), €450 (Women's Health), €400 (3-Month Map)
- */
-
 function App() {
-  useTranslation(); // Initialize i18n
-
+  const { i18n } = useTranslation();
+  
   // Track events for analytics
   const trackEvent = (action: string, category: string, label?: string) => {
-    // [INTEGRATION POINT] Google Analytics event tracking
-    // gtag('event', action, { event_category: category, event_label: label });
     console.log('Track:', { action, category, label });
   };
-
+  
+  // Assessment form links by language
+  const assessmentFormLinks: Record<string, string> = {
+    ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
+    sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
+    en: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
+    de: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform'
+  };
+  
   // Handle assessment click
   const handleAssessmentClick = () => {
+    const currentLang = i18n.language;
+    const formLink = assessmentFormLinks[currentLang] || assessmentFormLinks.sk;
+    
     trackEvent('click_assessment', 'conversion', '6d_diagnostic');
-    window.open('https://forms.gle/oDEBWUFKi6vLbTmk9', '_blank');
+    window.open(formLink, '_blank');
     toast.success('Opening 6D Assessment Form', {
       description: 'You will be redirected to the secure Google Form.',
       duration: 3000,
@@ -50,39 +46,39 @@ function App() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <Navigation onAssessmentClick={handleAssessmentClick} />
-
+      
       {/* Main Content */}
       <main>
         {/* Hero Section */}
         <HeroSection 
           onAssessmentClick={handleAssessmentClick}
         />
-
+        
         {/* 6D Method Section */}
         <Method6D />
-
+        
         {/* Global Experience Section */}
         <GlobalExperience />
-
+        
         {/* Services Section */}
         <Services />
-
+        
         {/* Success Stories Section */}
         <SuccessStories />
-
+        
         {/* Trust & Authority Section */}
         <TrustAuthority />
-
+        
         {/* FAQ Section */}
         <FAQ />
-
+        
         {/* Final CTA Section */}
         <FinalCTA />
       </main>
-
+      
       {/* Footer */}
       <Footer />
-
+      
       {/* Toast notifications */}
       <Toaster position="top-center" richColors />
     </div>
