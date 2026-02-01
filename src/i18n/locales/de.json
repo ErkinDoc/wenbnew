@@ -1,0 +1,308 @@
+{
+  "nav": {
+    "method": "Methode",
+    "services": "Leistungen",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "Wenn die Schulmedizin an ihre Grenzen stößt",
+    "subheadline": "Medizin der Kohärenz: Ein integrativer Ansatz für komplexe, chronische und unklare Diagnosen. 30+ Jahre Erfahrung. EU-Lizenz. Online-Beratungen in ganz Europa.",
+    "ctaPrimary": "Prüfen, ob mein Ansatz zu Ihnen passt",
+    "ctaSecondary": "Mehr über die Methodik erfahren",
+    "badge1": "EU Lizenziert",
+    "badge2": "30+ Jahre Praxis",
+    "badge3": "500+ Patienten",
+    "badge4": "15 Länder"
+  },
+  "problem": {
+    "title": "Sind Ihnen diese Situationen bekannt?",
+    "problemsTitle": "Probleme, mit denen Sie konfrontiert sind",
+    "solutionsTitle": "Die Medizin der Kohärenz funktioniert anders",
+    "problems": [
+      "Chronische Müdigkeit, die Tests nicht erklären können",
+      "Diagnose gestellt, aber Behandlung wirkt nicht",
+      "Viele Ärzte gesehen, aber keine Antworten",
+      "Schmerzen vorhanden, aber 'alles normal'",
+      "Symptome vorhanden, aber Ärzte sagen 'altersbedingt' oder 'Stress'"
+    ],
+    "solutions": [
+      "Tiefe funktionale Analyse (nicht nur 'normale' Tests)",
+      "Integration westlicher Diagnostik + östlicher Techniken",
+      "Personalisierte Protokolle für Ihren Fall",
+      "Fokus auf Ursache, nicht Symptome",
+      "Langfristige Verbesserung, keine temporäre Linderung"
+    ],
+    "transition": "Der Standardansatz konzentriert sich auf Symptome. Der integrative Ansatz findet die Wurzel des Problems."
+  },
+  "methodology": {
+    "title": "Drei Dimensionen des integrativen Ansatzes",
+    "subtitle": "Die Medizin der Kohärenz vereint das Beste aus westlicher und östlicher Medizin für einen ganzheitlichen Ansatz",
+    "cards": [
+      {
+        "title": "Diagnose & Bewertung",
+        "items": [
+          "Detaillierte Anamnese (nicht 15-minütige Untersuchung)",
+          "Funktionelle Testung der Körpersysteme",
+          "Bewertung von Lebensstil, Stressfaktoren, Ernährung",
+          "Erkennung versteckter Ungleichgewichte"
+        ]
+      },
+      {
+        "title": "Integrative Behandlung",
+        "items": [
+          "Funktionsmedizin-Protokolle",
+          "Physische und rehabilitative Techniken",
+          "Integration bewährter östlicher Praktiken",
+          "Personalisierung jedes Elements",
+          "Kombination der besten Ansätze"
+        ]
+      },
+      {
+        "title": "Nachhaltige Ergebnisse",
+        "items": [
+          "Selbstmanagement des Gesundheitszustands",
+          "Langfristige Begleitung und Unterstützung",
+          "Protokoll-Anpassungen basierend auf Fortschritt",
+          "Präventive Strategie",
+          "Ziel — nicht Abhängigkeit, sondern Autonomie"
+        ]
+      }
+    ],
+    "note": "Jedes Protokoll wird individuell entwickelt unter Berücksichtigung Ihrer einzigartigen Geschichte"
+  },
+  "services": {
+    "title": "Leistungen",
+    "subtitle": "Wählen Sie das passende Format",
+    "tabMedical": "Medizinische Beratungen",
+    "tabBusiness": "Business-Beratung",
+    "medicalPackages": [
+      {
+        "name": "Diagnostische Beratung",
+        "subtitle": "Für Erstbesucher",
+        "price": "€100",
+        "features": [
+          "90-minütige Online-Sitzung (Zoom)",
+          "Detaillierte Anamnese-Analyse",
+          "Funktionelle Bewertung",
+          "Personalisierte Diagnose-Planung",
+          "Schriftliche Zusammenfassung"
+        ],
+        "cta": "Beratung buchen"
+      },
+      {
+        "name": "Monatliche Begleitung",
+        "subtitle": "Für komplexe Fälle",
+        "price": "€300",
+        "savings": "Ersparnis vs. Einzelberatungen",
+        "badge": "Beliebteste",
+        "features": [
+          "Diagnostische Beratung (90 min)",
+          "Personalisiertes Behandlungsprotokoll",
+          "2 Follow-up Sitzungen",
+          "Email/Messenger Support",
+          "Protokoll-Anpassungen"
+        ],
+        "cta": "Programmdetails"
+      },
+      {
+        "name": "3-Monats-Transformation",
+        "subtitle": "Für tiefe Gesundheitstransformation",
+        "price": "€600",
+        "features": [
+          "Alles aus 1-Monats-Programm",
+          "6 Follow-up Sitzungen (wöchentlich)",
+          "Tiefe Arbeit mit Lebensstil, Ernährung, Stress",
+          "Prioritäts-Support (24h Antwort)",
+          "Langfristige Strategie"
+        ],
+        "cta": "Programm besprechen"
+      }
+    ],
+    "businessPackages": [
+      {
+        "name": "Practice Audit",
+        "subtitle": "Diagnostik Ihrer Praxis",
+        "price": "€1.500",
+        "features": [
+          "Analyse aktueller Prozesse",
+          "Identifizierung von Engpässen",
+          "Bewertung von Patientenfluss",
+          "Compliance-Check (EU)",
+          "Detaillierter Bericht"
+        ],
+        "cta": "Audit bestellen"
+      },
+      {
+        "name": "Wachstumsstrategie — 3 Monate",
+        "subtitle": "Systemische Praxis-Transformation",
+        "price": "€5.000",
+        "badge": "Für ernsthafte Veränderungen",
+        "features": [
+          "Vollständiger Practice Audit",
+          "Wachstumsstrategie-Entwicklung",
+          "Optimierung von Operationen",
+          "Marketing & Patientengewinnung",
+          "Team-Training",
+          "6 Beratungssitzungen"
+        ],
+        "cta": "Transformation starten"
+      }
+    ],
+    "note": "Alle Beratungen erfolgen online über sicheres Zoom. Zahlung vor der Beratung."
+  },
+  "trust": {
+    "title": "Warum Sie mir vertrauen können",
+    "credentialsTitle": "Qualifikationen & Lizenzen",
+    "credentials": [
+      "MUDr. (1987) — Kyrgyz State Medical University, Rotes Diplom",
+      "PhD. (1996) — Militärmedizinische Akademie, St. Petersburg",
+      "Facharzt Innere Medizin (2008) — Spanien",
+      "MBA (2014) — Universität Groningen, Niederlande",
+      "EU Medical License — Slowakei (2021)",
+      "30+ Jahre klinische Praxis"
+    ],
+    "certifications": [
+      "ACLS, ATLS (USA)",
+      "Moving Acupuncture, Chiropractic — Jaseng Hospital, Südkorea",
+      "Ayurveda, Yoga-Therapie — Indien",
+      "Qigong — China"
+    ],
+    "casesTitle": "Erholungsgeschichten",
+    "casesSubtitle": "Echte Ergebnisse von echten Menschen",
+    "cases": [
+      {
+        "problem": "Frau, 35, 5 Jahre chronische Müdigkeit.",
+        "problemDetail": "7 Ärzte besucht, alle Tests normal. Diagnose: 'Stress', 'Depression'. Konnte nicht arbeiten.",
+        "approach": "Identifiziert: mitochondriale Dysfunktion + Nebennierenerschöpfung + Nahrungsmittelunverträglichkeiten.",
+        "result": "Nach 4 Monaten integrativem Protokoll — Energie wiederhergestellt, Rückkehr zur Vollzeitarbeit, Ergebnis stabil seit 2+ Jahren."
+      },
+      {
+        "problem": "Mann, 48, Autoimmunerkrankung.",
+        "problemDetail": "Standardbehandlung — schwere Nebenwirkungen, Symptome bestehen.",
+        "approach": "Integration östlicher Techniken + Ernährungsumstellung + Stressmanagement.",
+        "result": "Symptome um 70% reduziert, Medikamentendosis halbiert, Lebensqualität deutlich verbessert."
+      },
+      {
+        "problem": "Frau, 52, unerklärliche Schmerzen.",
+        "problemDetail": "3 Jahre Schmerzen. MRT, Tests — alles normal. Ärzte ratlos.",
+        "approach": "Funktionelle Testung zeigte chronische Entzündung + neuromuskuläres Ungleichgewicht.",
+        "result": "Umfassendes Protokoll — Schmerzen um 85% reduziert in 6 Monaten."
+      }
+    ],
+    "statsTitle": "Zahlen, die für sich sprechen",
+    "stats": [
+      { "number": "500+", "label": "Patienten geholfen" },
+      { "number": "30+", "label": "Jahre klinische Praxis" },
+      { "number": "15", "label": "Länder (Online-Beratungen)" },
+      { "number": "92%", "label": "Zufriedenheit" }
+    ]
+  },
+  "quiz": {
+    "title": "Ist die Medizin der Kohärenz das Richtige für Sie?",
+    "subtitle": "Beantworten Sie 4 kurze Fragen (1 Minute)",
+    "questions": [
+      {
+        "question": "Wie lange besteht Ihr Zustand?",
+        "options": ["Weniger als 3 Monate", "3-12 Monate", "Mehr als ein Jahr"]
+      },
+      {
+        "question": "Waren Sie bei anderen Spezialisten?",
+        "options": ["Nein, erster Besuch", "Ja, aber ohne Verbesserung", "Ja, mit Teilverbesserung"]
+      },
+      {
+        "question": "Ihre Tests/Untersuchungen:",
+        "options": ["Nicht gemacht", "Gemacht, meist normal", "Abweichungen gefunden, aber Behandlung hilft nicht"]
+      },
+      {
+        "question": "Sind Sie bereit, aktiv teilzunehmen?",
+        "options": ["Ja, bereit Lebensstil zu ändern", "Nur Pillen/Prozeduren", "Unsicher"]
+      }
+    ],
+    "positiveResult": {
+      "title": "Ja, mein Ansatz kann Ihnen helfen",
+      "text": "Sie stehen vor einem komplexen Fall, der einen tieferen Ansatz erfordert als die Schulmedizin bietet. Die Medizin der Kohärenz spezialisiert sich auf solche Situationen. Ihre Bereitschaft zur aktiven Teilnahme ist der Schlüssel zum Erfolg.",
+      "cta": "Diagnostische Beratung buchen"
+    },
+    "neutralResult": {
+      "title": "Mein Ansatz könnte zu Ihnen passen",
+      "text": "Für eine genauere Bewertung empfehle ich: Bei akutem Zustand — beginnen Sie mit Ihrem behandelnden Arzt. Wenn Sie nicht bereit sind, den Lebensstil zu ändern — mein Ansatz könnte weniger effektiv sein.",
+      "cta": "Frage stellen"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Wie unterscheidet sich die Medizin der Kohärenz von der Schulmedizin?",
+        "answer": "Die Schulmedizin konzentriert sich auf Symptomdiagnose und Behandlung mit Medikamenten. Die Medizin der Kohärenz integriert diesen Ansatz mit Funktionsmedizin und bewährten östlichen Techniken. Das Ziel ist nicht nur Symptombeseitigung, sondern die Identifizierung und Behandlung der Ursache."
+      },
+      {
+        "question": "Ist Online-Beratung für ernste Fälle geeignet?",
+        "answer": "Online-Beratung ist effektiv für die meisten chronischen und funktionellen Zustände. Ich führe detaillierte Interviews durch, analysiere die Krankengeschichte und entwickle ein personalisiertes Protokoll."
+      },
+      {
+        "question": "Welche Unterlagen werden für die Beratung benötigt?",
+        "answer": "Für maximale Effektivität bereiten Sie vor: Bluttestergebnisse der letzten 6-12 Monate, Bildgebungsergebnisse, Liste der Medikamente, kurze Beschreibung der Krankengeschichte."
+      },
+      {
+        "question": "Wie lange bis zu ersten Ergebnissen?",
+        "answer": "Einige Patienten bemerken Verbesserungen innerhalb von 2-4 Wochen. Für chronische Zustände ist ein realistischer Zeitrahmen 2-4 Monate für signifikante Veränderungen."
+      },
+      {
+        "question": "Kann es mit Behandlung anderer Ärzte kombiniert werden?",
+        "answer": "Absolut, und ich ermutige dazu. Mein Ansatz ist keine Ersetzung, sondern Ergänzung zur Schulmedizin. Ich arbeite kollaborativ und kommuniziere bei Bedarf mit Ihren behandelnden Ärzten."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Bereit für den ersten Schritt zu besserer Gesundheit?",
+    "subtitle": "Beginnen Sie mit einer diagnostischen Beratung — 90 Minuten, die Ihren Ansatz zur Gesundheit verändern können.",
+    "ctaPrimary": "Beratung buchen",
+    "ctaSecondary": "Guide über meinen Ansatz herunterladen",
+    "trust1": "Sichere Buchung",
+    "trust2": "DSGVO-konform",
+    "trust3": "Vertraulichkeit garantiert"
+  },
+  "footer": {
+    "quickLinks": "Schnelllinks",
+    "legal": "Rechtliches",
+    "contact": "Kontakt",
+    "newsletter": "Newsletter",
+    "newsletterText": "Nützliche Gesundheitsmaterialien erhalten",
+    "subscribe": "Abonnieren",
+    "emailPlaceholder": "Ihre E-Mail",
+    "subscribed": "Danke für Ihr Abonnement! Prüfen Sie Ihre E-Mail.",
+    "location": "Bratislava, Slowakei",
+    "copyright": "© 2025 Dr. Erkin Dzhamanbaev | Medizin der Kohärenz"
+  },
+  "wheel6d": {
+    "title": "6D Navigation — Ihre Gesundheitskarte",
+    "subtitle": "Sechs Dimensionen der Kohärenz für umfassende Bewertung und Erholung",
+    "dimensions": [
+      { "name": "D1: Diagnose", "description": "Systemdiagnose und Kartierung" },
+      { "name": "D2: Dysfunktion", "description": "Korrektur von Atem- und Bewegungsmustern" },
+      { "name": "D3: Disconnection", "description": "Wiederherstellung der Gehirn-Körper-Verbindung" },
+      { "name": "D4: Direction", "description": "Biochemische Grundlage und Ernährung" },
+      { "name": "D5: Development", "description": "Psychologische Umprogrammierung" },
+      { "name": "D6: Depth", "description": "Integration der Veränderungen ins Leben" }
+    ]
+  },
+  "diagnosticForm": {
+    "title": "Diagnose starten",
+    "subtitle": "Füllen Sie das Formular aus und ich kontaktiere Sie innerhalb von 24 Stunden",
+    "step1": "Symptome",
+    "step2": "Kontakt",
+    "step3": "Senden",
+    "symptomsLabel": "Beschreiben Sie Ihre Hauptsymptome und wie lange sie Sie belasten",
+    "symptomsPlaceholder": "Z.B.: chronische Müdigkeit, Rückenschmerzen, Schlafstörungen...",
+    "emailLabel": "Ihre E-Mail",
+    "phoneLabel": "Ihre Telefonnummer (WhatsApp/Telegram)",
+    "phonePlaceholder": "+421...",
+    "submit": "Anfrage senden",
+    "success": "Vielen Dank! Ich habe Ihre Anfrage erhalten und werde mich innerhalb von 24 Stunden bei Ihnen melden.",
+    "whatsappButton": "Auf WhatsApp schreiben",
+    "back": "Zurück",
+    "next": "Weiter"
+  }
+}

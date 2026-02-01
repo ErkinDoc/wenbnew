@@ -1,0 +1,258 @@
+{
+  "nav": {
+    "method": "Metóda",
+    "services": "Služby",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Dr. Erkinbek Dzhamanbaev",
+    "credentials": "MD, PhD, MBA",
+    "specialty": "Expert na komplexné klinické prípady a chronickú bolesť",
+    "headline": "Medicína Koherencie: Riešenie pre komplexné prípady a chronickú bolesť",
+    "subheadline": "Keď štandardná diagnostika ukazuje 'normálne' výsledky, ale pacient stále trpí. Špecialista na fibromyalgia, neuropatickú bolesť a multi-systémovú dysfunkciu s 30+ rokmi praxe.",
+    "ctaAssessment": "Začať 6D diagnostiku",
+    "ctaApply": "Požiadať o program",
+    "badge1": "EU Licencia",
+    "badge2": "30+ rokov praxe",
+    "badge3": "500+ pacientov",
+    "badge4": "15 krajín"
+  },
+  "problem": {
+    "title": "Tieto situácie vám sú známe?",
+    "problemsTitle": "Keď konvenčná medicína dosiahla limity",
+    "solutionsTitle": "Medicína Koherencie ponúka riešenie",
+    "problems": [
+      "Fibromyalgia s 'normálnymi' výsledkami testov",
+      "Neuropatická bolesť bez zjavnej príčiny",
+      "Multi-systémová dysfunkcia — každý špecialista vidí len časť",
+      "Psychosomatické príznaky — 'je to vo vašej hlave'",
+      "10+ rokov chronickej bolesti bez úľavy"
+    ],
+    "solutions": [
+      "6D systémová analýza — vidíme to, čo iní prehliadnu",
+      "Integrácia klinických dôkazov + bioenergetickej logiky",
+      "70-85% redukcia symptómov u pacientov s 10+ ročnou históriou",
+      "Obnova systémovej koherencie, nielen potlačenie bolesti",
+      "Personalizovaný protokol pre komplexné komorbidity"
+    ],
+    "transition": "Neliečime len príznaky. Obnovujeme koherenciu vášho tela."
+  },
+  "method6d": {
+    "title": "Systém 6D Navigácie",
+    "subtitle": "Šesť dimenzií koherencie pre komplexné klinické prípady",
+    "description": "Integrácia západných klinických dôkazov s bioenergetickou a funkčnou logikou. Pre prípady, kde štandardná medicína vidí 'normálne' výsledky, ale pacient stále trpí.",
+    "dimensions": [
+      {
+        "id": "D1",
+        "name": "D1: Diagnóza",
+        "subtitle": "Fyzická",
+        "description": "Biochemická analýza (CRP, vitamín D, kortizol), HRV variabilita, štrukturálno-pohybové hodnotenie. Pre pacientov s 'normálnymi' výsledkami, ale pretrvávajúcimi symptómami."
+      },
+      {
+        "id": "D2",
+        "name": "D2: Dysfunkcia",
+        "subtitle": "Bioenergetická",
+        "description": "Korekcia dýchacích a pohybových vzorcov. Myofasciálny release, posturálna korekcia. Špecificky pre fibromyalgia a neuropatickú bolesť."
+      },
+      {
+        "id": "D3",
+        "name": "D3: Odpojenie",
+        "subtitle": "Emocionálna",
+        "description": "Obnova spojenia mozog-telo. Koherentné dýchanie (5-6 cyklov/min), vagusová aktivácia. Pre psychosomatické prípady a chronický stres."
+      },
+      {
+        "id": "D4",
+        "name": "D4: Smer",
+        "subtitle": "Mentálna",
+        "description": "Biochemický základ a výživa. Personalizovaná protizápalová strava, nutraceutiká (D3+K2, horčík, omega-3). Optimalizácia cirkadiánnych rytmov."
+      },
+      {
+        "id": "D5",
+        "name": "D5: Rozvoj",
+        "subtitle": "Sociálna",
+        "description": "Preprogramovanie psychiky. Pain Neuroscience Education, ACT, kognitívna terapia. Pre pacientov s 10+ ročnou históriou chronickej bolesti."
+      },
+      {
+        "id": "D6",
+        "name": "D6: Hĺbka",
+        "subtitle": "Integračná",
+        "description": "Integrácia zmien do života. Rituály, mindful movement, existenciálna reevaluácia. Prevencia recidív a dlhodobá stabilita."
+      }
+    ]
+  },
+  "globalExperience": {
+    "title": "Medzinárodná Klinická Prax",
+    "subtitle": "Špecialista na komplexné prípady v Slovensku, Európe a Ázii",
+    "locations": [
+      {
+        "country": "Slovensko",
+        "details": "Adeli Medical Center, Refit Clinic — neurorehabilitácia a liečba chronickej bolesti"
+      },
+      {
+        "country": "Kirgizsko",
+        "details": "Univerzitná nemocnica — intenzívna medicína a komplexná rehabilitácia"
+      },
+      {
+        "country": "Španielsko",
+        "details": "Špecializácia vnútorné lekárstvo, Barcelona — multi-systémové prípady"
+      },
+      {
+        "country": "Holandsko",
+        "details": "MBA University of Groningen — medicínsky manažment a klinická stratégia"
+      }
+    ],
+    "memberships": [
+      "AAPM — American Academy of Pain Medicine",
+      "APTA — American Physical Therapy Association",
+      "EAPM — European Academy of Pain Medicine"
+    ],
+    "certifications": [
+      "ACLS, ATLS (USA) — certifikácie akútnej starostlivosti",
+      "Moving Acupuncture, Chiropractic — Jaseng Hospital, Južná Kórea",
+      "Ayurveda, Panchakarma — India",
+      "Qigong — Čína"
+    ]
+  },
+  "services": {
+    "title": "Služby a Programy",
+    "subtitle": "Pre komplexné prípady, kde štandardná medicína vidí 'normálne' výsledky",
+    "packages": [
+      {
+        "name": "6D Primárna Diagnostika",
+        "subtitle": "60-minútová komplexná analýza",
+        "price": "€100",
+        "includes": "Vrátane 6D-Map PDF",
+        "features": [
+          "Biochemická analýza (CRP, vitamín D, kortizol)",
+          "HRV variabilita a autonómne hodnotenie",
+          "Štrukturálno-pohybová analýza",
+          "Personalizovaný 6D-Map PDF",
+          "Odporúčania pre ďalší postup"
+        ],
+        "cta": "Začať 6D diagnostiku",
+        "formUrl": "https://forms.gle/oDEBWUFKi6vLbTmk9"
+      },
+      {
+        "name": "Coherence Program",
+        "subtitle": "6-týždňový transformačný program",
+        "price": "€300",
+        "badge": "Najobľúbenejší",
+        "features": [
+          "6D primárna diagnostika",
+          "Personalizovaný 6-týždňový protokol",
+          "Týždenné follow-up konzultácie",
+          "Nepretržitá WhatsApp podpora",
+          "Kompletný 6D-Map s progress tracking"
+        ],
+        "cta": "Požiadať o program",
+        "formUrl": "https://forms.gle/hKjSMrxBabZ3NYda8"
+      },
+      {
+        "name": "3-Mesačná Strategická Cesta",
+        "subtitle": "Pre komplexné multi-systémové prípady",
+        "price": "€600",
+        "features": [
+          "Kompletná 6D diagnostika",
+          "3-mesačný strategický plán",
+          "Mesačné review konzultácie",
+          "Protokolové úpravy podľa progressu",
+          "Long-term maintenance stratégia"
+        ],
+        "cta": "Vytvoriť strategický plán",
+        "formUrl": "https://forms.gle/hKjSMrxBabZ3NYda8"
+      }
+    ],
+    "note": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom. Platba pred konzultáciou. GDPR compliant."
+  },
+  "successStories": {
+    "title": "Klinické Výsledky",
+    "subtitle": "Anonymizované prípady pacientov s komplexnými diagnózami",
+    "disclaimer": "Všetky prípady sú anonymizované v súlade s GDPR. Výsledky sa môžu líšiť podľa individuálnej situácie.",
+    "stories": [
+      {
+        "condition": "Fibromyalgia + neuropatická bolesť",
+        "history": "12 rokov, 15+ špecialistov, 'normálne' výsledky",
+        "approach": "6D systémová analýza, bioenergetická korekcia, nutrigenomika",
+        "result": "78% redukcia bolesti po 8 týždňoch, obnova spánku a energie"
+      },
+      {
+        "condition": "Multi-systémová dysfunkcia",
+        "history": "Nejasná diagnóza, každý špecialista iný názor",
+        "approach": "Integratívny 6D pohľad, koherenčná terapia",
+        "result": "85% zlepšenie kvality života, identifikácia skrytých spúšťačov"
+      },
+      {
+        "condition": "Psychosomatická integrita",
+        "history": "'Je to vo vašej hlave' — 7 rokov bez pomoci",
+        "approach": "Brain-body reconnection, vagusová terapia, somatická práca",
+        "result": "72% redukcia somatických symptómov, obnova autonómie"
+      }
+    ]
+  },
+  "trust": {
+    "title": "Prečo mi môžete dôverovať",
+    "credentialsTitle": "Kvalifikácia a Licencie",
+    "credentials": [
+      "MUDr. (1987) — Kyrgyz State Medical University, Červený diplom",
+      "PhD. (1996) — Vojenská lekárska akadémia, Petrohrad (šokové stavy)",
+      "Špecialista vnútorného lekárstva (2008) — Španielsko",
+      "MBA (2014) — Univerzita Groningen, Holandsko",
+      "EU Medical License — Slovensko, nostrifikované (2021)",
+      "30+ rokov klinickej praxe (Intenzívna medicína, Rehabilitácia, Liečba bolesti)"
+    ],
+    "gdpr": "GDPR Compliant — Ochrana osobných údajov v súlade s európskymi predpismi",
+    "stats": [
+      { "number": "500+", "label": "Pacientov s komplexnými prípadmi" },
+      { "number": "30+", "label": "Rokov praxe" },
+      { "number": "70-85%", "label": "Redukcia symptómov" },
+      { "number": "15", "label": "Krajín" }
+    ]
+  },
+  "faq": {
+    "title": "Často Kladené Otázky",
+    "items": [
+      {
+        "question": "Pre koho je Medicína Koherencie určená?",
+        "answer": "Pre pacientov s komplexnými prípadmi, kde štandardná diagnostika ukazuje 'normálne' výsledky, ale symptómy pretrvávajú. Špeciálne pre fibromyalgia, neuropatickú bolesť, multi-systémovú dysfunkciu a psychosomatické prípady."
+      },
+      {
+        "question": "Aké výsledky môžem očakávať?",
+        "answer": "Naši pacienti s 10+ ročnou históriou chronickej bolesti dosahujú 70-85% redukciu symptómov. Výsledky závisia od komplexity prípadu a vašej angažovanosti v procese."
+      },
+      {
+        "question": "Ako funguje 6D diagnostika?",
+        "answer": "6D diagnostika hodnotí šesť dimenzií vášho zdravia: fyzickú, bioenergetickú, emocionálnu, mentálnu, sociálnu a integračnú. Zahŕňa biochemickú analýzu, HRV meranie a komplexné hodnotenie, ktoré odhalí to, čo štandardné testy prehliadnu."
+      },
+      {
+        "question": "Kde prebiehajú konzultácie?",
+        "answer": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom. Pre pacientov v okolí Piešťan a Bratislavy je možný aj osobný kontakt."
+      },
+      {
+        "question": "Sú moje údaje v bezpečí?",
+        "answer": "Áno, všetky údaje sú spracovávané v súlade s GDPR. Používame šifrovanú komunikáciu a všetky prípady sú anonymizované."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Pripravení nájsť riešenie pre váš komplexný prípad?",
+    "subtitle": "Začnite 6D diagnostikou — prvým krokom k pochopeniu toho, čo štandardné testy nevidia.",
+    "ctaAssessment": "Začať 6D diagnostiku",
+    "ctaApply": "Požiadať o program",
+    "trust1": "GDPR Compliant",
+    "trust2": "Bezpečná komunikácia",
+    "trust3": "Anonymizované prípady"
+  },
+  "footer": {
+    "quickLinks": "Rýchle odkazy",
+    "legal": "Právne informácie",
+    "contact": "Kontakt",
+    "email": "erkinslovakia@gmail.com",
+    "phone": "+421 940 270 511",
+    "location": "Piešťany / Bratislava, Slovensko",
+    "copyright": "© 2025 Dr. Erkinbek Dzhamanbaev | Medicína Koherencie"
+  },
+  "seo": {
+    "keywords": "liečba chronickej bolesti Piešťany, integrative medicine Slovakia, expert na komplexné klinické prípady, fibromyalgia liečba, neuropatická bolesť, 6D diagnostika, medicína koherencie"
+  }
+}
