@@ -255,5 +255,58 @@
   },
   "seo": {
     "keywords": "complex comorbidities treatment, severe multi-system cases, integrative medicine Slovakia, expert on complex clinical cases, treatment-resistant conditions, online medical consultation Europe, 6D diagnostic, medicine of coherence"
+  },
+  "testimonials": {
+    "title": "Patient Testimonials",
+    "subtitle": "Real results from patients with complex comorbidities across Europe and worldwide",
+    "disclaimer": "All cases are anonymized in accordance with GDPR. Results may vary depending on individual circumstances.",
+    "1": {
+      "condition": "Multiple comorbidities",
+      "duration": "12 years, 15+ specialists",
+      "result": "78% pain reduction in 8 weeks",
+      "quote": "12 years of chronic pain. 15+ specialists couldn't help. All tests 'normal', but I was suffering. Dr. Erkin found the systemic cause in 90 minutes: chest breathing (18 cycles/min instead of 12), vitamin D deficiency (22 instead of 50+), weak gluteal muscles. In 6 weeks, pain dropped from 7/10 to 2/10. Most importantly - I understood WHY."
+    },
+    "2": {
+      "condition": "Multi-system dysfunction",
+      "duration": "7 years, unclear diagnosis",
+      "result": "85% improvement in quality of life",
+      "quote": "7 years without clear diagnosis. Each specialist treated separately. Everyone said 'not my area'. Dr. Erkin's 6D diagnostic revealed the connection: chronic stress → sympathetic dominance → gut dysfunction → inflammation. Online via Zoom worked perfectly. Finally understood what's happening."
+    },
+    "3": {
+      "condition": "Chronic fatigue + burnout",
+      "duration": "5 years, treatment-resistant",
+      "result": "72% reduction in symptoms",
+      "quote": "Burnout + chronic fatigue + pain everywhere. 5 years. Endocrinologist said 'hormones normal'. Neurologist prescribed antidepressants. Dr. Erkin's approach: adrenal recovery + circadian rhythms + vagus activation. After CRP-30 program, I sleep normally for the first time in years. Energy returned."
+    },
+    "4": {
+      "condition": "Psychosomatic comorbidity",
+      "duration": "10 years, 'it's all in your head'",
+      "result": "70% pain reduction",
+      "quote": "10 years of pain. Every doctor: 'It's psychosomatic, see a therapist'. But pain was REAL. Dr. Erkin didn't dismiss it. Brain-body reconnection + breathing + somatic work. Pain reduced from 8/10 to 2/10. Most important: I'm not 'broken'. My nervous system just needed reset."
+    },
+    "5": {
+      "condition": "Undiagnosed symptoms",
+      "duration": "8 years, 20+ doctors",
+      "result": "80% symptom improvement",
+      "quote": "8 years searching for answers. 20+ doctors, countless tests, all 'normal'. Found Dr. Erkin through Academia.edu publication. His 6D approach finally made sense: HRV showed sympathetic overdrive, breath pattern dysfunctional, magnesium severely depleted. 12 weeks later - different person. Working online from US was seamless."
+    },
+    "6": {
+      "condition": "Long COVID chronic fatigue",
+      "duration": "2 years, post-COVID",
+      "result": "75% energy restoration",
+      "quote": "Long COVID left me with severe fatigue and brain fog. Doctors said 'it takes time, be patient'. After 2 years of waiting, found Dr. Erkin. His approach: mitochondrial support, HRV training, vagal tone restoration. Within 8 weeks, brain fog cleared 80%, energy improved dramatically. Can work full-time again."
+    },
+    "7": {
+      "condition": "Chronic migraine + IBS",
+      "duration": "6 years, failed treatments",
+      "result": "82% migraine reduction",
+      "quote": "Chronic migraines 15 days/month + IBS. Tried everything: medications, Botox, exclusion diets. Nothing worked long-term. Dr. Erkin's 6D approach connected the dots: gut-brain axis dysfunction, vagal nerve impairment. After 3 months: migraines down to 3 days/month, IBS 90% better. Understanding the SYSTEM changed everything."
+    },
+    "8": {
+      "condition": "Post-surgical chronic pain",
+      "duration": "4 years after failed surgery",
+      "result": "70% pain reduction without surgery",
+      "quote": "Back surgery didn't help - pain actually got worse. Surgeon suggested second operation. Desperate, found Dr. Erkin online. His assessment: surgery addressed structure, ignored dysfunctional movement patterns and nervous system sensitization. Non-surgical approach: movement retraining + pain neuroscience education. 6 months later: pain 7/10 to 2/10. Avoided second surgery."
+    }
   }
 }
