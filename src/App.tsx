@@ -6,6 +6,7 @@ import { Method6D } from './sections/Method6D';
 import { GlobalExperience } from './sections/GlobalExperience';
 import { Services } from './sections/Services';
 import { SuccessStories } from './sections/SuccessStories';
+import { Testimonials } from './sections/Testimonials';
 import { TrustAuthority } from './sections/TrustAuthority';
 import { FAQ } from './sections/FAQ';
 import { FinalCTA } from './sections/FinalCTA';
@@ -65,6 +66,9 @@ function App() {
         
         {/* Success Stories Section */}
         <SuccessStories />
+        
+        {/* Testimonials Section */}
+        <Testimonials />
         
         {/* Trust & Authority Section */}
         <TrustAuthority />
