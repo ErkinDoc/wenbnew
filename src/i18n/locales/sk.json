@@ -255,5 +255,58 @@
   },
   "seo": {
     "keywords": "liečba komplexných komorbidít, závažné multi-systémové prípady, integratívna medicína Slovensko, expert na komplexné klinické prípady, rezistentné stavy, online medicínska konzultácia Európa, 6D diagnostika, medicína koherencie"
+  },
+  "testimonials": {
+    "title": "Ohlasy Pacientov",
+    "subtitle": "Reálne výsledky pacientov s komplexnými komorbiditami v Európe a po celom svete",
+    "disclaimer": "Všetky prípady sú anonymizované v súlade s GDPR. Výsledky sa môžu líšiť podľa individuálnej situácie.",
+    "1": {
+      "condition": "Viacnásobné komorbidity",
+      "duration": "12 rokov, 15+ špecialistov",
+      "result": "78% redukcia bolesti za 8 týždňov",
+      "quote": "12 rokov chronickej bolesti. 15+ špecialistov nepomohlo. Všetky testy 'normálne', ale ja som trpela. Dr. Erkin našiel systémovú príčinu za 90 minút: hrudné dýchanie (18 cyklov/min namiesto 12), deficit vitamínu D (22 namiesto 50+), slabé sedacie svaly. Za 6 týždňov bolesť klesla z 7/10 na 2/10. Najdôležitejšie - pochopila som PREČO."
+    },
+    "2": {
+      "condition": "Multi-systémová dysfunkcia",
+      "duration": "7 rokov, nejasná diagnóza",
+      "result": "85% zlepšenie kvality života",
+      "quote": "7 rokov bez jasnej diagnózy. Každý špecialista liečil oddelene. Všetci povedali 'to nie je moja oblasť'. Dr. Erkinova 6D diagnostika odhalila spojenie: chronický stres → sympatická dominancia → dysfunkcia čriev → zápal. Online cez Zoom fungovalo perfektne. Konečne som pochopil, čo sa deje."
+    },
+    "3": {
+      "condition": "Chronická únava + vyhorenie",
+      "duration": "5 rokov, rezistentné na liečbu",
+      "result": "72% redukcia symptómov",
+      "quote": "Vyhorenie + chronická únava + bolesť všade. 5 rokov. Endokrinológ povedal 'hormóny normálne'. Neurológ predpísal antidepresíva. Dr. Erkinov prístup: obnova nadobličiek + cirkadiánne rytmy + vágusová aktivácia. Po CRP-30 programe spím normálne prvýkrát za roky. Energia sa vrátila."
+    },
+    "4": {
+      "condition": "Psychosomatická komorbidita",
+      "duration": "10 rokov, 'je to vo vašej hlave'",
+      "result": "70% redukcia bolesti",
+      "quote": "10 rokov bolesti. Každý lekár: 'Je to psychosomatické, choďte k terapeutovi'. Ale bolesť bola REÁLNA. Dr. Erkin to neignoroval. Prepojenie mozog-telo + dýchanie + somatická práca. Bolesť klesla z 8/10 na 2/10. Najdôležitejšie: nie som 'pokazený'. Nervový systém len potreboval reset."
+    },
+    "5": {
+      "condition": "Nediagnostikované symptómy",
+      "duration": "8 rokov, 20+ lekárov",
+      "result": "80% zlepšenie symptómov",
+      "quote": "8 rokov hľadania odpovedí. 20+ lekárov, nespočetné testy, všetko 'normálne'. Našla som Dr. Erkina cez publikáciu na Academia.edu. Jeho 6D prístup konečne dával zmysel: HRV ukázalo sympatickú dominanciu, dychový vzorec bol dysfunkčný, horčík výrazne vyčerpaný. O 12 týždňov - iný človek. Online spolupráca z USA fungovala bezproblémovo."
+    },
+    "6": {
+      "condition": "Long COVID chronická únava",
+      "duration": "2 roky, post-COVID",
+      "result": "75% obnova energie",
+      "quote": "Long COVID ma nechal so závažnou únavou a 'brain fog'. Lekári povedali 'to trvá, buďte trpezlivý'. Po 2 rokoch čakania som našiel Dr. Erkina. Jeho prístup: mitochondriálna podpora, HRV tréning, obnova vágusového tónu. Za 8 týždňov sa 'brain fog' vyčistil na 80%, energia sa dramaticky zlepšila. Môžem opäť pracovať na plný úväzok."
+    },
+    "7": {
+      "condition": "Chronická migréna + IBS",
+      "duration": "6 rokov, neúspešné liečby",
+      "result": "82% redukcia migrény",
+      "quote": "Chronické migrémy 15 dní/mesiac + IBS. Skúšala som všetko: lieky, Botox, vylučovacie diéty. Nič nefungovalo dlhodobo. Dr. Erkinov 6D prístup spojil body: dysfunkcia osi črevo-mozog, poškodenie vágusového nervu. Po 3 mesiacoch: migrémy klesli na 3 dni/mesiac, IBS 90% lepšie. Pochopenie SYSTÉMU zmenilo všetko."
+    },
+    "8": {
+      "condition": "Chronická bolesť po operácii",
+      "duration": "4 roky po neúspešnej operácii",
+      "result": "70% redukcia bolesti bez operácie",
+      "quote": "Operácia chrbta nepomohla - bolesť sa dokonca zhoršila. Chirurg navrhol druhú operáciu. V zúfalstve som našiel Dr. Erkina online. Jeho posúdenie: operácia riešila štruktúru, ale ignorovala dysfunkčné pohybové vzorce a senzibilizáciu nervového systému. Nechirurgický prístup: preškolenie pohybu + pain neuroscience education. O 6 mesiacov: bolesť z 7/10 na 2/10. Vyhnul som sa druhej operácii."
+    }
   }
 }
