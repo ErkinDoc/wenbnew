@@ -8,7 +8,7 @@ export function TrustAuthority() {
   const credentials = t('trust.credentials', { returnObjects: true }) as string[];
 
   const stats = [
-    { icon: Users, number: '500+', label: t('trust.stats.0.label') },
+    { icon: Users, number: '5000+', label: t('trust.stats.0.label') },
     { icon: Clock, number: '30+', label: t('trust.stats.1.label') },
     { icon: TrendingDown, number: '70-85%', label: t('trust.stats.2.label') },
     { icon: Globe, number: '15', label: t('trust.stats.3.label') },
