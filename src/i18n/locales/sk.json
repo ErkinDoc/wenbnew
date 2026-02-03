@@ -79,7 +79,20 @@
         "subtitle": "Integrácia do Života",
         "description": "Prechod od 'liečim sa' k 'toto je teraz môj spôsob života'. Integrácia praktik do identity, vytváranie podporného prostredia a sociálnych väzieb. Rituály, mindful movement, existenciálna prehodnotenie. Prevencia relapsov a dlhodobá stabilita."
       }
-    ]
+    ],
+    "scientificBasis": {
+      "label": "Vedecký základ",
+      "publications": [
+        {
+          "title": "A Regulation-Oriented 6D Navigation Model",
+          "url": "https://www.academia.edu/161279480/A_Regulation_Oriented_6D_Navigation_Model"
+        },
+        {
+          "title": "Medicine of Coherence: A Regulation-Oriented Framework",
+          "url": "https://www.academia.edu/161272311/Medicine_of_Coherence_A_Regulation_Oriented_Framework_for_Chronic_Pain_and_Functional_Disorders"
+        }
+      ]
+    }
   },
   "globalExperience": {
     "title": "Medzinárodná Klinická Prax",
