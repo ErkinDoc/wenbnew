@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Activity, Wind, Brain, Apple, Heart, Sparkles, ChevronRight } from 'lucide-react';
+import { Activity, Wind, Brain, Apple, Heart, Sparkles, ChevronRight, FileText } from 'lucide-react';
 
 const dimensionIcons = {
   'D1': Activity,
@@ -15,6 +15,7 @@ const dimensionIcons = {
 export function Method6D() {
   const { t } = useTranslation();
   const [activeDim, setActiveDim] = useState(0);
+  const [showPubs, setShowPubs] = useState(false);
 
   const dimensions = t('method6d.dimensions', { returnObjects: true }) as Array<{
     id: string;
@@ -22,6 +23,11 @@ export function Method6D() {
     subtitle: string;
     description: string;
   }>;
+
+  const scientificBasis = t('method6d.scientificBasis', { returnObjects: true }) as {
+    label: string;
+    publications: Array<{ title: string; url: string }>;
+  };
 
   return (
     <section id="method6d" className="w-full py-24 lg:py-32 bg-white">
@@ -44,6 +50,39 @@ export function Method6D() {
             <p className="text-[16px] lg:text-[18px] text-[#4A5568] max-w-2xl mx-auto font-sans">
               {t('method6d.subtitle')}
             </p>
+
+            {/* Scientific Basis */}
+            <div className="mt-6 flex flex-col items-center">
+              <button
+                onClick={() => setShowPubs(!showPubs)}
+                className="inline-flex items-center gap-2 text-[13px] font-sans font-medium text-[#68A07C] hover:text-[#1A365D] transition-colors"
+              >
+                <FileText className="w-4 h-4" />
+                {scientificBasis.label}
+                <ChevronRight className={`w-3 h-3 transition-transform duration-300 ${showPubs ? 'rotate-90' : ''}`} />
+              </button>
+
+              {showPubs && (
+                <motion.div
+                  className="mt-3 flex flex-col items-center gap-2"
+                  initial={{ opacity: 0, y: -8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.25 }}
+                >
+                  {scientificBasis.publications.map((pub, i) => (
+                    <a
+                      key={i}
+                      href={pub.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[13px] font-sans text-[#4A5568] hover:text-[#68A07C] hover:underline transition-colors max-w-lg text-center"
+                    >
+                      {pub.title}
+                    </a>
+                  ))}
+                </motion.div>
+              )}
+            </div>
           </motion.div>
 
           {/* 6D Grid */}
@@ -115,7 +154,7 @@ export function Method6D() {
                           {dimensions[activeDim].name}
                         </h3>
                         <p className="text-[13px] font-sans text-[#68A07C] uppercase tracking-wider">
-                          {dimensions[activeDim].subtitle} Dimension
+                          {dimensions[activeDim].subtitle}
                         </p>
                       </div>
                     </div>
