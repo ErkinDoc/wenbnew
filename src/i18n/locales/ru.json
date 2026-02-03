@@ -79,7 +79,20 @@
         "subtitle": "Интеграция в Жизнь",
         "description": "Переход от 'я лечусь' к 'это теперь мой способ жить'. Интеграция практик в идентичность, создание поддерживающей среды и социальных связей. Ритуалы, mindful movement, экзистенциальная переоценка. Профилактика рецидивов и долгосрочная стабильность."
       }
-    ]
+    ],
+    "scientificBasis": {
+      "label": "Научная база",
+      "publications": [
+        {
+          "title": "A Regulation-Oriented 6D Navigation Model",
+          "url": "https://www.academia.edu/161279480/A_Regulation_Oriented_6D_Navigation_Model"
+        },
+        {
+          "title": "Medicine of Coherence: A Regulation-Oriented Framework",
+          "url": "https://www.academia.edu/161272311/Medicine_of_Coherence_A_Regulation_Oriented_Framework_for_Chronic_Pain_and_Functional_Disorders"
+        }
+      ]
+    }
   },
   "globalExperience": {
     "title": "Международная Клиническая Практика",
