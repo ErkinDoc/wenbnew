@@ -38,47 +38,49 @@
     ],
     "transition": "We don't just treat symptoms. We restore your body's coherence."
   },
-  "method6d": {
+ "method6d": {
     "title": "The 6D Navigation System",
-    "subtitle": "Six dimensions of coherence for complex comorbidities and severe cases",
-    "description": "Integration of Western clinical evidence with bioenergetic and functional logic. For complex cases with multiple comorbidities where standard medicine sees 'normal' results but the patient still suffers.",
+    "subtitle": "Six clinical vectors of coherence for complex comorbidities and severe cases",
+    "description": "A map, not a protocol. A system of diagnostic mapping and navigation that builds an individual coherence recovery pathway for each patient. Each dimension (D) answers a key question about the system's condition and identifies the 'bottleneck'.",
     "dimensions": [
       {
         "id": "D1",
         "name": "D1: Diagnosis",
-        "subtitle": "Physical",
-        "description": "Comprehensive biochemical analysis (CRP, vitamin D, cortisol), HRV variability, structural-movement assessment. For patients with complex comorbidities and 'normal' results but persistent symptoms."
+        "subtitle": "Evidence-Based Medical Diagnosis",
+        "description": "Evidence-based medical diagnosis (ICD, ICF, EBM). Creating a functional map of dysfunctions and system resources, beyond a single diagnostic label. Foundation for personalized recovery pathway."
       },
       {
         "id": "D2",
         "name": "D2: Dysfunction",
-        "subtitle": "Bioenergetic",
-        "description": "Correction of breathing and movement patterns. Myofascial release, postural correction. Essential for multi-system dysfunction and complex pain syndromes."
+        "subtitle": "Pattern Correction",
+        "description": "Recognition and correction of maladaptive patterns that have become the system's default and block recovery. Breathing and movement patterns, myofascial release, postural correction. Essential for multi-system dysfunction and complex pain syndromes."
       },
       {
         "id": "D3",
         "name": "D3: Disconnection",
-        "subtitle": "Emotional",
-        "description": "Restoring brain-body connection. Coherent breathing (5-6 cycles/min), vagus activation. Critical for psychosomatic comorbidities and chronic stress-related conditions."
+        "subtitle": "Brain-Body Reconnection",
+        "description": "Restoring brain-body connection and expanding the nervous system's 'window of tolerance'. Breaking free from chronic hyperactivation (anxiety, panic) or hypoactivation (apathy, dissociation). Coherent breathing, vagal activation, somatic grounding."
       },
       {
         "id": "D4",
         "name": "D4: Direction",
-        "subtitle": "Mental",
-        "description": "Biochemical foundation and nutrition. Personalized anti-inflammatory diet, nutraceuticals (D3+K2, magnesium, omega-3). Circadian rhythm optimization for complex cases."
+        "subtitle": "Biochemical Foundation",
+        "description": "Creating optimal internal environment for nervous system function and tissue regeneration through nutrition, nutraceuticals, and chronobiology. Personalized anti-inflammatory nutrition, circadian rhythm optimization. Biochemical support for system recovery."
       },
       {
         "id": "D5",
         "name": "D5: Development",
-        "subtitle": "Social",
-        "description": "Psychological reprogramming. Pain Neuroscience Education, ACT, cognitive therapy. For patients with severe, long-standing comorbid conditions."
+        "subtitle": "Cognitive Reprogramming",
+        "description": "Recognizing and changing maladaptive cognitive-behavioral programs that sustain the vicious cycle of pain, anxiety, and avoidance. Pain Neuroscience Education, ACT, cognitive therapy. Breaking neural circuits of catastrophization."
       },
       {
         "id": "D6",
         "name": "D6: Depth",
-        "subtitle": "Integration",
-        "description": "Integrating changes into life. Rituals, mindful movement, existential reevaluation. Relapse prevention and long-term stability in complex cases."
+        "subtitle": "Life Integration",
+        "description": "Transition from 'I am being treated' to 'this is now my way of living'. Integrating practices into identity, creating supportive environment and social connections. Rituals, mindful movement, existential reevaluation. Relapse prevention and long-term stability."
       }
+    ]
+  },
     ]
   },
   "globalExperience": {
