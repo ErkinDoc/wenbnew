@@ -31,7 +31,7 @@
     ],
     "solutions": [
       "6D systémová analýza — vidíme to, čo iní prehliadnu",
-      "Integrácia klinických dôkazov + bioenergetickej logiky",
+      "Integrácia dôkazovej diagnostiky a systémovej klinickej logiky",
       "70-85% redukcia symptómov u pacientov s 10+ ročnou históriou",
       "Obnova systémovej koherencie, nielen potlačenie bolesti",
       "Personalizovaný protokol pre komplexné komorbidity"
@@ -40,44 +40,44 @@
   },
   "method6d": {
     "title": "Systém 6D Navigácie",
-    "subtitle": "Šesť dimenzií koherencie pre komplexné komorbidity",
-    "description": "Integrácia západných klinických dôkazov s bioenergetickou a funkčnou logikou. Pre komplexné prípady s viacnásobnými komorbiditami, kde štandardná medicína vidí 'normálne' výsledky, ale pacient stále trpí.",
+    "subtitle": "Šesť klinických vektorov koherencie pre komplexné komorbidity a závažné prípady",
+    "description": "Mapa, nie protokol. Systém diagnostického kartovanie a navigácie, ktorý buduje individuálny cestu obnovy koherencie pre každého pacienta. Každá dimenza (D) odpoveda na kľúčovú otázku o stave systému a identifikuje 'úzke hrdlo'.",
     "dimensions": [
       {
         "id": "D1",
         "name": "D1: Diagnóza",
-        "subtitle": "Fyzická",
-        "description": "Biochemická analýza (CRP, vitamín D, kortizol), HRV variabilita, štrukturálno-pohybové hodnotenie. Pre pacientov s komplexnými komorbiditami a 'normálnymi' výsledkami, ale pretrvávajúcimi symptómami."
+        "subtitle": "Dôkazová Medicínska Diagnostika",
+        "description": "Dôkazová medicínska diagnostika (ICD, ICF, EBM). Vytváranie funkčnej mapy dysfunkcií a zdrojov systému, nad rámec jedinej diagnostickej nálepky. Základ pre personalizovanú cestu zotavenia."
       },
       {
         "id": "D2",
         "name": "D2: Dysfunkcia",
-        "subtitle": "Bioenergetická",
-        "description": "Korekcia dýchacích a pohybových vzorcov. Myofasciálny release, posturálna korekcia. Nevyhnutné pre multi-systémové dysfunkcie a komplexné bolestivé syndrómy."
+        "subtitle": "Korekcia Vzorov",
+        "description": "Rozpoznanie a korekcia maladaptívnych vzorov, ktoré sa stali predvoleným nastavením systému a blokujú zotavenie. Dýchacie a pohybové vzory, myofasciálny release, posturálna korekcia. Nevyhnutné pri multi-systémovej dysfunkcii a komplexných bolestivých syndrómoch."
       },
       {
         "id": "D3",
         "name": "D3: Odpojenie",
-        "subtitle": "Emocionálna",
-        "description": "Obnova spojenia mozog-telo. Koherentné dýchanie (5-6 cyklov/min), vagusová aktivácia. Pre psychosomatické komorbidity a chronický stres."
+        "subtitle": "Prepojenie Mozog-Telo",
+        "description": "Obnova spojenia mozog-telo a rozšírenie 'okna tolerancie' nervového systému. Vystúpenie z chronickej hyperaktivácie (úzkosť, panika) alebo hypoaktivácie (apatia, disociácia). Koherentné dýchanie, vagusová aktivácia, somatické ukotvenie."
       },
       {
         "id": "D4",
         "name": "D4: Smer",
-        "subtitle": "Mentálna",
-        "description": "Biochemický základ a výživa. Personalizovaná protizápalová strava, nutraceutiká (D3+K2, horčík, omega-3). Optimalizácia cirkadiánnych rytmov pre komplexné prípady."
+        "subtitle": "Biochemický Základ",
+        "description": "Vytváranie optimálneho vnútorného prostredia pre fungovanie nervového systému a regeneráciu tkanív prostredníctvom výživy, nutraceutík a chronobiológie. Personalizovaná protizápalová výživa, optimalizácia cirkadiánnych rytmov. Biochemická podpora pre zotavenie systému."
       },
       {
         "id": "D5",
         "name": "D5: Rozvoj",
-        "subtitle": "Sociálna",
-        "description": "Preprogramovanie psychiky. Pain Neuroscience Education, ACT, kognitívna terapia. Pre pacientov so závažnými, dlhodobými komorbidnými stavmi."
+        "subtitle": "Kognitívne Preprogramovanie",
+        "description": "Rozpoznanie a zmena maladaptívnych kognitívno-behaviorálnych programov, ktoré udržiavajú začarovaný kruh bolesti, úzkosti a vyhýbania. Pain Neuroscience Education, ACT, kognitívna terapia. Prerušenie neurónových obvodov katastrofizácie."
       },
       {
         "id": "D6",
         "name": "D6: Hĺbka",
-        "subtitle": "Integračná",
-        "description": "Integrácia zmien do života. Rituály, mindful movement, existenciálna reevaluácia. Prevencia recidív a dlhodobá stabilita v komplexných prípadoch."
+        "subtitle": "Integrácia do Života",
+        "description": "Prechod od 'liečim sa' k 'toto je teraz môj spôsob života'. Integrácia praktik do identity, vytváranie podporného prostredia a sociálnych väzieb. Rituály, mindful movement, existenciálna prehodnotenie. Prevencia relapsov a dlhodobá stabilita."
       }
     ]
   },
@@ -125,8 +125,8 @@
         "includes": "Vrátane 6D-Map PDF",
         "features": [
           "Komplexná analýza komorbidít",
-          "Biochemická analýza (CRP, vitamín D, kortizol)",
-          "HRV variabilita a autonómne hodnotenie",
+          "Dôkazové laboratórne a funkčné hodnotenie",
+          "Hodnotenie autonómneho nervového systému",
           "Štrukturálno-pohybová analýza",
           "Personalizovaný 6D-Map PDF",
           "Odporúčania pre ďalší postup"
@@ -174,7 +174,7 @@
       {
         "condition": "Viacnásobné komorbidity + závažná bolesť",
         "history": "12 rokov, 15+ špecialistov, konfliktné diagnózy",
-        "approach": "6D systémová analýza pre komorbidity, bioenergetická korekcia, nutrigenomika",
+        "approach": "6D systémová analýza pre komorbidity, korekcia vzorov, biochemická podpora",
         "result": "78% redukcia bolesti po 8 týždňoch, obnova spánku a energie"
       },
       {
@@ -204,10 +204,22 @@
     ],
     "gdpr": "GDPR Compliant — Ochrana osobných údajov v súlade s európskymi predpismi",
     "stats": [
-      { "number": "5000+", "label": "Pacientov s komplexnými prípadmi" },
-      { "number": "30+", "label": "Rokov praxe" },
-      { "number": "70-85%", "label": "Redukcia symptómov" },
-      { "number": "15", "label": "Krajín" }
+      {
+        "number": "5000+",
+        "label": "Pacientov s komplexnými prípadmi"
+      },
+      {
+        "number": "30+",
+        "label": "Rokov praxe"
+      },
+      {
+        "number": "70-85%",
+        "label": "Redukcia symptómov"
+      },
+      {
+        "number": "15",
+        "label": "Krajín"
+      }
     ]
   },
   "faq": {
@@ -223,7 +235,7 @@
       },
       {
         "question": "Ako funguje 6D diagnostika?",
-        "answer": "6D diagnostika hodnotí šesť dimenzií vášho zdravia: fyzickú, bioenergetickú, emocionálnu, mentálnu, sociálnu a integračnú. Zahŕňa komplexnú analýzu komorbidít, biochemické markery, HRV meranie a systémové hodnotenie, ktoré odhalí to, čo štandardné testy prehliadnu."
+        "answer": "6D diagnostika naviguje šesťoma klinickými vektormi vášho zdravia: Diagnóza, Dysfunkcia, Odpojenie, Smer, Rozvoj a Hĺbka. Vytvorí funkčnú mapu vášho systému, identifikuje kľúčové 'úzke hrdlo' a buduje personalizovanú cestu zotavenia na základe dôkazovej medicíny (ICD, ICF, EBM)."
       },
       {
         "question": "Kde prebiehajú konzultácie?",
@@ -245,13 +257,13 @@
     "trust3": "Anonymizované prípady"
   },
   "footer": {
-    "quickLinks": "Rýchle odkazy",
+    "quickLinks": "Rýchle odluky",
     "legal": "Právne informácie",
     "contact": "Kontakt",
     "email": "erkinslovakia@gmail.com",
     "phone": "+421 940 270 511",
     "location": "Online konzultácie (Európa) | Piešťany / Bratislava, Slovensko",
-    "copyright": "© 2025 Dr. Erkinbek Dzhamanbaev | Medicína Koherencie"
+    "copyright": "© 2026 Dr. Erkinbek Dzhamanbaev | Medicína Koherencie"
   },
   "seo": {
     "keywords": "liečba komplexných komorbidít, závažné multi-systémové prípady, integratívna medicína Slovensko, expert na komplexné klinické prípady, rezistentné stavy, online medicínska konzultácia Európa, 6D diagnostika, medicína koherencie"
@@ -276,7 +288,7 @@
       "condition": "Chronická únava + vyhorenie",
       "duration": "5 rokov, rezistentné na liečbu",
       "result": "72% redukcia symptómov",
-      "quote": "Vyhorenie + chronická únava + bolesť všade. 5 rokov. Endokrinológ povedal 'hormóny normálne'. Neurológ predpísal antidepresíva. Dr. Erkinov prístup: obnova nadobličiek + cirkadiánne rytmy + vágusová aktivácia. Po CRP-30 programe spím normálne prvýkrát za roky. Energia sa vrátila."
+      "quote": "Vyhorenie + chronická únava + bolesť všade. 5 rokov. Endokrinológ povedal 'hormóny normálne'. Neurológ predpísal antidepresíva. Dr. Erkinov prístup: obnova nadobličiek + cirkadiánne rytmy + vágusová aktivácia. Po 6D recovery programe spím normálne prvýkrát za roky. Energia sa vrátila."
     },
     "4": {
       "condition": "Psychosomatická komorbidita",
@@ -288,13 +300,13 @@
       "condition": "Nediagnostikované symptómy",
       "duration": "8 rokov, 20+ lekárov",
       "result": "80% zlepšenie symptómov",
-      "quote": "8 rokov hľadania odpovedí. 20+ lekárov, nespočetné testy, všetko 'normálne'. Našla som Dr. Erkina cez publikáciu na Academia.edu. Jeho 6D prístup konečne dával zmysel: HRV ukázalo sympatickú dominanciu, dychový vzorec bol dysfunkčný, horčík výrazne vyčerpaný. O 12 týždňov - iný človek. Online spolupráca z USA fungovala bezproblémovo."
+      "quote": "8 rokov hľadania odpovedí. 20+ lekárov, nespočetné testy, všetko 'normálne'. Našla som Dr. Erkina cez publikáciu na Academia.edu. jeho 6D prístup konečne dával zmysel: HRV ukázalo sympatickú dominanciu, dychový vzorec bol dysfunkčný, horčík výrazne vyčerpaný. O 12 týždňov - iný človek. Online spolupráca z USA fungovala bezproblémovo."
     },
     "6": {
       "condition": "Long COVID chronická únava",
       "duration": "2 roky, post-COVID",
       "result": "75% obnova energie",
-      "quote": "Long COVID ma nechal so závažnou únavou a 'brain fog'. Lekári povedali 'to trvá, buďte trpezlivý'. Po 2 rokoch čakania som našiel Dr. Erkina. Jeho prístup: mitochondriálna podpora, HRV tréning, obnova vágusového tónu. Za 8 týždňov sa 'brain fog' vyčistil na 80%, energia sa dramaticky zlepšila. Môžem opäť pracovať na plný úväzok."
+      "quote": "Long COVID ma nechal so závažnou únavou a 'brain fog'. Lekári povedali 'to trvá, buďte trpezlivý'. Po 2 rokoch čakania som našiel Dr. Erkina. jeho prístup: mitochondriálna podpora, HRV tréning, obnova vágusového tónu. Za 8 týždňov sa 'brain fog' vyčistil na 80%, energia sa dramaticky zlepšila. Môžem opäť pracovať na plný úväzok."
     },
     "7": {
       "condition": "Chronická migréna + IBS",
@@ -306,7 +318,7 @@
       "condition": "Chronická bolesť po operácii",
       "duration": "4 roky po neúspešnej operácii",
       "result": "70% redukcia bolesti bez operácie",
-      "quote": "Operácia chrbta nepomohla - bolesť sa dokonca zhoršila. Chirurg navrhol druhú operáciu. V zúfalstve som našiel Dr. Erkina online. Jeho posúdenie: operácia riešila štruktúru, ale ignorovala dysfunkčné pohybové vzorce a senzibilizáciu nervového systému. Nechirurgický prístup: preškolenie pohybu + pain neuroscience education. O 6 mesiacov: bolesť z 7/10 na 2/10. Vyhnul som sa druhej operácii."
+      "quote": "Operácia chrbta nepomohla - bolesť sa dokonca zhoršila. Chirurg navrhol druhú operáciu. V zúfalstve som našiel Dr. Erkina online. jeho posúdenie: operácia riešila štruktúru, ale ignorovala dysfunkčné pohybové vzorce a senzibilizáciu nervového systému. Nechirurgický prístup: preškolenie pohybu + pain neuroscience education. O 6 mesiacov: bolesť z 7/10 na 2/10. Vyhnul som sa druhej operácii."
     }
   }
 }
