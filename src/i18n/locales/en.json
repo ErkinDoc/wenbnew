@@ -31,14 +31,14 @@
     ],
     "solutions": [
       "6D systemic analysis for complex comorbidities",
-      "Integration of clinical evidence + bioenergetic logic",
+      "Integration of evidence-based diagnosis and systemic clinical logic",
       "70-85% symptom reduction in severe refractory cases",
       "Restoring systemic coherence in multi-system dysfunction",
       "Personalized protocol for complex cases"
     ],
     "transition": "We don't just treat symptoms. We restore your body's coherence."
   },
- "method6d": {
+  "method6d": {
     "title": "The 6D Navigation System",
     "subtitle": "Six clinical vectors of coherence for complex comorbidities and severe cases",
     "description": "A map, not a protocol. A system of diagnostic mapping and navigation that builds an individual coherence recovery pathway for each patient. Each dimension (D) answers a key question about the system's condition and identifies the 'bottleneck'.",
@@ -79,8 +79,6 @@
         "subtitle": "Life Integration",
         "description": "Transition from 'I am being treated' to 'this is now my way of living'. Integrating practices into identity, creating supportive environment and social connections. Rituals, mindful movement, existential reevaluation. Relapse prevention and long-term stability."
       }
-    ]
-  },
     ]
   },
   "globalExperience": {
@@ -127,8 +125,8 @@
         "includes": "Includes 6D-Map PDF",
         "features": [
           "Comprehensive analysis of comorbidities",
-          "Biochemical markers review (CRP, vitamin D, cortisol)",
-          "HRV variability and autonomic assessment",
+          "Evidence-based laboratory and functional assessment",
+          "Autonomic nervous system evaluation",
           "Structural-movement analysis",
           "Personalized 6D-Map PDF",
           "Recommendations for next steps"
@@ -176,7 +174,7 @@
       {
         "condition": "Multiple comorbidities + severe pain",
         "history": "12 years, 15+ specialists, conflicting diagnoses",
-        "approach": "6D systemic analysis for comorbidities, bioenergetic correction, nutrigenomics",
+        "approach": "6D systemic analysis for comorbidities, pattern correction, biochemical support",
         "result": "78% pain reduction after 8 weeks, restoration of sleep and energy"
       },
       {
@@ -201,15 +199,27 @@
       "PhD. (1996) — Military Medical Academy, St. Petersburg (shock states)",
       "Internal Medicine Specialist (2008) — Spain",
       "MBA (2014) — University of Groningen, Netherlands",
-      "EU Medical License — Slovakia, nostrifikované (2021)",
+      "EU Medical License — Slovakia, recognized (2021)",
       "30+ years clinical practice (Intensive Care, Rehabilitation, Pain Medicine)"
     ],
     "gdpr": "GDPR Compliant — Personal data protection in accordance with European regulations",
     "stats": [
-      { "number": "5000+", "label": "Patients with complex cases" },
-      { "number": "30+", "label": "Years of practice" },
-      { "number": "70-85%", "label": "Symptom reduction" },
-      { "number": "15", "label": "Countries" }
+      {
+        "number": "5000+",
+        "label": "Patients with complex cases"
+      },
+      {
+        "number": "30+",
+        "label": "Years of practice"
+      },
+      {
+        "number": "70-85%",
+        "label": "Symptom reduction"
+      },
+      {
+        "number": "15",
+        "label": "Countries"
+      }
     ]
   },
   "faq": {
@@ -225,7 +235,7 @@
       },
       {
         "question": "How does 6D diagnostic work?",
-        "answer": "6D diagnostic assesses six dimensions of your health: physical, bioenergetic, emotional, mental, social, and integrative. It includes comprehensive analysis of comorbidities, biochemical markers, HRV measurement, and systemic assessment that reveals what standard tests miss."
+        "answer": "6D diagnostic navigates six clinical vectors of your health: Diagnosis, Dysfunction, Disconnection, Direction, Development, and Depth. It creates a functional map of your system, identifies the key 'bottleneck', and builds a personalized recovery pathway based on evidence-based medicine (ICD, ICF, EBM)."
       },
       {
         "question": "Where do consultations take place?",
@@ -253,7 +263,7 @@
     "email": "erkinslovakia@gmail.com",
     "phone": "+421 940 270 511",
     "location": "Online consultations (Europe) | Piešťany / Bratislava, Slovakia",
-    "copyright": "© 2025 Dr. Erkinbek Dzhamanbaev | Medicine of Coherence"
+    "copyright": "© 2026 Dr. Erkinbek Dzhamanbaev | Medicine of Coherence"
   },
   "seo": {
     "keywords": "complex comorbidities treatment, severe multi-system cases, integrative medicine Slovakia, expert on complex clinical cases, treatment-resistant conditions, online medical consultation Europe, 6D diagnostic, medicine of coherence"
@@ -278,7 +288,7 @@
       "condition": "Chronic fatigue + burnout",
       "duration": "5 years, treatment-resistant",
       "result": "72% reduction in symptoms",
-      "quote": "Burnout + chronic fatigue + pain everywhere. 5 years. Endocrinologist said 'hormones normal'. Neurologist prescribed antidepressants. Dr. Erkin's approach: adrenal recovery + circadian rhythms + vagus activation. After CRP-30 program, I sleep normally for the first time in years. Energy returned."
+      "quote": "Burnout + chronic fatigue + pain everywhere. 5 years. Endocrinologist said 'hormones normal'. Neurologist prescribed antidepressants. Dr. Erkin's approach: adrenal recovery + circadian rhythms + vagus activation. After the 6D recovery program, I sleep normally for the first time in years. Energy returned."
     },
     "4": {
       "condition": "Psychosomatic comorbidity",
