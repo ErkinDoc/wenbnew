@@ -11,6 +11,7 @@ import { TrustAuthority } from './sections/TrustAuthority';
 import { FAQ } from './sections/FAQ';
 import { FinalCTA } from './sections/FinalCTA';
 import { Footer } from './sections/Footer';
+import { WhatsAppButton } from './components/WhatsAppButton';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 
@@ -82,6 +83,9 @@ function App() {
       
       {/* Footer */}
       <Footer />
+      
+      {/* WhatsApp Floating Button */}
+      <WhatsAppButton />
       
       {/* Toast notifications */}
       <Toaster position="top-center" richColors />
