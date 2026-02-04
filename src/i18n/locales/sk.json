@@ -337,6 +337,7 @@
   "whatsapp": {
     "defaultMessage": "Dobrý deň Dr. Erkin, chcel by som sa informovať o konzultácii.",
     "tooltip": "Rýchla konzultácia cez WhatsApp",
-    "cta": "Začať Chat"
+    "cta": "Začať Chat",
+    "ariaLabel": "Kontaktujte Dr. Erkina cez WhatsApp"
   }
 }
