@@ -333,5 +333,10 @@
       "result": "70% pain reduction without surgery",
       "quote": "Back surgery didn't help - pain actually got worse. Surgeon suggested second operation. Desperate, found Dr. Erkin online. His assessment: surgery addressed structure, ignored dysfunctional movement patterns and nervous system sensitization. Non-surgical approach: movement retraining + pain neuroscience education. 6 months later: pain 7/10 to 2/10. Avoided second surgery."
     }
+  },
+  "whatsapp": {
+    "defaultMessage": "Hello Dr. Erkin, I would like to inquire about a consultation.",
+    "tooltip": "Quick consultation via WhatsApp",
+    "cta": "Start Chat"
   }
 }
