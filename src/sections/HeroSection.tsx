@@ -130,14 +130,19 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 <div className="absolute -inset-4 border-2 border-[#68A07C]/30 rounded-2xl" />
                 <div className="absolute -inset-8 border border-[#1A365D]/10 rounded-3xl" />
                 
-                {/* Portrait */}
+                {/* Portrait with WebP optimization */}
                 <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[480px] lg:w-[420px] lg:h-[560px] 
                                 rounded-xl overflow-hidden border border-[#E2E8F0]">
-                  <img 
-                    src="/dr-erkin.jpg" 
-                    alt="Dr. Erkinbek Dzhamanbaev"
-                    className="w-full h-full object-cover"
-                  />
+                  <picture>
+                    <source srcSet="/dr-erkin.webp" type="image/webp" />
+                    <img 
+                      src="/dr-erkin.jpg" 
+                      alt="Dr. Erkinbek Dzhamanbaev"
+                      className="w-full h-full object-cover"
+                      loading="eager"
+                      fetchPriority="high"
+                    />
+                  </picture>
                   
                   {/* Credentials floating badge */}
                   <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 border border-[#E2E8F0]">
