@@ -13,8 +13,10 @@
     --sage-light: 145 30% 92%;      /* #E6F0EA */
     --medical-white: 0 0% 100%;     /* #FFFFFF */
     --off-white: 210 20% 98%;       /* #F7F9FC */
-    --slate: 215 25% 35%;           /* #4A5568 */
-    --slate-light: 215 16% 55%;     /* #718096 */
+    
+    /* FIXED: Darker colors for better contrast (WCAG AA compliant) */
+    --slate: 215 25% 25%;           /* #2D3748 - was #4A5568 (too light) */
+    --slate-light: 215 25% 35%;     /* #4A5568 - was #718096 (too light) */
     --gold-accent: 43 60% 55%;      /* #C9A227 - Premium accent */
     
     /* shadcn/ui variables */
@@ -29,7 +31,10 @@
     --secondary: 145 30% 92%;
     --secondary-foreground: 212 65% 23%;
     --muted: 210 20% 96%;
-    --muted-foreground: 215 16% 55%;
+    
+    /* FIXED: Much darker muted-foreground for accessibility */
+    --muted-foreground: 215 25% 35%;  /* was 215 16% 55% - failed contrast */
+    
     --accent: 145 25% 55%;
     --accent-foreground: 212 65% 23%;
     --destructive: 0 84% 60%;
