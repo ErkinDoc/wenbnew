@@ -337,6 +337,7 @@
   "whatsapp": {
     "defaultMessage": "Здравствуйте Dr. Erkin, хотел бы узнать о консультации.",
     "tooltip": "Быстрая консультация через WhatsApp",
-    "cta": "Начать чат"
+    "cta": "Начать чат",
+    "ariaLabel": "Связаться с Dr. Erkin через WhatsApp"
   }
 }
