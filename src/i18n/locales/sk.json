@@ -270,7 +270,7 @@
     "trust3": "Anonymizované prípady"
   },
   "footer": {
-    "quickLinks": "Rýchle odluky",
+    "quickLinks": "Rýchle links",
     "legal": "Právne informácie",
     "contact": "Kontakt",
     "email": "erkinslovakia@gmail.com",
@@ -333,5 +333,10 @@
       "result": "70% redukcia bolesti bez operácie",
       "quote": "Operácia chrbta nepomohla - bolesť sa dokonca zhoršila. Chirurg navrhol druhú operáciu. V zúfalstve som našiel Dr. Erkina online. jeho posúdenie: operácia riešila štruktúru, ale ignorovala dysfunkčné pohybové vzorce a senzibilizáciu nervového systému. Nechirurgický prístup: preškolenie pohybu + pain neuroscience education. O 6 mesiacov: bolesť z 7/10 na 2/10. Vyhnul som sa druhej operácii."
     }
+  },
+  "whatsapp": {
+    "defaultMessage": "Dobrý deň Dr. Erkin, chcel by som sa informovať o konzultácii.",
+    "tooltip": "Rýchla konzultácia cez WhatsApp",
+    "cta": "Začať Chat"
   }
 }
