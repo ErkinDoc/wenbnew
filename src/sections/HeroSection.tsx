@@ -96,14 +96,15 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button
-                  onClick={onAssessmentClick}
-                  className="btn-primary text-[14px] flex items-center justify-center gap-2"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {t('hero.ctaAssessment')}
-                </motion.button>
+               <motion.button
+  onClick={() => window.open(currentFormLink, '_blank')}
+  className="btn-primary text-[14px] flex items-center justify-center gap-2"
+  whileHover={{ scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+>
+  {t('hero.ctaAssessment')}
+</motion.button>
+
                 
                 <motion.a
                   href={currentFormLink}
