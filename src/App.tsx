@@ -23,15 +23,15 @@ function App() {
     console.log('Track:', { action, category, label });
   };
   
-  // Assessment form links by language
+  // Assessment form links by language (for Navigation component)
   const assessmentFormLinks: Record<string, string> = {
     ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
     sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
-    en: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
+    en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en',
     de: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform'
   };
   
-  // Handle assessment click
+  // Handle assessment click (for Navigation)
   const handleAssessmentClick = () => {
     const currentLang = i18n.language;
     const formLink = assessmentFormLinks[currentLang] || assessmentFormLinks.sk;
@@ -51,10 +51,8 @@ function App() {
       
       {/* Main Content */}
       <main>
-        {/* Hero Section */}
-        <HeroSection 
-          onAssessmentClick={handleAssessmentClick}
-        />
+        {/* Hero Section - no longer needs onAssessmentClick prop */}
+        <HeroSection />
         
         {/* 6D Method Section */}
         <Method6D />
