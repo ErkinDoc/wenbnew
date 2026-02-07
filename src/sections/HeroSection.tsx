@@ -2,10 +2,6 @@ import { motion } from 'framer-motion';
 import { Shield, Clock, Users, Globe, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-interface HeroSectionProps {
-  // No props needed
-}
-
 export function HeroSection() {
   const { t, i18n } = useTranslation();
 
