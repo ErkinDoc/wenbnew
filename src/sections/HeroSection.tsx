@@ -28,8 +28,8 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
   const assessmentFormLinks = {
     ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
     sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
-    en: 'https://forms.gle/13N35XNrZKdvnJJPA',
-    de: 'https://forms.gle/13N35XNrZKdvnJJPA'
+    en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en', // Используем ту же полную форму
+    de: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=de'
   };
 
   const lang = (i18n.resolvedLanguage || i18n.language).split('-')[0];
