@@ -3,10 +3,10 @@ import { Shield, Clock, Users, Globe, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 interface HeroSectionProps {
-  onAssessmentClick: () => void;
+  // No props needed
 }
 
-export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
+export function HeroSection() {
   const { t, i18n } = useTranslation();
 
   const trustBadges = [
@@ -189,4 +189,3 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
     </section>
   );
 }
-// Force rebuild 2026-02-07
