@@ -18,10 +18,10 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
 
   // Ссылки на формы в зависимости от языка
   const formLinks = {
-    ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
-    sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
-    en: 'https://forms.gle/13N35XNrZKdvnJJPA', // Используем словацкую форму для английского
-    de: 'https://forms.gle/13N35XNrZKdvnJJPA'  // Используем словацкую форму для немецкого
+    ru: 'https://forms.gle/QiKP5EhXjxZjVAwL9',
+    sk: 'https://forms.gle/j7MzVAug4HVv6bxu7',
+    en: 'https://forms.gle/j7MzVAug4HVv6bxu7', // Используем словацкую форму для английского
+    de: 'https://forms.gle/j7MzVAug4HVv6bxu7'  // Используем словацкую форму для немецкого
   };
 
   const currentFormLink = formLinks[i18n.language as keyof typeof formLinks] || formLinks.sk;
