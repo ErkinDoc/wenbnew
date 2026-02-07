@@ -24,8 +24,9 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
   de: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=de'
 };
 
-  const lang = i18n.language.split('-')[0];
+ const lang = (i18n.resolvedLanguage || i18n.language).split('-')[0];
 const currentFormLink = formLinks[lang as keyof typeof formLinks] || formLinks.en;
+
 
 
   return (
