@@ -16,18 +16,25 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
     { icon: Globe, label: t('hero.badge4') },
   ];
 
-  // Ссылки на формы в зависимости от языка
- const formLinks = {
-  ru: 'https://forms.gle/QiKP5EhXjxZjVAwL9?hl=ru',
-  sk: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=sk',
-  en: 'https://forms.gle/zAVdvWisrwWMbNGT7=en', 
-  de: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=de'
-};
+  // Ссылки на ПОЛНЫЕ анкеты (Apply for Consultation)
+  const applicationFormLinks = {
+    ru: 'https://forms.gle/QiKP5EhXjxZjVAwL9?hl=ru',
+    sk: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=sk',
+    en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en', 
+    de: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=de'
+  };
 
- const lang = (i18n.resolvedLanguage || i18n.language).split('-')[0];
-const currentFormLink = formLinks[lang as keyof typeof formLinks] || formLinks.en;
+  // Ссылки на КОРОТКИЕ оценки (Start 6D Assessment)
+  const assessmentFormLinks = {
+    ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
+    sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
+    en: 'https://forms.gle/13N35XNrZKdvnJJPA',
+    de: 'https://forms.gle/13N35XNrZKdvnJJPA'
+  };
 
-
+  const lang = (i18n.resolvedLanguage || i18n.language).split('-')[0];
+  const currentApplicationLink = applicationFormLinks[lang as keyof typeof applicationFormLinks] || applicationFormLinks.en;
+  const currentAssessmentLink = assessmentFormLinks[lang as keyof typeof assessmentFormLinks] || assessmentFormLinks.en;
 
   return (
     <section className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
@@ -99,18 +106,19 @@ const currentFormLink = formLinks[lang as keyof typeof formLinks] || formLinks.e
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-               <motion.button
-  onClick={() => window.open(currentFormLink, '_blank')}
-  className="btn-primary text-[14px] flex items-center justify-center gap-2"
-  whileHover={{ scale: 1.02 }}
-  whileTap={{ scale: 0.98 }}
->
-  {t('hero.ctaAssessment')}
-</motion.button>
-
+                {/* Button 1: Quick Assessment */}
+                <motion.button
+                  onClick={() => window.open(currentAssessmentLink, '_blank')}
+                  className="btn-primary text-[14px] flex items-center justify-center gap-2"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  {t('hero.ctaAssessment')}
+                </motion.button>
                 
+                {/* Button 2: Full Application */}
                 <motion.a
-                  href={currentFormLink}
+                  href={currentApplicationLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary text-[14px] flex items-center justify-center gap-2"
