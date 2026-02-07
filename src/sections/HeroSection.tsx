@@ -24,7 +24,9 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
   de: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=de'
 };
 
-  const currentFormLink = formLinks[i18n.language as keyof typeof formLinks] || formLinks.sk;
+  const lang = i18n.language.split('-')[0];
+const currentFormLink = formLinks[lang as keyof typeof formLinks] || formLinks.en;
+
 
   return (
     <section className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
