@@ -20,7 +20,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
  const formLinks = {
   ru: 'https://forms.gle/QiKP5EhXjxZjVAwL9?hl=ru',
   sk: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=sk',
-  en: 'https://forms.gle/oJJxM51iMMTxPwYS6?hl=en', 
+  en: 'https://forms.gle/zAVdvWisrwWMbNGT7=en', 
   de: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=de'
 };
 
