@@ -189,3 +189,4 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
     </section>
   );
 }
+// Force rebuild 2026-02-07
