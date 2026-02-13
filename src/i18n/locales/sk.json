@@ -77,7 +77,7 @@
         "id": "D6",
         "name": "D6: Hĺbka",
         "subtitle": "Integrácia do Života",
-        "description": "Prechod od 'liečim sa' k 'toto je teraz môj spôsob života'. Integrácia praktik do identity, vytváranie podporného prostredia a sociálnych väzieb. Rituály, mindful movement, existenciálna prehodnotenie. Prevencia relapsov a dlhodobá stabilita."
+        "description": "Prechod od 'liečim sa' k 'toto je teraz môй spôsob života'. Integrácia praktik do identity, vytváranie podporného prostredia a sociálnych väzieb. Rituály, mindful movement, existenciálna prehodnotenie. Prevencia relapsov a dlhodobá stabilita."
       }
     ],
     "scientificBasis": {
@@ -121,7 +121,7 @@
       "EAPM — European Academy of Pain Medicine"
     ],
     "certifications": [
-      "ACLS, ATLS (USA) — certifikácie akútnej starostlivosti",
+      "ACLS, ATLS (USA ) — certifikácie akútnej starostlivosti",
       "Moving Acupuncture, Chiropractic — Jaseng Hospital, Južná Kórea",
       "Ayurveda, Panchakarma — India",
       "Qigong — Čína"
@@ -137,7 +137,7 @@
         "price": "€100",
         "includes": "Vrátane 6D-Map PDF",
         "features": [
-          "Komplexná analýza komorbidít",
+          "Komplexná analýза komorbidít",
           "Dôkazové laboratórne a funkčné hodnotenie",
           "Hodnotenie autonómneho nervového systému",
           "Štrukturálno-pohybová analýza",
@@ -148,7 +148,7 @@
         "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
       },
       {
-        "name": "Coherence Program (Online)",
+        "name": "Coherence Program (Online )",
         "subtitle": "6-týždňový transformačný program pre komplexné prípady",
         "price": "€300",
         "badge": "Najobľúbenejší",
@@ -163,7 +163,7 @@
         "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
       },
       {
-        "name": "3-Mesačná Strategická Cesta (Online)",
+        "name": "3-Mesačná Strategická Cesta (Online )",
         "subtitle": "Pre závažné multi-systémové komorbidity",
         "price": "€600",
         "features": [
@@ -177,7 +177,7 @@
         "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
       }
     ],
-    "note": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom (dostupné v celej Európe). Platba pred konzultáciou. GDPR compliant."
+    "note": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom (dostupné v celej Európe ). Platba pred konzultáciou. GDPR compliant."
   },
   "successStories": {
     "title": "Klinické Výsledky",
@@ -199,7 +199,7 @@
       {
         "condition": "Komplexná psychosomatická komorbidita",
         "history": "Rezistentný prípad — 7 rokov bez efektívneho riešenia",
-        "approach": "Brain-body reconnection, vagusová terapia, somatická práca",
+        "approach": "Brain-body reconnection, vagusová terapia, somatické práca",
         "result": "72% redukcia somatických symptómov, obnova autonómie"
       }
     ]
@@ -240,7 +240,7 @@
     "items": [
       {
         "question": "Pre koho je Medicína Koherencie určená?",
-        "answer": "Pre pacientov so závažnými komorbiditami a komplexnými prípadmi, kde štandardná diagnostika ukazuje 'normálne' výsledky, ale symptómy pretrvávajú. Špeciálne pre multi-systémovú dysfunkciu, rezistentné stavy a prípady, ktoré nezapadajú do štandardných diagnostických kategórií. Online konzultácie dostupné v celej Európe."
+        "answer": "Pre pacientov so závažnými komorbiditami a komplexnými prípadmi, kde štandardná diagnostika ukazuje 'normálne' výsledky, ale symptómy pretrvávajú. Špeciálne pre multi-systémovú dysfunkciu, rezistentné stavy a prípady, ktoré nezapadajй do štandardných diagnostických kategórií. Online konzultácie dostupné v celej Európe."
       },
       {
         "question": "Aké výsledky môžem očakávať?",
@@ -252,92 +252,21 @@
       },
       {
         "question": "Kde prebiehajú konzultácie?",
-        "answer": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom, dostupné v celej Európe. Pre pacientov v okolí Piešťan a Bratislavy je možný aj osobný kontakt."
-      },
-      {
-        "question": "Sú moje údaje v bezpečí?",
-        "answer": "Áno, všetky údaje sú spracovávané v súlade s GDPR. Používame šifrovanú komunikáciu a všetky prípady sú anonymizované."
+        "answer": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom. To nám umožňuje pracovať s pacientmi z celého Slovenska a Európy bez nutnosti cestovania."
       }
     ]
   },
-  "finalCta": {
-    "title": "Pripravení nájsť riešenie pre váš komplexný prípad?",
-    "subtitle": "Začnite online 6D diagnostikou — prvým krokom k pochopeniu závažných komorbidít, ktoré štandardné testy nevidia.",
-    "ctaAssessment": "Začať 6D diagnostiku (Online)",
-    "ctaApply": "Požiadať o program",
-    "trust1": "GDPR Compliant",
-    "trust2": "Bezpečná online komunikácia",
-    "trust3": "Anonymizované prípady"
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Máte otázky? Sme tu pre vás.",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "followUs": "Sledujte nás",
+    "cta": "Napíšte nám"
   },
   "footer": {
-    "quickLinks": "Rýchle links",
-    "legal": "Právne informácie",
-    "contact": "Kontakt",
-    "email": "erkinslovakia@gmail.com",
-    "phone": "+421 940 270 511",
-    "location": "Online konzultácie (Európa) | Piešťany / Bratislava, Slovensko",
-    "copyright": "© 2026 Dr. Erkinbek Dzhamanbaev | Medicína Koherencie"
-  },
-  "seo": {
-    "keywords": "liečba komplexných komorbidít, závažné multi-systémové prípady, integratívna medicína Slovensko, expert na komplexné klinické prípady, rezistentné stavy, online medicínska konzultácia Európa, 6D diagnostika, medicína koherencie"
-  },
-  "testimonials": {
-    "title": "Ohlasy Pacientov",
-    "subtitle": "Reálne výsledky pacientov s komplexnými komorbiditami v Európe a po celom svete",
-    "disclaimer": "Všetky prípady sú anonymizované v súlade s GDPR. Výsledky sa môžu líšiť podľa individuálnej situácie.",
-    "1": {
-      "condition": "Viacnásobné komorbidity",
-      "duration": "12 rokov, 15+ špecialistov",
-      "result": "78% redukcia bolesti za 8 týždňov",
-      "quote": "12 rokov chronickej bolesti. 15+ špecialistov nepomohlo. Všetky testy 'normálne', ale ja som trpela. Dr. Erkin našiel systémovú príčinu za 90 minút: hrudné dýchanie (18 cyklov/min namiesto 12), deficit vitamínu D (22 namiesto 50+), slabé sedacie svaly. Za 6 týždňov bolesť klesla z 7/10 na 2/10. Najdôležitejšie - pochopila som PREČO."
-    },
-    "2": {
-      "condition": "Multi-systémová dysfunkcia",
-      "duration": "7 rokov, nejasná diagnóza",
-      "result": "85% zlepšenie kvality života",
-      "quote": "7 rokov bez jasnej diagnózy. Každý špecialista liečil oddelene. Všetci povedali 'to nie je moja oblasť'. Dr. Erkinova 6D diagnostika odhalila spojenie: chronický stres → sympatická dominancia → dysfunkcia čriev → zápal. Online cez Zoom fungovalo perfektne. Konečne som pochopil, čo sa deje."
-    },
-    "3": {
-      "condition": "Chronická únava + vyhorenie",
-      "duration": "5 rokov, rezistentné na liečbu",
-      "result": "72% redukcia symptómov",
-      "quote": "Vyhorenie + chronická únava + bolesť všade. 5 rokov. Endokrinológ povedal 'hormóny normálne'. Neurológ predpísal antidepresíva. Dr. Erkinov prístup: obnova nadobličiek + cirkadiánne rytmy + vágusová aktivácia. Po 6D recovery programe spím normálne prvýkrát za roky. Energia sa vrátila."
-    },
-    "4": {
-      "condition": "Psychosomatická komorbidita",
-      "duration": "10 rokov, 'je to vo vašej hlave'",
-      "result": "70% redukcia bolesti",
-      "quote": "10 rokov bolesti. Každý lekár: 'Je to psychosomatické, choďte k terapeutovi'. Ale bolesť bola REÁLNA. Dr. Erkin to neignoroval. Prepojenie mozog-telo + dýchanie + somatická práca. Bolesť klesla z 8/10 na 2/10. Najdôležitejšie: nie som 'pokazený'. Nervový systém len potreboval reset."
-    },
-    "5": {
-      "condition": "Nediagnostikované symptómy",
-      "duration": "8 rokov, 20+ lekárov",
-      "result": "80% zlepšenie symptómov",
-      "quote": "8 rokov hľadania odpovedí. 20+ lekárov, nespočetné testy, všetko 'normálne'. Našla som Dr. Erkina cez publikáciu na Academia.edu. jeho 6D prístup konečne dával zmysel: HRV ukázalo sympatickú dominanciu, dychový vzorec bol dysfunkčný, horčík výrazne vyčerpaný. O 12 týždňov - iný človek. Online spolupráca z USA fungovala bezproblémovo."
-    },
-    "6": {
-      "condition": "Long COVID chronická únava",
-      "duration": "2 roky, post-COVID",
-      "result": "75% obnova energie",
-      "quote": "Long COVID ma nechal so závažnou únavou a 'brain fog'. Lekári povedali 'to trvá, buďte trpezlivý'. Po 2 rokoch čakania som našiel Dr. Erkina. jeho prístup: mitochondriálna podpora, HRV tréning, obnova vágusového tónu. Za 8 týždňov sa 'brain fog' vyčistil na 80%, energia sa dramaticky zlepšila. Môžem opäť pracovať na plný úväzok."
-    },
-    "7": {
-      "condition": "Chronická migréna + IBS",
-      "duration": "6 rokov, neúspešné liečby",
-      "result": "82% redukcia migrény",
-      "quote": "Chronické migrémy 15 dní/mesiac + IBS. Skúšala som všetko: lieky, Botox, vylučovacie diéty. Nič nefungovalo dlhodobo. Dr. Erkinov 6D prístup spojil body: dysfunkcia osi črevo-mozog, poškodenie vágusového nervu. Po 3 mesiacoch: migrémy klesli na 3 dni/mesiac, IBS 90% lepšie. Pochopenie SYSTÉMU zmenilo všetko."
-    },
-    "8": {
-      "condition": "Chronická bolesť po operácii",
-      "duration": "4 roky po neúspešnej operácii",
-      "result": "70% redukcia bolesti bez operácie",
-      "quote": "Operácia chrbta nepomohla - bolesť sa dokonca zhoršila. Chirurg navrhol druhú operáciu. V zúfalstve som našiel Dr. Erkina online. jeho posúdenie: operácia riešila štruktúru, ale ignorovala dysfunkčné pohybové vzorce a senzibilizáciu nervového systému. Nechirurgický prístup: preškolenie pohybu + pain neuroscience education. O 6 mesiacov: bolesť z 7/10 na 2/10. Vyhnul som sa druhej operácii."
-    }
-  },
-  "whatsapp": {
-    "defaultMessage": "Dobrý deň Dr. Erkin, chcel by som sa informovať o konzultácii.",
-    "tooltip": "Rýchla konzultácia cez WhatsApp",
-    "cta": "Začať Chat",
-    "ariaLabel": "Kontaktujte Dr. Erkina cez WhatsApp"
+    "rights": "Všetky práva vyhradené.",
+    "privacy": "Ochrana osobných údajov",
+    "terms": "Všeobecné obchodné podmienky"
   }
 }
