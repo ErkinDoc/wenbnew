@@ -16,7 +16,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
     { icon: Globe, label: t('hero.badge4') },
   ];
 
-  // Ссылки на формы в зависимости от языка
+  // Ссылки на новые формы в зависимости от языка
   const assessmentLinks = {
     sk: "https://forms.gle/t7W8zVt1GwNafz1KA",
     ru: "https://forms.gle/VCejYUhzTLyQxJXU9",
@@ -24,9 +24,8 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
     de: "https://forms.gle/r7hQ44MV6C4UG4kz8",
   };
 
-  // Определяем ссылку для текущего языка
+  // Определяем активную ссылку на основе текущего языка (по умолчанию словацкая )
   const currentFormLink = assessmentLinks[i18n.language as keyof typeof assessmentLinks] || assessmentLinks.sk;
-
 
   return (
     <section className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
