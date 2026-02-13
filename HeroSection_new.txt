@@ -17,12 +17,13 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
   ];
 
   // Ссылки на формы в зависимости от языка
-  const formLinks = {
-    ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
-    sk: 'https://forms.gle/13N35XNrZKdvnJJPA',
-    en: 'https://forms.gle/13N35XNrZKdvnJJPA', // Используем словацкую форму для английского
-    de: 'https://forms.gle/13N35XNrZKdvnJJPA'  // Используем словацкую форму для немецкого
-  };
+export const assessmentLinks = {
+  sk: "https://forms.gle/t7W8zVt1GwNafz1KA", // Новая словацкая форма
+  ru: "https://forms.gle/VCejYUhzTLyQxJXU9", // Новая русская форма
+  en: "https://forms.gle/r7hQ44MV6C4UG4kz8", // Новая английская форма
+  de: "https://forms.gle/r7hQ44MV6C4UG4kz8", // Для немецкого используем английскую
+};
+
 
   const currentFormLink = formLinks[i18n.language as keyof typeof formLinks] || formLinks.sk;
 
