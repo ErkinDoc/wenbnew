@@ -77,7 +77,7 @@
         "id": "D6",
         "name": "D6: Hĺbka",
         "subtitle": "Integrácia do Života",
-        "description": "Prechod od 'liečim sa' k 'toto je teraz môй spôsob života'. Integrácia praktik do identity, vytváranie podporného prostredia a sociálnych väzieb. Rituály, mindful movement, existenciálna prehodnotenie. Prevencia relapsov a dlhodobá stabilita."
+        "description": "Prechod od 'liečim sa' k 'toto je teraz môj spôsob života'. Integrácia praktik do identity, vytváranie podporného prostredia a sociálnych väzieb. Rituály, mindful movement, existenciálna prehodnotenie. Prevencia relapsov a dlhodobá stabilita."
       }
     ],
     "scientificBasis": {
@@ -121,7 +121,7 @@
       "EAPM — European Academy of Pain Medicine"
     ],
     "certifications": [
-      "ACLS, ATLS (USA ) — certifikácie akútnej starostlivosti",
+      "ACLS, ATLS (USA) — certifikácie akútnej starostlivosti",
       "Moving Acupuncture, Chiropractic — Jaseng Hospital, Južná Kórea",
       "Ayurveda, Panchakarma — India",
       "Qigong — Čína"
@@ -137,7 +137,7 @@
         "price": "€100",
         "includes": "Vrátane 6D-Map PDF",
         "features": [
-          "Komplexná analýза komorbidít",
+          "Komplexná analýza komorbidít",
           "Dôkazové laboratórne a funkčné hodnotenie",
           "Hodnotenie autonómneho nervového systému",
           "Štrukturálno-pohybová analýza",
@@ -148,7 +148,7 @@
         "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
       },
       {
-        "name": "Coherence Program (Online )",
+        "name": "Coherence Program (Online)",
         "subtitle": "6-týždňový transformačný program pre komplexné prípady",
         "price": "€300",
         "badge": "Najobľúbenejší",
@@ -163,7 +163,7 @@
         "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
       },
       {
-        "name": "3-Mesačná Strategická Cesta (Online )",
+        "name": "3-Mesačná Strategická Cesta (Online)",
         "subtitle": "Pre závažné multi-systémové komorbidity",
         "price": "€600",
         "features": [
@@ -177,7 +177,7 @@
         "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
       }
     ],
-    "note": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom (dostupné v celej Európe ). Platba pred konzultáciou. GDPR compliant."
+    "note": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom (dostupné v celej Európe). Platba pred konzultáciou. GDPR compliant."
   },
   "successStories": {
     "title": "Klinické Výsledky",
@@ -199,7 +199,7 @@
       {
         "condition": "Komplexná psychosomatická komorbidita",
         "history": "Rezistentný prípad — 7 rokov bez efektívneho riešenia",
-        "approach": "Brain-body reconnection, vagusová terapia, somatické práca",
+        "approach": "Brain-body reconnection, vagusová terapia, somatická práca",
         "result": "72% redukcia somatických symptómov, obnova autonómie"
       }
     ]
@@ -240,7 +240,7 @@
     "items": [
       {
         "question": "Pre koho je Medicína Koherencie určená?",
-        "answer": "Pre pacientov so závažnými komorbiditami a komplexnými prípadmi, kde štandardná diagnostika ukazuje 'normálne' výsledky, ale symptómy pretrvávajú. Špeciálne pre multi-systémovú dysfunkciu, rezistentné stavy a prípady, ktoré nezapadajй do štandardných diagnostických kategórií. Online konzultácie dostupné v celej Európe."
+        "answer": "Pre pacientov so závažnými komorbiditami a komplexnými prípadmi, kde štandardná diagnostika ukazuje 'normálne' výsledky, ale symptómy pretrvávajú. Špeciálne pre multi-systémovú dysfunkciu, rezistentné stavy a prípady, ktoré nezapadajú do štandardných diagnostických kategórií. Online konzultácie dostupné v celej Európe."
       },
       {
         "question": "Aké výsledky môžem očakávať?",
