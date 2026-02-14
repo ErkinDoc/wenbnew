@@ -4,11 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
-interface NavigationProps {
-  onAssessmentClick: () => void; // Оставляем для совместимости, но не используем
-}
-
-export function Navigation({ onAssessmentClick }: NavigationProps) {
+export function Navigation() {
   const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -53,7 +49,6 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     setIsMobileMenuOpen(false);
   };
 
-  // Используем новые ссылки вместо callback
   const handleAssessmentClick = () => {
     window.open(currentFormLink, '_blank');
     setIsMobileMenuOpen(false);
@@ -73,7 +68,6 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
       >
         <div className="section-container">
           <div className="section-inner flex items-center justify-between">
-            {/* Logo */}
             <a 
               href="#" 
               className="flex flex-col"
@@ -87,7 +81,6 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
               </span>
             </a>
 
-            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <button
@@ -100,7 +93,6 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
               ))}
             </nav>
 
-            {/* Right side */}
             <div className="flex items-center gap-4">
               <div className="hidden lg:block">
                 <LanguageSwitcher variant={isScrolled ? 'light' : 'light'} />
@@ -114,7 +106,6 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
                 {t('hero.ctaAssessment')}
               </button>
 
-              {/* Mobile menu button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="lg:hidden p-2 text-[#1A365D]"
@@ -126,7 +117,6 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
         </div>
       </motion.header>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
