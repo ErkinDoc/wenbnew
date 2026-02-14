@@ -4,7 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
-export function Navigation() {
+interface NavigationProps {
+  onAssessmentClick: () => void; // Оставляем для совместимости, но не используем
+}
+
+export function Navigation({ onAssessmentClick }: NavigationProps) {
   const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,6 +53,7 @@ export function Navigation() {
     setIsMobileMenuOpen(false);
   };
 
+  // Используем новые ссылки вместо callback
   const handleAssessmentClick = () => {
     window.open(currentFormLink, '_blank');
     setIsMobileMenuOpen(false);
