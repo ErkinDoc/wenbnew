@@ -11,24 +11,89 @@
     "specialty": "Expert in Complex Comorbidities & Chronic Pain Cases",
     "headline": "Beyond Standard Diagnostics: Resolving Complex Comorbidities When Tests Show 'Normal'",
     "subheadline": "Specialist in complex multi-system cases, severe comorbidities, and undiagnosed conditions where conventional medicine reaches its limits. Online consultations available across Europe. 30+ years of clinical practice.",
-    "ctaAssessment": "Start 6D Assessment (Online )",
-    "ctaApply": "Apply for Program"
+    "ctaAssessment": "Start 6D Assessment (Online)",
+    "ctaApply": "Apply for Program",
+    "badge1": "EU Licensed",
+    "badge2": "30+ Years Practice",
+    "badge3": "5000+ Patients",
+    "badge4": "15 Countries"
+  },
+  "problem": {
+    "title": "Do these situations sound familiar?",
+    "problemsTitle": "When conventional medicine reaches its limits",
+    "solutionsTitle": "Medicine of Coherence offers a solution",
+    "problems": [
+      "Multiple comorbidities — specialists treat symptoms separately",
+      "Severe cases with unclear diagnosis after years of testing",
+      "Complex multi-system dysfunction — normal tests but severe symptoms",
+      "Treatment-resistant chronic conditions",
+      "Cases that don't fit standard diagnostic categories"
+    ],
+    "solutions": [
+      "6D systemic analysis for complex comorbidities",
+      "Integration of evidence-based diagnosis and systemic clinical logic",
+      "70-85% symptom reduction in severe refractory cases",
+      "Restoring systemic coherence in multi-system dysfunction",
+      "Personalized protocol for complex cases"
+    ],
+    "transition": "We don't just treat symptoms. We restore your body's coherence."
   },
   "services": {
     "title": "Services & Programs",
+    "subtitle": "For complex comorbidities and severe cases where standard medicine reaches its limits",
     "packages": [
       {
         "name": "6D Primary Diagnostic (Online)",
+        "subtitle": "60-minute comprehensive analysis",
+        "price": "€100",
+        "includes": "Includes 6D-Map PDF",
+        "features": [
+          "Comprehensive analysis of comorbidities",
+          "Evidence-based laboratory and functional assessment",
+          "Autonomic nervous system evaluation",
+          "Structural-movement analysis",
+          "Personalized 6D-Map PDF",
+          "Recommendations for next steps"
+        ],
+        "cta": "Start 6D Assessment (Online)",
         "formUrl": "https://forms.gle/r7hQ44MV6C4UG4kz8"
       },
       {
-        "name": "Coherence Program (Online )",
+        "name": "Coherence Program (Online)",
+        "subtitle": "6-week transformational program for complex cases",
+        "price": "€300",
+        "badge": "Most Popular",
+        "features": [
+          "6D primary diagnostic",
+          "Personalized 6-week protocol for comorbidities",
+          "Weekly online follow-up consultations",
+          "Continuous WhatsApp support",
+          "Complete 6D-Map with progress tracking"
+        ],
+        "cta": "Apply for Program",
         "formUrl": "https://forms.gle/r7hQ44MV6C4UG4kz8"
       },
       {
-        "name": "3-Month Strategic Roadmap (Online )",
+        "name": "3-Month Strategic Roadmap (Online)",
+        "subtitle": "For severe multi-system comorbidities",
+        "price": "€600",
+        "features": [
+          "Complete 6D diagnostic",
+          "3-month strategic plan for complex cases",
+          "Monthly online review consultations",
+          "Protocol adjustments based on progress",
+          "Long-term maintenance strategy"
+        ],
+        "cta": "Create Strategic Roadmap",
         "formUrl": "https://forms.gle/r7hQ44MV6C4UG4kz8"
       }
-    ]
+    ],
+    "note": "All consultations are conducted online via secure Zoom (available across Europe). Payment before consultation. GDPR compliant."
+  },
+  "whatsapp": {
+    "defaultMessage": "Hello Dr. Erkin, I would like to inquire about a consultation.",
+    "tooltip": "Quick consultation via WhatsApp",
+    "cta": "Start Chat",
+    "ariaLabel": "Contact Dr. Erkin via WhatsApp"
   }
 }
