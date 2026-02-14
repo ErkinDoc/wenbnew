@@ -20,13 +20,13 @@ export function HeroSection() {
     de: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=de'
   };
 
-  // Ссылки на КОРОТКИЕ оценки (Start 6D Assessment)
-  const assessmentFormLinks = {
-    ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
-    sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
-    en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en', // Используем ту же полную форму
-    de: 'https://forms.gle/j7MzVAug4HVv6bxu7?hl=de'
-  };
+   // Ссылки на КОРОТКИЕ оценки (Start 6D Assessment)
+const assessmentFormLinks = {
+  ru: 'https://forms.gle/VCejYUhzTLyQxJXU9',
+  sk: 'https://forms.gle/t7W8zVt1GwNafz1KA',
+  en: 'https://forms.gle/r7hQ44MV6C4UG4kz8',
+  de: 'https://forms.gle/r7hQ44MV6C4UG4kz8'
+};
 
   const lang = (i18n.resolvedLanguage || i18n.language).split('-')[0];
   const currentApplicationLink = applicationFormLinks[lang as keyof typeof applicationFormLinks] || applicationFormLinks.en;
