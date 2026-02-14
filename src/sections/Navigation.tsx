@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
-// 1. Исправляем ошибку типов: разрешаем принимать onAssessmentClick
 interface NavigationProps {
   onAssessmentClick?: () => void;
 }
@@ -14,17 +13,13 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // 2. Указываем ВЕРНЫЕ ссылки, которые вы прислали
-  const formLinks = {
+  // ГАРАНТИРОВАННО ВЕРНЫЕ ССЫЛКИ
+  const formLinks: Record<string, string> = {
     ru: 'https://forms.gle/VCejYUhzTLyQxJXU9',
     sk: 'https://forms.gle/t7W8zVt1GwNafz1KA',
     en: 'https://forms.gle/r7hQ44MV6C4UG4kz8',
-    de: 'https://forms.gle/r7hQ44MV6C4UG4kz8' // Для немецкого по умолчанию английская
+    de: 'https://forms.gle/r7hQ44MV6C4UG4kz8'
   };
-
-  // Определяем текущий язык и ссылку
-  const lang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
-  const currentFormLink = formLinks[lang as keyof typeof formLinks] || formLinks.en;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,13 +50,25 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     setIsMobileMenuOpen(false);
   };
 
-  const handleAssessmentClick = () => {
-    // Если из App.tsx передана функция (например для метрики), вызываем её
+  const handleAssessmentClick = (e: React.MouseEvent) => {
+    // Останавливаем любое другое действие
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Определяем язык максимально точно
+    const currentLang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0].toLowerCase();
+    const finalLink = formLinks[currentLang] || formLinks.en;
+
+    console.log('Opening form for lang:', currentLang, 'URL:', finalLink);
+    
+    // Открываем новую ссылку
+    window.open(finalLink, '_blank', 'noopener,noreferrer');
+    
+    // Если в App.tsx была какая-то логика (например, метрика), вызываем её, но ссылку она уже не изменит
     if (onAssessmentClick) {
       onAssessmentClick();
     }
-    // Открываем ПРАВИЛЬНУЮ ссылку в новом окне
-    window.open(currentFormLink, '_blank');
+    
     setIsMobileMenuOpen(false);
   };
 
@@ -80,7 +87,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
         <div className="section-container">
           <div className="section-inner flex items-center justify-between">
             <a 
-              href="#" 
+              href="/" 
               className="flex flex-col"
               onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             >
@@ -106,10 +113,9 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
 
             <div className="flex items-center gap-4">
               <div className="hidden lg:block">
-                <LanguageSwitcher variant="light" />
+                <LanguageSwitcher variant={isScrolled ? 'light' : 'light'} />
               </div>
               
-              {/* ЭТА КНОПКА ТЕПЕРЬ БУДЕТ РАБОТАТЬ ПРАВИЛЬНО */}
               <button
                 onClick={handleAssessmentClick}
                 className="hidden sm:block px-5 py-2.5 bg-[#1A365D] hover:bg-[#2C5282] 
