@@ -4,14 +4,21 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
-interface NavigationProps {
-  onAssessmentClick: () => void;
-}
-
-export function Navigation({ onAssessmentClick }: NavigationProps) {
-  const { t } = useTranslation();
+export function Navigation() {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Ссылки на формы для каждого языка
+  const formLinks = {
+    ru: 'https://forms.gle/VCejYUhzTLyQxJXU9',
+    sk: 'https://forms.gle/t7W8zVt1GwNafz1KA',
+    en: 'https://forms.gle/r7hQ44MV6C4UG4kz8',
+    de: 'https://forms.gle/r7hQ44MV6C4UG4kz8'
+  };
+
+  const lang = (i18n.resolvedLanguage || i18n.language).split('-')[0];
+  const currentFormLink = formLinks[lang as keyof typeof formLinks] || formLinks.en;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +32,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     { label: t('nav.method'), href: '#method6d' },
     { label: t('nav.services'), href: '#services' },
     { label: 'Global Experience', href: '#global' },
-    { label: 'Publications', href: '/publications.html', external: true }, // НОВАЯ ССЫЛКА
+    { label: 'Publications', href: '/publications.html', external: true },
     { label: t('nav.faq'), href: '#faq' },
     { label: t('nav.contact'), href: '#contact' },
   ];
@@ -39,6 +46,11 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMobileMenuOpen(false);
+  };
+
+  const handleAssessmentClick = () => {
+    window.open(currentFormLink, '_blank');
     setIsMobileMenuOpen(false);
   };
 
@@ -90,7 +102,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
               </div>
               
               <button
-                onClick={onAssessmentClick}
+                onClick={handleAssessmentClick}
                 className="hidden sm:block px-5 py-2.5 bg-[#1A365D] hover:bg-[#2C5282] 
                            text-white text-[13px] font-sans font-medium rounded-lg transition-colors"
               >
@@ -142,7 +154,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
               <div className="mt-8 space-y-4">
                 <LanguageSwitcher variant="light" />
                 <button
-                  onClick={() => { onAssessmentClick(); setIsMobileMenuOpen(false); }}
+                  onClick={handleAssessmentClick}
                   className="w-full py-4 bg-[#1A365D] hover:bg-[#2C5282] text-white 
                              font-medium rounded-lg transition-colors"
                 >
