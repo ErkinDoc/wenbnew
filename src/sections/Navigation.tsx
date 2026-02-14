@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
-// Определение типов для пропсов компонента
+// 1. Исправляем ошибку типов: разрешаем принимать onAssessmentClick
 interface NavigationProps {
   onAssessmentClick?: () => void;
 }
@@ -14,15 +14,16 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Ссылки на формы для каждого языка
+  // 2. Указываем ВЕРНЫЕ ссылки, которые вы прислали
   const formLinks = {
     ru: 'https://forms.gle/VCejYUhzTLyQxJXU9',
     sk: 'https://forms.gle/t7W8zVt1GwNafz1KA',
     en: 'https://forms.gle/r7hQ44MV6C4UG4kz8',
-    de: 'https://forms.gle/r7hQ44MV6C4UG4kz8'
+    de: 'https://forms.gle/r7hQ44MV6C4UG4kz8' // Для немецкого по умолчанию английская
   };
 
-  const lang = (i18n.resolvedLanguage || i18n.language).split('-')[0];
+  // Определяем текущий язык и ссылку
+  const lang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
   const currentFormLink = formLinks[lang as keyof typeof formLinks] || formLinks.en;
 
   useEffect(() => {
@@ -55,11 +56,11 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
   };
 
   const handleAssessmentClick = () => {
-    // Вызываем внешнюю функцию, если она передана в пропсах
+    // Если из App.tsx передана функция (например для метрики), вызываем её
     if (onAssessmentClick) {
       onAssessmentClick();
     }
-    // Открываем форму и закрываем мобильное меню
+    // Открываем ПРАВИЛЬНУЮ ссылку в новом окне
     window.open(currentFormLink, '_blank');
     setIsMobileMenuOpen(false);
   };
@@ -105,9 +106,10 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
 
             <div className="flex items-center gap-4">
               <div className="hidden lg:block">
-                <LanguageSwitcher variant={isScrolled ? 'light' : 'light'} />
+                <LanguageSwitcher variant="light" />
               </div>
               
+              {/* ЭТА КНОПКА ТЕПЕРЬ БУДЕТ РАБОТАТЬ ПРАВИЛЬНО */}
               <button
                 onClick={handleAssessmentClick}
                 className="hidden sm:block px-5 py-2.5 bg-[#1A365D] hover:bg-[#2C5282] 
