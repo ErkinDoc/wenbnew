@@ -4,7 +4,12 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
-export function Navigation() {
+// Определение типов для пропсов компонента
+interface NavigationProps {
+  onAssessmentClick?: () => void;
+}
+
+export function Navigation({ onAssessmentClick }: NavigationProps) {
   const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -50,6 +55,11 @@ export function Navigation() {
   };
 
   const handleAssessmentClick = () => {
+    // Вызываем внешнюю функцию, если она передана в пропсах
+    if (onAssessmentClick) {
+      onAssessmentClick();
+    }
+    // Открываем форму и закрываем мобильное меню
     window.open(currentFormLink, '_blank');
     setIsMobileMenuOpen(false);
   };
