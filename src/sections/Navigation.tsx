@@ -29,13 +29,14 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // ИСПРАВЛЕНО: якоря совпадают с id секций в App.tsx
   const navLinks = [
-    { label: t('nav.method'), href: '#method6d' },
-    { label: t('nav.services'), href: '#services' },
-    { label: 'Global Experience', href: '#global' },
+    { label: t('nav.method'), href: '#metodika' },
+    { label: t('nav.services'), href: '#sluzby' },
+    { label: 'Global Experience', href: '#o-mne' },
     { label: 'Publications', href: '/publications.html', external: true },
     { label: t('nav.faq'), href: '#faq' },
-    { label: t('nav.contact'), href: '#contact' },
+    { label: t('nav.contact'), href: '#kontakt' },
   ];
 
   const scrollToSection = (href: string, external?: boolean) => {
@@ -51,20 +52,16 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
   };
 
   const handleAssessmentClick = (e: React.MouseEvent) => {
-    // Останавливаем любое другое действие
     e.preventDefault();
     e.stopPropagation();
 
-    // Определяем язык максимально точно
     const currentLang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0].toLowerCase();
     const finalLink = formLinks[currentLang] || formLinks.en;
 
     console.log('Opening form for lang:', currentLang, 'URL:', finalLink);
     
-    // Открываем новую ссылку
     window.open(finalLink, '_blank', 'noopener,noreferrer');
     
-    // Если в App.tsx была какая-то логика (например, метрика), вызываем её, но ссылку она уже не изменит
     if (onAssessmentClick) {
       onAssessmentClick();
     }
