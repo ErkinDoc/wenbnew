@@ -1,280 +1,108 @@
 {
   "nav": {
-    "method": "Metóda",
-    "services": "Služby",
+    "method": "Метод",
+    "services": "Услуги",
     "faq": "FAQ",
-    "contact": "Kontakt"
+    "contact": "Контакт"
   },
   "hero": {
-    "title": "Dr. Erkinbek Dzhamanbaev",
+    "title": "Др. Эркинбек Джаманбаев",
     "credentials": "MD, PhD, MBA",
-    "specialty": "Expert na komplexné komorbidity a chronickú bolesť",
-    "headline": "Za hranicami štandardnej diagnostiky: Riešenie komplexných komorbidít pri 'normálnych' výsledkoch",
-    "subheadline": "Špecialista na komplexné multi-systémové prípady, závažné komorbidity a nediagnostikované stavy, kde konvenčná medicína dosiahla limity. Online konzultácie dostupné v celej Európe. 30+ rokov klinickej praxe.",
-    "ctaAssessment": "Začať 6D diagnostiku (Online)",
-    "ctaApply": "Požiadať o program",
-    "badge1": "EU Licencia",
-    "badge2": "30+ rokov praxe",
-    "badge3": "5000+ pacientov",
-    "badge4": "15 krajín"
+    "specialty": "Эксперт по комплексным случаям",
+    "headline": "За пределами стандартной диагностики",
+    "subheadline": "Онлайн консультации по всей Европе. 30+ лет клинической практики.",
+    "ctaAssessment": "Начать 6D диагностику (Онлайн)",
+    "ctaApply": "Подать заявку",
+    "badge1": "EU Лицензия",
+    "badge2": "30+ лет практики",
+    "badge3": "5000+ пациентов",
+    "badge4": "15 стран"
   },
   "problem": {
-    "title": "Tieto situácie vám sú známe?",
-    "problemsTitle": "Keď konvenčná medicína dosiahla limity",
-    "solutionsTitle": "Medicína Koherencie ponúka riešenie",
+    "title": "Эти ситуации вам знакомы?",
+    "problemsTitle": "Когда медицина достигает пределов",
+    "solutionsTitle": "Медицина Когерентности",
     "problems": [
-      "Viacnásobné komorbidity s 'normálnymi' výsledkami testov",
-      "Závažné multi-systémové dysfunkcie bez jasnej diagnózy",
-      "Komplexné prípady — každý špecialista vidí len časť",
-      "Liečbe rezistentné stavy — roky bez úľavy",
-      "10+ rokov chronickej bolesti a komorbidít bez riešenia"
+      "Сложные случаи с 'нормальными' анализами",
+      "Множественные симптомы без диагноза",
+      "Хроническая боль годами"
     ],
     "solutions": [
-      "6D systémová analýza — vidíme to, čo iní prehliadnu",
-      "Integrácia dôkazovej diagnostiky a systémovej klinickej logiky",
-      "70-85% redukcia symptómov u pacientov s 10+ ročnou históriou",
-      "Obnova systémovej koherencie, nielen potlačenie bolesti",
-      "Personalizovaný protokol pre komplexné komorbidity"
+      "Системный 6D анализ",
+      "Поиск причин, а не маскировка боли",
+      "Индивидуальный план восстановления"
     ],
-    "transition": "Neliečime len príznaky. Obnovujeme koherenciu vášho tela."
+    "transition": "Восстанавливаем когерентность вашего тела."
   },
   "method6d": {
-    "title": "Systém 6D Navigácie",
-    "subtitle": "Šesť klinických vektorov koherencie pre komplexné komorbidity a závažné prípady",
-    "description": "Mapa, nie protokol. Systém diagnostického kartovanie a navigácie, ktorý buduje individuálnu cestu obnovy koherencie pre každého pacienta. Každá dimenza (D) odpoveda na kľúčovú otázku o stave systému a identifikuje 'úzke hrdlo'.",
+    "title": "Система 6D Навигации",
+    "subtitle": "Шесть векторов здоровья",
+    "description": "Индивидуальный маршрут восстановления для каждого пациента.",
     "dimensions": [
-      {
-        "id": "D1",
-        "name": "D1: Diagnóza",
-        "subtitle": "Dôkazová Medicínska Diagnostika",
-        "description": "Dôkazová medicínska diagnostika (ICD, ICF, EBM). Vytváranie funkčnej mapy dysfunkcií a zdrojov systému nad rámec jednej diagnostickej nálepky."
-      },
-      {
-        "id": "D2",
-        "name": "D2: Dysfunkcia",
-        "subtitle": "Korekcia Vzorov",
-        "description": "Rozpoznanie a korekcia maladaptívnych vzorov dýchania a pohybu, myofasciálny release, posturálna korekcia."
-      },
-      {
-        "id": "D3",
-        "name": "D3: Odpojenie",
-        "subtitle": "Prepojenie Mozog-Telo",
-        "description": "Obnova spojenia mozog-telo a rozšírenie 'okna tolerancie' nervového systému. Vagusová aktivácia, somatické ukotvenie."
-      },
-      {
-        "id": "D4",
-        "name": "D4: Smer",
-        "subtitle": "Biochemický Základ",
-        "description": "Vytváranie optimálneho vnútorného prostredia prostredníctvom výživy, nutraceutík a chronobiológie. Podpora pre zotavenie systému."
-      },
-      {
-        "id": "D5",
-        "name": "D5: Rozvoj",
-        "subtitle": "Kognitívne Preprogramovanie",
-        "description": "Zmena maladaptívnych kognitívno-behaviorálnych programov, ktoré udržiavajú začarovaný kruh bolesti a úzkosti."
-      },
-      {
-        "id": "D6",
-        "name": "D6: Hĺbka",
-        "subtitle": "Integrácia do Života",
-        "description": "Prechod od 'liečim sa' k novému spôsobu života. Prevencia relapsov a dlhodobá stabilita systému."
-      }
+      { "id": "D1", "name": "D1: Диагностика", "subtitle": "EBM анализ", "description": "Карта дисфункций системы." },
+      { "id": "D2", "name": "D2: Дисфункция", "subtitle": "Паттерны", "description": "Коррекция движений и дыхания." },
+      { "id": "D3", "name": "D3: Отключение", "subtitle": "Связь Мозг-Тело", "description": "Активация блуждающего нерва." },
+      { "id": "D4", "name": "D4: Направление", "subtitle": "Биохимия", "description": "Питание и внутренняя среда." },
+      { "id": "D5", "name": "D5: Развитие", "subtitle": "Когниции", "description": "Разрыв цикла боли." },
+      { "id": "D6", "name": "D6: Глубина", "subtitle": "Интеграция", "description": "Новый образ жизни." }
     ],
     "scientificBasis": {
-      "label": "Vedecký základ",
+      "label": "Научная база",
       "publications": [
-        {
-          "title": "A Regulation-Oriented 6D Navigation Model",
-          "url": "https://www.academia.edu/161279480/A_Regulation_Oriented_6D_Navigation_Model"
-        },
-        {
-          "title": "Medicine of Coherence: A Regulation-Oriented Framework",
-          "url": "https://www.academia.edu/161272311/Medicine_of_Coherence_A_Regulation_Oriented_Framework_for_Chronic_Pain_and_Functional_Disorders"
-        }
+        { "title": "6D Navigation Model", "url": "https://www.drerkin.eu/" }
       ]
     }
   },
   "testimonials": {
-    "title": "Príbehy pacientov",
-    "subtitle": "Skutočné prípady. Skutočné výsledky. Anonymizované pre ochranu súkromia.",
-    "disclaimer": "Výsledky sa môžu líšiť. Všetky prípady sú anonymizované v súlade s GDPR.",
-    "1": {
-      "condition": "Chronická únava + fibromyalgia",
-      "duration": "8 rokov, 11 špecialistov",
-      "result": "82% obnova energie",
-      "quote": "Každý lekár tvrdil, že moje testy sú v norme. Dr. Erkin bol prvý, kto mi vysvetlil, PREČO sa cítim zle napriek normálnym výsledkom. Po 6 týždňoch som sa prvýkrát po rokoch zobudila bez bolesti."
-    },
-    "2": {
-      "condition": "Syndróm vyhorenia + hormonálny kolaps",
-      "duration": "3 roky, rezistentné na liečbu",
-      "result": "Úplný návrat do práce",
-      "quote": "Dve vyhorenia za tri roky. Antidepresíva prestali fungovať. 6D diagnostika odhalila dysfunkciu osi HPA, ktorú nikto predtým nekontroloval. O tri mesiace neskôr som späť vo vedení svojej firmy."
-    },
-    "3": {
-      "condition": "Nediagnostikované autoimunitné ochorenie",
-      "duration": "5 rokov, 9 špecialistov",
-      "result": "78% redukcia symptómov",
-      "quote": "Reumatológ, neurológ aj gastroenterológ nič nezistili. Dr. Erkin pospájal súvislosti, ktoré nikto iný nevidel. Konečne mám diagnózu, ktorá dáva zmysel."
-    },
-    "4": {
-      "condition": "Post-COVID syndróm",
-      "duration": "18 mesiacov bez zlepšenia",
-      "result": "85% zotavenie",
-      "quote": "Mozgová hmla, únava, búšenie srdca. 6D protokol sa zameral priamo na autonómnu dysfunkciu. Vrátila sa mi jasná myseľ."
-    },
-    "5": {
-      "condition": "Chronická bolesť + depresia",
-      "duration": "12 rokov, 15+ špecialistov",
-      "result": "70% redukcia bolesti",
-      "quote": "Minula som 40 000 € na liečbu, ktorá nefungovala. Diagnostika za 100 € ukázala to, čo všetci prehliadli: moja bolesť nebola psychologická, ale išlo o neurozápal. Všetko sa potom zmenilo."
-    },
-    "6": {
-      "condition": "Štítna žľaza + extrémna únava",
-      "duration": "4 roky, TSH vždy v norme",
-      "result": "Energia plne obnovená",
-      "quote": "Moje TSH bolo perfektné, ale nedokázala som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiadny iný lekár to nespomenul. Teraz rozumiem svojmu telu."
-    },
-    "7": {
-      "condition": "Úzkosť + GI dysfunkcia",
-      "duration": "6 rokov, liečené ako IBS",
-      "result": "90% kontrola symptómov",
-      "quote": "Šesť rokov mi hovorili „je to len stres“. 6D prístup našiel dysfunkciu blúdivého nervu. Nebolo to IBS ani úzkosť. Bol to biologický vzorec, ktorý sa dal opraviť."
-    },
-    "8": {
-      "condition": "Komplexné multisystémové zlyhanie",
-      "duration": "7 rokov, rezignácia na medicínu",
-      "result": "Transformovaná kvalita života",
-      "quote": "Prestala som chodiť k lekárom — mala som pocit, že si vymýšľam. Dr. Erkin bol iný. Počúval, mapoval a ukázal mi cestu vpred. Prvýkrát mám nádej založenú na biológii."
-    }
+    "title": "Отзывы",
+    "subtitle": "Реальные результаты",
+    "disclaimer": "GDPR compliant",
+    "1": { "condition": "Усталость", "duration": "8 лет", "result": "82% энергии", "quote": "Я снова живу." },
+    "2": { "condition": "Боль", "duration": "12 лет", "result": "70% меньше боли", "quote": "Это работает." }
   },
   "globalExperience": {
-    "title": "Medzinárodná Klinická Prax",
-    "subtitle": "Špecialista na komplexné komorbidity v Slovensku, Európe a Ázii",
-    "locations": [
-      {
-        "country": "Slovensko",
-        "details": "Adeli Medical Center, Refit Clinic — neurorehabilitácia a liečba komplexnej bolesti"
-      },
-      {
-        "country": "Kirgizsko",
-        "details": "Univerzitná nemocnica — intenzívna medicína a komplexná rehabilitácia"
-      },
-      {
-        "country": "Španielsko",
-        "details": "Špecializácia vnútorné lekárstvo, Barcelona — komplexné multi-systémové prípady"
-      },
-      {
-        "country": "Holandsko",
-        "details": "MBA University of Groningen — medicínsky manažment a klinická stratégia"
-      }
-    ],
-    "memberships": [
-      "AAPM — American Academy of Pain Medicine",
-      "APTA — American Physical Therapy Association",
-      "EAPM — European Academy of Pain Medicine"
-    ],
-    "certifications": [
-      "ACLS, ATLS (USA) — certifikácie akútnej starostlivosti",
-      "Moving Acupuncture, Chiropractic — Jaseng Hospital, Južná Kórea",
-      "Ayurveda, Panchakarma — India",
-      "Qigong — Čína"
-    ]
+    "title": "Опыт",
+    "subtitle": "Международная практика",
+    "locations": [],
+    "memberships": [],
+    "certifications": []
   },
   "services": {
-    "title": "Služby a Programy",
-    "subtitle": "Pre komplexné komorbidity a závažné prípady, kde štandardná medicína dosiahla limity",
+    "title": "Услуги",
+    "subtitle": "Программы",
     "packages": [
       {
-        "name": "6D Primárna Diagnostika (Online)",
-        "subtitle": "60-minútová komplexná analýza",
+        "name": "6D Диагностика",
+        "subtitle": "60 минут",
         "price": "€100",
-        "includes": "Vrátane 6D-Map PDF",
-        "features": [
-          "Komplexná analýza komorbidít",
-          "Dôkazové laboratórne a funkčné hodnotenie",
-          "Hodnotenie autonómneho nervového systému",
-          "Štrukturálno-pohybová analýza",
-          "Personalizovaný 6D-Map PDF",
-          "Odporúčania pre ďalší postup"
-        ],
-        "cta": "Začať 6D diagnostiku (Online)",
-        "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
-      },
-      {
-        "name": "Coherence Program (Online)",
-        "subtitle": "6-týždňový transformačný program pre komplexné prípady",
-        "price": "€300",
-        "badge": "Najobľúbenejší",
-        "features": [
-          "6D primárna diagnostika",
-          "Personalizovaný 6-týždňový protokol pre komorbidity",
-          "Týždenné online follow-up konzultácie",
-          "Nepretržitá WhatsApp podpora",
-          "Kompletný 6D-Map s progress tracking"
-        ],
-        "cta": "Požiadať o program",
-        "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
-      },
-      {
-        "name": "3-Mesačná Strategická Cesta (Online)",
-        "subtitle": "Pre závažné multi-systémové komorbidity",
-        "price": "€600",
-        "features": [
-          "Kompletná 6D diagnostika",
-          "3-mesačný strategický plán pre komplexné prípady",
-          "Mesačné online review konzultácie",
-          "Protokolové úpravy podľa progressu",
-          "Long-term maintenance stratégia"
-        ],
-        "cta": "Vytvoriť strategický plán",
-        "formUrl": "https://forms.gle/t7W8zVt1GwNafz1KA"
+        "features": ["Анализ", "План"],
+        "cta": "Записаться",
+        "formUrl": "https://forms.gle/Gb6nj1SURsMk6G9c7"
       }
     ],
-    "note": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom (dostupné v celej Európe). Platba pred konzultáciou. GDPR compliant."
+    "note": "Zoom консультации."
   },
   "trust": {
-    "title": "Prečo mi môžete dôverovať",
-    "credentialsTitle": "Kvalifikácia a Licencie",
-    "credentials": [
-      "MUDr. (1987) — Kyrgyz State Medical University, Červený diplom",
-      "PhD. (1996) — Vojenská lekárska akadémia, Petrohrad (šokové stavy)",
-      "Špecialista vnútorného lekárstva (2008) — Španielsko",
-      "MBA (2014) — Univerzita Groningen, Holandsko",
-      "EU Medical License — Slovensko, nostrifikované (2021)",
-      "30+ rokov klinickej praxe"
-    ],
-    "gdpr": "GDPR Compliant — Ochrana osobných údajov v súlade s európskymi predpismi",
-    "stats": [
-      { "number": "5000+", "label": "Pacientov s komplexnými prípadmi" },
-      { "number": "30+", "label": "Rokov praxe" },
-      { "number": "70-85%", "label": "Redukcia symptómov" },
-      { "number": "15", "label": "Krajín" }
-    ]
+    "title": "Доверие",
+    "credentialsTitle": "Квалификация",
+    "credentials": ["MUDr., PhD, MBA"],
+    "gdpr": "GDPR Compliant",
+    "stats": []
   },
   "faq": {
-    "title": "Často Kladené Otázky",
-    "items": [
-      {
-        "question": "Pre koho je Medicína Koherencie určená?",
-        "answer": "Pre pacientov so závažnými komorbiditami a komplexnými prípadmi, kde štandardná diagnostika ukazuje 'normálne' výsledky. Online konzultácie dostupné v celej Európe."
-      },
-      {
-        "question": "Aké výsledky môžem očakávať?",
-        "answer": "Naši pacienti dosahujú 70-85% redukciu symptómov. Výsledky závisia od komplexity prípadu a vašej angažovanosti."
-      }
-    ]
+    "title": "FAQ",
+    "items": []
   },
   "contact": {
-    "title": "Kontakt",
-    "subtitle": "Máte otázky? Sme tu pre vás.",
+    "title": "Контакт",
+    "subtitle": "На связи",
     "email": "Email",
     "whatsapp": "WhatsApp",
-    "followUs": "Sledujte nás",
-    "cta": "Napíšte nám"
+    "cta": "Написать нам"
   },
   "footer": {
-    "rights": "Všetky práva vyhradené.",
-    "privacy": "Ochrana osobných údajov",
-    "terms": "Všeobecné obchodné podmienky"
+    "rights": "Все права защищены.",
+    "privacy": "Приватность",
+    "terms": "Условия"
   }
 }
