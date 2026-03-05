@@ -10,77 +10,76 @@
   "hero": {
     "title": "Др. Эркинбек Джаманбаев",
     "credentials": "MD, PhD, MBA",
-    "specialty": "Эксперт по комплексным коморбидностям и хронической боли",
-    "headline": "За пределами стандартной диагностики: Решение комплексных коморбидностей при 'нормальных' результатах",
-    "subheadline": "Специалист по комплексным мульти-системным случаям, тяжёлым коморбидностям и недиагностированным состояниям. Онлайн консультации доступны по всей Европе. 30+ лет практики.",
-    "ctaAssessment": "Начать 6D диагностику (Онлайн)",
-    "ctaApply": "Подать заявку на программу",
+    "specialty": "Эксперт по комплексным коморбидностям",
+    "headline": "За пределами стандартной диагностики",
+    "subheadline": "Специалист по комплексным случаям. Онлайн консультации по всей Европе. 30+ лет практики.",
+    "ctaAssessment": "Начать 6D диагностику",
+    "ctaApply": "Подать заявку",
     "badge1": "EU Лицензия",
     "badge2": "30+ лет практики",
     "badge3": "5000+ пациентов",
     "badge4": "15 стран"
   },
-  "testimonials": {
-    "title": "Истории пациентов",
-    "subtitle": "Реальные случаи. Анонимизировано для приватности.",
-    "1": {
-      "name": "Maria K.",
-      "location": "Bratislava, Slovakia",
-      "age": 42,
-      "condition": "Хроническая усталость + фибромиалгия",
-      "duration": "8 лет",
-      "result": "82% энергии",
-      "quote": "Доктор Эркин был первым, кто объяснил, почему я чувствую себя сломленной."
-    },
-    "2": {
-      "name": "Andrey M.",
-      "location": "Moscow, Russia",
-      "age": 38,
-      "condition": "Выгорание",
-      "duration": "3 года",
-      "result": "Возврат к работе",
-      "quote": "6D диагностика выявила дисфункцию, которую никто не проверял."
-    },
-    "3": {
-      "name": "Gulnara A.",
-      "location": "Almaty, Kazakhstan",
-      "age": 45,
-      "condition": "Аутоиммунное",
-      "duration": "5 лет",
-      "result": "78% улучшение",
-      "quote": "Теперь диагноз наконец имеет смысл."
-    },
-    "4": {
-      "name": "Pavel S.",
-      "location": "Prague, Czech Republic",
-      "age": 51,
-      "condition": "Постковид",
-      "duration": "18 месяцев",
-      "result": "85% восстановление",
-      "quote": "Мой мозг вернулся в норму."
-    },
-    "5": {
-      "name": "Jennifer L.",
-      "location": "San Francisco, USA",
-      "age": 39,
-      "condition": "Хроническая боль",
-      "duration": "12 лет",
-      "result": "70% меньше боли",
-      "quote": "Диагностика показала нейровоспаление."
-    },
-    "6": {
-      "name": "David M.",
-      "location": "London, UK",
-      "age": 47,
-      "condition": "Щитовидная железа",
-      "duration": "4 года",
-      "result": "Энергия восстановлена",
-      "quote": "Теперь я понимаю своё тело."
+  "problem": {
+    "title": "Эти ситуации вам знакомы?",
+    "problemsTitle": "Когда медицина достигает пределов",
+    "solutionsTitle": "Решение",
+    "problems": ["Сложные коморбидности", "Нет диагноза", "Хроническая боль"],
+    "solutions": ["6D анализ", "Поиск причин", "Когерентность"],
+    "transition": "Восстанавливаем ваше тело."
+  },
+  "method6d": {
+    "title": "Система 6D",
+    "subtitle": "Векторы здоровья",
+    "description": "Индивидуальный маршрут восстановления.",
+    "dimensions": [
+      { "id": "D1", "name": "D1", "subtitle": "Диагностика", "description": "Карта системы." },
+      { "id": "D2", "name": "D2", "subtitle": "Дисфункция", "description": "Паттерны." },
+      { "id": "D3", "name": "D3", "subtitle": "Отключение", "description": "Связь мозг-тело." },
+      { "id": "D4", "name": "D4", "subtitle": "Направление", "description": "Биохимия." },
+      { "id": "D5", "name": "D5", "subtitle": "Развитие", "description": "Когниции." },
+      { "id": "D6", "name": "D6", "subtitle": "Глубина", "description": "Интеграция." }
+    ],
+    "scientificBasis": {
+      "label": "Научная база",
+      "publications": [
+        { "title": "6D Navigation Model", "url": "https://www.drerkin.eu/" }
+      ]
     }
   },
-  "footer": {
-    "rights": "Все права защищены.",
-    "privacy": "Политика конфиденциальности",
-    "terms": "Условия использования"
-  }
+  "testimonials": {
+    "title": "Истории пациентов",
+    "subtitle": "Реальные случаи",
+    "1": { "name": "Maria K.", "location": "Slovakia", "age": 42, "condition": "Усталость", "duration": "8 лет", "result": "Успех", "quote": "Доктор помог мне." },
+    "2": { "name": "Andrey M.", "location": "Russia", "age": 38, "condition": "Выгорание", "duration": "3 года", "result": "Восстановление", "quote": "Диагностика 6D работает." },
+    "3": { "name": "G", "location": "Kz", "age": 45, "condition": "...", "duration": "...", "result": "...", "quote": "..." },
+    "4": { "name": "P", "location": "Cz", "age": 51, "condition": "...", "duration": "...", "result": "...", "quote": "..." },
+    "5": { "name": "J", "location": "USA", "age": 39, "condition": "...", "duration": "...", "result": "...", "quote": "..." },
+    "6": { "name": "D", "location": "UK", "age": 47, "condition": "...", "duration": "...", "result": "...", "quote": "..." }
+  },
+  "globalExperience": {
+    "title": "Опыт",
+    "subtitle": "Практика",
+    "locations": [],
+    "memberships": [],
+    "certifications": []
+  },
+  "services": {
+    "title": "Услуги",
+    "subtitle": "Программы",
+    "packages": [
+      { "name": "Диагностика", "subtitle": "60 мин", "price": "100€", "features": ["Анализ"], "cta": "Запись", "formUrl": "https://forms.gle/Gb6nj1SURsMk6G9c7" }
+    ],
+    "note": "Zoom"
+  },
+  "trust": {
+    "title": "Доверие",
+    "credentialsTitle": "Дипломы",
+    "credentials": ["MD, PhD, MBA"],
+    "gdpr": "GDPR",
+    "stats": []
+  },
+  "faq": { "title": "FAQ", "items": [] },
+  "contact": { "title": "Контакт", "subtitle": "Связь", "email": "Email", "whatsapp": "WhatsApp", "cta": "Написать" },
+  "footer": { "rights": "Все права защищены", "privacy": "Политика", "terms": "Условия" }
 }
