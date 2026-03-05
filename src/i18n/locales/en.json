@@ -47,37 +47,37 @@
         "id": "D1",
         "name": "D1: Diagnosis",
         "subtitle": "Evidence-Based Medical Diagnosis",
-        "description": "Evidence-based medical diagnosis (ICD, ICF, EBM). Creating a functional map of dysfunctions and system resources, beyond a single diagnostic label. Foundation for personalized recovery pathway."
+        "description": "Evidence-based medical diagnosis (ICD, ICF, EBM). Creating a functional map of dysfunctions and system resources, beyond a single diagnostic label."
       },
       {
         "id": "D2",
         "name": "D2: Dysfunction",
         "subtitle": "Pattern Correction",
-        "description": "Recognition and correction of maladaptive patterns that have become the system's default and block recovery. Breathing and movement patterns, myofascial release, postural correction. Essential for multi-system dysfunction and complex pain syndromes."
+        "description": "Recognition and correction of maladaptive patterns. Breathing and movement patterns, myofascial release, postural correction."
       },
       {
         "id": "D3",
         "name": "D3: Disconnection",
         "subtitle": "Brain-Body Reconnection",
-        "description": "Restoring brain-body connection and expanding the nervous system's 'window of tolerance'. Breaking free from chronic hyperactivation (anxiety, panic) or hypoactivation (apathy, dissociation). Coherent breathing, vagal activation, somatic grounding."
+        "description": "Restoring brain-body connection and expanding the nervous system's 'window of tolerance'. Breaking free from chronic hyperactivation or apathy."
       },
       {
         "id": "D4",
         "name": "D4: Direction",
         "subtitle": "Biochemical Foundation",
-        "description": "Creating optimal internal environment for nervous system function and tissue regeneration through nutrition, nutraceuticals, and chronobiology. Personalized anti-inflammatory nutrition, circadian rhythm optimization. Biochemical support for system recovery."
+        "description": "Creating optimal internal environment through nutrition, nutraceuticals, and chronobiology. Support for system recovery."
       },
       {
         "id": "D5",
         "name": "D5: Development",
         "subtitle": "Cognitive Reprogramming",
-        "description": "Recognizing and changing maladaptive cognitive-behavioral programs that sustain the vicious cycle of pain, anxiety, and avoidance. Pain Neuroscience Education, ACT, cognitive therapy. Breaking neural circuits of catastrophization."
+        "description": "Changing maladaptive cognitive-behavioral programs that sustain the vicious cycle of pain and anxiety."
       },
       {
         "id": "D6",
         "name": "D6: Depth",
         "subtitle": "Life Integration",
-        "description": "Transition from 'I am being treated' to 'this is now my way of living'. Integrating practices into identity, creating supportive environment and social connections. Rituals, mindful movement, existential reevaluation. Relapse prevention and long-term stability."
+        "description": "Transition from 'I am being treated' to 'this is now my way of living'. Relapse prevention and long-term stability."
       }
     ],
     "scientificBasis": {
@@ -93,116 +93,6 @@
         }
       ]
     }
-  },
-  "globalExperience": {
-    "title": "International Clinical Practice",
-    "subtitle": "Specialist in complex comorbidities across Slovakia, Europe, and Asia",
-    "locations": [
-      {
-        "country": "Slovakia",
-        "details": "Adeli Medical Center, Refit Clinic — neurorehabilitation and complex pain management"
-      },
-      {
-        "country": "Kyrgyzstan",
-        "details": "University Hospital — intensive care and comprehensive rehabilitation"
-      },
-      {
-        "country": "Spain",
-        "details": "Internal Medicine specialization, Barcelona — complex multi-system cases"
-      },
-      {
-        "country": "Netherlands",
-        "details": "MBA University of Groningen — medical management and clinical strategy"
-      }
-    ],
-    "memberships": [
-      "AAPM — American Academy of Pain Medicine",
-      "APTA — American Physical Therapy Association",
-      "EAPM — European Academy of Pain Medicine"
-    ],
-    "certifications": [
-      "ACLS, ATLS (USA) — emergency care certifications",
-      "Moving Acupuncture, Chiropractic — Jaseng Hospital, South Korea",
-      "Ayurveda, Panchakarma — India",
-      "Qigong — China"
-    ]
-  },
-  "services": {
-    "title": "Services & Programs",
-    "subtitle": "For complex comorbidities and severe cases where standard medicine reaches its limits",
-    "packages": [
-      {
-        "name": "6D Primary Diagnostic (Online)",
-        "subtitle": "60-minute comprehensive analysis",
-        "price": "€100",
-        "includes": "Includes 6D-Map PDF",
-        "features": [
-          "Comprehensive analysis of comorbidities",
-          "Evidence-based laboratory and functional assessment",
-          "Autonomic nervous system evaluation",
-          "Structural-movement analysis",
-          "Personalized 6D-Map PDF",
-          "Recommendations for next steps"
-        ],
-        "cta": "Start 6D Assessment (Online)",
-        "formUrl": "https://forms.gle/r7hQ44MV6C4UG4kz8"
-      },
-      {
-        "name": "Coherence Program (Online)",
-        "subtitle": "6-week transformational program for complex cases",
-        "price": "€300",
-        "badge": "Most Popular",
-        "features": [
-          "6D primary diagnostic",
-          "Personalized 6-week protocol for comorbidities",
-          "Weekly online follow-up consultations",
-          "Continuous WhatsApp support",
-          "Complete 6D-Map with progress tracking"
-        ],
-        "cta": "Apply for Program",
-        "formUrl": "https://forms.gle/r7hQ44MV6C4UG4kz8"
-      },
-      {
-        "name": "3-Month Strategic Roadmap (Online)",
-        "subtitle": "For severe multi-system comorbidities",
-        "price": "€600",
-        "features": [
-          "Complete 6D diagnostic",
-          "3-month strategic plan for complex cases",
-          "Monthly online review consultations",
-          "Protocol adjustments based on progress",
-          "Long-term maintenance strategy"
-        ],
-        "cta": "Create Strategic Roadmap",
-        "formUrl": "https://forms.gle/r7hQ44MV6C4UG4kz8"
-      }
-    ],
-    "note": "All consultations are conducted online via secure Zoom (available across Europe). Payment before consultation. GDPR compliant."
-  },
-  "successStories": {
-    "title": "Clinical Results",
-    "subtitle": "Anonymized cases of patients with severe comorbidities and complex diagnoses",
-    "disclaimer": "All cases are anonymized in accordance with GDPR. Results may vary depending on individual circumstances.",
-    "stories": [
-      {
-        "condition": "Multiple comorbidities + severe pain",
-        "history": "12 years, 15+ specialists, conflicting diagnoses",
-        "approach": "6D systemic analysis for comorbidities, pattern correction, biochemical support",
-        "result": "78% pain reduction after 8 weeks, restoration of sleep and energy"
-      },
-      {
-        "condition": "Severe multi-system dysfunction",
-        "history": "Unclear diagnosis, each specialist treating separately",
-        "approach": "Integrative 6D perspective, coherence therapy for complex comorbidities",
-        "result": "85% improvement in quality of life, identification of systemic root causes"
-      },
-      {
-        "condition": "Complex psychosomatic comorbidity",
-        "history": "Treatment-resistant case — 7 years without effective solution",
-        "approach": "Brain-body reconnection, vagus therapy, somatic work",
-        "result": "72% reduction in somatic symptoms, restoration of autonomy"
-      }
-    ]
   },
   "testimonials": {
     "title": "Patient Stories",
@@ -266,7 +156,7 @@
       "Internal Medicine Specialist (2008) — Spain",
       "MBA (2014) — University of Groningen, Netherlands",
       "EU Medical License — Slovakia, recognized (2021)",
-      "30+ years clinical practice (Intensive Care, Rehabilitation, Pain Medicine)"
+      "30+ years clinical practice"
     ],
     "gdpr": "GDPR Compliant — Personal data protection in accordance with European regulations",
     "stats": [
@@ -288,33 +178,11 @@
       }
     ]
   },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "items": [
-      {
-        "question": "Who is Medicine of Coherence for?",
-        "answer": "For patients with severe comorbidities and complex cases where standard diagnostics show 'normal' results but symptoms persist. Especially for multi-system dysfunction, treatment-resistant conditions, and cases that don't fit standard diagnostic categories. Online consultations available across Europe."
-      },
-      {
-        "question": "What results can I expect?",
-        "answer": "Our patients with severe, long-standing comorbidities achieve 70-85% symptom reduction. Results depend on case complexity and your engagement in the process."
-      },
-      {
-        "question": "How does 6D diagnostic work?",
-        "answer": "6D diagnostic navigates six clinical vectors of your health: Diagnosis, Dysfunction, Disconnection, Direction, Development, and Depth. It creates a functional map of your system, identifies the key 'bottleneck', and builds a personalized recovery pathway based on evidence-based medicine (ICD, ICF, EBM)."
-      },
-      {
-        "question": "Where do consultations take place?",
-        "answer": "All consultations are conducted online via secure Zoom. This allows us to work with patients throughout Slovakia and Europe without the need for travel."
-      }
-    ]
-  },
   "contact": {
     "title": "Contact",
     "subtitle": "Have questions? We're here for you.",
     "email": "Email",
     "whatsapp": "WhatsApp",
-    "followUs": "Follow us",
     "cta": "Write to us"
   },
   "footer": {
