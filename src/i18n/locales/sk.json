@@ -39,17 +39,50 @@
     "subtitle": "Шесть векторов здоровья",
     "description": "Индивидуальный маршрут восстановления для каждого пациента.",
     "dimensions": [
-      { "id": "D1", "name": "D1: Диагностика", "subtitle": "EBM анализ", "description": "Карта дисфункций системы." },
-      { "id": "D2", "name": "D2: Дисфункция", "subtitle": "Паттерны", "description": "Коррекция движений и дыхания." },
-      { "id": "D3", "name": "D3: Отключение", "subtitle": "Связь Мозг-Тело", "description": "Активация блуждающего нерва." },
-      { "id": "D4", "name": "D4: Направление", "subtitle": "Биохимия", "description": "Питание и внутренняя среда." },
-      { "id": "D5", "name": "D5: Развитие", "subtitle": "Когниции", "description": "Разрыв цикла боли." },
-      { "id": "D6", "name": "D6: Глубина", "subtitle": "Интеграция", "description": "Новый образ жизни." }
+      {
+        "id": "D1",
+        "name": "D1: Диагностика",
+        "subtitle": "EBM анализ",
+        "description": "Карта дисфункций системы."
+      },
+      {
+        "id": "D2",
+        "name": "D2: Дисфункция",
+        "subtitle": "Паттерны",
+        "description": "Коррекция движений и дыхания."
+      },
+      {
+        "id": "D3",
+        "name": "D3: Отключение",
+        "subtitle": "Связь Мозг-Тело",
+        "description": "Активация блуждающего нерва."
+      },
+      {
+        "id": "D4",
+        "name": "D4: Направление",
+        "subtitle": "Биохимия",
+        "description": "Питание и внутренняя среда."
+      },
+      {
+        "id": "D5",
+        "name": "D5: Развитие",
+        "subtitle": "Когниции",
+        "description": "Разрыв цикла боли."
+      },
+      {
+        "id": "D6",
+        "name": "D6: Глубина",
+        "subtitle": "Интеграция",
+        "description": "Новый образ жизни."
+      }
     ],
     "scientificBasis": {
       "label": "Научная база",
       "publications": [
-        { "title": "6D Navigation Model", "url": "https://www.drerkin.eu/" }
+        {
+          "title": "6D Navigation Model",
+          "url": "https://www.drerkin.eu/"
+        }
       ]
     }
   },
@@ -57,8 +90,54 @@
     "title": "Отзывы",
     "subtitle": "Реальные результаты",
     "disclaimer": "GDPR compliant",
-    "1": { "condition": "Усталость", "duration": "8 лет", "result": "82% энергии", "quote": "Я снова живу." },
-    "2": { "condition": "Боль", "duration": "12 лет", "result": "70% меньше боли", "quote": "Это работает." }
+    "1": {
+      "condition": "Усталость",
+      "duration": "8 лет",
+      "result": "82% энергии",
+      "quote": "Я снова живу."
+    },
+    "2": {
+      "condition": "Боль",
+      "duration": "12 лет",
+      "result": "70% меньше боли",
+      "quote": "Это работает."
+    },
+    "3": {
+      "condition": "...",
+      "duration": "...",
+      "result": "...",
+      "quote": "..."
+    },
+    "4": {
+      "condition": "...",
+      "duration": "...",
+      "result": "...",
+      "quote": "..."
+    },
+    "5": {
+      "condition": "...",
+      "duration": "...",
+      "result": "...",
+      "quote": "..."
+    },
+    "6": {
+      "condition": "...",
+      "duration": "...",
+      "result": "...",
+      "quote": "..."
+    },
+    "7": {
+      "condition": "...",
+      "duration": "...",
+      "result": "...",
+      "quote": "..."
+    },
+    "8": {
+      "condition": "...",
+      "duration": "...",
+      "result": "...",
+      "quote": "..."
+    }
   },
   "globalExperience": {
     "title": "Опыт",
@@ -75,7 +154,10 @@
         "name": "6D Диагностика",
         "subtitle": "60 минут",
         "price": "€100",
-        "features": ["Анализ", "План"],
+        "features": [
+          "Анализ",
+          "План"
+        ],
         "cta": "Записаться",
         "formUrl": "https://forms.gle/Gb6nj1SURsMk6G9c7"
       }
@@ -85,7 +167,9 @@
   "trust": {
     "title": "Доверие",
     "credentialsTitle": "Квалификация",
-    "credentials": ["MUDr., PhD, MBA"],
+    "credentials": [
+      "MUDr., PhD, MBA"
+    ],
     "gdpr": "GDPR Compliant",
     "stats": []
   },
@@ -104,5 +188,30 @@
     "rights": "Все права защищены.",
     "privacy": "Приватность",
     "terms": "Условия"
+  },
+  "successStories": {
+    "title": "Klinické výsledky",
+    "subtitle": "Príklady obnovy",
+    "disclaimer": "GDPR compliant",
+    "stories": [
+      {
+        "condition": "Chronická únava",
+        "history": "8 rokov bezúspešnej liečby",
+        "approach": "6D Biochémia",
+        "result": "85% energie"
+      },
+      {
+        "condition": "Neuralgia",
+        "history": "5 rokov bolesti",
+        "approach": "D2 & D3 korekcia",
+        "result": "70% menej bolesti"
+      },
+      {
+        "condition": "Psychosomatika",
+        "history": "Komplexné symptómy",
+        "approach": "Integratívna 6D analýza",
+        "result": "Úplná remisia"
+      }
+    ]
   }
 }
