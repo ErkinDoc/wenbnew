@@ -204,6 +204,59 @@
       }
     ]
   },
+  "testimonials": {
+    "title": "Patient Stories",
+    "subtitle": "Real cases. Real results. Anonymized for privacy.",
+    "disclaimer": "Results may vary. All cases anonymized per GDPR.",
+    "1": {
+      "condition": "Chronic fatigue + fibromyalgia",
+      "duration": "8 years, 11 specialists",
+      "result": "82% energy restoration",
+      "quote": "Every doctor said my tests were normal. Dr. Erkin was the first to explain WHY I felt broken despite normal labs. After 6 weeks, I woke up without pain for the first time in years."
+    },
+    "2": {
+      "condition": "Burnout + hormonal collapse",
+      "duration": "3 years, medication-resistant",
+      "result": "Full return to work",
+      "quote": "Two burnouts in three years. Antidepressants stopped working. The 6D assessment revealed HPA-axis dysfunction that no one had checked. Three months later, I'm back to running my company."
+    },
+    "3": {
+      "condition": "Undiagnosed autoimmune",
+      "duration": "5 years, 9 specialists",
+      "result": "78% symptom reduction",
+      "quote": "Rheumatologist said nothing. Neurologist said nothing. Gastroenterologist said nothing. Dr. Erkin connected dots no one else saw. Finally, I have a diagnosis that makes sense."
+    },
+    "4": {
+      "condition": "Post-COVID syndrome",
+      "duration": "18 months, no improvement",
+      "result": "85% recovery",
+      "quote": "Brain fog, fatigue, heart palpitations — doctors told me to wait it out. The 6D protocol addressed autonomic dysfunction directly. I got my brain back."
+    },
+    "5": {
+      "condition": "Chronic pain + depression",
+      "duration": "12 years, 15+ specialists",
+      "result": "70% pain reduction",
+      "quote": "I spent €40,000 on treatments that didn't work. €100 diagnostic showed what everyone missed: my pain wasn't psychological, it was neuroinflammation. Everything changed after that."
+    },
+    "6": {
+      "condition": "Thyroid + extreme fatigue",
+      "duration": "4 years, TSH always normal",
+      "result": "Energy fully restored",
+      "quote": "My TSH was perfect but I couldn't get out of bed. Dr. Erkin explained T4-to-T3 conversion at cellular level. No other doctor ever mentioned this. Now I understand my body."
+    },
+    "7": {
+      "condition": "Anxiety + GI dysfunction",
+      "duration": "6 years, treated as IBS",
+      "result": "90% symptom control",
+      "quote": "Six years of 'it's just stress' and 'eat more fiber.' The 6D approach found vagus nerve dysfunction. Not IBS. Not anxiety. A biological pattern that could be fixed."
+    },
+    "8": {
+      "condition": "Complex multi-system failure",
+      "duration": "7 years, gave up on medicine",
+      "result": "Life quality transformed",
+      "quote": "I stopped going to doctors — they made me feel crazy. Dr. Erkin was different. He listened, mapped everything, and showed me a path forward. For the first time, I have hope based on biology, not promises."
+    }
+  },
   "trust": {
     "title": "Why you can trust me",
     "credentialsTitle": "Qualifications & Licensing",
