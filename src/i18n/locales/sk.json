@@ -41,43 +41,43 @@
   "method6d": {
     "title": "Systém 6D Navigácie",
     "subtitle": "Šesť klinických vektorov koherencie pre komplexné komorbidity a závažné prípady",
-    "description": "Mapa, nie protokol. Systém diagnostického kartovanie a navigácie, ktorý buduje individuálny cestu obnovy koherencie pre každého pacienta. Každá dimenza (D) odpoveda na kľúčovú otázku o stave systému a identifikuje 'úzke hrdlo'.",
+    "description": "Mapa, nie protokol. Systém diagnostického kartovanie a navigácie, ktorý buduje individuálnu cestu obnovy koherencie pre každého pacienta. Každá dimenza (D) odpoveda na kľúčovú otázku o stave systému a identifikuje 'úzke hrdlo'.",
     "dimensions": [
       {
         "id": "D1",
         "name": "D1: Diagnóza",
         "subtitle": "Dôkazová Medicínska Diagnostika",
-        "description": "Dôkazová medicínska diagnostika (ICD, ICF, EBM). Vytváranie funkčnej mapy dysfunkcií a zdrojov systému, nad rámec jedinej diagnostickej nálepky. Základ pre personalizovanú cestu zotavenia."
+        "description": "Dôkazová medicínska diagnostika (ICD, ICF, EBM). Vytváranie funkčnej mapy dysfunkcií a zdrojov systému nad rámec jednej diagnostickej nálepky."
       },
       {
         "id": "D2",
         "name": "D2: Dysfunkcia",
         "subtitle": "Korekcia Vzorov",
-        "description": "Rozpoznanie a korekcia maladaptívnych vzorov, ktoré sa stali predvoleným nastavením systému a blokujú zotavenie. Dýchacie a pohybové vzory, myofasciálny release, posturálna korekcia. Nevyhnutné pri multi-systémovej dysfunkcii a komplexných bolestivých syndrómoch."
+        "description": "Rozpoznanie a korekcia maladaptívnych vzorov dýchania a pohybu, myofasciálny release, posturálna korekcia."
       },
       {
         "id": "D3",
         "name": "D3: Odpojenie",
         "subtitle": "Prepojenie Mozog-Telo",
-        "description": "Obnova spojenia mozog-telo a rozšírenie 'okna tolerancie' nervového systému. Vystúpenie z chronickej hyperaktivácie (úzkosť, panika) alebo hypoaktivácie (apatia, disociácia). Koherentné dýchanie, vagusová aktivácia, somatické ukotvenie."
+        "description": "Obnova spojenia mozog-telo a rozšírenie 'okna tolerancie' nervového systému. Vagusová aktivácia, somatické ukotvenie."
       },
       {
         "id": "D4",
         "name": "D4: Smer",
         "subtitle": "Biochemický Základ",
-        "description": "Vytváranie optimálneho vnútorného prostredia pre fungovanie nervového systému a regeneráciu tkanív prostredníctvom výživy, nutraceutík a chronobiológie. Personalizovaná protizápalová výživa, optimalizácia cirkadiánnych rytmov. Biochemická podpora pre zotavenie systému."
+        "description": "Vytváranie optimálneho vnútorného prostredia prostredníctvom výživy, nutraceutík a chronobiológie. Podpora pre zotavenie systému."
       },
       {
         "id": "D5",
         "name": "D5: Rozvoj",
         "subtitle": "Kognitívne Preprogramovanie",
-        "description": "Rozpoznanie a zmena maladaptívnych kognitívno-behaviorálnych programov, ktoré udržiavajú začarovaný kruh bolesti, úzkosti a vyhýbania. Pain Neuroscience Education, ACT, kognitívna terapia. Prerušenie neurónových obvodov katastrofizácie."
+        "description": "Zmena maladaptívnych kognitívno-behaviorálnych programov, ktoré udržiavajú začarovaný kruh bolesti a úzkosti."
       },
       {
         "id": "D6",
         "name": "D6: Hĺbka",
         "subtitle": "Integrácia do Života",
-        "description": "Prechod od 'liečim sa' k 'toto je teraz môj spôsob života'. Integrácia praktik do identity, vytváranie podporného prostredia a sociálnych väzieb. Rituály, mindful movement, existenciálna prehodnotenie. Prevencia relapsov a dlhodobá stabilita."
+        "description": "Prechod od 'liečim sa' k novému spôsobu života. Prevencia relapsov a dlhodobá stabilita systému."
       }
     ],
     "scientificBasis": {
@@ -92,6 +92,59 @@
           "url": "https://www.academia.edu/161272311/Medicine_of_Coherence_A_Regulation_Oriented_Framework_for_Chronic_Pain_and_Functional_Disorders"
         }
       ]
+    }
+  },
+  "testimonials": {
+    "title": "Príbehy pacientov",
+    "subtitle": "Skutočné prípady. Skutočné výsledky. Anonymizované pre ochranu súkromia.",
+    "disclaimer": "Výsledky sa môžu líšiť. Všetky prípady sú anonymizované v súlade s GDPR.",
+    "1": {
+      "condition": "Chronická únava + fibromyalgia",
+      "duration": "8 rokov, 11 špecialistov",
+      "result": "82% obnova energie",
+      "quote": "Každý lekár tvrdil, že moje testy sú v norme. Dr. Erkin bol prvý, kto mi vysvetlil, PREČO sa cítim zle napriek normálnym výsledkom. Po 6 týždňoch som sa prvýkrát po rokoch zobudila bez bolesti."
+    },
+    "2": {
+      "condition": "Syndróm vyhorenia + hormonálny kolaps",
+      "duration": "3 roky, rezistentné na liečbu",
+      "result": "Úplný návrat do práce",
+      "quote": "Dve vyhorenia za tri roky. Antidepresíva prestali fungovať. 6D diagnostika odhalila dysfunkciu osi HPA, ktorú nikto predtým nekontroloval. O tri mesiace neskôr som späť vo vedení svojej firmy."
+    },
+    "3": {
+      "condition": "Nediagnostikované autoimunitné ochorenie",
+      "duration": "5 rokov, 9 špecialistov",
+      "result": "78% redukcia symptómov",
+      "quote": "Reumatológ, neurológ aj gastroenterológ nič nezistili. Dr. Erkin pospájal súvislosti, ktoré nikto iný nevidel. Konečne mám diagnózu, ktorá dáva zmysel."
+    },
+    "4": {
+      "condition": "Post-COVID syndróm",
+      "duration": "18 mesiacov bez zlepšenia",
+      "result": "85% zotavenie",
+      "quote": "Mozgová hmla, únava, búšenie srdca. 6D protokol sa zameral priamo na autonómnu dysfunkciu. Vrátila sa mi jasná myseľ."
+    },
+    "5": {
+      "condition": "Chronická bolesť + depresia",
+      "duration": "12 rokov, 15+ špecialistov",
+      "result": "70% redukcia bolesti",
+      "quote": "Minula som 40 000 € na liečbu, ktorá nefungovala. Diagnostika za 100 € ukázala to, čo všetci prehliadli: moja bolesť nebola psychologická, ale išlo o neurozápal. Všetko sa potom zmenilo."
+    },
+    "6": {
+      "condition": "Štítna žľaza + extrémna únava",
+      "duration": "4 roky, TSH vždy v norme",
+      "result": "Energia plne obnovená",
+      "quote": "Moje TSH bolo perfektné, ale nedokázala som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiadny iný lekár to nespomenul. Teraz rozumiem svojmu telu."
+    },
+    "7": {
+      "condition": "Úzkosť + GI dysfunkcia",
+      "duration": "6 rokov, liečené ako IBS",
+      "result": "90% kontrola symptómov",
+      "quote": "Šesť rokov mi hovorili „je to len stres“. 6D prístup našiel dysfunkciu blúdivého nervu. Nebolo to IBS ani úzkosť. Bol to biologický vzorec, ktorý sa dal opraviť."
+    },
+    "8": {
+      "condition": "Komplexné multisystémové zlyhanie",
+      "duration": "7 rokov, rezignácia na medicínu",
+      "result": "Transformovaná kvalita života",
+      "quote": "Prestala som chodiť k lekárom — mala som pocit, že si vymýšľam. Dr. Erkin bol iný. Počúval, mapoval a ukázal mi cestu vpred. Prvýkrát mám nádej založenú na biológii."
     }
   },
   "globalExperience": {
@@ -179,31 +232,6 @@
     ],
     "note": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom (dostupné v celej Európe). Platba pred konzultáciou. GDPR compliant."
   },
-  "successStories": {
-    "title": "Klinické Výsledky",
-    "subtitle": "Anonymizované prípady pacientov so závažnými komorbiditami a komplexnými diagnózami",
-    "disclaimer": "Všetky prípady sú anonymizované v súlade s GDPR. Výsledky sa môžu líšiť podľa individuálnej situácie.",
-    "stories": [
-      {
-        "condition": "Viacnásobné komorbidity + závažná bolesť",
-        "history": "12 rokov, 15+ špecialistov, konfliktné diagnózy",
-        "approach": "6D systémová analýza pre komorbidity, korekcia vzorov, biochemická podpora",
-        "result": "78% redukcia bolesti po 8 týždňoch, obnova spánku a energie"
-      },
-      {
-        "condition": "Závažná multi-systémová dysfunkcia",
-        "history": "Nejasná diagnóza, každý špecialista lieči oddelene",
-        "approach": "Integratívny 6D pohľad, koherenčná terapia pre komplexné komorbidity",
-        "result": "85% zlepšenie kvality života, identifikácia systémových príčin"
-      },
-      {
-        "condition": "Komplexná psychosomatická komorbidita",
-        "history": "Rezistentný prípad — 7 rokov bez efektívneho riešenia",
-        "approach": "Brain-body reconnection, vagusová terapia, somatická práca",
-        "result": "72% redukcia somatických symptómov, obnova autonómie"
-      }
-    ]
-  },
   "trust": {
     "title": "Prečo mi môžete dôverovať",
     "credentialsTitle": "Kvalifikácia a Licencie",
@@ -213,26 +241,14 @@
       "Špecialista vnútorného lekárstva (2008) — Španielsko",
       "MBA (2014) — Univerzita Groningen, Holandsko",
       "EU Medical License — Slovensko, nostrifikované (2021)",
-      "30+ rokov klinickej praxe (Intenzívna medicína, Rehabilitácia, Liečba bolesti)"
+      "30+ rokov klinickej praxe"
     ],
     "gdpr": "GDPR Compliant — Ochrana osobných údajov v súlade s európskymi predpismi",
     "stats": [
-      {
-        "number": "5000+",
-        "label": "Pacientov s komplexnými prípadmi"
-      },
-      {
-        "number": "30+",
-        "label": "Rokov praxe"
-      },
-      {
-        "number": "70-85%",
-        "label": "Redukcia symptómov"
-      },
-      {
-        "number": "15",
-        "label": "Krajín"
-      }
+      { "number": "5000+", "label": "Pacientov s komplexnými prípadmi" },
+      { "number": "30+", "label": "Rokov praxe" },
+      { "number": "70-85%", "label": "Redukcia symptómov" },
+      { "number": "15", "label": "Krajín" }
     ]
   },
   "faq": {
@@ -240,19 +256,11 @@
     "items": [
       {
         "question": "Pre koho je Medicína Koherencie určená?",
-        "answer": "Pre pacientov so závažnými komorbiditami a komplexnými prípadmi, kde štandardná diagnostika ukazuje 'normálne' výsledky, ale symptómy pretrvávajú. Špeciálne pre multi-systémovú dysfunkciu, rezistentné stavy a prípady, ktoré nezapadajú do štandardných diagnostických kategórií. Online konzultácie dostupné v celej Európe."
+        "answer": "Pre pacientov so závažnými komorbiditami a komplexnými prípadmi, kde štandardná diagnostika ukazuje 'normálne' výsledky. Online konzultácie dostupné v celej Európe."
       },
       {
         "question": "Aké výsledky môžem očakávať?",
-        "answer": "Naši pacienti so závažnými, dlhodobými komorbiditami dosahujú 70-85% redukciu symptómov. Výsledky závisia od komplexity prípadu a vašej angažovanosti v procese."
-      },
-      {
-        "question": "Ako funguje 6D diagnostika?",
-        "answer": "6D diagnostika naviguje šesťoma klinickými vektormi vášho zdravia: Diagnóza, Dysfunkcia, Odpojenie, Smer, Rozvoj a Hĺbka. Vytvorí funkčnú mapu vášho systému, identifikuje kľúčové 'úzke hrdlo' a buduje personalizovanú cestu zotavenia na základe dôkazovej medicíny (ICD, ICF, EBM)."
-      },
-      {
-        "question": "Kde prebiehajú konzultácie?",
-        "answer": "Všetky konzultácie prebiehajú online cez zabezpečený Zoom. To nám umožňuje pracovať s pacientmi z celého Slovenska a Európy bez nutnosti cestovania."
+        "answer": "Naši pacienti dosahujú 70-85% redukciu symptómov. Výsledky závisia od komplexity prípadu a vašej angažovanosti."
       }
     ]
   },
