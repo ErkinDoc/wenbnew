@@ -1,83 +1,83 @@
 {
   "nav": {
-    "method": "Метод",
-    "services": "Услуги",
+    "method": "Method",
+    "services": "Services",
     "faq": "FAQ",
-    "contact": "Контакт"
+    "contact": "Contact"
   },
   "hero": {
-    "title": "Др. Эркинбек Джаманбаев",
+    "title": "Dr. Erkinbek Dzhamanbaev",
     "credentials": "MD, PhD, MBA",
-    "specialty": "Эксперт по комплексным случаям",
-    "headline": "За пределами стандартной диагностики",
-    "subheadline": "Онлайн консультации по всей Европе. 30+ лет клинической практики.",
-    "ctaAssessment": "Начать 6D диагностику (Онлайн)",
-    "ctaApply": "Подать заявку",
-    "badge1": "EU Лицензия",
-    "badge2": "30+ лет практики",
-    "badge3": "5000+ пациентов",
-    "badge4": "15 стран"
+    "specialty": "Complex Case Expert",
+    "headline": "Beyond Standard Diagnostics",
+    "subheadline": "Online consultations across Europe. 30+ years of clinical practice.",
+    "ctaAssessment": "Start 6D Assessment (Online)",
+    "ctaApply": "Apply",
+    "badge1": "EU License",
+    "badge2": "30+ Years",
+    "badge3": "5000+ Patients",
+    "badge4": "15 Countries"
   },
   "problem": {
-    "title": "Эти ситуации вам знакомы?",
-    "problemsTitle": "Когда медицина достигает пределов",
-    "solutionsTitle": "Медицина Когерентности",
+    "title": "Do these situations sound familiar?",
+    "problemsTitle": "When Medicine Reaches Its Limits",
+    "solutionsTitle": "Medicine of Coherence",
     "problems": [
-      "Сложные случаи с 'нормальными' анализами",
-      "Множественные симптомы без диагноза",
-      "Хроническая боль годами"
+      "Complex cases with 'normal' test results",
+      "Multiple symptoms without diagnosis",
+      "Chronic pain for years"
     ],
     "solutions": [
-      "Системный 6D анализ",
-      "Поиск причин, а не маскировка боли",
-      "Индивидуальный план восстановления"
+      "Systematic 6D analysis",
+      "Finding causes, not masking pain",
+      "Individual recovery plan"
     ],
-    "transition": "Восстанавливаем когерентность вашего тела."
+    "transition": "Restoring coherence to your body."
   },
   "method6d": {
-    "title": "Система 6D Навигации",
-    "subtitle": "Шесть векторов здоровья",
-    "description": "Индивидуальный маршрут восстановления для каждого пациента.",
+    "title": "6D Navigation System",
+    "subtitle": "Six Vectors of Health",
+    "description": "Individual recovery roadmap for each patient.",
     "dimensions": [
       {
         "id": "D1",
-        "name": "D1: Диагностика",
-        "subtitle": "EBM анализ",
-        "description": "Карта дисфункций системы."
+        "name": "D1: Diagnostics",
+        "subtitle": "EBM Analysis",
+        "description": "Mapping system dysfunctions."
       },
       {
         "id": "D2",
-        "name": "D2: Дисфункция",
-        "subtitle": "Паттерны",
-        "description": "Коррекция движений и дыхания."
+        "name": "D2: Dysfunction",
+        "subtitle": "Patterns",
+        "description": "Movement and breathing correction."
       },
       {
         "id": "D3",
-        "name": "D3: Отключение",
-        "subtitle": "Связь Мозг-Тело",
-        "description": "Активация блуждающего нерва."
+        "name": "D3: Disconnection",
+        "subtitle": "Brain-Body Link",
+        "description": "Vagus nerve activation."
       },
       {
         "id": "D4",
-        "name": "D4: Направление",
-        "subtitle": "Биохимия",
-        "description": "Питание и внутренняя среда."
+        "name": "D4: Direction",
+        "subtitle": "Biochemistry",
+        "description": "Nutrition and internal environment."
       },
       {
         "id": "D5",
-        "name": "D5: Развитие",
-        "subtitle": "Когниции",
-        "description": "Разрыв цикла боли."
+        "name": "D5: Development",
+        "subtitle": "Cognition",
+        "description": "Breaking the pain cycle."
       },
       {
         "id": "D6",
-        "name": "D6: Глубина",
-        "subtitle": "Интеграция",
-        "description": "Новый образ жизни."
+        "name": "D6: Depth",
+        "subtitle": "Integration",
+        "description": "New lifestyle."
       }
     ],
     "scientificBasis": {
-      "label": "Научная база",
+      "label": "Scientific Basis",
       "publications": [
         {
           "title": "6D Navigation Model",
@@ -87,86 +87,74 @@
     }
   },
   "testimonials": {
-    "title": "Отзывы",
-    "subtitle": "Реальные результаты",
-    "disclaimer": "GDPR compliant",
+    "title": "Patient Stories",
+    "subtitle": "Real Results",
+    "disclaimer": "GDPR compliant. All cases anonymized.",
     "1": {
-      "condition": "Усталость",
-      "duration": "8 лет",
-      "result": "82% энергии",
-      "quote": "Я снова живу."
+      "condition": "Chronic fatigue + fibromyalgia",
+      "duration": "8 years, 12 specialists",
+      "result": "Full functional recovery",
+      "quote": "Twelve doctors in eight years. Each one treated a piece. None saw the pattern. Dr. Erkin found HPA-axis exhaustion in the first session. Six months later, I'm back to living."
     },
     "2": {
-      "condition": "Боль",
-      "duration": "12 лет",
-      "result": "70% меньше боли",
-      "quote": "Это работает."
+      "condition": "Medication-resistant burnout",
+      "duration": "3 years, antidepressants ineffective",
+      "result": "Return to work",
+      "quote": "Two burnouts. Antidepressants stopped working. The 6D assessment revealed what no one checked — cellular energy collapse. Three months later, I'm running my company again."
     },
     "3": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
+      "condition": "Undiagnosed autoimmune",
+      "duration": "5 years, 9 specialists",
+      "result": "78% symptom reduction",
+      "quote": "Rheumatologist — nothing. Neurologist — nothing. Gastroenterologist — nothing. Dr. Erkin connected dots no one else saw. Finally, a diagnosis that makes sense."
     },
     "4": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
+      "condition": "Post-COVID syndrome",
+      "duration": "18 months, no improvement",
+      "result": "85% recovery",
+      "quote": "Brain fog, fatigue, heart palpitations — doctors told me to wait. The 6D protocol addressed autonomic dysfunction directly. I got my brain back."
     },
     "5": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
+      "condition": "Chronic pain + depression",
+      "duration": "12 years, 15+ specialists",
+      "result": "70% pain reduction",
+      "quote": "I spent €40,000 on treatments that didn't work. €100 diagnostic showed what everyone missed: my pain wasn't psychological — it was neuroinflammation."
     },
     "6": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
-    },
-    "7": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
-    },
-    "8": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
+      "condition": "Thyroid dysfunction + fatigue",
+      "duration": "4 years, TSH always normal",
+      "result": "Energy restored",
+      "quote": "TSH perfect. Couldn't get out of bed. Dr. Erkin explained T4-to-T3 conversion at cellular level. No other doctor mentioned this. Now I understand my body."
     }
   },
   "globalExperience": {
-    "title": "Опыт",
-    "subtitle": "Международная практика",
+    "title": "Experience",
+    "subtitle": "International Practice",
     "locations": [],
     "memberships": [],
     "certifications": []
   },
   "services": {
-    "title": "Услуги",
-    "subtitle": "Программы",
+    "title": "Services",
+    "subtitle": "Programs",
     "packages": [
       {
-        "name": "6D Диагностика",
-        "subtitle": "60 минут",
+        "name": "6D Diagnostics",
+        "subtitle": "60 minutes",
         "price": "€100",
         "features": [
-          "Анализ",
-          "План"
+          "Analysis",
+          "Plan"
         ],
-        "cta": "Записаться",
+        "cta": "Book Now",
         "formUrl": "https://forms.gle/Gb6nj1SURsMk6G9c7"
       }
     ],
-    "note": "Zoom консультации."
+    "note": "Zoom consultations."
   },
   "trust": {
-    "title": "Доверие",
-    "credentialsTitle": "Квалификация",
+    "title": "Trust",
+    "credentialsTitle": "Qualifications",
     "credentials": [
       "MUDr., PhD, MBA"
     ],
@@ -178,16 +166,16 @@
     "items": []
   },
   "contact": {
-    "title": "Контакт",
-    "subtitle": "На связи",
+    "title": "Contact",
+    "subtitle": "Get in Touch",
     "email": "Email",
     "whatsapp": "WhatsApp",
-    "cta": "Написать нам"
+    "cta": "Contact Us"
   },
   "footer": {
-    "rights": "Все права защищены.",
-    "privacy": "Приватность",
-    "terms": "Условия"
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
   },
   "successStories": {
     "title": "Clinical Outcomes",
