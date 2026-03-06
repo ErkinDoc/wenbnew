@@ -21,26 +21,26 @@ const SchemaOrg: React.FC<Props> = ({ lang }) => {
   const content = {
     en: {
       name: "Dr. Erkinbek Dzhamanbaev, PhD, MBA",
-      desc: "Expert in Integrative Medicine and 6D Diagnostics for complex chronic conditions. 30+ years of clinical practice. EU License.",
+      desc: "Expert in Integrative Medicine and 6D Diagnostics. Consultations at Poliklinika Piešťany (Rekreačná 2).",
       specialties: ["Integrative Medicine", "Pain Management", "Chronic Fatigue Specialist"],
       serviceName: "6D Diagnostic Navigation",
-      serviceDesc: "60-minute online diagnostic analysis for complex chronic conditions.",
+      serviceDesc: "60-minute comprehensive health analysis across six dimensions.",
       catalogName: "Medical Consultations",
     },
     ru: {
       name: "Д-р Эркинбек Джаманбаев, PhD, MBA",
-      desc: "Специалист по интегративной медицине и 6D-диагностике сложных хронических состояний. Более 30 лет клинической практики. Лицензия ЕС.",
+      desc: "Специалист по интегративной медицине и 6D-диагностике. Прием в Поликлинике Пьештяны (Rekreačná 2).",
       specialties: ["Интегративная медицина", "Лечение боли", "Специалист по хронической усталости"],
       serviceName: "6D-диагностическая навигация",
-      serviceDesc: "60-минутный онлайн-диагностический анализ сложных хронических состояний.",
+      serviceDesc: "60-минутный комплексный анализ здоровья в шести измерениях.",
       catalogName: "Медицинские консультации",
     },
     sk: {
       name: "MUDr. Erkinbek Džamanbajev, PhD, MBA",
-      desc: "Odborník na integratívnu medicínu a 6D diagnostiku pre zložité chronické stavy. Viac ako 30 rokov klinickej praxe. EU licencia.",
+      desc: "Odborník na integratívnu medicínu a 6D diagnostiku. Konzultácie v Poliklinike Piešťany (Rekreačná 2).",
       specialties: ["Integratívna medicína", "Liečba bolesti", "Špecialista na chronickú únavu"],
       serviceName: "6D diagnostická navigácia",
-      serviceDesc: "60-minútová online diagnostická analýza pre zložité chronické stavy.",
+      serviceDesc: "60-minútová komplexná analýza zdravia v šiestich dimenziách.",
       catalogName: "Lekárske konzultácie",
     },
   };
@@ -56,6 +56,21 @@ const SchemaOrg: React.FC<Props> = ({ lang }) => {
     "addressRegion": "Trnavský kraj",
   };
 
+  const geoCoordinates = {
+    "@type": "GeoCoordinates",
+    "latitude": 48.574,
+    "longitude": 17.814
+  };
+
+  const openingHours = [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "16:00"
+    }
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -70,14 +85,16 @@ const SchemaOrg: React.FC<Props> = ({ lang }) => {
         "priceRange": "€€",
         "sameAs": socialLinks,
         "address": commonAddress,
+        "geo": geoCoordinates,
+        "openingHoursSpecification": openingHours,
         "areaServed": ["Slovakia", "European Union"],
         "knowsLanguage": ["sk", "ru", "en"],
         "medicalSpecialty": c.specialties,
         "isAcceptingNewPatients": true,
         "hasCredential": [
           { "@type": "EducationalOccupationalCredential", "name": "PhD" },
-          { "@type": "EducationalOccupationalCredential", "name": "MBA" },
-        ],
+          { "@type": "EducationalOccupationalCredential", "name": "MBA" }
+        ]
       },
       {
         "@type": "MedicalBusiness",
@@ -89,11 +106,12 @@ const SchemaOrg: React.FC<Props> = ({ lang }) => {
         "image": `${baseUrl}/photo.jpg`,
         "description": c.desc,
         "address": commonAddress,
-        "areaServed": ["Slovakia", "European Union"],
+        "geo": geoCoordinates,
         "priceRange": "€€",
         "sameAs": socialLinks,
         "currenciesAccepted": "EUR",
         "paymentAccepted": "Credit Card, Bank Transfer, Online Payment",
+        "openingHoursSpecification": openingHours,
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": c.catalogName,
@@ -103,16 +121,16 @@ const SchemaOrg: React.FC<Props> = ({ lang }) => {
               "itemOffered": {
                 "@type": "MedicalService",
                 "name": c.serviceName,
-                "description": c.serviceDesc,
+                "description": c.serviceDesc
               },
               "price": 100,
               "priceCurrency": "EUR",
-              "availability": "https://schema.org/InStock",
-            },
-          ],
-        },
-      },
-    ],
+              "availability": "https://schema.org/InStock"
+            }
+          ]
+        }
+      }
+    ]
   };
 
   return (
