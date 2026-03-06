@@ -5,7 +5,7 @@ import SchemaOrg from './components/SchemaOrg';
 function App() {
   return (
     <>
-      {/* This adds the Piešťany address to Google's search robot */}
+      {/* Это добавит ваш адрес в Пьештянах для робота Google */}
       <SchemaOrg lang="sk" />
 
       <div className="App">
