@@ -3,7 +3,7 @@ import { Check, Star, FileText, ExternalLink } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export function Services() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const packages = t('services.packages', { returnObjects: true }) as Array<{
     name: string;
@@ -16,14 +16,17 @@ export function Services() {
     formUrl: string;
   }>;
 
-  // Функция для автоматического выбора ссылки в зависимости от языка интерфейса
-  const getCorrectFormUrl = (originalUrl: string) => {
-    const currentLang = i18n.language;
-    // Если выбран словацкий (sk) или английский (en), используем европейскую форму
-    if (currentLang === 'sk' || currentLang === 'en') {
-      return 'https://forms.gle/13N35XNrZKdvnJJPA';
+  // Экспертный метод определения URL: проверяем путь в браузере напрямую
+  const getCorrectFormUrl = () => {
+    if (typeof window !== 'undefined') {
+      const path = window.location.pathname;
+      const isEuropean = path.includes('/sk') || path.includes('/en') || document.documentElement.lang === 'sk' || document.documentElement.lang === 'en';
+      
+      if (isEuropean) {
+        return 'https://forms.gle/13N35XNrZKdvnJJPA';
+      }
     }
-    // Для русского (ru) и всех остальных случаев используем русскую форму
+    // Если мы на русском или путь не определен — отдаем русскую форму
     return 'https://forms.gle/Gb6nj1SURsMk6G9c7';
   };
 
@@ -31,7 +34,6 @@ export function Services() {
     <section id="services" className="w-full py-24 lg:py-32 bg-white">
       <div className="section-container">
         <div className="section-inner">
-          {/* Header */}
           <motion.div 
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
@@ -50,11 +52,10 @@ export function Services() {
             </p>
           </motion.div>
 
-          {/* Pricing Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {packages.map((pkg, index) => (
               <motion.div
-                key={pkg.name}
+                key={index}
                 className={`relative bg-white rounded-2xl p-8 border transition-all duration-300 ${
                   pkg.badge 
                     ? 'border-[#68A07C] shadow-lg ring-1 ring-[#68A07C]/20' 
@@ -65,65 +66,45 @@ export function Services() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                {/* Badge */}
                 {pkg.badge && (
-                  <div className="absolute -top-3 left-8 bg-[#68A07C] text-white 
-                                  px-4 py-1 rounded-full text-[11px] font-sans font-semibold 
-                                  flex items-center gap-1.5">
+                  <div className="absolute -top-3 left-8 bg-[#68A07C] text-white px-4 py-1 rounded-full text-[11px] font-sans font-semibold flex items-center gap-1.5">
                     <Star className="w-3 h-3 fill-current" />
                     {pkg.badge}
                   </div>
                 )}
 
-                {/* Package Name */}
                 <h3 className="text-[22px] lg:text-[26px] font-serif font-bold text-[#1A365D] mb-1">
                   {pkg.name}
                 </h3>
                 
-                {/* Subtitle */}
                 <p className="text-[14px] text-[#718096] font-sans mb-4">
                   {pkg.subtitle}
                 </p>
 
-                {/* Price */}
                 <div className="mb-6 pb-6 border-b border-[#E2E8F0]">
                   <div className="flex items-baseline gap-2">
                     <span className="text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D]">
                       {pkg.price}
                     </span>
                   </div>
-                  {pkg.includes && (
-                    <p className="text-[13px] text-[#68A07C] mt-1 font-sans flex items-center gap-1">
-                      <FileText className="w-3.5 h-3.5" />
-                      {pkg.includes}
-                    </p>
-                  )}
                 </div>
 
-                {/* Features */}
                 <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, featureIndex) => (
-                    <li 
-                      key={featureIndex}
-                      className="flex items-start gap-3 text-[14px] leading-[1.7] text-[#4A5568] font-sans"
-                    >
+                  {pkg.features.map((feature, fIndex) => (
+                    <li key={fIndex} className="flex items-start gap-3 text-[14px] leading-[1.7] text-[#4A5568] font-sans">
                       <Check className="w-5 h-5 text-[#68A07C] mt-0.5 flex-shrink-0" />
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
 
-                {/* CTA Button */}
                 <a
-                  href={getCorrectFormUrl(pkg.formUrl)}
+                  href={getCorrectFormUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-full py-4 rounded-xl font-sans font-semibold text-[14px] 
-                              flex items-center justify-center gap-2 transition-all ${
-                    pkg.badge
-                      ? 'bg-[#68A07C] text-white hover:bg-[#4A7A5E]'
-                      : 'bg-[#1A365D] text-white hover:bg-[#2C5282]'
-                    }`}
+                  className={`w-full py-4 rounded-xl font-sans font-semibold text-[14px] flex items-center justify-center gap-2 transition-all ${
+                    pkg.badge ? 'bg-[#68A07C] text-white hover:bg-[#4A7A5E]' : 'bg-[#1A365D] text-white hover:bg-[#2C5282]'
+                  }`}
                 >
                   {pkg.cta}
                   <ExternalLink className="w-4 h-4" />
@@ -132,14 +113,7 @@ export function Services() {
             ))}
           </div>
 
-          {/* Note */}
-          <motion.p 
-            className="text-center text-[13px] text-[#718096] mt-10 font-sans"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
+          <motion.p className="text-center text-[13px] text-[#718096] mt-10 font-sans">
             {t('services.note')}
           </motion.p>
         </div>
