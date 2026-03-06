@@ -16,7 +16,7 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 
-// Определяем тип Lang (если он не импортируется из SchemaOrg, добавляем здесь)
+// Тип языка — нужен для SchemaOrg
 type Lang = 'en' | 'ru' | 'sk';
 
 function App() {
@@ -45,20 +45,21 @@ function App() {
     });
   };
 
-  // Фикс TS2322: приводим string к типу Lang
+  // Фикс ошибки TS2322
   const currentLang = i18n.language as Lang;
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Данные для Google об адресе в Пьештянах */}
+      {/* Structured Data для Google */}
       <SchemaOrg lang={currentLang} />
 
-      {/* Navigation */}
+      {/* Навигация */}
       <Navigation onAssessmentClick={handleAssessmentClick} />
 
-      {/* Main Content */}
+      {/* Основной контент */}
       <main>
-        <HeroSection />
+        {/* Передаём функцию в HeroSection и FinalCTA — там кнопки "Objednať sa" */}
+        <HeroSection onAssessmentClick={handleAssessmentClick} />
         <Method6D />
         <GlobalExperience />
         <Services />
@@ -66,7 +67,7 @@ function App() {
         <Testimonials />
         <TrustAuthority />
         <FAQ />
-        <FinalCTA />
+        <FinalCTA onAssessmentClick={handleAssessmentClick} />
       </main>
 
       <Footer />
