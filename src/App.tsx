@@ -44,13 +44,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Данные для Google об адресе в Пьештянах */}
       <SchemaOrg lang={i18n.language} />
-
-      {/* Navigation */}
       <Navigation onAssessmentClick={handleAssessmentClick} />
-      
-      {/* Main Content */}
       <main>
         <HeroSection />
         <Method6D />
@@ -62,7 +57,6 @@ function App() {
         <FAQ />
         <FinalCTA />
       </main>
-      
       <Footer />
       <WhatsAppButton />
       <Toaster position="top-center" richColors />
