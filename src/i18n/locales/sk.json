@@ -1,83 +1,83 @@
 {
   "nav": {
-    "method": "Метод",
-    "services": "Услуги",
+    "method": "Metóda",
+    "services": "Služby",
     "faq": "FAQ",
-    "contact": "Контакт"
+    "contact": "Kontakt"
   },
   "hero": {
-    "title": "Др. Эркинбек Джаманбаев",
+    "title": "Dr. Erkinbek Džamanbajev",
     "credentials": "MD, PhD, MBA",
-    "specialty": "Эксперт по комплексным случаям",
-    "headline": "За пределами стандартной диагностики",
-    "subheadline": "Онлайн консультации по всей Европе. 30+ лет клинической практики.",
-    "ctaAssessment": "Начать 6D диагностику (Онлайн)",
-    "ctaApply": "Подать заявку",
-    "badge1": "EU Лицензия",
-    "badge2": "30+ лет практики",
-    "badge3": "5000+ пациентов",
-    "badge4": "15 стран"
+    "specialty": "Expert na komplexné prípady",
+    "headline": "Za hranicami štandardnej diagnostiky",
+    "subheadline": "Online konzultácie v celej Európe. 30+ rokov klinickej praxe.",
+    "ctaAssessment": "Začať 6D diagnostiku (Online)",
+    "ctaApply": "Podať žiadosť",
+    "badge1": "EU Licencia",
+    "badge2": "30+ rokov",
+    "badge3": "5000+ pacientov",
+    "badge4": "15 krajín"
   },
   "problem": {
-    "title": "Эти ситуации вам знакомы?",
-    "problemsTitle": "Когда медицина достигает пределов",
-    "solutionsTitle": "Медицина Когерентности",
+    "title": "Sú vám tieto situácie známe?",
+    "problemsTitle": "Keď medicína naráža na limity",
+    "solutionsTitle": "Medicína Koherencie",
     "problems": [
-      "Сложные случаи с 'нормальными' анализами",
-      "Множественные симптомы без диагноза",
-      "Хроническая боль годами"
+      "Komplexné prípady s 'normálnymi' výsledkami",
+      "Viacero symptómov bez diagnózy",
+      "Chronická bolesť roky"
     ],
     "solutions": [
-      "Системный 6D анализ",
-      "Поиск причин, а не маскировка боли",
-      "Индивидуальный план восстановления"
+      "Systematická 6D analýza",
+      "Hľadanie príčin, nie maskovanie bolesti",
+      "Individuálny plán obnovy"
     ],
-    "transition": "Восстанавливаем когерентность вашего тела."
+    "transition": "Obnovujeme koherenciu vášho tela."
   },
   "method6d": {
-    "title": "Система 6D Навигации",
-    "subtitle": "Шесть векторов здоровья",
-    "description": "Индивидуальный маршрут восстановления для каждого пациента.",
+    "title": "6D Navigačný systém",
+    "subtitle": "Šesť vektorov zdravia",
+    "description": "Individuálna cesta obnovy pre každého pacienta.",
     "dimensions": [
       {
         "id": "D1",
-        "name": "D1: Диагностика",
-        "subtitle": "EBM анализ",
-        "description": "Карта дисфункций системы."
+        "name": "D1: Diagnostika",
+        "subtitle": "EBM analýza",
+        "description": "Mapa dysfunkcií systému."
       },
       {
         "id": "D2",
-        "name": "D2: Дисфункция",
-        "subtitle": "Паттерны",
-        "description": "Коррекция движений и дыхания."
+        "name": "D2: Dysfunkcia",
+        "subtitle": "Vzorce",
+        "description": "Korekcia pohybu a dýchania."
       },
       {
         "id": "D3",
-        "name": "D3: Отключение",
-        "subtitle": "Связь Мозг-Тело",
-        "description": "Активация блуждающего нерва."
+        "name": "D3: Odpojenie",
+        "subtitle": "Spojenie mozog-telo",
+        "description": "Aktivácia blúdivého nervu."
       },
       {
         "id": "D4",
-        "name": "D4: Направление",
-        "subtitle": "Биохимия",
-        "description": "Питание и внутренняя среда."
+        "name": "D4: Smer",
+        "subtitle": "Biochémia",
+        "description": "Výživa a vnútorné prostredie."
       },
       {
         "id": "D5",
-        "name": "D5: Развитие",
-        "subtitle": "Когниции",
-        "description": "Разрыв цикла боли."
+        "name": "D5: Rozvoj",
+        "subtitle": "Kognícia",
+        "description": "Prerušenie cyklu bolesti."
       },
       {
         "id": "D6",
-        "name": "D6: Глубина",
-        "subtitle": "Интеграция",
-        "description": "Новый образ жизни."
+        "name": "D6: Hĺbka",
+        "subtitle": "Integrácia",
+        "description": "Nový životný štýl."
       }
     ],
     "scientificBasis": {
-      "label": "Научная база",
+      "label": "Vedecký základ",
       "publications": [
         {
           "title": "6D Navigation Model",
@@ -87,86 +87,74 @@
     }
   },
   "testimonials": {
-    "title": "Отзывы",
-    "subtitle": "Реальные результаты",
-    "disclaimer": "GDPR compliant",
+    "title": "Príbehy pacientov",
+    "subtitle": "Skutočné výsledky",
+    "disclaimer": "GDPR compliant. Všetky prípady anonymizované.",
     "1": {
-      "condition": "Усталость",
-      "duration": "8 лет",
-      "result": "82% энергии",
-      "quote": "Я снова живу."
+      "condition": "Chronická únava + fibromyalgia",
+      "duration": "8 rokov, 12 špecialistov",
+      "result": "Plná funkčná obnova",
+      "quote": "Dvanásť lekárov za osem rokov. Každý liečil svoj kúsok. Nikto nevidel vzor. Dr. Erkin našiel vyčerpanie HPA-osi na prvej konzultácii. O šesť mesiacov neskôr žijem normálne."
     },
     "2": {
-      "condition": "Боль",
-      "duration": "12 лет",
-      "result": "70% меньше боли",
-      "quote": "Это работает."
+      "condition": "Vyhorenie rezistentné na lieky",
+      "duration": "3 roky, antidepresíva neúčinné",
+      "result": "Návrat do práce",
+      "quote": "Dva burnouty. Antidepresíva prestali fungovať. 6D diagnostika odhalila kolaps bunkovej energie. O tri mesiace riadim svoju firmu."
     },
     "3": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
+      "condition": "Nediagnostikované autoimunitné",
+      "duration": "5 rokov, 9 špecialistov",
+      "result": "78% redukcia symptómov",
+      "quote": "Reumatológ — nič. Neurológ — nič. Gastroenterológ — nič. Dr. Erkin spojil body, ktoré nikto iný nevidel. Konečne diagnóza, ktorá dáva zmysel."
     },
     "4": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
+      "condition": "Post-COVID syndróm",
+      "duration": "18 mesiacov bez zlepšenia",
+      "result": "85% zotavenie",
+      "quote": "Mozgová hmla, únava, palpitácie — lekári mi povedali čakať. 6D protokol priamo riešil autonómnu dysfunkciu. Dostal som späť svoju hlavu."
     },
     "5": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
+      "condition": "Chronická bolesť + depresia",
+      "duration": "12 rokov, 15+ špecialistov",
+      "result": "70% redukcia bolesti",
+      "quote": "Minul som 40 000 € na liečby, ktoré nefungovali. €100 diagnostika ukázala, čo všetci prehliadli: moja bolesť nebola psychická — bola to neuroinflamácia."
     },
     "6": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
-    },
-    "7": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
-    },
-    "8": {
-      "condition": "...",
-      "duration": "...",
-      "result": "...",
-      "quote": "..."
+      "condition": "Dysfunkcia štítnej žľazy + únava",
+      "duration": "4 roky, TSH vždy v norme",
+      "result": "Energia obnovená",
+      "quote": "TSH perfektné. Nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiadny iný lekár to nespomenul."
     }
   },
   "globalExperience": {
-    "title": "Опыт",
-    "subtitle": "Международная практика",
+    "title": "Skúsenosti",
+    "subtitle": "Medzinárodná prax",
     "locations": [],
     "memberships": [],
     "certifications": []
   },
   "services": {
-    "title": "Услуги",
-    "subtitle": "Программы",
+    "title": "Služby",
+    "subtitle": "Programy",
     "packages": [
       {
-        "name": "6D Диагностика",
-        "subtitle": "60 минут",
+        "name": "6D Diagnostika",
+        "subtitle": "60 minút",
         "price": "€100",
         "features": [
-          "Анализ",
-          "План"
+          "Analýza",
+          "Plán"
         ],
-        "cta": "Записаться",
+        "cta": "Objednať sa",
         "formUrl": "https://forms.gle/Gb6nj1SURsMk6G9c7"
       }
     ],
-    "note": "Zoom консультации."
+    "note": "Zoom konzultácie."
   },
   "trust": {
-    "title": "Доверие",
-    "credentialsTitle": "Квалификация",
+    "title": "Dôvera",
+    "credentialsTitle": "Kvalifikácia",
     "credentials": [
       "MUDr., PhD, MBA"
     ],
@@ -178,16 +166,16 @@
     "items": []
   },
   "contact": {
-    "title": "Контакт",
-    "subtitle": "На связи",
+    "title": "Kontakt",
+    "subtitle": "Spojte sa s nami",
     "email": "Email",
     "whatsapp": "WhatsApp",
-    "cta": "Написать нам"
+    "cta": "Napíšte nám"
   },
   "footer": {
-    "rights": "Все права защищены.",
-    "privacy": "Приватность",
-    "terms": "Условия"
+    "rights": "Všetky práva vyhradené.",
+    "privacy": "Súkromie",
+    "terms": "Podmienky"
   },
   "successStories": {
     "title": "Klinické výsledky",
