@@ -5,27 +5,20 @@ import { useTranslation } from 'react-i18next';
 export function Services() {
   const { t, i18n } = useTranslation();
 
-  const packages = t('services.packages', { returnObjects: true }) as Array<{
-    name: string;
-    subtitle: string;
-    price: string;
-    includes?: string;
-    badge?: string;
-    features: string[];
-    cta: string;
-    formUrl: string;
-  }>;
+  // Получаем данные из JSON
+  const packagesData = t('services.packages', { returnObjects: true });
+  const packages = Array.isArray(packagesData) ? packagesData : [];
 
-  // Функция определения ссылки по жесткому условию URL
+  // Жесткая логика определения ссылки
   const getFinalUrl = () => {
     if (typeof window !== 'undefined') {
-      const url = window.location.href;
-      // Если в адресе есть /sk или /en — это ЕВРОПЕЙСКАЯ форма
-      if (url.includes('/sk') || url.includes('/en')) {
+      const currentPath = window.location.pathname;
+      // Если в пути есть /sk или /en — даем европейскую форму
+      if (currentPath.includes('/sk') || currentPath.includes('/en')) {
         return 'https://forms.gle/13N35XNrZKdvnJJPA';
       }
     }
-    // Во всех остальных случаях — РУССКАЯ форма
+    // По умолчанию — русская форма
     return 'https://forms.gle/Gb6nj1SURsMk6G9c7';
   };
 
@@ -49,19 +42,23 @@ export function Services() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {Array.isArray(packages) && packages.map((pkg, index) => (
+            {packages.map((pkg: any, index: number) => (
               <motion.div
                 key={index}
-                className="relative bg-white rounded-2xl p-8 border border-[#E2E8F0] hover:border-[#1A365D] transition-all"
+                className="relative bg-white rounded-2xl p-8 border border-[#E2E8F0] hover:border-[#1A365D] transition-all duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <h3 className="text-[22px] font-serif font-bold text-[#1A365D] mb-1">{pkg.name}</h3>
                 <div className="text-[40px] font-serif font-bold text-[#1A365D] mb-6">{pkg.price}</div>
                 
                 <ul className="space-y-3 mb-8">
-                  {pkg.features.map((f, i) => (
-                    <li key={i} className="flex items-start gap-3 text-[14px] text-[#4A5568]">
-                      <Check className="w-5 h-5 text-[#68A07C] flex-shrink-0" />
-                      <span>{f}</span>
+                  {Array.isArray(pkg.features) && pkg.features.map((feature: string, fIndex: number) => (
+                    <li key={fIndex} className="flex items-start gap-3 text-[14px] leading-[1.7] text-[#4A5568]">
+                      <Check className="w-5 h-5 text-[#68A07C] mt-0.5 flex-shrink-0" />
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -70,10 +67,9 @@ export function Services() {
                   href={getFinalUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-4 rounded-xl font-sans font-semibold text-[14px] bg-[#1A365D] text-white flex items-center justify-center gap-2"
+                  className="w-full py-4 rounded-xl font-sans font-semibold text-[14px] bg-[#1A365D] text-white hover:bg-[#2C5282] flex items-center justify-center gap-2 transition-all"
                 >
-                  {/* Проверочный текст: если вы видите TEST — значит код обновился */}
-                  {pkg.cta} {typeof window !== 'undefined' && window.location.href.includes('/sk') ? '(SK)' : ''}
+                  {pkg.cta}
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </motion.div>
