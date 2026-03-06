@@ -4,11 +4,11 @@ import React from 'react';
 
 type Lang = 'en' | 'ru' | 'sk';
 
-type Props = {
+interface Props {
   lang: Lang;
-};
+}
 
-const SchemaOrg = ({ lang }: Props) => {
+const SchemaOrg: React.FC<Props> = ({ lang }) => {
   const baseUrl = "https://www.drerkin.eu";
 
   const socialLinks = [
@@ -49,8 +49,11 @@ const SchemaOrg = ({ lang }: Props) => {
 
   const commonAddress = {
     "@type": "PostalAddress",
+    "streetAddress": "Rekreačná 2",
+    "addressLocality": "Piešťany",
+    "postalCode": "921 01",
     "addressCountry": "SK",
-    "addressLocality": "Bratislava",
+    "addressRegion": "Trnavský kraj",
   };
 
   const jsonLd = {
@@ -72,14 +75,8 @@ const SchemaOrg = ({ lang }: Props) => {
         "medicalSpecialty": c.specialties,
         "isAcceptingNewPatients": true,
         "hasCredential": [
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "PhD",
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "MBA",
-          }
+          { "@type": "EducationalOccupationalCredential", "name": "PhD" },
+          { "@type": "EducationalOccupationalCredential", "name": "MBA" },
         ],
       },
       {
