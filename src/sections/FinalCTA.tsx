@@ -2,7 +2,11 @@ import { motion } from 'framer-motion';
 import { Lock, Shield, FileCheck, ExternalLink, MessageCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-export function FinalCTA() {
+interface FinalCTAProps {
+  onAssessmentClick: () => void;  // ← добавляем пропс из App.tsx
+}
+
+export function FinalCTA({ onAssessmentClick }: FinalCTAProps) {
   const { t } = useTranslation();
 
   return (
@@ -10,7 +14,7 @@ export function FinalCTA() {
       <div className="section-container">
         <div className="section-inner max-w-4xl mx-auto text-center">
           {/* Headline */}
-          <motion.h2 
+          <motion.h2
             className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -19,9 +23,9 @@ export function FinalCTA() {
           >
             {t('finalCta.title')}
           </motion.h2>
-          
+
           {/* Subheadline */}
-          <motion.p 
+          <motion.p
             className="text-[16px] lg:text-[18px] text-[#4A5568] mb-12 max-w-2xl mx-auto font-sans"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -30,42 +34,38 @@ export function FinalCTA() {
           >
             {t('finalCta.subtitle')}
           </motion.p>
-          
-          {/* CTA Buttons */}
-          <motion.div 
+
+          {/* CTA Buttons — используем функцию из App.tsx */}
+          <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center mb-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <motion.a
-              href="https://forms.gle/oDEBWUFKi6vLbTmk9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-[14px] flex items-center justify-center gap-2"
+            <motion.button
+              onClick={onAssessmentClick}  // ← здесь вызов функции по языку
+              className="btn-primary text-[14px] flex items-center justify-center gap-2 cursor-pointer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
               {t('finalCta.ctaAssessment')}
               <ExternalLink className="w-4 h-4" />
-            </motion.a>
-            
-            <motion.a
-              href="https://forms.gle/hKjSMrxBabZ3NYda8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary text-[14px] flex items-center justify-center gap-2"
+            </motion.button>
+
+            <motion.button
+              onClick={onAssessmentClick}  // ← здесь тоже
+              className="btn-secondary text-[14px] flex items-center justify-center gap-2 cursor-pointer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
               {t('finalCta.ctaApply')}
               <ExternalLink className="w-4 h-4" />
-            </motion.a>
+            </motion.button>
           </motion.div>
-          
+
           {/* Trust Reinforcements */}
-          <motion.div 
+          <motion.div
             className="flex flex-wrap justify-center gap-6 text-[13px] text-[#718096] font-sans mb-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -87,7 +87,7 @@ export function FinalCTA() {
           </motion.div>
 
           {/* Contact Info */}
-          <motion.div 
+          <motion.div
             className="pt-8 border-t border-[#E2E8F0]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -98,13 +98,13 @@ export function FinalCTA() {
               Or contact directly:
             </p>
             <div className="flex flex-wrap justify-center gap-6">
-              <a 
-                href="mailto:erkinslovakia@gmail.com" 
+              <a
+                href="mailto:erkinslovakia@gmail.com"
                 className="text-[14px] text-[#1A365D] hover:text-[#68A07C] transition-colors font-sans"
               >
                 erkinslovakia@gmail.com
               </a>
-              <a 
+              <a
                 href="https://wa.me/421940270511"
                 target="_blank"
                 rel="noopener noreferrer"
