@@ -3,13 +3,10 @@ import './App.css';
 import SchemaOrg from './components/SchemaOrg';
 
 function App() {
-  // Мы принудительно ставим словацкий язык для главной страницы
-  const lang = 'sk'; 
-
   return (
     <>
-      {/* Эта строчка вставляет адрес Rekreačná 2 для Google */}
-      <SchemaOrg lang={lang} />
+      {/* This adds the Piešťany address to Google's search robot */}
+      <SchemaOrg lang="sk" />
 
       <div className="App">
         <header>
