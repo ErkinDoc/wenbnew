@@ -16,24 +16,27 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 
+// Определяем тип Lang (если он не импортируется из SchemaOrg, добавляем здесь)
+type Lang = 'en' | 'ru' | 'sk';
+
 function App() {
   const { i18n } = useTranslation();
-  
+
   const trackEvent = (action: string, category: string, label?: string) => {
     console.log('Track:', { action, category, label });
   };
-  
+
   const assessmentFormLinks: Record<string, string> = {
     ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
     sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
     en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en',
     de: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform'
   };
-  
+
   const handleAssessmentClick = () => {
     const currentLang = i18n.language;
     const formLink = assessmentFormLinks[currentLang] || assessmentFormLinks.sk;
-    
+
     trackEvent('click_assessment', 'conversion', '6d_diagnostic');
     window.open(formLink, '_blank');
     toast.success('Opening 6D Assessment Form', {
@@ -42,10 +45,18 @@ function App() {
     });
   };
 
+  // Фикс TS2322: приводим string к типу Lang
+  const currentLang = i18n.language as Lang;
+
   return (
     <div className="min-h-screen bg-white">
-      <SchemaOrg lang={i18n.language} />
+      {/* Данные для Google об адресе в Пьештянах */}
+      <SchemaOrg lang={currentLang} />
+
+      {/* Navigation */}
       <Navigation onAssessmentClick={handleAssessmentClick} />
+
+      {/* Main Content */}
       <main>
         <HeroSection />
         <Method6D />
@@ -57,6 +68,7 @@ function App() {
         <FAQ />
         <FinalCTA />
       </main>
+
       <Footer />
       <WhatsAppButton />
       <Toaster position="top-center" richColors />
