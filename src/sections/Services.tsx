@@ -3,7 +3,7 @@ import { Check, Star, FileText, ExternalLink } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export function Services() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const packages = t('services.packages', { returnObjects: true }) as Array<{
     name: string;
@@ -15,6 +15,17 @@ export function Services() {
     cta: string;
     formUrl: string;
   }>;
+
+  // Функция для автоматического выбора ссылки в зависимости от языка интерфейса
+  const getCorrectFormUrl = (originalUrl: string) => {
+    const currentLang = i18n.language;
+    // Если выбран словацкий (sk) или английский (en), используем европейскую форму
+    if (currentLang === 'sk' || currentLang === 'en') {
+      return 'https://forms.gle/13N35XNrZKdvnJJPA';
+    }
+    // Для русского (ru) и всех остальных случаев используем русскую форму
+    return 'https://forms.gle/Gb6nj1SURsMk6G9c7';
+  };
 
   return (
     <section id="services" className="w-full py-24 lg:py-32 bg-white">
@@ -104,11 +115,11 @@ export function Services() {
 
                 {/* CTA Button */}
                 <a
-                  href={pkg.formUrl}
+                  href={getCorrectFormUrl(pkg.formUrl)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full py-4 rounded-xl font-sans font-semibold text-[14px] 
-                             flex items-center justify-center gap-2 transition-all ${
+                              flex items-center justify-center gap-2 transition-all ${
                     pkg.badge
                       ? 'bg-[#68A07C] text-white hover:bg-[#4A7A5E]'
                       : 'bg-[#1A365D] text-white hover:bg-[#2C5282]'
