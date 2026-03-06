@@ -2,26 +2,18 @@ import { motion } from 'framer-motion';
 import { Shield, Clock, Users, Globe, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-export function HeroSection() {
-  const { t, i18n } = useTranslation();
+interface HeroSectionProps {
+  onAssessmentClick: () => void;  // ← пропс из App.tsx для кнопок
+}
 
+export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
+  const { t, i18n } = useTranslation();
   const trustBadges = [
     { icon: Shield, label: t('hero.badge1') },
     { icon: Clock, label: t('hero.badge2') },
     { icon: Users, label: t('hero.badge3') },
     { icon: Globe, label: t('hero.badge4') },
   ];
-
-  // Все кнопки ведут на ОДНУ форму для каждого языка
-  const formLinks = {
-    ru: 'https://forms.gle/VCejYUhzTLyQxJXU9',
-    sk: 'https://forms.gle/t7W8zVt1GwNafz1KA',
-    en: 'https://forms.gle/r7hQ44MV6C4UG4kz8',
-    de: 'https://forms.gle/r7hQ44MV6C4UG4kz8'
-  };
-
-  const lang = (i18n.resolvedLanguage || i18n.language).split('-')[0];
-  const currentFormLink = formLinks[lang as keyof typeof formLinks] || formLinks.en;
 
   return (
     <section className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
@@ -30,13 +22,13 @@ export function HeroSection() {
         <div className="absolute top-20 right-20 w-96 h-96 border border-[#1A365D] rounded-full" />
         <div className="absolute bottom-40 left-10 w-64 h-64 border border-[#68A07C] rounded-full" />
       </div>
-      
+     
       <div className="section-container relative z-10">
         <div className="section-inner min-h-[calc(100vh-96px)] flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full py-12 lg:py-0">
-            
+           
             {/* Left column - Text content */}
-            <motion.div 
+            <motion.div
               className="space-y-8"
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -45,7 +37,7 @@ export function HeroSection() {
               {/* Doctor Name & Credentials */}
               <div>
                 <motion.div
-                  className="inline-flex items-center gap-2 bg-[#1A365D]/5 text-[#1A365D] 
+                  className="inline-flex items-center gap-2 bg-[#1A365D]/5 text-[#1A365D]
                              px-4 py-2 rounded-full text-[12px] font-sans font-medium tracking-wider uppercase mb-4"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -54,27 +46,26 @@ export function HeroSection() {
                   <Award className="w-4 h-4" />
                   {t('hero.credentials')}
                 </motion.div>
-                
+               
                 <h1 className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] leading-[1.1] mb-3">
                   {t('hero.title')}
                 </h1>
-                
+               
                 <p className="text-[16px] lg:text-[18px] text-[#68A07C] font-sans">
                   {t('hero.specialty')}
                 </p>
               </div>
-
               {/* Main Headline */}
               <div>
                 <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-serif font-semibold text-[#1A365D] leading-[1.2] mb-4">
                   {t('hero.headline')}
                 </h2>
-                
+               
                 <p className="text-[15px] lg:text-[16px] leading-[1.8] text-[#4A5568] max-w-xl font-sans">
                   {t('hero.subheadline')}
                 </p>
               </div>
-              
+             
               {/* Trust Badges */}
               <div className="flex flex-wrap gap-4 lg:gap-6">
                 {trustBadges.map((badge, index) => (
@@ -90,35 +81,33 @@ export function HeroSection() {
                   </motion.div>
                 ))}
               </div>
-              
-              {/* CTA Buttons */}
+             
+              {/* CTA Buttons — используем функцию из App.tsx */}
               <div className="flex flex-col sm:flex-row gap-4">
                 {/* Button 1: Quick Assessment */}
                 <motion.button
-                  onClick={() => window.open(currentFormLink, '_blank')}
-                  className="btn-primary text-[14px] flex items-center justify-center gap-2"
+                  onClick={onAssessmentClick}  // ← вызов функции по языку
+                  className="btn-primary text-[14px] flex items-center justify-center gap-2 cursor-pointer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
                   {t('hero.ctaAssessment')}
                 </motion.button>
-                
+               
                 {/* Button 2: Full Application */}
-                <motion.a
-                  href={currentFormLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-secondary text-[14px] flex items-center justify-center gap-2"
+                <motion.button
+                  onClick={onAssessmentClick}  // ← здесь тоже
+                  className="btn-secondary text-[14px] flex items-center justify-center gap-2 cursor-pointer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
                   {t('hero.ctaApply')}
-                </motion.a>
+                </motion.button>
               </div>
             </motion.div>
-            
+           
             {/* Right column - Professional Portrait */}
-            <motion.div 
+            <motion.div
               className="flex justify-center lg:justify-end"
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -128,21 +117,21 @@ export function HeroSection() {
                 {/* Decorative frame */}
                 <div className="absolute -inset-4 border-2 border-[#68A07C]/30 rounded-2xl" />
                 <div className="absolute -inset-8 border border-[#1A365D]/10 rounded-3xl" />
-                
+               
                 {/* Portrait with WebP optimization */}
-                <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[480px] lg:w-[420px] lg:h-[560px] 
+                <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[480px] lg:w-[420px] lg:h-[560px]
                                 rounded-xl overflow-hidden border border-[#E2E8F0]">
                   <picture>
                     <source srcSet="/dr-erkin.webp" type="image/webp" />
-                    <img 
-                      src="/dr-erkin.jpg" 
+                    <img
+                      src="/dr-erkin.jpg"
                       alt="Dr. Erkinbek Dzhamanbaev"
                       className="w-full h-full object-cover"
                       loading="eager"
                       fetchPriority="high"
                     />
                   </picture>
-                  
+                 
                   {/* Credentials floating badge */}
                   <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 border border-[#E2E8F0]">
                     <div className="flex items-center justify-center gap-3">
@@ -152,9 +141,8 @@ export function HeroSection() {
                     </div>
                   </div>
                 </div>
-
                 {/* Experience badge */}
-                <motion.div 
+                <motion.div
                   className="absolute -bottom-6 -right-6 bg-[#1A365D] rounded-xl shadow-xl p-4"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
