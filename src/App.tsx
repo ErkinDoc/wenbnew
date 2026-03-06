@@ -3,20 +3,27 @@ import './App.css';
 import SchemaOrg from './components/SchemaOrg';
 
 function App() {
-  // Определяем язык (по умолчанию словацкий, раз вы в Пьештянах)
-  const lang = 'sk';
+  // Мы принудительно ставим словацкий язык для главной страницы
+  const lang = 'sk'; 
 
   return (
-    <div className="App">
-      {/* Это главная строчка, которая передает ваши данные в Google */}
+    <>
+      {/* Эта строчка вставляет адрес Rekreačná 2 для Google */}
       <SchemaOrg lang={lang} />
 
-      {/* Ниже идет ваш текущий сайт (замените этим текстом начало вашего return) */}
-      <main>
-        <h1>MUDr. Erkinbek Džamanbajev</h1>
-        <p>Integratívna medicína a 6D diagnostika v Piešťanoch</p>
-      </main>
-    </div>
+      <div className="App">
+        <header>
+          <h1>MUDr. Erkinbek Džamanbajev</h1>
+          <p>Integratívna medicína • Piešťany • Rekreačná 2</p>
+        </header>
+        <main>
+          <p>6D diagnostika a online konzultácie</p>
+          <a href="https://forms.gle/Gb6nj1SURsMk6G9c7" target="_blank" rel="noreferrer">
+            Dotazník 6D (SK)
+          </a>
+        </main>
+      </div>
+    </>
   );
 }
 
