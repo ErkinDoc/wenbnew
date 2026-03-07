@@ -7,7 +7,7 @@
   },
   "hero": {
     "title": "Dr. Erkinbek Dzhamanbaev",
-    "credentials": "MD, PhD, MBA",
+    "credentials": "MUDr., PhD, MBA",
     "specialty": "Complex Case Expert",
     "headline": "Beyond Standard Diagnostics",
     "subheadline": "Online consultations across Europe. 30+ years of clinical practice.",
@@ -171,7 +171,24 @@
       "MUDr., PhD, MBA"
     ],
     "gdpr": "GDPR Compliant",
-    "stats": []
+    "stats": [
+      {
+        "number": "30+",
+        "label": "years of clinical practice"
+      },
+      {
+        "number": "5000+",
+        "label": "patients"
+      },
+      {
+        "number": "15",
+        "label": "European countries"
+      },
+      {
+        "number": "87%",
+        "label": "report improvement within 3 months"
+      }
+    ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
