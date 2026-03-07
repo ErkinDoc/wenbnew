@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Head from 'next/head'; // ← добавь эту строку
 import './i18n';
 import SchemaOrg from './components/SchemaOrg';
 import { Navigation } from './sections/Navigation';
@@ -16,29 +17,25 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 
-// Тип языка — нужен для корректной работы SchemaOrg
+// Тип языка
 type Lang = 'en' | 'ru' | 'sk';
 
 function App() {
   const { i18n } = useTranslation();
-
   const trackEvent = (action: string, category: string, label?: string) => {
     console.log('Track:', { action, category, label });
   };
 
-  // Ссылки на формы диагностики по языкам
   const assessmentFormLinks: Record<string, string> = {
-    ru: 'https://forms.gle/Gb6nj1SURsMk6G9c7',
+    ru: 'https://forms.gle/oDEBWUFKi6vLbTmk9', // актуальная
     sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
     en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en',
     de: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform'
   };
 
-  // Главная функция обработки клика по кнопкам заказа
   const handleAssessmentClick = () => {
     const currentLang = i18n.language;
     const formLink = assessmentFormLinks[currentLang] || assessmentFormLinks.sk;
-
     trackEvent('click_assessment', 'conversion', '6d_diagnostic');
     window.open(formLink, '_blank');
     toast.success('Opening 6D Assessment Form', {
@@ -47,42 +44,74 @@ function App() {
     });
   };
 
-  // Указываем тип языка для SchemaOrg (исправление ошибки TS2322)
   const currentLang = (i18n.language.split('-')[0]) as Lang;
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Данные для Google (адрес в Пьештянах) */}
-      <SchemaOrg lang={currentLang} />
+    <>
+      {/* <Head> добавлен здесь — применяется ко всем страницам */}
+      <Head>
+        {/* Динамический title и description по языку */}
+        {currentLang === 'ru' ? (
+          <>
+            <title>Др. Эркинбек Джаманбаев | 6D-диагностика сложных случаев онлайн</title>
+            <meta name="description" content="Онлайн-консультации эксперта по системной медицине. 30+ лет практики, 6D-навигация при хронической усталости, боли, выгорании и пост-COVID. €100 за глубокий анализ через Zoom." />
+          </>
+        ) : currentLang === 'en' ? (
+          <>
+            <title>Dr. Erkinbek Dzhamanbayev | 6D Diagnostics for Complex Cases</title>
+            <meta name="description" content="Online consultations with a systemic medicine expert. 30+ years of practice, 6D navigation for chronic fatigue, pain, burnout, and post-COVID. €100 in-depth assessment via Zoom." />
+          </>
+        ) : (
+          <>
+            <title>MUDr. Erkinbek Džamanbajev | 6D diagnostika komplexných prípadov</title>
+            <meta name="description" content="Online konzultácie s expertom na systémovú medicínu. 30+ rokov praxe, 6D navigácia pre chronickú únavu, bolesť a vyhorenie. €100 za hĺbkovú diagnostiku cez Zoom." />
+          </>
+        )}
 
-      {/* Навигация */}
-      <Navigation onAssessmentClick={handleAssessmentClick} />
+        {/* Hreflang — обязательно для всех версий */}
+        <link rel="alternate" hrefLang="sk" href="https://drerkin.eu/" />
+        <link rel="alternate" hrefLang="ru" href="https://drerkin.eu/ru" />
+        <link rel="alternate" hrefLang="en" href="https://drerkin.eu/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://drerkin.eu/" />
 
-      <main>
-        {/* Кнопка в главном блоке */}
-        <HeroSection onAssessmentClick={handleAssessmentClick} />
-        
-        <Method6D />
-        <GlobalExperience />
-        
-        {/* Кнопки в блоке услуг (теперь передаем функцию клика) */}
-        <Services onAssessmentClick={handleAssessmentClick} />
-        
-        <SuccessStories />
-        <Testimonials />
-        <TrustAuthority />
-        <FAQ />
-        
-        {/* Кнопка в финальном призыве к действию */}
-        <FinalCTA onAssessmentClick={handleAssessmentClick} />
-      </main>
+        {/* OpenGraph — для красивого шаринга */}
+        <meta property="og:title" content={
+          currentLang === 'ru' ? 'Др. Эркинбек Джаманбаев | 6D-диагностика сложных случаев онлайн' :
+          currentLang === 'en' ? 'Dr. Erkinbek Dzhamanbayev | 6D Diagnostics for Complex Cases' :
+          'MUDr. Erkinbek Džamanbajev | 6D diagnostika komplexných prípadov'
+        } />
+        <meta property="og:description" content={
+          currentLang === 'ru' ? 'Онлайн-консультации эксперта по системной медицине. 30+ лет практики, 6D-навигация при хронической усталости, боли, выгорании и пост-COVID. €100 за глубокий анализ через Zoom.' :
+          currentLang === 'en' ? 'Online consultations with a systemic medicine expert. 30+ years of practice, 6D navigation for chronic fatigue, pain, burnout, and post-COVID. €100 in-depth assessment via Zoom.' :
+          'Online konzultácie s expertom na systémovú medicínu. 30+ rokov praxe, 6D navigácia pre chronickú únavu, bolesť a vyhorenie. €100 za hĺbkovú diagnostiku cez Zoom.'
+        } />
+        <meta property="og:url" content={`https://drerkin.eu/${currentLang === 'sk' ? '' : currentLang}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/dr-erkin.webp" /> {/* или /dr-erkin.jpg */}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="MUDr. Erkinbek Džamanbajev" />
+      </Head>
 
-      <Footer />
-      <WhatsAppButton />
-      
-      {/* Уведомления */}
-      <Toaster position="top-center" richColors />
-    </div>
+      <div className="min-h-screen bg-white">
+        <SchemaOrg lang={currentLang} />
+        <Navigation onAssessmentClick={handleAssessmentClick} />
+        <main>
+          <HeroSection onAssessmentClick={handleAssessmentClick} />
+          <Method6D />
+          <GlobalExperience />
+          <Services onAssessmentClick={handleAssessmentClick} />
+          <SuccessStories />
+          <Testimonials />
+          <TrustAuthority />
+          <FAQ />
+          <FinalCTA onAssessmentClick={handleAssessmentClick} />
+        </main>
+        <Footer />
+        <WhatsAppButton />
+        <Toaster position="top-center" richColors />
+      </div>
+    </>
   );
 }
 
