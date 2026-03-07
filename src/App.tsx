@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Helmet, HelmetProvider } from 'react-helmet-async'; // Правильная замена для Vite
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import './i18n';
 import SchemaOrg from './components/SchemaOrg';
 import { Navigation } from './sections/Navigation';
@@ -21,7 +21,8 @@ import { toast } from 'sonner';
 type Lang = 'en' | 'ru' | 'sk';
 
 function App() {
-  const { i18n, t } = useTranslation();
+  // Убрал лишнюю переменую 't', которая блокировала билд
+  const { i18n } = useTranslation();
   
   const trackEvent = (action: string, category: string, label?: string) => {
     console.log('Track:', { action, category, label });
@@ -68,13 +69,12 @@ function App() {
           </>
         )}
 
-        {/* Теги Hreflang для Google */}
+        {/* Теги Hreflang */}
         <link rel="alternate" hrefLang="sk" href="https://drerkin.eu/" />
         <link rel="alternate" hrefLang="ru" href="https://drerkin.eu/ru" />
         <link rel="alternate" hrefLang="en" href="https://drerkin.eu/en" />
         <link rel="alternate" hrefLang="x-default" href="https://drerkin.eu/" />
 
-        {/* OpenGraph для Facebook/WhatsApp */}
         <meta property="og:title" content={currentLang === 'ru' ? 'Др. Эркинбек Джаманбаев' : 'MUDr. Erkinbek Džamanbajev'} />
         <meta property="og:image" content="/dr-erkin.webp" />
       </Helmet>
