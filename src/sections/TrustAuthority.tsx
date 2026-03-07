@@ -5,8 +5,10 @@ import { useTranslation } from 'react-i18next';
 export function TrustAuthority() {
   const { t } = useTranslation();
 
+  // Получаем список регалий
   const credentials = t('trust.credentials', { returnObjects: true }) as string[];
 
+  // Статистика — теперь данные берутся динамически
   const stats = [
     { icon: Users, number: '5000+', label: t('trust.stats.0.label') },
     { icon: Clock, number: '30+', label: t('trust.stats.1.label') },
@@ -26,8 +28,9 @@ export function TrustAuthority() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
+            {/* ИСПРАВЛЕНО: Теперь "Credentials" тоже переводится */}
             <span className="inline-block text-[12px] font-sans font-medium tracking-wider uppercase text-[#68A07C] mb-4">
-              Credentials
+              {t('trust.badge') || 'Credentials'} 
             </span>
             <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] mb-4">
               {t('trust.title')}
@@ -47,7 +50,7 @@ export function TrustAuthority() {
             </h3>
             <div className="bg-white rounded-2xl p-6 lg:p-8 border border-[#E2E8F0]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {credentials.map((cred, index) => (
+                {Array.isArray(credentials) && credentials.map((cred, index) => (
                   <motion.div
                     key={index}
                     className="flex items-start gap-4 p-4 rounded-xl bg-[#F7F9FC]"
@@ -114,7 +117,7 @@ export function TrustAuthority() {
                     <p className="text-[40px] lg:text-[52px] font-serif font-bold text-white leading-none mb-2">
                       {stat.number}
                     </p>
-                    <p className="text-[13px] text-white/70 font-sans">
+                    <p className="text-[13px] text-white/70 font-sans uppercase tracking-wider">
                       {stat.label}
                     </p>
                   </motion.div>
