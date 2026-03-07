@@ -1,143 +1,73 @@
-// @ts-nocheck
-/* eslint-disable */
 import React from 'react';
 
-type Lang = 'en' | 'ru' | 'sk';
-
-interface Props {
-  lang: Lang;
+interface SchemaOrgProps {
+  lang: 'en' | 'ru' | 'sk';
 }
 
-const SchemaOrg: React.FC<Props> = ({ lang }) => {
-  const baseUrl = "https://www.drerkin.eu";
-
-  const socialLinks = [
-    "https://www.facebook.com/drerkin.medicine",
-    "https://www.instagram.com/pain.therapy",
-    "https://www.linkedin.com/in/doctorerkin/",
-    "https://ko-fi.com/erkindoc/shop",
-  ];
-
-  const content = {
-    en: {
-      name: "Dr. Erkinbek Dzhamanbaev, PhD, MBA",
-      desc: "Expert in Integrative Medicine and 6D Diagnostics. Consultations at Poliklinika Piešťany (Rekreačná 2).",
-      specialties: ["Integrative Medicine", "Pain Management", "Chronic Fatigue Specialist"],
-      serviceName: "6D Diagnostic Navigation",
-      serviceDesc: "60-minute comprehensive health analysis across six dimensions.",
-      catalogName: "Medical Consultations",
-    },
-    ru: {
-      name: "Д-р Эркинбек Джаманбаев, PhD, MBA",
-      desc: "Специалист по интегративной медицине и 6D-диагностике. Прием в Поликлинике Пьештяны (Rekreačná 2).",
-      specialties: ["Интегративная медицина", "Лечение боли", "Специалист по хронической усталости"],
-      serviceName: "6D-диагностическая навигация",
-      serviceDesc: "60-минутный комплексный анализ здоровья в шести измерениях.",
-      catalogName: "Медицинские консультации",
-    },
-    sk: {
-      name: "MUDr. Erkinbek Džamanbajev, PhD, MBA",
-      desc: "Odborník na integratívnu medicínu a 6D diagnostiku. Konzultácie v Poliklinike Piešťany (Rekreačná 2).",
-      specialties: ["Integratívna medicína", "Liečba bolesti", "Špecialista na chronickú únavu"],
-      serviceName: "6D diagnostická navigácia",
-      serviceDesc: "60-minútová komplexná analýza zdravia v šiestich dimenziách.",
-      catalogName: "Lekárske konzultácie",
-    },
+const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang }) => {
+  const descriptions = {
+    ru: "Др. Эркинбек Джаманбаев — эксперт по системной медицине. 6D-диагностика сложных случаев: хроническая усталость, боли, выгорание, пост-COVID. Онлайн-консультации по всей Европе.",
+    en: "Dr. Erkinbek Dzhamanbayev — systemic medicine expert. 6D diagnostics for complex cases: chronic fatigue, pain, burnout, post-COVID. Online consultations across Europe.",
+    sk: "MUDr. Erkinbek Džamanbajev — expert na systémovú medicínu. 6D diagnostika komplexných prípadov: chronická únava, bolesť, vyhorenie, post-COVID. Online konzultácie po celej Európe."
   };
 
-  const c = content[lang] || content.en;
-
-  const commonAddress = {
-    "@type": "PostalAddress",
-    "streetAddress": "Rekreačná 2",
-    "addressLocality": "Piešťany",
-    "postalCode": "921 01",
-    "addressCountry": "SK",
-    "addressRegion": "Trnavský kraj",
-  };
-
-  const geoCoordinates = {
-    "@type": "GeoCoordinates",
-    "latitude": 48.574,
-    "longitude": 17.814
-  };
-
-  const openingHours = [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "07:00",
-      "closes": "16:00"
-    }
-  ];
-
-  const jsonLd = {
+  const schemaData = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Physician",
-        "@id": `${baseUrl}/${lang}/#physician`,
-        "name": c.name,
-        "url": `${baseUrl}/${lang}`,
-        "telephone": "+421940270511",
-        "image": `${baseUrl}/photo.jpg`,
-        "description": c.desc,
-        "priceRange": "€€",
-        "sameAs": socialLinks,
-        "address": commonAddress,
-        "geo": geoCoordinates,
-        "openingHoursSpecification": openingHours,
-        "areaServed": ["Slovakia", "European Union"],
-        "knowsLanguage": ["sk", "ru", "en"],
-        "medicalSpecialty": c.specialties,
-        "isAcceptingNewPatients": true,
-        "hasCredential": [
-          { "@type": "EducationalOccupationalCredential", "name": "PhD" },
-          { "@type": "EducationalOccupationalCredential", "name": "MBA" }
-        ]
-      },
-      {
-        "@type": "MedicalBusiness",
-        "@id": `${baseUrl}/${lang}/#business`,
-        "name": "Medicine of Coherence",
-        "parentOrganization": { "@id": `${baseUrl}/${lang}/#physician` },
-        "url": `${baseUrl}/${lang}`,
-        "telephone": "+421940270511",
-        "image": `${baseUrl}/photo.jpg`,
-        "description": c.desc,
-        "address": commonAddress,
-        "geo": geoCoordinates,
-        "priceRange": "€€",
-        "sameAs": socialLinks,
-        "currenciesAccepted": "EUR",
-        "paymentAccepted": "Credit Card, Bank Transfer, Online Payment",
-        "openingHoursSpecification": openingHours,
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": c.catalogName,
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "MedicalService",
-                "name": c.serviceName,
-                "description": c.serviceDesc
-              },
-              "price": 100,
-              "priceCurrency": "EUR",
-              "availability": "https://schema.org/InStock"
-            }
-          ]
+    "@type": "Physician",
+    "name": lang === 'sk' ? "MUDr. Erkinbek Džamanbajev" : "Dr. Erkinbek Dzhamanbayev",
+    "jobTitle": "MD, PhD, MBA",
+    "image": "https://drerkin.eu/dr-erkin.webp",
+    "description": descriptions[lang],
+    "url": `https://drerkin.eu/${lang === 'sk' ? '' : lang}`,
+    "telephone": "+421940270511", // Твой реальный номер из стратегии
+    "priceRange": "100 EUR",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Piešťany",
+      "addressCountry": "SK"
+    },
+    "areaServed": "Europe",
+    "medicalSpecialty": [
+      "Integrative Medicine",
+      "Chronic Pain Management",
+      "Rehabilitation Medicine",
+      "Autonomic Nervous System Disorders"
+    ],
+    "knowsAbout": [
+      "Systemic Medicine",
+      "Chronic Fatigue Syndrome",
+      "Burnout Syndrome",
+      "Post-COVID Syndrome",
+      "6D Navigation Model",
+      "Medicine of Coherence"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Medical Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "6D Diagnostics Consultation",
+            "description": lang === 'ru' ? "Глубокий 60-минутный анализ через Zoom" : "In-depth 60-minute analysis via Zoom"
+          },
+          "price": "100.00",
+          "priceCurrency": "EUR"
         }
-      }
-    ]
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "24"
+    }
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd, null, 2) }}
-    />
+    <script type="application/ld+json">
+      {JSON.stringify(schemaData)}
+    </script>
   );
 };
 
