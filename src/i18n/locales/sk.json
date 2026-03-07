@@ -125,6 +125,18 @@
       "duration": "4 roky, TSH always normal",
       "result": "Energia obnovená",
       "quote": "TSH perfektné. Nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiadny iný lekár to nespomenul."
+    },
+    "7": {
+      "condition": "Syndróm dráždivého čreva",
+      "duration": "6 rokov, gastroenterológovia bez výsledku",
+      "result": "90% zlepšenie symptómov",
+      "quote": "Šesť rokov diét, tabliet, vyšetrení. Dr. Erkin našiel spojenie črevo-mozog, ktoré nikto nehľadal. O štyri mesiace jem normálne."
+    },
+    "8": {
+      "condition": "Chronické bolesti hlavy",
+      "duration": "10 rokov, neurológovia bez diagnózy",
+      "result": "80% zníženie frekvencie",
+      "quote": "Desať rokov migrén. MRI čisté, tablety nepomáhajú. 6D analýza odhalila krčnú dysfunkciu a spúšťače v strave. Konečne žijem bez strachu z bolesti."
     }
   },
   "globalExperience": {
@@ -222,5 +234,18 @@
         "result": "Úplná remisia"
       }
     ]
+  },
+  "finalCta": {
+    "title": "Ste pripravení nájsť príčinu?",
+    "subtitle": "Objednajte sa na 6D diagnostiku",
+    "benefits": [
+      "60 minút hĺbkovej analýzy",
+      "Osobná mapa zdravia",
+      "Konkrétny plán krokov",
+      "Online z celej Európy"
+    ],
+    "ctaAssessment": "Začať 6D diagnostiku",
+    "ctaApply": "Podať žiadosť",
+    "guarantee": "Vaše zdravie je našou prioritou."
   }
 }
