@@ -125,6 +125,18 @@
       "duration": "4 years, TSH always normal",
       "result": "Energy restored",
       "quote": "TSH perfect. Couldn't get out of bed. Dr. Erkin explained T4-to-T3 conversion at cellular level. No other doctor mentioned this. Now I understand my body."
+    },
+    "7": {
+      "condition": "Irritable bowel syndrome",
+      "duration": "6 years, gastroenterologists without results",
+      "result": "90% symptom improvement",
+      "quote": "Six years of diets, pills, examinations. Dr. Erkin found the gut-brain connection no one was looking for. Four months later, I eat normally."
+    },
+    "8": {
+      "condition": "Chronic headaches",
+      "duration": "10 years, neurologists without diagnosis",
+      "result": "80% reduction in frequency",
+      "quote": "Ten years of migraines. MRI clear, pills don't help. 6D analysis revealed cervical dysfunction and dietary triggers. Finally living without fear of pain."
     }
   },
   "globalExperience": {
@@ -222,5 +234,18 @@
         "result": "Full remission"
       }
     ]
+  },
+  "finalCta": {
+    "title": "Ready to find the cause?",
+    "subtitle": "Book your 6D Assessment",
+    "benefits": [
+      "60 minutes of deep analysis",
+      "Personal health roadmap",
+      "Concrete action plan",
+      "Online from anywhere in Europe"
+    ],
+    "ctaAssessment": "Start 6D Assessment",
+    "ctaApply": "Apply",
+    "guarantee": "Your health is our priority."
   }
 }
