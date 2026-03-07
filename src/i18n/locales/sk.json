@@ -7,7 +7,7 @@
   },
   "hero": {
     "title": "Dr. Erkinbek Džamanbajev",
-    "credentials": "MD, PhD, MBA",
+    "credentials": "MUDr., PhD, MBA",
     "specialty": "Expert na komplexné prípady",
     "headline": "Za hranicami štandardnej diagnostiky",
     "subheadline": "Online konzultácie v celej Európe. 30+ rokov klinickej praxe.",
@@ -122,7 +122,7 @@
     },
     "6": {
       "condition": "Dysfunkcia štítnej žľazy + únava",
-      "duration": "4 roky, TSH always normal",
+      "duration": "4 roky, TSH vždy v norme",
       "result": "Energia obnovená",
       "quote": "TSH perfektné. Nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiadny iný lekár to nespomenul."
     },
@@ -159,7 +159,7 @@
           "Plán"
         ],
         "cta": "Objednať sa",
-        "formUrl": "https://forms.gle/13N35XNrZKdvnJJPA"
+        "formUrl": "https://forms.gle/oDEBWUFKi6vLbTmk9"
       }
     ],
     "note": "Zoom konzultácie."
@@ -171,7 +171,24 @@
       "MUDr., PhD, MBA"
     ],
     "gdpr": "GDPR Compliant",
-    "stats": []
+    "stats": [
+      {
+        "number": "30+",
+        "label": "rokov klinickej praxe"
+      },
+      {
+        "number": "5000+",
+        "label": "pacientov"
+      },
+      {
+        "number": "15",
+        "label": "krajín Európy"
+      },
+      {
+        "number": "87%",
+        "label": "zaznamenáva zlepšenie do 3 mesiacov"
+      }
+    ]
   },
   "faq": {
     "title": "Často kladené otázky",
