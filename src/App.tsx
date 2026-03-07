@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import Head from 'next/head'; // ← добавь эту строку
+import { Helmet, HelmetProvider } from 'react-helmet-async'; // Правильная замена для Vite
 import './i18n';
 import SchemaOrg from './components/SchemaOrg';
 import { Navigation } from './sections/Navigation';
@@ -21,20 +21,21 @@ import { toast } from 'sonner';
 type Lang = 'en' | 'ru' | 'sk';
 
 function App() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
+  
   const trackEvent = (action: string, category: string, label?: string) => {
     console.log('Track:', { action, category, label });
   };
 
   const assessmentFormLinks: Record<string, string> = {
-    ru: 'https://forms.gle/oDEBWUFKi6vLbTmk9', // актуальная
+    ru: 'https://forms.gle/oDEBWUFKi6vLbTmk9',
     sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
     en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en',
     de: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform'
   };
 
   const handleAssessmentClick = () => {
-    const currentLang = i18n.language;
+    const currentLang = i18n.language.split('-')[0];
     const formLink = assessmentFormLinks[currentLang] || assessmentFormLinks.sk;
     trackEvent('click_assessment', 'conversion', '6d_diagnostic');
     window.open(formLink, '_blank');
@@ -47,10 +48,9 @@ function App() {
   const currentLang = (i18n.language.split('-')[0]) as Lang;
 
   return (
-    <>
-      {/* <Head> добавлен здесь — применяется ко всем страницам */}
-      <Head>
-        {/* Динамический title и description по языку */}
+    <HelmetProvider>
+      <Helmet>
+        {/* Динамический SEO блок */}
         {currentLang === 'ru' ? (
           <>
             <title>Др. Эркинбек Джаманбаев | 6D-диагностика сложных случаев онлайн</title>
@@ -68,30 +68,16 @@ function App() {
           </>
         )}
 
-        {/* Hreflang — обязательно для всех версий */}
+        {/* Теги Hreflang для Google */}
         <link rel="alternate" hrefLang="sk" href="https://drerkin.eu/" />
         <link rel="alternate" hrefLang="ru" href="https://drerkin.eu/ru" />
         <link rel="alternate" hrefLang="en" href="https://drerkin.eu/en" />
         <link rel="alternate" hrefLang="x-default" href="https://drerkin.eu/" />
 
-        {/* OpenGraph — для красивого шаринга */}
-        <meta property="og:title" content={
-          currentLang === 'ru' ? 'Др. Эркинбек Джаманбаев | 6D-диагностика сложных случаев онлайн' :
-          currentLang === 'en' ? 'Dr. Erkinbek Dzhamanbayev | 6D Diagnostics for Complex Cases' :
-          'MUDr. Erkinbek Džamanbajev | 6D diagnostika komplexných prípadov'
-        } />
-        <meta property="og:description" content={
-          currentLang === 'ru' ? 'Онлайн-консультации эксперта по системной медицине. 30+ лет практики, 6D-навигация при хронической усталости, боли, выгорании и пост-COVID. €100 за глубокий анализ через Zoom.' :
-          currentLang === 'en' ? 'Online consultations with a systemic medicine expert. 30+ years of practice, 6D navigation for chronic fatigue, pain, burnout, and post-COVID. €100 in-depth assessment via Zoom.' :
-          'Online konzultácie s expertom na systémovú medicínu. 30+ rokov praxe, 6D navigácia pre chronickú únavu, bolesť a vyhorenie. €100 za hĺbkovú diagnostiku cez Zoom.'
-        } />
-        <meta property="og:url" content={`https://drerkin.eu/${currentLang === 'sk' ? '' : currentLang}`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/dr-erkin.webp" /> {/* или /dr-erkin.jpg */}
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="MUDr. Erkinbek Džamanbajev" />
-      </Head>
+        {/* OpenGraph для Facebook/WhatsApp */}
+        <meta property="og:title" content={currentLang === 'ru' ? 'Др. Эркинбек Джаманбаев' : 'MUDr. Erkinbek Džamanbajev'} />
+        <meta property="og:image" content="/dr-erkin.webp" />
+      </Helmet>
 
       <div className="min-h-screen bg-white">
         <SchemaOrg lang={currentLang} />
@@ -111,7 +97,7 @@ function App() {
         <WhatsAppButton />
         <Toaster position="top-center" richColors />
       </div>
-    </>
+    </HelmetProvider>
   );
 }
 
