@@ -1,6 +1,6 @@
-import ru from './ru.json';
-import en from './en.json';
-import sk from './sk.json';
+import ru from './locales/ru.json';
+import en from './locales/en.json';
+import sk from './locales/sk.json';
 
 export const locales = {
   ru: { translation: ru },
