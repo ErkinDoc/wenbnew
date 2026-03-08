@@ -9,12 +9,12 @@ export function Footer() {
   const quickLinks = [
     { label: t('nav.method'), href: '#method6d' },
     { label: t('nav.services'), href: '#services' },
-    { label: t('nav.global'), href: '#global' }, // ИСПРАВЛЕНО: теперь переводится
+    { label: t('nav.global'), href: '#global' },
     { label: t('nav.faq'), href: '#faq' },
   ];
 
   return (
-    <footer id="contact" className="w-full bg-[#1A365D] text-white/80">
+    <footer id="footer" className="w-full bg-[#1A365D] text-white/80">
       <div className="section-container py-16 lg:py-20">
         <div className="section-inner">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
@@ -115,17 +115,17 @@ export function Footer() {
               </h4>
               <ul className="space-y-3 mb-6">
                 <li>
-                  <a href="#privacy" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
+                  <a href="/privacy" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
                     {t('footer.privacy')}
                   </a>
                 </li>
                 <li>
-                  <a href="#terms" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
+                  <a href="/terms" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
                     {t('footer.terms')}
                   </a>
                 </li>
                 <li>
-                  <a href="#gdpr" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
+                  <a href="/gdpr" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
                     GDPR
                   </a>
                 </li>
