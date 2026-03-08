@@ -81,6 +81,7 @@
   "testimonials": {
     "title": "Príbehy pacientov",
     "subtitle": "Skutočné výsledky",
+    "disclaimer": "GDPR compliant",
     "1": { "condition": "Chronická únava", "quote": "Dr. Erkin našiel vyčerpanie HPA-osi na prvej konzultácii. O šesť mesiacov neskôr žijem normálne." },
     "2": { "condition": "Vyhorenie", "quote": "6D diagnostika odhalila kolaps bunkovej energie. O tri mesiace riadim svoju firmu." },
     "3": { "condition": "Autoimunitné", "quote": "Dr. Erkin spojil body, ktoré nikto iný nevidel. Konečne diagnóza, ktorá dáva zmysel." },
@@ -99,7 +100,29 @@
         "title": "6D Diagnostika",
         "description": "Hĺbková systémová analýza stavu (60 minút).",
         "features": ["Osobná mapa zdravia", "Individuálny akčný plán"]
+      },
+      {
+        "title": "Mentoring",
+        "description": "Pravidelné sedenia na úpravu procesu obnovy.",
+        "features": ["Sledovanie pokroku", "Úprava protokolov"]
       }
+    ]
+  },
+  "trust": {
+    "title": "Skúsenosti a dôvera",
+    "badge": "Kvalifikácia",
+    "credentialsTitle": "Kvalifikácia",
+    "credentials": [
+      "MUDr., PhD, MBA",
+      "Lekárska licencia EÚ (Slovensko)",
+      "Expert na systémovú medicínu",
+      "30+ rokov klinickej praxe"
+    ],
+    "stats": [
+      { "number": "5000+", "label": "pacientov" },
+      { "number": "30+", "label": "rokov praxe" },
+      { "number": "70–85%", "label": "dynamika zotavenia" },
+      { "number": "15", "label": "krajín Európy" }
     ]
   },
   "faq": {
@@ -107,7 +130,12 @@
     "items": [
       { "question": "Prečo sa cítim vyčerpaný?", "answer": "Príčina môže byť v mitochondriálnej dysfunkcii. 6D diagnostika ju pomáha odhaliť." },
       { "question": "Prečo sú testy v norme?", "answer": "Štandardné testy hľadajú akútnu patológiu, my hľadáme funkčné nerovnováhy." },
-      { "question": "Ako prebieha online konzultácia?", "answer": "Sedenie trvá 60 minút cez Zoom. Vopred študujem vašu anamnézu." }
+      { "question": "Ako prebieha online konzultácia?", "answer": "Sedenie trvá 60 minút cez Zoom. Vopred študujem vašu anamnézu." },
+      { "question": "Čo je 6D navigačný systém?", "answer": "Je to komplexný prístup, ktorý analyzuje šesť vektorov zdravia: diagnostiku, dysfunkciu, reguláciu, smer, rozvoj a hĺbku." },
+      { "question": "Pre koho je 6D diagnostika vhodná?", "answer": "Pre pacientov s chronickými ťažkosťami, u ktorých štandardná medicína nenašla príčinu." },
+      { "question": "Koľko stojí konzultácia?", "answer": "Úvodná 6D diagnostika stojí €100 za 60 minút." },
+      { "question": "Ako sa objednať?", "answer": "Vyplňte formulár na tejto stránke alebo napíšte na WhatsApp." },
+      { "question": "Pracujete aj osobne?", "answer": "Áno, osobné konzultácie sú možné v Piešťanoch po dohode." }
     ]
   },
   "contact": {
@@ -118,11 +146,35 @@
     "cta": "Napíšte nám"
   },
   "footer": {
-    "description": "Expert na integratívny manaжment bolesti a medicínu koherencie.",
+    "description": "Expert na integratívny manažment bolesti a medicínu koherencie.",
+    "quickLinks": "Rýchle odkazy",
+    "contact": "Kontakt",
+    "email": "erkinslovakia@gmail.com",
     "phone": "+421 940 270 511",
     "locationValue": "Piešťany, Slovensko",
+    "legal": "Právne",
+    "privacy": "Ochrana súkromia",
+    "terms": "Podmienky",
+    "language": "Jazyk",
     "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
     "license": "Lekárska licencia EÚ — Slovensko",
     "disclaimerText": "Obsah slúži len na informačné účely."
+  },
+  "finalCta": {
+    "title": "Pripravení nájsť príčinu?",
+    "subtitle": "Objednajte sa na 6D diagnostiku",
+    "benefits": [
+      "60 minút hĺbkovej analýzy",
+      "Osobná mapa zdravia",
+      "Konkrétny akčný plán",
+      "Online odkiaľkoľvek v Európe"
+    ],
+    "ctaAssessment": "Začať 6D diagnostiku",
+    "ctaApply": "Podať žiadosť",
+    "guarantee": "Vaše zdravie je naša priorita."
+  },
+  "meta": {
+    "title": "Dr. Erkinbek Džamanbajev | Expert na komplexné prípady",
+    "description": "Systémová 6D analýza a medicína koherencie. Hľadanie príčin chronickej únavy a bolesti."
   }
 }
