@@ -14,6 +14,7 @@ import { FAQ } from './sections/FAQ';
 import { FinalCTA } from './sections/FinalCTA';
 import { Footer } from './sections/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
+import { CookieConsent } from './components/CookieConsent';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 
@@ -21,7 +22,6 @@ import { toast } from 'sonner';
 type Lang = 'en' | 'ru' | 'sk';
 
 function App() {
-  // Убрал лишнюю переменую 't', которая блокировала билд
   const { i18n } = useTranslation();
   
   const trackEvent = (action: string, category: string, label?: string) => {
@@ -95,6 +95,7 @@ function App() {
         </main>
         <Footer />
         <WhatsAppButton />
+        <CookieConsent />
         <Toaster position="top-center" richColors />
       </div>
     </HelmetProvider>
