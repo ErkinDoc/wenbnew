@@ -1,36 +1,21 @@
 import { motion } from 'framer-motion';
-import { TrendingDown, Clock, Stethoscope, Award, Shield } from 'lucide-react';
+import { TrendingUp, Shield } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-
-interface Story {
-  condition: string;
-  history: string;
-  approach: string;
-  result: string;
-}
 
 export function SuccessStories() {
   const { t } = useTranslation();
 
-  const stories = t('successStories.stories', { returnObjects: true }) as Story[];
-
-  const getIcon = (index: number) => {
-    switch (index) {
-      case 0:
-        return TrendingDown;
-      case 1:
-        return Stethoscope;
-      case 2:
-        return Clock;
-      default:
-        return Award;
-    }
-  };
+  // ИСПРАВЛЕНО: используем 'items' вместо 'stories'
+  const items = t('successStories.items', { returnObjects: true }) as Array<{
+    title: string;
+    content: string;
+  }>;
 
   return (
     <section className="w-full py-24 lg:py-32 bg-gradient-to-b from-white to-[#F7F9FC]">
-      <div className="section-container">
-        <div className="section-inner">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          
           {/* Header */}
           <motion.div 
             className="text-center mb-16"
@@ -51,77 +36,29 @@ export function SuccessStories() {
           </motion.div>
 
           {/* Stories Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
-            {stories.map((story, index) => {
-              const Icon = getIcon(index);
-              return (
-                <motion.div
-                  key={index}
-                  className="bg-white rounded-2xl p-8 border border-[#E2E8F0] shadow-sm hover:shadow-lg transition-all duration-300"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  {/* Condition Badge */}
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-[#1A365D] rounded-xl flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <span className="text-[11px] font-sans font-medium tracking-wider uppercase text-[#68A07C]">
-                        Condition
-                      </span>
-                      <h3 className="text-[16px] font-serif font-semibold text-[#1A365D]">
-                        {story.condition}
-                      </h3>
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
+            {Array.isArray(items) && items.map((item, index) => (
+              <motion.div
+                key={index}
+                className="bg-white rounded-2xl p-8 border border-[#E2E8F0] shadow-sm hover:shadow-lg transition-all duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-[#68A07C] rounded-xl flex items-center justify-center">
+                    <TrendingUp className="w-6 h-6 text-white" />
                   </div>
-
-                  {/* Story Details */}
-                  <div className="space-y-4">
-                    {/* History */}
-                    <div className="p-4 bg-[#F7F9FC] rounded-xl">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Clock className="w-4 h-4 text-[#718096]" />
-                        <span className="text-[12px] font-sans font-medium uppercase tracking-wider text-[#718096]">
-                          Patient History
-                        </span>
-                      </div>
-                      <p className="text-[14px] text-[#4A5568] font-sans leading-relaxed">
-                        {story.history}
-                      </p>
-                    </div>
-
-                    {/* Approach */}
-                    <div className="p-4 bg-[#F7F9FC] rounded-xl">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Stethoscope className="w-4 h-4 text-[#718096]" />
-                        <span className="text-[12px] font-sans font-medium uppercase tracking-wider text-[#718096]">
-                          6D Approach
-                        </span>
-                      </div>
-                      <p className="text-[14px] text-[#4A5568] font-sans leading-relaxed">
-                        {story.approach}
-                      </p>
-                    </div>
-
-                    {/* Result */}
-                    <div className="p-4 bg-[#68A07C]/10 rounded-xl border border-[#68A07C]/20">
-                      <div className="flex items-center gap-2 mb-2">
-                        <TrendingDown className="w-4 h-4 text-[#68A07C]" />
-                        <span className="text-[12px] font-sans font-medium uppercase tracking-wider text-[#68A07C]">
-                          Result
-                        </span>
-                      </div>
-                      <p className="text-[15px] text-[#1A365D] font-sans font-medium leading-relaxed">
-                        {story.result}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              );
-            })}
+                  <h3 className="text-[18px] font-serif font-semibold text-[#1A365D]">
+                    {item.title}
+                  </h3>
+                </div>
+                <p className="text-[15px] text-[#4A5568] font-sans leading-relaxed">
+                  {item.content}
+                </p>
+              </motion.div>
+            ))}
           </div>
 
           {/* GDPR Disclaimer */}
