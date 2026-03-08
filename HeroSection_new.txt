@@ -7,7 +7,7 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const trustBadges = [
     { icon: Shield, label: t('hero.badge1') },
@@ -16,41 +16,29 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
     { icon: Globe, label: t('hero.badge4') },
   ];
 
-  // Ссылки на новые формы в зависимости от языка
-  const assessmentLinks = {
-    sk: "https://forms.gle/t7W8zVt1GwNafz1KA",
-    ru: "https://forms.gle/VCejYUhzTLyQxJXU9",
-    en: "https://forms.gle/r7hQ44MV6C4UG4kz8",
-    de: "https://forms.gle/r7hQ44MV6C4UG4kz8",
-  };
-
-  // Определяем активную ссылку на основе текущего языка (по умолчанию словацкая )
-  const currentFormLink = assessmentLinks[i18n.language as keyof typeof assessmentLinks] || assessmentLinks.sk;
-
   return (
-    <section className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
+    <section className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-20 md:pt-24">
+      {/* Декоративный фон */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
         <div className="absolute top-20 right-20 w-96 h-96 border border-[#1A365D] rounded-full" />
         <div className="absolute bottom-40 left-10 w-64 h-64 border border-[#68A07C] rounded-full" />
       </div>
       
-      <div className="section-container relative z-10">
-        <div className="section-inner min-h-[calc(100vh-96px)] flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full py-12 lg:py-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="min-h-[calc(100vh-96px)] flex items-center py-12 lg:py-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
             
-            {/* Left column - Text content */}
+            {/* Левая колонка - Контент */}
             <motion.div 
-              className="space-y-8"
+              className="space-y-8 text-center lg:text-left"
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
             >
-              {/* Doctor Name & Credentials */}
               <div>
                 <motion.div
                   className="inline-flex items-center gap-2 bg-[#1A365D]/5 text-[#1A365D] 
-                             px-4 py-2 rounded-full text-[12px] font-sans font-medium tracking-wider uppercase mb-4"
+                             px-4 py-2 rounded-full text-[12px] font-sans font-medium tracking-wider uppercase mb-6"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
@@ -59,28 +47,27 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                   {t('hero.credentials')}
                 </motion.div>
                 
-                <h1 className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] leading-[1.1] mb-3">
+                <h1 className="text-[32px] sm:text-[42px] lg:text-[52px] font-serif font-bold text-[#1A365D] leading-[1.1] mb-4 break-words">
                   {t('hero.title')}
                 </h1>
                 
-                <p className="text-[16px] lg:text-[18px] text-[#68A07C] font-sans">
+                <p className="text-[17px] lg:text-[20px] text-[#68A07C] font-sans font-medium">
                   {t('hero.specialty')}
                 </p>
               </div>
 
-              {/* Main Headline */}
-              <div>
-                <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-serif font-semibold text-[#1A365D] leading-[1.2] mb-4">
+              <div className="space-y-4">
+                <h2 className="text-[22px] sm:text-[26px] lg:text-[30px] font-serif font-semibold text-[#2D3748] leading-[1.3]">
                   {t('hero.headline')}
                 </h2>
                 
-                <p className="text-[15px] lg:text-[16px] leading-[1.8] text-[#4A5568] max-w-xl font-sans">
+                <p className="text-[15px] lg:text-[17px] leading-[1.7] text-[#4A5568] max-w-xl mx-auto lg:mx-0 font-sans">
                   {t('hero.subheadline')}
                 </p>
               </div>
               
               {/* Trust Badges */}
-              <div className="flex flex-wrap gap-4 lg:gap-6">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-6">
                 {trustBadges.map((badge, index) => (
                   <motion.div
                     key={badge.label}
@@ -89,79 +76,82 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                   >
-                    <badge.icon className="w-4 h-4 text-[#68A07C]" />
-                    <span className="text-[12px] font-sans font-medium">{badge.label}</span>
+                    <badge.icon className="w-4 h-4 text-[#68A07C] shrink-0" />
+                    <span className="text-[12px] font-sans font-medium whitespace-nowrap">{badge.label}</span>
                   </motion.div>
                 ))}
               </div>
               
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* Кнопки */}
+              <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
                 <motion.button
-                  onClick={() => window.open(currentFormLink, '_blank')}
-                  className="btn-primary text-[14px] flex items-center justify-center gap-2"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                  onClick={onAssessmentClick}
+                  className="px-8 py-4 bg-[#1A365D] text-white rounded-xl font-sans font-bold text-[15px] shadow-lg shadow-[#1A365D]/20 hover:bg-[#2C5282] transition-all"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
                 >
                   {t('hero.ctaAssessment')}
                 </motion.button>
                 
-                <motion.a
-                  href={currentFormLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-secondary text-[14px] flex items-center justify-center gap-2"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                <motion.button
+                  onClick={() => {
+                    document.getElementById('metodika')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="px-8 py-4 bg-white text-[#1A365D] border-2 border-[#1A365D]/10 rounded-xl font-sans font-bold text-[15px] hover:border-[#1A365D]/30 transition-all"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
                 >
                   {t('hero.ctaApply')}
-                </motion.a>
+                </motion.button>
               </div>
             </motion.div>
             
-            {/* Right column - Professional Portrait */}
+            {/* Правая колонка - Портрет */}
             <motion.div 
               className="flex justify-center lg:justify-end"
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="relative">
-                {/* Decorative frame */}
-                <div className="absolute -inset-4 border-2 border-[#68A07C]/30 rounded-2xl" />
-                <div className="absolute -inset-8 border border-[#1A365D]/10 rounded-3xl" />
+                {/* Декоративные рамки */}
+                <div className="absolute -inset-3 border-2 border-[#68A07C]/20 rounded-2xl -rotate-2" />
+                <div className="absolute -inset-3 border-2 border-[#1A365D]/10 rounded-2xl rotate-1" />
                 
-                {/* Portrait */}
-                <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[480px] lg:w-[420px] lg:h-[560px] 
-                                rounded-xl overflow-hidden border border-[#E2E8F0]">
+                {/* Фотография */}
+                <div className="relative w-[280px] h-[380px] sm:w-[340px] sm:h-[460px] lg:w-[400px] lg:h-[540px] 
+                                rounded-2xl overflow-hidden shadow-2xl border border-white/50">
                   <img 
-                    src="/dr-erkin.jpg" 
-                    alt="Dr. Erkinbek Dzhamanbaev"
-                    className="w-full h-full object-cover"
+                    src="/dr-erkin.webp" 
+                    alt="MUDr. Erkinbek Dzhamanbaev"
+                    className="w-full h-full object-cover object-top"
+                    loading="eager"
                   />
                   
-                  {/* Credentials floating badge */}
-                  <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 border border-[#E2E8F0]">
-                    <div className="flex items-center justify-center gap-3">
-                      <span className="px-3 py-1 bg-[#1A365D] text-white text-[11px] font-bold rounded">MD</span>
-                      <span className="px-3 py-1 bg-[#68A07C] text-white text-[11px] font-bold rounded">PhD</span>
-                      <span className="px-3 py-1 bg-[#C9A227] text-white text-[11px] font-bold rounded">MBA</span>
+                  {/* Плашка с регалиями */}
+                  <div className="absolute bottom-6 left-4 right-4 bg-white/90 backdrop-blur-md rounded-xl p-3 shadow-lg border border-white/20">
+                    <div className="flex items-center justify-center gap-2 sm:gap-4">
+                      <span className="px-2 py-1 bg-[#1A365D] text-white text-[10px] font-bold rounded">MD</span>
+                      <span className="px-2 py-1 bg-[#68A07C] text-white text-[10px] font-bold rounded">PhD</span>
+                      <span className="px-2 py-1 bg-[#C9A227] text-white text-[10px] font-bold rounded">MBA</span>
                     </div>
                   </div>
                 </div>
 
-                {/* Experience badge */}
+                {/* Бадж с опытом */}
                 <motion.div 
-                  className="absolute -bottom-6 -right-6 bg-[#1A365D] rounded-xl shadow-xl p-4"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, delay: 0.5 }}
+                  className="absolute -bottom-6 -right-4 sm:-right-8 bg-white rounded-2xl shadow-xl p-4 border border-[#E2E8F0]"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
                 >
                   <div className="flex items-center gap-3">
-                    <Clock className="w-6 h-6 text-[#68A07C]" />
+                    <div className="w-12 h-12 bg-[#F0FDF4] rounded-full flex items-center justify-center">
+                      <Clock className="w-6 h-6 text-[#68A07C]" />
+                    </div>
                     <div>
-                      <p className="text-[24px] font-serif font-bold text-white">30+</p>
-                      <p className="text-[11px] text-white/70 font-sans">Years Practice</p>
+                      <p className="text-[22px] font-serif font-bold text-[#1A365D] leading-none">30+</p>
+                      <p className="text-[10px] text-[#718096] font-sans uppercase tracking-wider">{t('hero.badge2')}</p>
                     </div>
                   </div>
                 </motion.div>
