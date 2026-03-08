@@ -1,70 +1,128 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { useTranslation } from 'react-i18next';
-import { CheckCircle2, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
-
-// Это исправит ошибку TS2322
-interface ServicesProps {
-  onAssessmentClick: () => void;
-}
-
-export function Services({ onAssessmentClick }: ServicesProps) {
-  const { t } = useTranslation();
-
-  // Безопасное получение списка услуг из твоих новых JSON
-  const services = t('services.items', { returnObjects: true }) as any[] || [];
-
-  return (
-    <section id="services" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1A365D] mb-4">
-            {t('services.title')}
-          </h2>
-          <p className="text-[#4A5568] max-w-2xl mx-auto text-lg">
-            {t('services.subtitle')}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Array.isArray(services) && services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="p-8 rounded-3xl border border-[#E2E8F0] bg-[#F7F9FC] hover:shadow-xl transition-all group flex flex-col justify-between"
-            >
-              <div>
-                <h3 className="text-xl font-serif font-bold text-[#1A365D] mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-[#4A5568] mb-6 text-sm leading-relaxed">
-                  {service.description}
-                </p>
-                {service.features && (
-                  <ul className="space-y-3 mb-8">
-                    {service.features.map((feature: string, fIndex: number) => (
-                      <li key={fIndex} className="flex items-center gap-2 text-sm text-[#4A5568]">
-                        <CheckCircle2 className="w-4 h-4 text-[#68A07C]" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-              <button
-                onClick={onAssessmentClick}
-                className="w-full py-4 bg-white border-2 border-[#1A365D] text-[#1A365D] rounded-xl font-bold hover:bg-[#1A365D] hover:text-white transition-all flex items-center justify-center gap-2"
-              >
-                {t('services.cta')}
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+{
+  "nav": {
+    "method": "Metóda",
+    "services": "Služby",
+    "global": "Skúsenosti",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Dr. Erkinbek Džamanbajev",
+    "credentials": "MUDr., PhD, MBA",
+    "specialty": "Expert na komplexné prípady",
+    "headline": "Za hranicami štandardnej diagnostiky",
+    "subheadline": "Online konzultácie v celej Európe. 30+ rokov klinickej praxe.",
+    "ctaAssessment": "Začať 6D diagnostiku (Online)",
+    "ctaApply": "Podať žiadosť",
+    "badge1": "EU Licencia",
+    "badge2": "30+ rokov",
+    "badge3": "5000+ pacientov",
+    "badge4": "15 krajín"
+  },
+  "problem": {
+    "title": "Sú vám tieto situácie známe?",
+    "problemsTitle": "Keď medicína naráža na limity",
+    "solutionsTitle": "Medicína Koherencie",
+    "problems": [
+      "Komplexné prípady s 'normálnymi' výsledkami",
+      "Viacero symptómov bez diagnózy",
+      "Chronická bolesť roky"
+    ],
+    "solutions": [
+      "Systematická 6D analýza",
+      "Hľadanie príčin, nie maskovanie bolesti",
+      "Individuálny plán obnovy"
+    ],
+    "transition": "Obnovujeme koherenciu vášho tela."
+  },
+  "method6d": {
+    "title": "6D Navigačný systém",
+    "subtitle": "Šesť vektorov zdravia",
+    "description": "Individuálna cesta obnovy pre každého pacienta.",
+    "dimensions": [
+      { "id": "D1", "name": "D1: Diagnostika", "subtitle": "EBM analýza", "description": "Mapa dysfunkcií systému." },
+      { "id": "D2", "name": "D2: Dysfunkcia", "subtitle": "Vzorce", "description": "Korekcia pohybu a dýchania." },
+      { "id": "D3", "name": "D3: Odpojenie", "subtitle": "Spojenie mozog-telo", "description": "Aktivácia blúdivého nervu." },
+      { "id": "D4", "name": "D4: Smer", "subtitle": "Biochémia", "description": "Výživa a vnútorné prostredie." },
+      { "id": "D5", "name": "D5: Rozvoj", "subtitle": "Kognícia", "description": "Prerušenie cyklu bolesti." },
+      { "id": "D6", "name": "D6: Hĺbka", "subtitle": "Integrácia", "description": "Nový životný štýl." }
+    ]
+  },
+  "globalExperience": {
+    "title": "Skúsenosti",
+    "subtitle": "Medzinárodná prax",
+    "locations": [
+      { "country": "Nemecko", "details": "Stáže v oblasti systémovej medicíny." },
+      { "country": "Slovensko", "details": "Súkromná prax v Piešťanoch." },
+      { "country": "Švajčiarsko", "details": "Spolupráca s centrami." },
+      { "country": "USA", "details": "Účasť na konferenciách." }
+    ],
+    "membershipsTitle": "Členstvo",
+    "memberships": [
+      "Člen Európskej asociácie systémovej medicíny",
+      "Expert rady pre biorezonanciu",
+      "Lekárska licencia v SR"
+    ],
+    "certificationsTitle": "Certifikáty",
+    "certifications": [
+      "Diplomate in Systemic Medicine (Germany)",
+      "MBA in Healthcare Management"
+    ]
+  },
+  "successStories": {
+    "title": "Klinické výsledky",
+    "subtitle": "Príklady obnovy",
+    "disclaimer": "GDPR compliant",
+    "items": [
+      { "title": "Chronická únava (45 r.)", "content": "8 rokov neúspešnej liečby. Po 6D diagnostike odhalený neurozápal. Obnova energie na 85%." },
+      { "title": "Zložitá diagnóza", "content": "5 rokov bolesti bez príčiny. Nájdená súvislosť medzi biochémiou a pohybom." }
+    ]
+  },
+  "testimonials": {
+    "title": "Príbehy pacientov",
+    "subtitle": "Skutočné výsledky",
+    "1": { "condition": "Chronická únava", "quote": "Dr. Erkin našiel vyčerpanie HPA-osi na prvej konzultácii. O šesť mesiacov neskôr žijem normálne." },
+    "2": { "condition": "Vyhorenie", "quote": "6D diagnostika odhalila kolaps bunkovej energie. O tri mesiace riadim svoju firmu." },
+    "3": { "condition": "Autoimunitné", "quote": "Dr. Erkin spojil body, ktoré nikto iný nevidel. Konečne diagnóza, ktorá dáva zmysel." },
+    "4": { "condition": "Post-COVID", "quote": "6D protokol priamo riešil autonómnu dysfunkciu. Dostal som späť svoju hlavu." },
+    "5": { "condition": "Chronická bolesť", "quote": "€100 diagnostika ukázala neuroinflamáciu, ktorú všetci prehliadli." },
+    "6": { "condition": "Štítna žľaza", "quote": "Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Energia obnovená." },
+    "7": { "condition": "SDRČ", "quote": "Dr. Erkin našiel spojenie črevo-mozog. O štyri mesiace jem normálne." },
+    "8": { "condition": "Bolesti hlavy", "quote": "6D analýza odhalila krčnú dysfunkciu. Konečne žijem bez strachu z bolesti." }
+  },
+  "services": {
+    "title": "Služby",
+    "subtitle": "Programy",
+    "cta": "Objednať sa",
+    "items": [
+      {
+        "title": "6D Diagnostika",
+        "description": "Hĺbková systémová analýza stavu (60 minút).",
+        "features": ["Osobná mapa zdravia", "Individuálny akčný plán"]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Často kladené otázky",
+    "items": [
+      { "question": "Prečo sa cítim vyčerpaný?", "answer": "Príčina môže byť v mitochondriálnej dysfunkcii. 6D diagnostika ju pomáha odhaliť." },
+      { "question": "Prečo sú testy v norme?", "answer": "Štandardné testy hľadajú akútnu patológiu, my hľadáme funkčné nerovnováhy." },
+      { "question": "Ako prebieha online konzultácia?", "answer": "Sedenie trvá 60 minút cez Zoom. Vopred študujem vašu anamnézu." }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Spojte sa s nami",
+    "email": "erkinslovakia@gmail.com",
+    "whatsapp": { "label": "WhatsApp", "url": "https://wa.me/421940270511" },
+    "cta": "Napíšte nám"
+  },
+  "footer": {
+    "description": "Expert na integratívny manažment bolesti a medicínu koherencie.",
+    "phone": "+421 940 270 511",
+    "locationValue": "Piešťany, Slovensko",
+    "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
+    "license": "Lekárska licencia EÚ — Slovensko",
+    "disclaimerText": "Obsah slúži len na informačné účely."
+  }
 }
