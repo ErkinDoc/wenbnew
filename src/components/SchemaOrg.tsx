@@ -18,8 +18,9 @@ const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang }) => {
     "jobTitle": "MD, PhD, MBA",
     "image": "https://drerkin.eu/dr-erkin.webp",
     "description": descriptions[lang],
-    "url": `https://drerkin.eu/${lang === 'sk' ? '' : lang}`,
-    "telephone": "+421940270511", // Твой реальный номер из стратегии
+    // Исправлено: теперь ссылки соответствуют формату ?lang=
+    "url": lang === 'sk' ? "https://drerkin.eu/" : `https://drerkin.eu/?lang=${lang}`,
+    "telephone": "+421940270511",
     "priceRange": "100 EUR",
     "address": {
       "@type": "PostalAddress",
@@ -65,9 +66,10 @@ const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang }) => {
   };
 
   return (
-    <script type="application/ld+json">
-      {JSON.stringify(schemaData)}
-    </script>
+    <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+    />
   );
 };
 
