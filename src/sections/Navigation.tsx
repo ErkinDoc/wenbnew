@@ -5,31 +5,22 @@ import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
 interface NavigationProps {
-  onAssessmentClick?: () => void;
+  onAssessmentClick: () => void; // Сделал обязательным, так как логика в App.tsx
 }
 
 export function Navigation({ onAssessmentClick }: NavigationProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // ГАРАНТИРОВАННО ВЕРНЫЕ ССЫЛКИ
-  const formLinks: Record<string, string> = {
-    ru: 'https://forms.gle/VCejYUhzTLyQxJXU9',
-    sk: 'https://forms.gle/t7W8zVt1GwNafz1KA',
-    en: 'https://forms.gle/r7hQ44MV6C4UG4kz8',
-    de: 'https://forms.gle/r7hQ44MV6C4UG4kz8'
-  };
-
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // ИСПРАВЛЕНО: якоря совпадают с id секций в App.tsx
   const navLinks = [
     { label: t('nav.method'), href: '#metodika' },
     { label: t('nav.services'), href: '#sluzby' },
@@ -46,26 +37,24 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     }
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Добавляем отступ сверху, чтобы шапка не закрывала заголовок секции
+      const offset = 80; 
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
     setIsMobileMenuOpen(false);
   };
 
-  const handleAssessmentClick = (e: React.MouseEvent) => {
+  const handleCtaClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    e.stopPropagation();
-
-    const currentLang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0].toLowerCase();
-    const finalLink = formLinks[currentLang] || formLinks.en;
-
-    console.log('Opening form for lang:', currentLang, 'URL:', finalLink);
-    
-    window.open(finalLink, '_blank', 'noopener,noreferrer');
-    
-    if (onAssessmentClick) {
-      onAssessmentClick();
-    }
-    
+    onAssessmentClick(); // Вызываем единую логику из App.tsx
     setIsMobileMenuOpen(false);
   };
 
@@ -81,49 +70,55 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="section-container">
-          <div className="section-inner flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
             <a 
               href="/" 
-              className="flex flex-col"
-              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              className="flex flex-col group"
+              onClick={(e) => { 
+                e.preventDefault(); 
+                window.scrollTo({ top: 0, behavior: 'smooth' }); 
+              }}
             >
-              <span className="text-[20px] font-serif font-bold text-[#1A365D] leading-tight">
+              <span className="text-[18px] md:text-[20px] font-serif font-bold text-[#1A365D] leading-tight group-hover:text-[#68A07C] transition-colors">
                 Medicine of Coherence
               </span>
-              <span className="text-[11px] text-[#68A07C] font-sans tracking-wider uppercase">
+              <span className="text-[10px] md:text-[11px] text-[#68A07C] font-sans tracking-wider uppercase">
                 Dr. Erkinbek Dzhamanbaev
               </span>
             </a>
 
-            <nav className="hidden lg:flex items-center gap-8">
+            {/* Desktop Nav */}
+            <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
               {navLinks.map((link) => (
                 <button
                   key={link.href}
                   onClick={() => scrollToSection(link.href, link.external)}
-                  className="text-[14px] font-sans font-medium text-[#4A5568] hover:text-[#1A365D] transition-colors"
+                  className="text-[14px] font-sans font-medium text-[#4A5568] hover:text-[#1A365D] transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#68A07C] after:transition-all hover:after:w-full"
                 >
                   {link.label}
                 </button>
               ))}
             </nav>
 
-            <div className="flex items-center gap-4">
-              <div className="hidden lg:block">
-                <LanguageSwitcher variant={isScrolled ? 'light' : 'light'} />
+            <div className="flex items-center gap-3 md:gap-4">
+              <div className="hidden md:block">
+                <LanguageSwitcher variant="light" />
               </div>
               
               <button
-                onClick={handleAssessmentClick}
+                onClick={handleCtaClick}
                 className="hidden sm:block px-5 py-2.5 bg-[#1A365D] hover:bg-[#2C5282] 
-                           text-white text-[13px] font-sans font-medium rounded-lg transition-colors"
+                           text-white text-[13px] font-sans font-medium rounded-lg 
+                           transition-all transform hover:scale-105 active:scale-95 shadow-md"
               >
                 {t('hero.ctaAssessment')}
               </button>
 
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="lg:hidden p-2 text-[#1A365D]"
+                className="lg:hidden p-2 text-[#1A365D] hover:bg-[#F7FAFC] rounded-full transition-colors"
+                aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -132,41 +127,44 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
         </div>
       </motion.header>
 
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            className="fixed inset-0 z-30 lg:hidden"
+            className="fixed inset-0 z-50 lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div className="absolute inset-0 bg-black/30" onClick={() => setIsMobileMenuOpen(false)} />
+            <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setIsMobileMenuOpen(false)} />
             <motion.div
-              className="absolute top-0 right-0 w-[300px] h-full bg-white shadow-xl pt-24 px-6"
+              className="absolute top-0 right-0 w-[280px] h-full bg-white shadow-2xl pt-20 px-6 flex flex-col"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
             >
-              <nav className="space-y-1">
+              <nav className="flex-1">
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
                     onClick={() => scrollToSection(link.href, link.external)}
                     className="block w-full text-left text-[16px] font-medium text-[#1A365D] 
-                               hover:text-[#68A07C] py-3 border-b border-[#E2E8F0]"
+                               hover:text-[#68A07C] py-4 border-b border-[#E2E8F0] transition-colors"
                   >
                     {link.label}
                   </button>
                 ))}
               </nav>
               
-              <div className="mt-8 space-y-4">
-                <LanguageSwitcher variant="light" />
+              <div className="pb-10 space-y-4">
+                <div className="flex justify-center py-2">
+                  <LanguageSwitcher variant="light" />
+                </div>
                 <button
-                  onClick={handleAssessmentClick}
+                  onClick={handleCtaClick}
                   className="w-full py-4 bg-[#1A365D] hover:bg-[#2C5282] text-white 
-                             font-medium rounded-lg transition-colors"
+                             font-semibold rounded-xl transition-all shadow-lg active:scale-95"
                 >
                   {t('hero.ctaAssessment')}
                 </button>
