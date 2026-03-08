@@ -138,7 +138,7 @@ export function Footer() {
             </motion.div>
           </div>
 
-          {/* Medical Disclaimer Section */}
+          {/* Medical Disclaimer Section (Dynamic) */}
           <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -147,10 +147,10 @@ export function Footer() {
             className="mt-16 p-6 rounded-lg border border-white/5 bg-white/[0.02]"
           >
             <p className="text-[12px] leading-relaxed text-white/40 font-sans text-center max-w-4xl mx-auto">
-              <span className="text-white/60 font-semibold uppercase tracking-wider block mb-2">Medical Disclaimer</span>
-              All content on this website is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. 
-              Accessing this site or purchasing publications does not establish a doctor-patient relationship. 
-              For personalized medical recommendations, please schedule a private consultation.
+              <span className="text-white/60 font-semibold uppercase tracking-wider block mb-2">
+                {t('footer.disclaimerTitle')}
+              </span>
+              {t('footer.disclaimerText')}
             </p>
           </motion.div>
 
