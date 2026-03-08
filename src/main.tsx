@@ -1,17 +1,13 @@
-// Force rebuild 2026-02-14
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './index.css';
 
-const rootElement = document.getElementById('root');
-
-if (!rootElement) {
-  console.error('Failed to find the root element. Check your index.html');
-} else {
-  createRoot(rootElement).render(
-    <StrictMode>
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <BrowserRouter>
       <App />
-    </StrictMode>,
-  );
-}
+    </BrowserRouter>
+  </React.StrictMode>
+);
