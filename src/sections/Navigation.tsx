@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
@@ -10,6 +11,8 @@ interface NavigationProps {
 
 export function Navigation({ onAssessmentClick }: NavigationProps) {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -21,33 +24,37 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // ИСПРАВЛЕННЫЙ МАССИВ ССЫЛОК: Сверяется с ключами в json и ID в секциях
   const navLinks = [
-    { label: t('nav.method'), href: '#method' },
-    { label: t('nav.services'), href: '#services' },
-    { label: t('nav.global'), href: '#experience' },
-    { label: 'Publications', href: 'https://www.drerkin.eu/', external: true },
-    { label: t('nav.faq'), href: '#faq' },
-    { label: t('nav.contact'), href: '#contact' },
+    { label: t('nav.method'), href: '#method', type: 'anchor' },
+    { label: t('nav.services'), href: '#services', type: 'anchor' },
+    { label: t('nav.global'), href: '#global', type: 'anchor' },
+    { label: 'Publications', href: '/publications', type: 'route' },
+    { label: t('nav.faq'), href: '#faq', type: 'anchor' },
+    { label: t('nav.contact'), href: '#footer', type: 'anchor' },
   ];
 
-  const scrollToSection = (href: string, external?: boolean) => {
-    if (external) {
-      window.location.href = href;
-      return;
-    }
-    const element = document.querySelector(href);
-    if (element) {
-      const offset = 80; 
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+  const handleNavClick = (href: string, type: string) => {
+    if (type === 'route') {
+      navigate(href);
+    } else {
+      // Если мы на другой странице, сначала переходим на главную
+      if (location.pathname !== '/') {
+        navigate('/' + href);
+      } else {
+        const element = document.querySelector(href);
+        if (element) {
+          const offset = 80;
+          const bodyRect = document.body.getBoundingClientRect().top;
+          const elementRect = element.getBoundingClientRect().top;
+          const elementPosition = elementRect - bodyRect;
+          const offsetPosition = elementPosition - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
     }
     setIsMobileMenuOpen(false);
   };
@@ -56,6 +63,15 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     e.preventDefault();
     onAssessmentClick();
     setIsMobileMenuOpen(false);
+  };
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -75,10 +91,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
             <a 
               href="/" 
               className="flex flex-col group"
-              onClick={(e) => { 
-                e.preventDefault(); 
-                window.scrollTo({ top: 0, behavior: 'smooth' }); 
-              }}
+              onClick={handleLogoClick}
             >
               <span className="text-[18px] md:text-[20px] font-serif font-bold text-[#1A365D] leading-tight group-hover:text-[#68A07C] transition-colors">
                 Medicine of Coherence
@@ -93,7 +106,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
               {navLinks.map((link) => (
                 <button
                   key={link.href}
-                  onClick={() => scrollToSection(link.href, link.external)}
+                  onClick={() => handleNavClick(link.href, link.type)}
                   className="text-[14px] font-sans font-medium text-[#4A5568] hover:text-[#1A365D] transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#68A07C] after:transition-all hover:after:w-full"
                 >
                   {link.label}
@@ -148,7 +161,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
-                    onClick={() => scrollToSection(link.href, link.external)}
+                    onClick={() => handleNavClick(link.href, link.type)}
                     className="block w-full text-left text-[16px] font-medium text-[#1A365D] 
                                hover:text-[#68A07C] py-4 border-b border-[#E2E8F0] transition-colors"
                   >
