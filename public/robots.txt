@@ -1,27 +1,38 @@
 # robots.txt for drerkin.eu
 # Medicine of Coherence - Dr. Erkinbek Dzhamanbaev
 
-# Allow all search engines
 User-agent: *
 Allow: /
+
+# Disallow admin and private areas
 Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
 Disallow: /*.json$
+
+# Allow important resources
+Allow: /sitemap.xml
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.webp$
 
 # Sitemap location
 Sitemap: https://www.drerkin.eu/sitemap.xml
 
-# Specific crawler rules
+# Crawl-delay for politeness (optional)
+Crawl-delay: 1
+
+# Specific bot instructions
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Slurp
+User-agent: facebookexternalhit
 Allow: /
 
-# Crawl delay for polite crawling
-Crawl-delay: 1
-
-# Host preference (primary domain)
-Host: https://www.drerkin.eu
+User-agent: Twitterbot
+Allow: /
