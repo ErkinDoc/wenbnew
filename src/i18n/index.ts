@@ -17,13 +17,19 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    // Если язык не определен, ставим словацкий (основная локация клиники)
+    fallbackLng: 'sk', 
     debug: false,
     interpolation: {
       escapeValue: false,
     },
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
+      // ПРИОРЯТЕТ: 
+      // 1. Ссылка (?lang=ru) - ВАЖНО ДЛЯ SEO
+      // 2. Память браузера (localStorage)
+      // 3. Настройки системы (navigator)
+      order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lang', // Ищем именно этот ключ в URL
       caches: ['localStorage'],
     },
   });
