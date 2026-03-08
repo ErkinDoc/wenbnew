@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Users, Globe, TrendingDown, Clock, Shield, GraduationCap, Briefcase, Lock } from 'lucide-react';
+import { Users, Globe, TrendingUp, Clock, Shield, GraduationCap, Briefcase, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export function TrustAuthority() {
@@ -12,7 +12,7 @@ export function TrustAuthority() {
   const stats = [
     { icon: Users, number: '5000+', label: t('trust.stats.0.label') },
     { icon: Clock, number: '30+', label: t('trust.stats.1.label') },
-    { icon: TrendingDown, number: '70-85%', label: t('trust.stats.2.label') },
+    { icon: TrendingUp, number: '70-85%', label: t('trust.stats.2.label') },
     { icon: Globe, number: '15', label: t('trust.stats.3.label') },
   ];
 
@@ -28,7 +28,6 @@ export function TrustAuthority() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            {/* ИСПРАВЛЕНО: Теперь "Credentials" тоже переводится */}
             <span className="inline-block text-[12px] font-sans font-medium tracking-wider uppercase text-[#68A07C] mb-4">
               {t('trust.badge') || 'Credentials'} 
             </span>
