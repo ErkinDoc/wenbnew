@@ -14,8 +14,8 @@
     "subheadline": "Online konzultácie v celej Európe. 30+ rokov klinickej praxe.",
     "ctaAssessment": "Začať 6D diagnostiku (Online)",
     "ctaApply": "Podať žiadosť",
-    "badge1": "Licencia v EÚ",
-    "badge2": "30+ rokov praxe",
+    "badge1": "EU Licencia",
+    "badge2": "30+ rokov",
     "badge3": "5000+ pacientov",
     "badge4": "15 krajín"
   },
@@ -24,13 +24,13 @@
     "problemsTitle": "Keď medicína naráža na limity",
     "solutionsTitle": "Medicína Koherencie",
     "problems": [
-      "Komplexné prípady s „normálnymi“ výsledkami",
+      "Komplexné prípady s 'normálnymi' výsledkami",
       "Viacero symptómov bez diagnózy",
-      "Chronická bolesť trvajúca roky"
+      "Chronická bolesť roky"
     ],
     "solutions": [
       "Systematická 6D analýza",
-      "Hľadanie príčin, nie maskovanie symptómov",
+      "Hľadanie príčin, nie maskovanie bolesti",
       "Individuálny plán obnovy"
     ],
     "transition": "Obnovujeme koherenciu vášho tela."
@@ -54,7 +54,7 @@
       },
       {
         "id": "D3",
-        "name": "D3: Regulácia",
+        "name": "D3: Odpojenie",
         "subtitle": "Spojenie mozog-telo",
         "description": "Aktivácia blúdivého nervu."
       },
@@ -90,54 +90,54 @@
   "testimonials": {
     "title": "Príbehy pacientov",
     "subtitle": "Skutočné výsledky",
-    "disclaimer": "V súlade s GDPR. Všetky prípady sú anonymizované.",
+    "disclaimer": "GDPR compliant. Všetky prípady anonymizované.",
     "1": {
       "condition": "Chronická únava + fibromyalgia",
       "duration": "8 rokov, 12 špecialistov",
-      "result": "Úplná funkčná obnova",
-      "quote": "Dvanásť lekárov za osem rokov. Každý liečil svoju časť. Nikto nevidel vzorec. Dr. Erkin našiel vyčerpanie HPA osi na prvom sedení. Po pol roku opäť žijem."
+      "result": "Plná funkčná obnova",
+      "quote": "Dvanásť lekárov za osem rokov. Každý liečil svoj kúsok. Nikto nevidel vzor. Dr. Erkin našiel vyčerpanie HPA-osi na prvej konzultácii. O šesť mesiacov neskôr žijem normálne."
     },
     "2": {
       "condition": "Vyhorenie rezistentné na lieky",
       "duration": "3 roky, antidepresíva neúčinné",
       "result": "Návrat do práce",
-      "quote": "Dve vyhorenia. Antidepresíva prestali fungovať. 6D diagnostika ukázala to, čo nikto nekontroloval — kolaps bunkovej energetiky. O tri mesiace neskôr opäť riadim firmu."
+      "quote": "Dva burnouty. Antidepresíva prestali fungovať. 6D diagnostika odhalila kolaps bunkovej energie. O tri mesiace riadim svoju firmu."
     },
     "3": {
-      "condition": "Nediagnostikované autoimunitné ochorenie",
+      "condition": "Nediagnostikované autoimunitné",
       "duration": "5 rokov, 9 špecialistov",
-      "result": "78% zníženie symptómov",
-      "quote": "Reumatológ — nič. Neurológ — nič. Gastroenterológ — nič. Dr. Erkin spojil body, ktoré iní nevideli. Konečne diagnóza, ktorá dáva zmysel."
+      "result": "78% redukcia symptómov",
+      "quote": "Reumatológ — nič. Neurológ — nič. Gastroenterológ — nič. Dr. Erkin spojil body, ktoré nikto iný nevidel. Konečne diagnóza, ktorá dáva zmysel."
     },
     "4": {
-      "condition": "Post-covidový syndróm",
+      "condition": "Post-COVID syndróm",
       "duration": "18 mesiacov bez zlepšenia",
       "result": "85% zotavenie",
-      "quote": "Mozgová hmla, únava, búšenie srdca — lekári hovorili, aby som čakala. 6D protokol priamo vyriešil autonómnu dysfunkciu. Vrátil sa mi môj mozog."
+      "quote": "Mozgová hmla, únava, palpitácie — lekári mi povedali čakať. 6D protokol priamo riešil autonómnu dysfunkciu. Dostal som späť svoju hlavu."
     },
     "5": {
       "condition": "Chronická bolesť + depresia",
       "duration": "12 rokov, 15+ špecialistov",
-      "result": "70% zníženie bolesti",
-      "quote": "Minula som 40 000 € na liečbu, ktorá nefungovala. Diagnostika za 100 € ukázala to, čo všetci prehliadli: moja bolesť nebola psychická — bol to neurozápal."
+      "result": "70% redukcia bolesti",
+      "quote": "Minul som 40 000 € na liečby, ktoré nefungovali. €100 diagnostika ukázala, čo všetci prehliadli: moja bolesť nebola psychická — bola to neuroinflamácia."
     },
     "6": {
       "condition": "Dysfunkcia štítnej žľazy + únava",
       "duration": "4 roky, TSH vždy v norme",
       "result": "Energia obnovená",
-      "quote": "TSH bolo ideálne, ale nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiaden iný lekár to nespomenul."
+      "quote": "TSH perfektné. Nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiadny iný lekár to nespomenul."
     },
     "7": {
       "condition": "Syndróm dráždivého čreva",
       "duration": "6 rokov, gastroenterológovia bez výsledku",
       "result": "90% zlepšenie symptómov",
-      "quote": "Šesť rokov diét, tabliet a vyšetrení. Dr. Erkin našiel spojenie črevo-mozog, ktoré nikto nehľadal. Po štyroch mesiacoch jem normálne."
+      "quote": "Šesť rokov diét, tabliet, vyšetrení. Dr. Erkin našiel spojenie črevo-mozog, ktoré nikto nehľadal. O štyri mesiace jem normálne."
     },
     "8": {
       "condition": "Chronické bolesti hlavy",
       "duration": "10 rokov, neurológovia bez diagnózy",
       "result": "80% zníženie frekvencie",
-      "quote": "Desať rokov migrén. MRI čisté, lieky nepomáhajú. 6D analýza odhalila krčnú dysfunkciu a potravinové spúšťače. Konečne žijem bez strachu z bolesti."
+      "quote": "Desať rokov migrén. MRI čisté, tablety nepomáhajú. 6D analýza odhalila krčnú dysfunkciu a spúšťače v strave. Konečne žijem bez strachu z bolesti."
     }
   },
   "globalExperience": {
@@ -166,16 +166,16 @@
     "note": "Konzultácie prebiehajú cez Zoom."
   },
   "trust": {
-    "title": "Skúsenosti a dôvera",
-    "badge": "Regálie",
-    "credentialsTitle": "Kvalifikácia",
+    "title": "Skúsenosti a Dôvera",
+    "badge": "Kvalifikácia",
+    "credentialsTitle": "Certifikáty",
     "credentials": [
       "MUDr., PhD, MBA",
-      "Lekárska licencia v EÚ (Slovensko)",
+      "Lekárska licencia EÚ (Slovensko)",
       "Expert na systémovú medicínu",
       "30+ rokov klinickej praxe"
     ],
-    "gdpr": "V súlade so štandardmi ochrany údajov GDPR",
+    "gdpr": "V súlade so štandardmi GDPR",
     "stats": [
       {
         "number": "5000+",
@@ -183,11 +183,11 @@
       },
       {
         "number": "30+",
-        "label": "rokov klinickej praxe"
+        "label": "rokov praxe"
       },
       {
         "number": "70–85%",
-        "label": "dynamika uzdravenia za 3 mesiace"
+        "label": "zlepšenie do 3 mesiacov"
       },
       {
         "number": "15",
@@ -200,41 +200,41 @@
     "items": [
       {
         "question": "Prečo sa cítim vyčerpaný aj po plnohodnotnom spánku?",
-        "answer": "Takáto únava často nesúvisí s nedostatkom odpočinku, ale s mitochondriálnou dysfunkciou — stavom „bunkovej hibernácie“. 6D diagnostika pomáha pochopiť, či príčina spočíva v metabolických alebo neurologických poruchách."
+        "answer": "Tento typ únavy často pramení z mitochondriálnej dysfunkcie alebo stavu 'celulárnej hibernácie'. 6D diagnostická navigácia pomáha identifikovať, či je príčina v metabolickej alebo neurologickej regulácii."
       },
       {
-        "question": "Prečo sú výsledky testov v norme, ak sa cítim zle?",
-        "answer": "Štandardné testy hľadajú akútne patológie, pričom často prehliadajú funkčné zlyhania. Pozeráme sa hlbšie ako sú referenčné hodnoty, aby sme našli logiku vašich symptómov."
+        "question": "Prečo sú moje výsledky testov 'v norme', ak sa cítim tak zle?",
+        "answer": "Štandardné laboratórne testy sú navrhnuté na detekciu akútnej patológie, pričom často prehliadajú subklinické funkčné nerovnováhy. Hľadáme fyziologickú logiku mimo referenčných hodnôt."
       },
       {
         "question": "Čo je dysfunkcia osi HPA a ako ovplyvňuje energiu?",
-        "answer": "Os HPA (hypotalamus-hypofýza-nadobličky) je hlavným regulátorom stresu. Jej narušenie vedie k stavu „unavený, ale vybičovaný“, mozgovej hmle a poruchám spánku. Obnova tejto osi je prioritou pri liečbe vyčerpania."
+        "answer": "Os HPA (hypotalamus-hypofýza-nadobličky) je hlavným regulátorom stresu. Jej porucha vedie k stavu 'unavený, ale napätý', mozgovej hmle a poruchám spánku. Obnova tejto osi je prioritou pri liečbe vyčerpania."
       },
       {
         "question": "Prečo dovolenka nepomáha pri profesionálnom vyhorení?",
-        "answer": "Vyhorenie je fyziologické vyčerpanie zdrojov organizmu na bunkovej úrovni, nie len psychologická únava. Krátky odpočinok nedokáže okamžite obnoviť neuroendokrinnú rovnováhu."
+        "answer": "Vyhorenie je fyziologické vyčerpanie zdrojov organizmu na bunkovej úrovni, nie len psychická únava. Krátky odpočinok nedokáže okamžite obnoviť neuroendokrinnú rovnováhu."
       },
       {
         "question": "Ako 6D diagnostika pomáha pri chronickej bolesti?",
-        "answer": "Hľadáme systémové príčiny: neuroinflamáciu, biochemické deficity alebo chyby v pohybových vzorcoch. Prerušenie cyklu bolesti je možné len prostredníctvom komplexného pôsobenia na všetky vektory zdravia."
+        "answer": "Hľadáme systémové príčiny: neuroinflamáciu, biochemické deficity alebo chyby v pohybových vzorcoch. Prerušenie cyklu bolesti je možné len komplexným pôsobením na všetky vektory zdravia."
       },
       {
         "question": "Môžu symptómy Long COVID zmiznúť samy od seba?",
-        "answer": "U mnohých pacientov telo uviazne v režime autonómnej dysfunkcie. Bez cielenej regulácie vegetatívneho nervového systému môžu symptómy pretrvávať mesiace alebo roky."
+        "answer": "U mnohých pacientov organizmus uviazne v režime autonómnej dysfunkcie. Bez cielenej regulácie vegetatívneho nervového systému môžu symptómy pretrvávať mesiace až roky."
       },
       {
-        "question": "Ako prebieha online konzultácia v zložitých prípadoch?",
-        "answer": "Sedenie trvá 60 minút. Vopred si preštudujem vašu anamnézu, aby som sa na stretnutí mohol sústrediť na hľadanie súvislostí medzi symptómami a zostaviť navigačnú mapu vašej obnovy."
+        "question": "Ako prebieha online konzultácia pri komplexných prípadoch?",
+        "answer": "Sedenie trvá 60 minút. Vopred preštudojem vašu zdravotnú dokumentáciu, aby som sa na stretnutí mohol sústrediť na hľadanie súvislostí medzi symptómami a zostaviť navigačnú mapu vášho zotavenia."
       },
       {
-        "question": "Čo získam po diagnostickom sedení?",
-        "answer": "Získate jasné pochopenie prvotných príčin vášho stavu a individuálny akčný plán (roadmap), ktorý zahŕňa korekciu životného štýlu, stravovania a odporúčania pre ďalšiu terapiu."
+        "question": "Čo dostanem po diagnostickom sedení?",
+        "answer": "Získate jasné pochopenie príčin vášho stavu a individuálny akčný plán (roadmap) zahŕňajúci úpravu životného štýlu, stravovania a odporúčania pre ďalšiu terapiu."
       }
     ]
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Na príjme",
+    "subtitle": "Spojte sa s nami",
     "email": "erkinslovakia@gmail.com",
     "whatsapp": {
       "label": "WhatsApp",
@@ -259,24 +259,24 @@
   "successStories": {
     "title": "Klinické výsledky",
     "subtitle": "Príklady obnovy",
-    "disclaimer": "V súlade s GDPR",
+    "disclaimer": "GDPR compliant",
     "stories": [
       {
         "condition": "Chronická únava",
-        "history": "8 rokov neúspešnej liečby",
+        "history": "8 rokov bezúspešnej liečby",
         "approach": "6D Biochémia",
-        "result": "85% obnova energie"
+        "result": "85% energie"
       }
     ]
   },
   "finalCta": {
     "title": "Ste pripravení nájsť príčinu?",
-    "subtitle": "Prihláste sa na 6D diagnostiku",
+    "subtitle": "Objednajte sa na 6D diagnostiku",
     "benefits": [
       "60 minút hĺbkovej analýzy",
       "Osobná mapa zdravia",
-      "Konkrétny akčný plán",
-      "Online z ktoréhokoľvek miesta v Európe"
+      "Konkrétny plán krokov",
+      "Online z celej Európy"
     ],
     "ctaAssessment": "Začať 6D diagnostiku",
     "ctaApply": "Podať žiadosť",
