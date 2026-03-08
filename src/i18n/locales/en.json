@@ -254,7 +254,9 @@
     "terms": "Terms of Service",
     "language": "Language",
     "copyright": "© 2026 Dr. Erkinbek Dzhamanbayev. All rights reserved.",
-    "license": "EU Medical License — Slovakia"
+    "license": "EU Medical License — Slovakia",
+    "disclaimerTitle": "Medical Disclaimer",
+    "disclaimerText": "All content on this website is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing this site or purchasing publications does not establish a doctor-patient relationship. For personalized medical advice, please book a private consultation."
   },
   "successStories": {
     "title": "Clinical Outcomes",
