@@ -1,291 +1,70 @@
-{
-  "nav": {
-    "method": "Metóda",
-    "services": "Služby",
-    "global": "Skúsenosti",
-    "faq": "FAQ",
-    "contact": "Kontakt"
-  },
-  "hero": {
-    "title": "Dr. Erkinbek Džamanbajev",
-    "credentials": "MUDr., PhD, MBA",
-    "specialty": "Expert na komplexné prípady",
-    "headline": "Za hranicami štandardnej diagnostiky",
-    "subheadline": "Online konzultácie v celej Európe. 30+ rokov klinickej praxe.",
-    "ctaAssessment": "Začať 6D diagnostiku (Online)",
-    "ctaApply": "Podať žiadosť",
-    "badge1": "EU Licencia",
-    "badge2": "30+ rokov",
-    "badge3": "5000+ pacientov",
-    "badge4": "15 krajín"
-  },
-  "problem": {
-    "title": "Sú vám tieto situácie známe?",
-    "problemsTitle": "Keď medicína naráža na limity",
-    "solutionsTitle": "Medicína Koherencie",
-    "problems": [
-      "Komplexné prípady s 'normálnymi' výsledkami",
-      "Viacero symptómov bez diagnózy",
-      "Chronická bolesť roky"
-    ],
-    "solutions": [
-      "Systematická 6D analýza",
-      "Hľadanie príčin, nie maskovanie bolesti",
-      "Individuálny plán obnovy"
-    ],
-    "transition": "Obnovujeme koherenciu vášho tela."
-  },
-  "method6d": {
-    "title": "6D Navigačný systém",
-    "subtitle": "Šesť vektorov zdravia",
-    "description": "Individuálna cesta obnovy pre každého pacienta.",
-    "dimensions": [
-      {
-        "id": "D1",
-        "name": "D1: Diagnostika",
-        "subtitle": "EBM analýza",
-        "description": "Mapa dysfunkcií systému."
-      },
-      {
-        "id": "D2",
-        "name": "D2: Dysfunkcia",
-        "subtitle": "Vzorce",
-        "description": "Korekcia pohybu a dýchania."
-      },
-      {
-        "id": "D3",
-        "name": "D3: Odpojenie",
-        "subtitle": "Spojenie mozog-telo",
-        "description": "Aktivácia blúdivého nervu."
-      },
-      {
-        "id": "D4",
-        "name": "D4: Smer",
-        "subtitle": "Biochémia",
-        "description": "Výživa a vnútorné prostredie."
-      },
-      {
-        "id": "D5",
-        "name": "D5: Rozvoj",
-        "subtitle": "Kognícia",
-        "description": "Prerušenie cyklu bolesti."
-      },
-      {
-        "id": "D6",
-        "name": "D6: Hĺbka",
-        "subtitle": "Integrácia",
-        "description": "Nový životný štýl."
-      }
-    ],
-    "scientificBasis": {
-      "label": "Vedecký základ",
-      "publications": [
-        {
-          "title": "6D Navigation Model",
-          "url": "https://www.drerkin.eu/"
-        }
-      ]
-    }
-  },
-  "testimonials": {
-    "title": "Príbehy pacientov",
-    "subtitle": "Skutočné výsledky",
-    "disclaimer": "GDPR compliant. Všetky prípady anonymizované.",
-    "1": {
-      "condition": "Chronická únava + fibromyalgia",
-      "duration": "8 rokov, 12 špecialistov",
-      "result": "Plná funkčná obnova",
-      "quote": "Dvanásť lekárov za osem rokov. Každý liečil svoj kúsok. Nikto nevidel vzor. Dr. Erkin našiel vyčerpanie HPA-osi na prvej konzultácii. O šesť mesiacov neskôr žijem normálne."
-    },
-    "2": {
-      "condition": "Vyhorenie rezistentné na lieky",
-      "duration": "3 roky, antidepresíva neúčinné",
-      "result": "Návrat do práce",
-      "quote": "Dva burnouty. Antidepresíva prestali fungovať. 6D diagnostika odhalila kolaps bunkovej energie. O tri mesiace riadim svoju firmu."
-    },
-    "3": {
-      "condition": "Nediagnostikované autoimunitné",
-      "duration": "5 rokov, 9 špecialistov",
-      "result": "78% redukcia symptómov",
-      "quote": "Reumatológ — nič. Neurológ — nič. Gastroenterológ — nič. Dr. Erkin spojil body, ktoré nikto iný nevidel. Konečne diagnóza, ktorá dáva zmysel."
-    },
-    "4": {
-      "condition": "Post-COVID syndróm",
-      "duration": "18 mesiacov bez zlepšenia",
-      "result": "85% zotavenie",
-      "quote": "Mozgová hmla, únava, palpitácie — lekári mi povedali čakať. 6D protokol priamo riešil autonómnu dysfunkciu. Dostal som späť svoju hlavu."
-    },
-    "5": {
-      "condition": "Chronická bolesť + depresia",
-      "duration": "12 rokov, 15+ špecialistov",
-      "result": "70% redukcia bolesti",
-      "quote": "Minul som 40 000 € na liečby, ktoré nefungovali. €100 diagnostika ukázala, čo všetci prehliadli: moja bolesť nebola psychická — bola to neuroinflamácia."
-    },
-    "6": {
-      "condition": "Dysfunkcia štítnej žľazy + únava",
-      "duration": "4 roky, TSH always v norme",
-      "result": "Energia obnovená",
-      "quote": "TSH perfektné. Nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiadny iný lekár to nespomenul."
-    },
-    "7": {
-      "condition": "Syndróm dráždivého čreva",
-      "duration": "6 rokov, gastroenterológovia bez výsledku",
-      "result": "90% zlepšenie symptómov",
-      "quote": "Šesť rokov diét, tabliet, vyšetrení. Dr. Erkin našiel spojenie črevo-mozog, ktoré nikto nehľadal. O štyri mesiace jem normálne."
-    },
-    "8": {
-      "condition": "Chronické bolesti hlavy",
-      "duration": "10 rokov, neurológovia bez diagnózy",
-      "result": "80% zníženie frekvencie",
-      "quote": "Desať rokov migrén. MRI čisté, tablety nepomáhajú. 6D analýza odhalila krčnú dysfunkciu a spúšťače v strave. Konečne žijem bez strachu z bolesti."
-    }
-  },
-  "globalExperience": {
-    "title": "Skúsenosti",
-    "subtitle": "Medzinárodná prax",
-    "locations": [],
-    "memberships": [],
-    "certifications": []
-  },
-  "services": {
-    "title": "Služby",
-    "subtitle": "Programy",
-    "packages": [
-      {
-        "name": "6D Diagnostika",
-        "subtitle": "60 minút",
-        "price": "€100",
-        "features": [
-          "Hĺbková systémová analýza",
-          "Individuálny akčný plán"
-        ],
-        "cta": "Objednať sa",
-        "formUrl": "https://forms.gle/oDEBWUFKi6vLbTmk9"
-      }
-    ],
-    "note": "Konzultácie prebiehajú cez Zoom."
-  },
-  "trust": {
-    "title": "Skúsenosti a Dôvera",
-    "badge": "Kvalifikácia",
-    "credentialsTitle": "Certifikáty",
-    "credentials": [
-      "MUDr., PhD, MBA",
-      "Lekárska licencia EÚ (Slovensko)",
-      "Expert na systémovú medicínu",
-      "30+ rokov klinickej praxe"
-    ],
-    "gdpr": "V súlade so štandardmi GDPR",
-    "stats": [
-      {
-        "number": "5000+",
-        "label": "pacientov"
-      },
-      {
-        "number": "30+",
-        "label": "rokov praxe"
-      },
-      {
-        "number": "70–85%",
-        "label": "zlepšenie do 3 mesiacov"
-      },
-      {
-        "number": "15",
-        "label": "krajín Európy"
-      }
-    ]
-  },
-  "faq": {
-    "title": "Často kladené otázky",
-    "items": [
-      {
-        "question": "Prečo sa cítim vyčerpaný aj po plnohodnotnom spánku?",
-        "answer": "Tento typ únavy často pramení z mitochondriálnej dysfunkcie alebo stavu 'celulárnej hibernácie'. 6D diagnostická navigácia pomáha identifikovať, či je príčina v metabolickej alebo neurologickej regulácii."
-      },
-      {
-        "question": "Prečo sú moje výsledky testov 'v norme', ak sa cítim tak zle?",
-        "answer": "Štandardné laboratórne testy sú navrhnuté na detekciu akútnej patológie, pričom často prehliadajú subklinické funkčné nerovnováhy. Hľadáme fyziologickú logiku mimo referenčných hodnôt."
-      },
-      {
-        "question": "Čo je dysfunkcia osi HPA a ako ovplyvňuje energiu?",
-        "answer": "Os HPA (hypotalamus-hypofýza-nadobličky) je hlavným regulátorom stresu. Jej porucha vedie k stavu 'unavený, ale napätý', mozgovej hmle a poruchám spánku. Obnova tejto osi je prioritou pri liečbe vyčerpania."
-      },
-      {
-        "question": "Prečo dovolenka nepomáha pri profesionálnom vyhorení?",
-        "answer": "Vyhorenie je fyziologické vyčerpanie zdrojov organizmu na bunkovej úrovni, nie len psychická únava. Krátky odpočinok nedokáže okamžite obnoviť neuroendokrinnú rovnováhu."
-      },
-      {
-        "question": "Ako 6D diagnostika pomáha pri chronickej bolesti?",
-        "answer": "Hľadáme systémové príčiny: neuroinflamáciu, biochemické deficity alebo chyby v pohybových vzorcoch. Prerušenie cyklu bolesti je možné len komplexným pôsobením na všetky vektory zdravia."
-      },
-      {
-        "question": "Môžu symptómy Long COVID zmiznúť samy od seba?",
-        "answer": "U mnohých pacientov organizmus uviazne v režime autonómnej dysfunkcie. Bez cielenej regulácie vegetatívneho nervového systému môžu symptómy pretrvávať mesiace až roky."
-      },
-      {
-        "question": "Ako prebieha online konzultácia pri komplexných prípadoch?",
-        "answer": "Sedenie trvá 60 minút. Vopred preštudojem vašu zdravotnú dokumentáciu, aby som sa na stretnutí mohol sústrediť na hľadanie súvislostí medzi symptómami a zostaviť navigačnú mapu vášho zotavenia."
-      },
-      {
-        "question": "Čo dostanem po diagnostickom sedení?",
-        "answer": "Získate jasné pochopenie príčin vášho stavu a individuálny akčný plán (roadmap) zahŕňajúci úpravu životného štýlu, stravovania a odporúčania pre ďalšiu terapiu."
-      }
-    ]
-  },
-  "contact": {
-    "title": "Kontakt",
-    "subtitle": "Spojte sa s nami",
-    "email": "erkinslovakia@gmail.com",
-    "whatsapp": {
-      "label": "WhatsApp",
-      "url": "https://wa.me/421940270511"
-    },
-    "cta": "Napíšte nám"
-  },
-  "footer": {
-    "description": "Expert na integratívny manažment bolesti a medicínu koherencie. Viac ako 30 rokov medzinárodnej klinickej praxe.",
-    "quickLinks": "Rýchle odkazy",
-    "contact": "Kontakt",
-    "email": "erkinslovakia@gmail.com",
-    "phone": "+421 940 270 511",
-    "locationValue": "Piešťany, Slovensko",
-    "legal": "Právne informácie",
-    "privacy": "Ochrana súkromia",
-    "terms": "Obchodné podmienky",
-    "language": "Jazyk",
-    "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
-    "license": "Lekárska licencia EÚ — Slovensko",
-    "disclaimerTitle": "Lekárske vyhlásenie",
-    "disclaimerText": "Všetok obsah na tejto webovej stránke slúži len na informačné účely a nepredstavuje lekársku pomoc, diagnostiku ani liečbu. Prístup na túto stránku alebo nákup publikácií nezakladá vzťah medzi lekárom a pacientom. Pre personalizované lekárske odporúčania sa, prosím, objednajte na súkromnú konzultáciu."
-  },
-  "successStories": {
-    "title": "Klinické výsledky",
-    "subtitle": "Príklady obnovy",
-    "disclaimer": "GDPR compliant",
-    "stories": [
-      {
-        "condition": "Chronická únava",
-        "history": "8 rokov bezúspešnej liečby",
-        "approach": "6D Biochémia",
-        "result": "85% energie"
-      }
-    ]
-  },
-  "finalCta": {
-    "title": "Ste pripravení nájsť príčinu?",
-    "subtitle": "Objednajte sa na 6D diagnostiku",
-    "benefits": [
-      "60 minút hĺbkovej analýzy",
-      "Osobná mapa zdravia",
-      "Konkrétny plán krokov",
-      "Online z celej Európy"
-    ],
-    "ctaAssessment": "Začať 6D diagnostiku",
-    "ctaApply": "Podať žiadosť",
-    "guarantee": "Vaše zdravie je našou prioritou."
-  },
-  "meta": {
-    "title": "MUDr. Erkinbek Džamanbajev | Expert na komplexné klinické prípady",
-    "description": "Systémová 6D analýza a medicína koherencie. Online konzultácie v celej Európe. Hľadanie príčin chronickej únavy a bolesti."
-  }
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useTranslation } from 'react-i18next';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
+
+// Это исправит ошибку TS2322
+interface ServicesProps {
+  onAssessmentClick: () => void;
+}
+
+export function Services({ onAssessmentClick }: ServicesProps) {
+  const { t } = useTranslation();
+
+  // Безопасное получение списка услуг из твоих новых JSON
+  const services = t('services.items', { returnObjects: true }) as any[] || [];
+
+  return (
+    <section id="services" className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1A365D] mb-4">
+            {t('services.title')}
+          </h2>
+          <p className="text-[#4A5568] max-w-2xl mx-auto text-lg">
+            {t('services.subtitle')}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Array.isArray(services) && services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="p-8 rounded-3xl border border-[#E2E8F0] bg-[#F7F9FC] hover:shadow-xl transition-all group flex flex-col justify-between"
+            >
+              <div>
+                <h3 className="text-xl font-serif font-bold text-[#1A365D] mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-[#4A5568] mb-6 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+                {service.features && (
+                  <ul className="space-y-3 mb-8">
+                    {service.features.map((feature: string, fIndex: number) => (
+                      <li key={fIndex} className="flex items-center gap-2 text-sm text-[#4A5568]">
+                        <CheckCircle2 className="w-4 h-4 text-[#68A07C]" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              <button
+                onClick={onAssessmentClick}
+                className="w-full py-4 bg-white border-2 border-[#1A365D] text-[#1A365D] rounded-xl font-bold hover:bg-[#1A365D] hover:text-white transition-all flex items-center justify-center gap-2"
+              >
+                {t('services.cta')}
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
