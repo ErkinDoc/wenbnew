@@ -123,7 +123,7 @@
     },
     "6": {
       "condition": "Dysfunkcia štítnej žľazy + únava",
-      "duration": "4 roky, TSH vždy v norme",
+      "duration": "4 roky, TSH always v norme",
       "result": "Energia obnovená",
       "quote": "TSH perfektné. Nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Žiadny iný lekár to nespomenul."
     },
@@ -283,5 +283,9 @@
     "ctaAssessment": "Začať 6D diagnostiku",
     "ctaApply": "Podať žiadosť",
     "guarantee": "Vaše zdravie je našou prioritou."
+  },
+  "meta": {
+    "title": "MUDr. Erkinbek Džamanbajev | Expert na komplexné klinické prípady",
+    "description": "Systémová 6D analýza a medicína koherencie. Online konzultácie v celej Európe. Hľadanie príčin chronickej únavy a bolesti."
   }
 }
