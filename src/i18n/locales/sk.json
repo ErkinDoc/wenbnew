@@ -81,19 +81,19 @@
   "testimonials": {
     "title": "Príbehy pacientov",
     "subtitle": "Skutočné výsledky",
-    "disclaimer": "GDPR compliant",
-    "1": { "condition": "Chronická únava", "quote": "Dr. Erkin našiel vyčerpanie HPA-osi na prvej konzultácii. O šesť mesiacov neskôr žijem normálne." },
-    "2": { "condition": "Vyhorenie", "quote": "6D diagnostika odhalila kolaps bunkovej energie. O tri mesiace riadim svoju firmu." },
-    "3": { "condition": "Autoimunitné", "quote": "Dr. Erkin spojil body, ktoré nikto iný nevidel. Konečne diagnóza, ktorá dáva zmysel." },
-    "4": { "condition": "Post-COVID", "quote": "6D protokol priamo riešil autonómnu dysfunkciu. Dostal som späť svoju hlavu." },
-    "5": { "condition": "Chronická bolesť", "quote": "€100 diagnostika ukázala neuroinflamáciu, ktorú všetci prehliadli." },
-    "6": { "condition": "Štítna žľaza", "quote": "Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni. Energia obnovená." },
-    "7": { "condition": "SDRČ", "quote": "Dr. Erkin našiel spojenie črevo-mozog. O štyri mesiace jem normálne." },
-    "8": { "condition": "Bolesti hlavy", "quote": "6D analýza odhalila krčnú dysfunkciu. Konečne žijem bez strachu z bolesti." }
+    "disclaimer": "GDPR compliant. Všetky údaje sú anonymizované.",
+    "1": { "condition": "Chronická únava + fibromyalgia", "quote": "Dvanásť lekárov za osem rokov. Dr. Erkin našiel vyčerpanie HPA-osi na prvej konzultácii. O šesť mesiacov neskôr žijem normálne." },
+    "2": { "condition": "Vyhorenie", "quote": "Antidepresíva prestali fungovať. 6D diagnostika odhalila kolaps bunkovej energie. O tri mesiace riadim svoju firmu." },
+    "3": { "condition": "Autoimunitné", "quote": "Reumatológ — nič. Neurológ — nič. Dr. Erkin spojil body, ktoré nikto iný nevidel. Konečne diagnóza, ktorá dáva zmysel." },
+    "4": { "condition": "Post-COVID", "quote": "Mozgová hmla, únava, palpitácie — lekári mi povedali, aby som čakal. 6D protokol priamo riešil autonómnu dysfunkciu." },
+    "5": { "condition": "Chronická bolesť", "quote": "Minul som €40,000 na liečbu, ktorá nefungovala. €100 diagnostika ukázala, čo všetci prehliadli: bola to neuroinflamácia." },
+    "6": { "condition": "Štítna žľaza", "quote": "TSH perfektné. Nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni." },
+    "7": { "condition": "Syndróm dráždivého čreva", "quote": "Šesť rokov diét a piluliek. Dr. Erkin našiel spojenie črevo-mozog. O štyri mesiace jem normálne." },
+    "8": { "condition": "Chronické bolesti hlavy", "quote": "MRI čisté, pilulky nepomáhajú. 6D analýza odhalila krčnú dysfunkciu. Konečne žijem bez strachu z bolesti." }
   },
   "services": {
     "title": "Služby",
-    "subtitle": "Programy",
+    "subtitle": "Programy obnovy",
     "cta": "Objednať sa",
     "items": [
       {
@@ -118,6 +118,7 @@
       "Expert na systémovú medicínu",
       "30+ rokov klinickej praxe"
     ],
+    "gdpr": "GDPR Compliant — Vaše údaje sú v bezpečí",
     "stats": [
       { "number": "5000+", "label": "pacientov" },
       { "number": "30+", "label": "rokov praxe" },
@@ -131,7 +132,7 @@
       { "question": "Prečo sa cítim vyčerpaný?", "answer": "Príčina môže byť v mitochondriálnej dysfunkcii. 6D diagnostika ju pomáha odhaliť." },
       { "question": "Prečo sú testy v norme?", "answer": "Štandardné testy hľadajú akútnu patológiu, my hľadáme funkčné nerovnováhy." },
       { "question": "Ako prebieha online konzultácia?", "answer": "Sedenie trvá 60 minút cez Zoom. Vopred študujem vašu anamnézu." },
-      { "question": "Čo je 6D navigačný systém?", "answer": "Je to komplexný prístup, ktorý analyzuje šesť vektorov zdravia: diagnostiku, dysfunkciu, reguláciu, smer, rozvoj a hĺbku." },
+      { "question": "Čo je 6D navigačný systém?", "answer": "Je to komplexný prístup, ktorý analyzuje šesť vektorov zdravia." },
       { "question": "Pre koho je 6D diagnostika vhodná?", "answer": "Pre pacientov s chronickými ťažkosťami, u ktorých štandardná medicína nenašla príčinu." },
       { "question": "Koľko stojí konzultácia?", "answer": "Úvodná 6D diagnostika stojí €100 za 60 minút." },
       { "question": "Ako sa objednať?", "answer": "Vyplňte formulár na tejto stránke alebo napíšte na WhatsApp." },
@@ -158,7 +159,8 @@
     "language": "Jazyk",
     "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
     "license": "Lekárska licencia EÚ — Slovensko",
-    "disclaimerText": "Obsah slúži len na informačné účely."
+    "disclaimerTitle": "Právne upozornenie",
+    "disclaimerText": "Obsah slúži len na informačné účely a nepredstavuje lekársku radu."
   },
   "finalCta": {
     "title": "Pripravení nájsť príčinu?",
@@ -175,6 +177,6 @@
   },
   "meta": {
     "title": "Dr. Erkinbek Džamanbajev | Expert na komplexné prípady",
-    "description": "Systémová 6D analýza a medicína koherencie. Hľadanie príčin chronickej únavy a bolesti."
+    "description": "Systémová 6D analýza a medicína koherencie."
   }
 }
