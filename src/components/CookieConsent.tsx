@@ -13,7 +13,7 @@ const COOKIE_CONSENT_KEY = 'cookie-consent';
 const COOKIE_PREFERENCES_KEY = 'cookie-preferences';
 
 export function CookieConsent() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation(); // Убрали неиспользуемую 't'
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>({
@@ -85,60 +85,38 @@ export function CookieConsent() {
   const t_cookie = texts[currentLang] || texts.sk;
 
   useEffect(() => {
-    // Проверяем, было ли уже дано согласие
     const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (!consent) {
-      // Показываем баннер через небольшую задержку
       const timer = setTimeout(() => setShowBanner(true), 1000);
       return () => clearTimeout(timer);
     } else {
-      // Загружаем сохранённые предпочтения
       const savedPrefs = localStorage.getItem(COOKIE_PREFERENCES_KEY);
       if (savedPrefs) {
-        setPreferences(JSON.parse(savedPrefs));
-        applyConsent(JSON.parse(savedPrefs));
+        const parsedPrefs = JSON.parse(savedPrefs);
+        setPreferences(parsedPrefs);
+        applyConsent(parsedPrefs);
       }
     }
   }, []);
 
   const applyConsent = (prefs: CookiePreferences) => {
-    // Здесь применяем настройки cookies
     if (prefs.analytics) {
-      // Включаем Google Analytics или другую аналитику
       enableAnalytics();
     } else {
       disableAnalytics();
     }
 
     if (prefs.marketing) {
-      // Включаем маркетинговые скрипты
       enableMarketing();
     } else {
       disableMarketing();
     }
   };
 
-  const enableAnalytics = () => {
-    // Google Analytics или другая аналитика
-    // window.gtag && window.gtag('consent', 'update', { analytics_storage: 'granted' });
-    console.log('Analytics enabled');
-  };
-
-  const disableAnalytics = () => {
-    // window.gtag && window.gtag('consent', 'update', { analytics_storage: 'denied' });
-    console.log('Analytics disabled');
-  };
-
-  const enableMarketing = () => {
-    // Facebook Pixel, Google Ads и т.д.
-    // window.gtag && window.gtag('consent', 'update', { ad_storage: 'granted' });
-    console.log('Marketing enabled');
-  };
-
-  const disableMarketing = () => {
-    // window.gtag && window.gtag('consent', 'update', { ad_storage: 'denied' });
-    console.log('Marketing disabled');
-  };
+  const enableAnalytics = () => console.log('Analytics enabled');
+  const disableAnalytics = () => console.log('Analytics disabled');
+  const enableMarketing = () => console.log('Marketing enabled');
+  const disableMarketing = () => console.log('Marketing disabled');
 
   const handleAcceptAll = () => {
     const allAccepted: CookiePreferences = {
@@ -162,7 +140,7 @@ export function CookieConsent() {
   };
 
   const togglePreference = (key: keyof CookiePreferences) => {
-    if (key === 'necessary') return; // Нельзя отключить необходимые
+    if (key === 'necessary') return;
     setPreferences(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
@@ -178,7 +156,6 @@ export function CookieConsent() {
         >
           <div className="max-w-6xl mx-auto">
             {!showSettings ? (
-              /* Основной баннер */
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
                 <div className="flex items-start gap-3 flex-1">
                   <Cookie className="w-6 h-6 text-[#68A07C] flex-shrink-0 mt-0.5" />
@@ -197,6 +174,7 @@ export function CookieConsent() {
                 
                 <div className="flex items-center gap-3 w-full md:w-auto">
                   <button
+                    type="button"
                     onClick={() => setShowSettings(true)}
                     className="flex items-center gap-2 px-4 py-2 text-[13px] text-gray-600 hover:text-[#1A365D] transition-colors"
                   >
@@ -204,6 +182,7 @@ export function CookieConsent() {
                     {t_cookie.settings}
                   </button>
                   <button
+                    type="button"
                     onClick={handleAcceptAll}
                     className="flex-1 md:flex-none px-6 py-2.5 bg-[#68A07C] hover:bg-[#5a8f6d] text-white text-[13px] font-medium rounded-lg transition-colors"
                   >
@@ -212,13 +191,13 @@ export function CookieConsent() {
                 </div>
               </div>
             ) : (
-              /* Настройки cookies */
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-semibold text-[#1A365D] text-[15px]">
                     {t_cookie.settings}
                   </h3>
                   <button
+                    type="button"
                     onClick={() => setShowSettings(false)}
                     className="p-1 hover:bg-gray-100 rounded-full transition-colors"
                   >
@@ -227,24 +206,23 @@ export function CookieConsent() {
                 </div>
                 
                 <div className="space-y-3 mb-4">
-                  {/* Necessary */}
                   <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                     <div>
                       <p className="font-medium text-[14px] text-[#1A365D]">{t_cookie.necessary}</p>
                       <p className="text-[12px] text-gray-500">{t_cookie.necessaryDesc}</p>
                     </div>
-                    <div className="w-12 h-6 bg-[#68A07C] rounded-full flex items-center justify-end px-1 cursor-not-allowed opacity-60">
+                    <div className="w-12 h-6 bg-[#68A07C] rounded-full flex items-center justify-end px-1 opacity-60">
                       <div className="w-4 h-4 bg-white rounded-full" />
                     </div>
                   </div>
                   
-                  {/* Analytics */}
                   <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                     <div>
                       <p className="font-medium text-[14px] text-[#1A365D]">{t_cookie.analytics}</p>
                       <p className="text-[12px] text-gray-500">{t_cookie.analyticsDesc}</p>
                     </div>
                     <button
+                      type="button"
                       onClick={() => togglePreference('analytics')}
                       className={`w-12 h-6 rounded-full flex items-center px-1 transition-colors ${
                         preferences.analytics ? 'bg-[#68A07C] justify-end' : 'bg-gray-300 justify-start'
@@ -254,13 +232,13 @@ export function CookieConsent() {
                     </button>
                   </div>
                   
-                  {/* Marketing */}
                   <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                     <div>
                       <p className="font-medium text-[14px] text-[#1A365D]">{t_cookie.marketing}</p>
                       <p className="text-[12px] text-gray-500">{t_cookie.marketingDesc}</p>
                     </div>
                     <button
+                      type="button"
                       onClick={() => togglePreference('marketing')}
                       className={`w-12 h-6 rounded-full flex items-center px-1 transition-colors ${
                         preferences.marketing ? 'bg-[#68A07C] justify-end' : 'bg-gray-300 justify-start'
@@ -273,6 +251,7 @@ export function CookieConsent() {
                 
                 <div className="flex justify-end gap-3">
                   <button
+                    type="button"
                     onClick={handleAcceptSelected}
                     className="px-6 py-2.5 bg-[#1A365D] hover:bg-[#15294a] text-white text-[13px] font-medium rounded-lg transition-colors flex items-center gap-2"
                   >
