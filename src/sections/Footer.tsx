@@ -9,7 +9,7 @@ export function Footer() {
   const quickLinks = [
     { label: t('nav.method'), href: '#method6d' },
     { label: t('nav.services'), href: '#services' },
-    { label: 'Global Experience', href: '#global' },
+    { label: t('nav.global'), href: '#global' }, // ИСПРАВЛЕНО: теперь переводится
     { label: t('nav.faq'), href: '#faq' },
   ];
 
@@ -17,7 +17,6 @@ export function Footer() {
     <footer id="contact" className="w-full bg-[#1A365D] text-white/80">
       <div className="section-container py-16 lg:py-20">
         <div className="section-inner">
-          {/* Main Footer Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
             
             {/* Brand */}
@@ -36,7 +35,7 @@ export function Footer() {
                 </p>
               </div>
               <p className="text-[13px] text-white/60 font-sans leading-relaxed">
-                Expert in Integrative Pain Management & Medicine of Coherence. 30+ years of international clinical practice.
+                {t('footer.description')}
               </p>
             </motion.div>
 
@@ -81,7 +80,7 @@ export function Footer() {
                     href="mailto:erkinslovakia@gmail.com"
                     className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans"
                   >
-                    {t('footer.email')}
+                    erkinslovakia@gmail.com
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
@@ -92,13 +91,13 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans"
                   >
-                    WhatsApp: {t('footer.phone')}
+                    WhatsApp: +421 940 270 511
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#68A07C] mt-0.5 flex-shrink-0" />
                   <span className="text-[13px] text-white/70 font-sans">
-                    {t('footer.location')}
+                    {t('footer.locationValue')}
                   </span>
                 </li>
               </ul>
@@ -117,12 +116,12 @@ export function Footer() {
               <ul className="space-y-3 mb-6">
                 <li>
                   <a href="#privacy" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
-                    Privacy Policy
+                    {t('footer.privacy')}
                   </a>
                 </li>
                 <li>
                   <a href="#terms" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
-                    Terms of Service
+                    {t('footer.terms')}
                   </a>
                 </li>
                 <li>
@@ -133,7 +132,7 @@ export function Footer() {
               </ul>
               
               <div>
-                <p className="text-[11px] text-white/40 mb-2 font-sans">Language</p>
+                <p className="text-[11px] text-white/40 mb-2 font-sans">{t('footer.language')}</p>
                 <LanguageSwitcher variant="dark" />
               </div>
             </motion.div>
@@ -146,7 +145,7 @@ export function Footer() {
                 {t('footer.copyright')}
               </p>
               <p className="text-[12px] text-white/50 font-sans">
-                EU Medical License — Slovakia
+                {t('footer.license')}
               </p>
             </div>
           </div>
