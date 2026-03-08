@@ -1,79 +1,86 @@
-import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { ChevronDown, HelpCircle } from 'lucide-react';
 
 export function FAQ() {
   const { t } = useTranslation();
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = t('faq.items', { returnObjects: true }) as Array<{
-    question: string;
-    answer: string;
-  }>;
+  // Достаем массив вопросов из секции "faq" нашего JSON
+  const faqItems = t('faq.items', { returnObjects: true }) as any[];
 
   return (
-    <section id="faq" className="w-full py-24 lg:py-32 bg-white">
-      <div className="section-container">
-        <div className="section-inner max-w-3xl mx-auto">
-          {/* Header */}
+    <section id="faq" className="py-24 bg-white">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Заголовок */}
+        <div className="text-center mb-16">
           <motion.div 
-            className="text-center mb-12"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="flex justify-center mb-4"
+          >
+            <div className="p-3 bg-[#68A07C]/10 rounded-full">
+              <HelpCircle className="w-6 h-6 text-[#68A07C]" />
+            </div>
+          </motion.div>
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            className="text-[32px] md:text-[42px] font-serif font-bold text-[#1A365D]"
           >
-            <span className="inline-block text-[12px] font-sans font-medium tracking-wider uppercase text-[#68A07C] mb-4">
-              FAQ
-            </span>
-            <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] mb-4">
-              {t('faq.title')}
-            </h2>
-          </motion.div>
-
-          {/* FAQ Accordion */}
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <motion.div
-                key={index}
-                className="border border-[#E2E8F0] rounded-xl overflow-hidden"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-              >
-                <button
-                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full flex items-center justify-between gap-4 text-left p-5 group hover:bg-[#F7F9FC] transition-colors"
-                >
-                  <span className="text-[16px] font-serif font-semibold text-[#1A365D] pr-4">
-                    {faq.question}
-                  </span>
-                  <ChevronDown 
-                    className={`w-5 h-5 text-[#68A07C] flex-shrink-0 transition-transform duration-300 ${
-                      openIndex === index ? 'rotate-180' : ''
-                    }`}
-                  />
-                </button>
-                
-                <motion.div
-                  initial={false}
-                  animate={{
-                    height: openIndex === index ? 'auto' : 0,
-                    opacity: openIndex === index ? 1 : 0,
-                  }}
-                  transition={{ duration: 0.3, ease: 'easeInOut' }}
-                  className="overflow-hidden"
-                >
-                  <p className="text-[15px] leading-[1.8] text-[#4A5568] px-5 pb-5 font-sans">
-                    {faq.answer}
-                  </p>
-                </motion.div>
-              </motion.div>
-            ))}
-          </div>
+            {t('faq.title')}
+          </motion.h2>
         </div>
+
+        {/* Аккордеон */}
+        <div className="space-y-4">
+          {Array.isArray(faqItems) && faqItems.map((item, index) => (
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.05 }}
+              className="border border-[#E2E8F0] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#68A07C]/50"
+            >
+              <button
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                className="w-full flex items-center justify-between p-6 text-left bg-white hover:bg-[#F8FAFC] transition-colors"
+              >
+                <span className="text-[16px] md:text-[18px] font-sans font-semibold text-[#1A365D] pr-8 leading-snug">
+                  {item.question}
+                </span>
+                <div className={`p-1 rounded-full transition-colors ${openIndex === index ? 'bg-[#68A07C] text-white' : 'text-[#68A07C]'}`}>
+                  <ChevronDown 
+                    className={`w-5 h-5 transition-transform duration-300 ${
+                      openIndex === index ? 'rotate-180' : ''
+                    }`} 
+                  />
+                </div>
+              </button>
+
+              <AnimatePresence>
+                {openIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  >
+                    <div className="px-6 pb-6 text-[15px] md:text-[16px] text-[#4A5568] leading-relaxed border-t border-[#F1F5F9] pt-4">
+                      {item.answer}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
