@@ -7,15 +7,15 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Dr. Erkinbek Dzhamanbayev",
+    "title": "Dr. Erkinbek Dzhamanbaev",
     "credentials": "MUDr., PhD, MBA",
     "specialty": "Complex Case Expert",
     "headline": "Beyond Standard Diagnostics",
     "subheadline": "Online consultations across Europe. 30+ years of clinical practice.",
     "ctaAssessment": "Start 6D Assessment (Online)",
-    "ctaApply": "Apply Now",
-    "badge1": "EU Licensed",
-    "badge2": "30+ Years Practice",
+    "ctaApply": "Apply",
+    "badge1": "EU License",
+    "badge2": "30+ Years",
     "badge3": "5000+ Patients",
     "badge4": "15 Countries"
   },
@@ -24,13 +24,13 @@
     "problemsTitle": "When Medicine Reaches Its Limits",
     "solutionsTitle": "Medicine of Coherence",
     "problems": [
-      "Complex cases with 'normal' lab results",
-      "Multiple symptoms without a diagnosis",
+      "Complex cases with 'normal' test results",
+      "Multiple symptoms without diagnosis",
       "Chronic pain for years"
     ],
     "solutions": [
-      "Systemic 6D analysis",
-      "Finding causes, not masking symptoms",
+      "Systematic 6D analysis",
+      "Finding causes, not masking pain",
       "Individual recovery plan"
     ],
     "transition": "Restoring coherence to your body."
@@ -38,7 +38,7 @@
   "method6d": {
     "title": "6D Navigation System",
     "subtitle": "Six Vectors of Health",
-    "description": "An individual recovery roadmap for every patient.",
+    "description": "Individual recovery roadmap for each patient.",
     "dimensions": [
       {
         "id": "D1",
@@ -54,8 +54,8 @@
       },
       {
         "id": "D3",
-        "name": "D3: Regulation",
-        "subtitle": "Brain–Body Link",
+        "name": "D3: Disconnection",
+        "subtitle": "Brain-Body Link",
         "description": "Vagus nerve activation."
       },
       {
@@ -74,7 +74,7 @@
         "id": "D6",
         "name": "D6: Depth",
         "subtitle": "Integration",
-        "description": "A new way of life."
+        "description": "New lifestyle."
       }
     ],
     "scientificBasis": {
@@ -90,54 +90,54 @@
   "testimonials": {
     "title": "Patient Stories",
     "subtitle": "Real Results",
-    "disclaimer": "GDPR compliant. All cases are anonymized.",
+    "disclaimer": "GDPR compliant. All cases anonymized.",
     "1": {
-      "condition": "Chronic Fatigue + Fibromyalgia",
+      "condition": "Chronic fatigue + fibromyalgia",
       "duration": "8 years, 12 specialists",
       "result": "Full functional recovery",
-      "quote": "Twelve doctors in eight years. Each treated a fragment. No one saw the pattern. Dr. Erkin found HPA-axis exhaustion in the first session. Six months later, I'm living again."
+      "quote": "Twelve doctors in eight years. Each one treated a piece. None saw the pattern. Dr. Erkin found HPA-axis exhaustion in the first session. Six months later, I'm back to living."
     },
     "2": {
-      "condition": "Medication-resistant Burnout",
+      "condition": "Medication-resistant burnout",
       "duration": "3 years, antidepressants ineffective",
       "result": "Return to work",
-      "quote": "Two burnouts. Antidepressants stopped working. 6D diagnostics revealed what no one checked — cellular energy collapse. Three months later, I'm running my company again."
+      "quote": "Two burnouts. Antidepressants stopped working. The 6D assessment revealed what no one checked — cellular energy collapse. Three months later, I'm running my company again."
     },
     "3": {
-      "condition": "Undiagnosed Autoimmune Condition",
+      "condition": "Undiagnosed autoimmune",
       "duration": "5 years, 9 specialists",
       "result": "78% symptom reduction",
-      "quote": "Rheumatologist — nothing. Neurologist — nothing. Gastroenterologist — nothing. Dr. Erkin connected dots others missed. Finally, a diagnosis that makes sense."
+      "quote": "Rheumatologist — nothing. Neurologist — nothing. Gastroenterologist — nothing. Dr. Erkin connected dots no one else saw. Finally, a diagnosis that makes sense."
     },
     "4": {
-      "condition": "Long COVID Syndrome",
-      "duration": "18 months without improvement",
+      "condition": "Post-COVID syndrome",
+      "duration": "18 months, no improvement",
       "result": "85% recovery",
-      "quote": "Brain fog, fatigue, palpitations — doctors said to wait. The 6D protocol directly addressed autonomic dysfunction. I got my brain back."
+      "quote": "Brain fog, fatigue, heart palpitations — doctors told me to wait. The 6D protocol addressed autonomic dysfunction directly. I got my brain back."
     },
     "5": {
-      "condition": "Chronic Pain + Depression",
+      "condition": "Chronic pain + depression",
       "duration": "12 years, 15+ specialists",
       "result": "70% pain reduction",
-      "quote": "I spent €40,000 on treatments that didn't work. A €100 diagnostic session showed what everyone missed: my pain wasn't psychological — it was neuroinflammation."
+      "quote": "I spent €40,000 on treatments that didn't work. €100 diagnostic showed what everyone missed: my pain wasn't psychological — it was neuroinflammation."
     },
     "6": {
-      "condition": "Thyroid Dysfunction + Fatigue",
+      "condition": "Thyroid dysfunction + fatigue",
       "duration": "4 years, TSH always normal",
       "result": "Energy restored",
-      "quote": "TSH was perfect, but I couldn't get out of bed. Dr. Erkin explained T4 to T3 conversion at the cellular level. No other doctor had mentioned it."
+      "quote": "TSH perfect. Couldn't get out of bed. Dr. Erkin explained T4-to-T3 conversion at cellular level. No other doctor mentioned this. Now I understand my body."
     },
     "7": {
-      "condition": "Irritable Bowel Syndrome",
+      "condition": "Irritable bowel syndrome",
       "duration": "6 years, gastroenterologists without results",
       "result": "90% symptom improvement",
-      "quote": "Six years of diets, pills, and tests. Dr. Erkin found the gut–brain connection no one was looking for. Four months later, I'm eating normally."
+      "quote": "Six years of diets, pills, examinations. Dr. Erkin found the gut-brain connection no one was looking for. Four months later, I eat normally."
     },
     "8": {
-      "condition": "Chronic Headaches",
+      "condition": "Chronic headaches",
       "duration": "10 years, neurologists without diagnosis",
-      "result": "80% frequency reduction",
-      "quote": "Ten years of migraines. MRI clear, pills don't help. 6D analysis revealed cervical dysfunction and dietary triggers. Finally living without the fear of pain."
+      "result": "80% reduction in frequency",
+      "quote": "Ten years of migraines. MRI clear, pills don't help. 6D analysis revealed cervical dysfunction and dietary triggers. Finally living without fear of pain."
     }
   },
   "globalExperience": {
@@ -163,7 +163,7 @@
         "formUrl": "https://forms.gle/oDEBWUFKi6vLbTmk9"
       }
     ],
-    "note": "Consultations are held via Zoom."
+    "note": "Zoom consultations."
   },
   "trust": {
     "title": "Experience & Trust",
@@ -171,11 +171,11 @@
     "credentialsTitle": "Qualifications",
     "credentials": [
       "MUDr., PhD, MBA",
-      "Licensed Physician in the EU (Slovakia)",
-      "Expert in Systemic Medicine",
-      "30+ years of clinical practice"
+      "EU Medical License (Slovakia)",
+      "Systemic Medicine Expert",
+      "30+ Years of Clinical Practice"
     ],
-    "gdpr": "Compliant with GDPR data protection standards",
+    "gdpr": "GDPR Compliant Data Protection",
     "stats": [
       {
         "number": "5000+",
@@ -183,11 +183,11 @@
       },
       {
         "number": "30+",
-        "label": "years of clinical practice"
+        "label": "years of practice"
       },
       {
         "number": "70–85%",
-        "label": "recovery dynamics in 3 months"
+        "label": "improvement within 3 months"
       },
       {
         "number": "15",
@@ -200,35 +200,35 @@
     "items": [
       {
         "question": "Why do I feel exhausted even after a full night's sleep?",
-        "answer": "This type of fatigue is often not related to a lack of rest, but to mitochondrial dysfunction — a state of 'cellular hibernation.' 6D diagnostics helps to understand whether the cause lies in metabolic or neurological disturbances."
+        "answer": "This type of fatigue often stems from mitochondrial dysfunction or a state of 'cellular hibernation' rather than simple lack of rest. Our 6D Diagnostic Navigation helps identify if the root cause lies in metabolic or neurological regulation."
       },
       {
-        "question": "Why are my test results normal if I feel unwell?",
-        "answer": "Standard tests look for acute pathologies, often missing functional failures. We look deeper than reference values to find the logic behind your symptoms."
+        "question": "Why are my lab results 'normal' if I feel so unwell?",
+        "answer": "Standard lab tests are designed to find acute pathology, often missing sub-clinical functional imbalances like HPA-axis dysfunction. We look beyond the 'reference range' to find the physiological logic behind your symptoms."
       },
       {
         "question": "What is HPA axis dysfunction and how does it affect energy?",
-        "answer": "The HPA axis (hypothalamus-pituitary-adrenal) is the main stress regulator. Its disruption leads to a 'tired but wired' state, brain fog, and sleep disturbances. Restoring this axis is a priority in treating exhaustion."
+        "answer": "The HPA axis (hypothalamus-pituitary-adrenal) is the main stress regulator. Its dysfunction leads to feeling 'tired but wired', brain fog, and sleep disturbances. Restoring this axis is a priority in treating exhaustion."
       },
       {
-        "question": "Why doesn't a vacation help with professional burnout?",
-        "answer": "Burnout is physiological resource depletion at the cellular level, not just psychological fatigue. A short rest cannot instantly restore neuroendocrine balance."
+        "question": "Why doesn't vacation help with professional burnout?",
+        "answer": "Burnout is physiological exhaustion of the body's resources at the cellular level, not just psychological fatigue. A short rest cannot instantly restore neuroendocrine balance."
       },
       {
         "question": "How does 6D diagnostics help with chronic pain?",
-        "answer": "We look for systemic causes: neuroinflammation, biochemical deficiencies, or errors in movement patterns. Breaking the pain cycle is only possible through comprehensive action on all health vectors."
+        "answer": "We look for systemic causes: neuroinflammation, biochemical deficits, or errors in movement patterns. Breaking the pain cycle is only possible through comprehensive action on all health vectors."
       },
       {
         "question": "Can Long COVID symptoms go away on their own?",
-        "answer": "In many patients, the body gets stuck in autonomous dysfunction mode. Without targeted regulation of the autonomic nervous system, symptoms can persist for months or years."
+        "answer": "In many patients, the body gets stuck in autonomic dysfunction mode. Without targeted regulation of the autonomic nervous system, symptoms can persist for months or years."
       },
       {
         "question": "How does an online consultation work for complex cases?",
-        "answer": "The session lasts 60 minutes. I study your medical history in advance to focus on finding connections between symptoms during the meeting and create a navigation map for your recovery."
+        "answer": "The session lasts 60 minutes. I study your medical history in advance so that during the meeting I can focus on finding connections between symptoms and create a navigation map for your recovery."
       },
       {
         "question": "What will I receive after the diagnostic session?",
-        "answer": "You will get a clear understanding of the root causes of your condition and an individual action plan (roadmap), including lifestyle and nutrition corrections and recommendations for further therapy."
+        "answer": "You will receive a clear understanding of the root causes of your condition and an individual action plan (roadmap) including lifestyle corrections, nutrition, and recommendations for further therapy."
       }
     ]
   },
@@ -271,7 +271,7 @@
   },
   "finalCta": {
     "title": "Ready to find the cause?",
-    "subtitle": "Book your 6D assessment",
+    "subtitle": "Book your 6D Assessment",
     "benefits": [
       "60 minutes of deep analysis",
       "Personal health roadmap",
@@ -279,7 +279,7 @@
       "Online from anywhere in Europe"
     ],
     "ctaAssessment": "Start 6D Assessment",
-    "ctaApply": "Apply Now",
+    "ctaApply": "Apply",
     "guarantee": "Your health is our priority."
   }
 }
