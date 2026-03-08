@@ -254,7 +254,9 @@
     "terms": "Obchodné podmienky",
     "language": "Jazyk",
     "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
-    "license": "Lekárska licencia EÚ — Slovensko"
+    "license": "Lekárska licencia EÚ — Slovensko",
+    "disclaimerTitle": "Lekárske vyhlásenie",
+    "disclaimerText": "Všetok obsah na tejto webovej stránke slúži len na informačné účely a nepredstavuje lekársku pomoc, diagnostiku ani liečbu. Prístup na túto stránku alebo nákup publikácií nezakladá vzťah medzi lekárom a pacientom. Pre personalizované lekárske odporúčania sa, prosím, objednajte na súkromnú konzultáciu."
   },
   "successStories": {
     "title": "Klinické výsledky",
