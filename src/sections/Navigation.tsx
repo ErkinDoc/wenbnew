@@ -5,7 +5,7 @@ import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
 interface NavigationProps {
-  onAssessmentClick: () => void; // Сделал обязательным, так как логика в App.tsx
+  onAssessmentClick: () => void;
 }
 
 export function Navigation({ onAssessmentClick }: NavigationProps) {
@@ -21,13 +21,14 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // ИСПРАВЛЕННЫЙ МАССИВ ССЫЛОК: Сверяется с ключами в json и ID в секциях
   const navLinks = [
-    { label: t('nav.method'), href: '#metodika' },
-    { label: t('nav.services'), href: '#sluzby' },
-    { label: 'Global Experience', href: '#o-mne' },
-    { label: 'Publications', href: '/publications.html', external: true },
+    { label: t('nav.method'), href: '#method' },
+    { label: t('nav.services'), href: '#services' },
+    { label: t('nav.global'), href: '#experience' },
+    { label: 'Publications', href: 'https://www.drerkin.eu/', external: true },
     { label: t('nav.faq'), href: '#faq' },
-    { label: t('nav.contact'), href: '#kontakt' },
+    { label: t('nav.contact'), href: '#contact' },
   ];
 
   const scrollToSection = (href: string, external?: boolean) => {
@@ -37,7 +38,6 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     }
     const element = document.querySelector(href);
     if (element) {
-      // Добавляем отступ сверху, чтобы шапка не закрывала заголовок секции
       const offset = 80; 
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
@@ -54,7 +54,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
 
   const handleCtaClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    onAssessmentClick(); // Вызываем единую логику из App.tsx
+    onAssessmentClick();
     setIsMobileMenuOpen(false);
   };
 
