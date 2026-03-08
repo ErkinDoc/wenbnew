@@ -17,7 +17,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
   ];
 
   return (
-    <section className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
+    <section id="hero" className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute top-20 right-20 w-96 h-96 border border-[#1A365D] rounded-full" />
         <div className="absolute bottom-40 left-10 w-64 h-64 border border-[#68A07C] rounded-full" />
