@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Shield, Clock, Users, Globe, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
+// 1. Обязательный интерфейс для TypeScript, чтобы Vercel не ругался
 interface HeroSectionProps {
   onAssessmentClick: () => void;
 }
@@ -23,8 +24,8 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
         <div className="absolute bottom-40 left-10 w-64 h-64 border border-[#68A07C] rounded-full" />
       </div>
       
-      <div className="section-container relative z-10">
-        <div className="section-inner min-h-[calc(100vh-96px)] flex items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="min-h-[calc(100vh-96px)] flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full py-12 lg:py-0">
             
             {/* Left column - Text content */}
@@ -50,7 +51,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                   {t('hero.title')}
                 </h1>
                 
-                <p className="text-[16px] lg:text-[18px] text-[#68A07C] font-sans">
+                <p className="text-[16px] lg:text-[18px] text-[#68A07C] font-sans font-semibold">
                   {t('hero.specialty')}
                 </p>
               </div>
@@ -83,7 +84,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.button
                   onClick={onAssessmentClick}
-                  className="btn-primary text-[14px] flex items-center justify-center gap-2 cursor-pointer"
+                  className="bg-[#68A07C] text-white px-8 py-4 rounded-xl font-bold text-[14px] flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:bg-[#5a8c6b] transition-all"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -92,7 +93,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 
                 <motion.button
                   onClick={onAssessmentClick}
-                  className="btn-secondary text-[14px] flex items-center justify-center gap-2 cursor-pointer"
+                  className="border-2 border-[#1A365D] text-[#1A365D] px-8 py-4 rounded-xl font-bold text-[14px] flex items-center justify-center gap-2 cursor-pointer hover:bg-[#1A365D] hover:text-white transition-all"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -113,22 +114,19 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 <div className="absolute -inset-8 border border-[#1A365D]/10 rounded-3xl" />
                 
                 <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[480px] lg:w-[420px] lg:h-[560px]
-                                rounded-xl overflow-hidden border border-[#E2E8F0]">
-                  <picture>
-                    <source srcSet="/dr-erkin.webp" type="image/webp" />
-                    <img
-                      src="/dr-erkin.jpg"
-                      alt="Dr. Erkinbek Dzhamanbaev"
-                      className="w-full h-full object-cover"
-                      loading="eager"
-                    />
-                  </picture>
+                                rounded-xl overflow-hidden border border-[#E2E8F0] bg-gray-200">
+                  <img
+                    src="/dr-erkin.jpg"
+                    alt="Dr. Erkinbek Dzhamanbaev"
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                  />
                   
                   <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 border border-[#E2E8F0]">
                     <div className="flex items-center justify-center gap-3">
-                      <span className="px-3 py-1 bg-[#1A365D] text-white text-[11px] font-bold rounded">MD</span>
-                      <span className="px-3 py-1 bg-[#68A07C] text-white text-[11px] font-bold rounded">PhD</span>
-                      <span className="px-3 py-1 bg-[#C9A227] text-white text-[11px] font-bold rounded">MBA</span>
+                      <span className="px-3 py-1 bg-[#1A365D] text-white text-[11px] font-bold rounded uppercase">MUDr.</span>
+                      <span className="px-3 py-1 bg-[#68A07C] text-white text-[11px] font-bold rounded uppercase">PhD.</span>
+                      <span className="px-3 py-1 bg-[#C9A227] text-white text-[11px] font-bold rounded uppercase">MBA</span>
                     </div>
                   </div>
                 </div>
@@ -142,8 +140,8 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                   <div className="flex items-center gap-3">
                     <Clock className="w-6 h-6 text-[#68A07C]" />
                     <div>
-                      <p className="text-[24px] font-serif font-bold text-white">30+</p>
-                      <p className="text-[11px] text-white/70 font-sans">Years Practice</p>
+                      <p className="text-[24px] font-serif font-bold text-white leading-none">30+</p>
+                      <p className="text-[11px] text-white/70 font-sans uppercase tracking-tighter">Rokov praxe</p>
                     </div>
                   </div>
                 </motion.div>
