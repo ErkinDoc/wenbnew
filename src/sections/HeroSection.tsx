@@ -3,11 +3,11 @@ import { Shield, Clock, Users, Globe, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 interface HeroSectionProps {
-  onAssessmentClick: () => void;  // ← пропс из App.tsx для кнопок
+  onAssessmentClick: () => void;
 }
 
 export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
-  const { t } = useTranslation(); // ← Исправлено: удалили i18n, чтобы билд прошел успешно
+  const { t } = useTranslation();
   
   const trustBadges = [
     { icon: Shield, label: t('hero.badge1') },
@@ -18,7 +18,6 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
 
   return (
     <section className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
-      {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute top-20 right-20 w-96 h-96 border border-[#1A365D] rounded-full" />
         <div className="absolute bottom-40 left-10 w-64 h-64 border border-[#68A07C] rounded-full" />
@@ -35,7 +34,6 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
             >
-              {/* Doctor Name & Credentials */}
               <div>
                 <motion.div
                   className="inline-flex items-center gap-2 bg-[#1A365D]/5 text-[#1A365D]
@@ -57,7 +55,6 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 </p>
               </div>
 
-              {/* Main Headline */}
               <div>
                 <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-serif font-semibold text-[#1A365D] leading-[1.2] mb-4">
                   {t('hero.headline')}
@@ -68,7 +65,6 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 </p>
               </div>
               
-              {/* Trust Badges */}
               <div className="flex flex-wrap gap-4 lg:gap-6">
                 {trustBadges.map((badge, index) => (
                   <motion.div
@@ -84,7 +80,6 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 ))}
               </div>
               
-              {/* CTA Buttons — используем функцию из App.tsx */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.button
                   onClick={onAssessmentClick}
@@ -139,7 +134,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 </div>
 
                 <motion.div
-                  className="absolute -bottom-6 -right-6 bg-[#1A365D] rounded-xl shadow-xl p-4"
+                  className="relative mt-8 mx-auto w-fit md:absolute md:-bottom-6 md:-right-6 bg-[#1A365D] rounded-xl shadow-xl p-4"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 0.5 }}
