@@ -5,18 +5,19 @@ import { MapPin, Award, BadgeCheck } from 'lucide-react';
 export function GlobalExperience() {
   const { t } = useTranslation();
 
+  // Безопасное получение данных из JSON
   const locations = t('globalExperience.locations', { returnObjects: true }) as Array<{
     country: string;
     details: string;
-  }>;
+  }> || [];
 
-  const memberships = t('globalExperience.memberships', { returnObjects: true }) as string[];
-  const certifications = t('globalExperience.certifications', { returnObjects: true }) as string[];
+  const memberships = t('globalExperience.memberships', { returnObjects: true }) as string[] || [];
+  const certifications = t('globalExperience.certifications', { returnObjects: true }) as string[] || [];
 
   return (
     <section id="global" className="w-full py-24 lg:py-32 bg-[#F7F9FC]">
-      <div className="section-container">
-        <div className="section-inner">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative">
           {/* Header */}
           <motion.div 
             className="text-center mb-16"
@@ -25,7 +26,7 @@ export function GlobalExperience() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block text-[12px] font-sans font-medium tracking-wider uppercase text-[#68A07C] mb-4">
+            <span className="inline-block text-[12px] font-sans font-bold tracking-wider uppercase text-[#68A07C] mb-4">
               International Practice
             </span>
             <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] mb-4">
@@ -38,9 +39,9 @@ export function GlobalExperience() {
 
           {/* Locations Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {locations.map((location, index) => (
+            {Array.isArray(locations) && locations.map((location, index) => (
               <motion.div
-                key={location.country}
+                key={index}
                 className="bg-white rounded-xl p-6 border border-[#E2E8F0] hover:shadow-lg hover:border-[#68A07C] transition-all"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +65,7 @@ export function GlobalExperience() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Professional Memberships */}
             <motion.div
-              className="bg-white rounded-2xl p-8 border border-[#E2E8F0]"
+              className="bg-white rounded-2xl p-8 border border-[#E2E8F0] shadow-sm"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -75,14 +76,14 @@ export function GlobalExperience() {
                   <Award className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-[20px] font-serif font-semibold text-[#1A365D]">
-                  Professional Memberships
+                   {t('globalExperience.membershipsTitle') || 'Professional Memberships'}
                 </h3>
               </div>
-              <ul className="space-y-3">
-                {memberships.map((membership, index) => (
+              <ul className="space-y-4">
+                {Array.isArray(memberships) && memberships.map((membership, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#68A07C] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[14px] text-[#4A5568] font-sans">{membership}</span>
+                    <span className="w-2 h-2 bg-[#68A07C] rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-[14px] text-[#4A5568] font-sans leading-snug">{membership}</span>
                   </li>
                 ))}
               </ul>
@@ -90,7 +91,7 @@ export function GlobalExperience() {
 
             {/* Certifications */}
             <motion.div
-              className="bg-white rounded-2xl p-8 border border-[#E2E8F0]"
+              className="bg-white rounded-2xl p-8 border border-[#E2E8F0] shadow-sm"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -101,14 +102,14 @@ export function GlobalExperience() {
                   <BadgeCheck className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-[20px] font-serif font-semibold text-[#1A365D]">
-                  International Certifications
+                   {t('globalExperience.certificationsTitle') || 'International Certifications'}
                 </h3>
               </div>
-              <ul className="space-y-3">
-                {certifications.map((cert, index) => (
+              <ul className="space-y-4">
+                {Array.isArray(certifications) && certifications.map((cert, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#68A07C] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[14px] text-[#4A5568] font-sans">{cert}</span>
+                    <span className="w-2 h-2 bg-[#68A07C] rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-[14px] text-[#4A5568] font-sans leading-snug">{cert}</span>
                   </li>
                 ))}
               </ul>
