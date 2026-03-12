@@ -32,7 +32,7 @@ export function Publications() {
       title: 'Fibromyalgia & Myofascial Pain',
       description: {
         ru: 'Практические стратегии для управления симптомами фибромиалгии и миофасциальной боли. Последние исследования, методы самопомощи и механизмы адаптации. Незаменимый ресурс для всех, кто живёт с хронической болью.',
-        sk: 'Praktické stratégie pre zvládanie príznakov fibromyalgie a myofasciálnej bolesti. Najnovší výskum, metódy sebapomoci a mechanizmy adaptácie.',
+        sk: 'Praktické stratégie pre zvládanie príznakov fibromyalgie a myofasciálnej bolesti. Najnovší výskum, metódy sebapomoci a mechanizmi adaptácie.',
         en: 'Practical strategies for managing fibromyalgia and myofascial pain symptoms. Latest research, self-care methods and coping mechanisms. Essential resource for anyone living with chronic pain.'
       },
       audience: {
@@ -173,17 +173,14 @@ export function Publications() {
               <ArrowLeft className="w-5 h-5" />
               <span className="font-medium">{t.backHome}</span>
             </Link>
-            <a 
-              href="/" 
-              className="flex flex-col items-end"
-            >
+            <div className="flex flex-col items-end">
               <span className="text-[16px] font-serif font-bold text-[#1A365D]">
                 Medicine of Coherence
               </span>
               <span className="text-[10px] text-[#68A07C] font-sans tracking-wider uppercase">
                 Dr. Erkinbek Dzhamanbaev
               </span>
-            </a>
+            </div>
           </div>
         </div>
       </header>
@@ -222,7 +219,6 @@ export function Publications() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                {/* Book Cover Placeholder */}
                 <div className="relative h-48 bg-gradient-to-br from-[#1A365D] via-[#2D4A6F] to-[#1A365D] flex items-center justify-center">
                   <BookOpen className="w-16 h-16 text-white/30" />
                   {book.priority === 'high' && (
@@ -238,7 +234,6 @@ export function Publications() {
                   </div>
                 </div>
 
-                {/* Content */}
                 <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-[20px] font-serif font-bold text-[#1A365D] mb-3">
                     {book.title}
@@ -249,36 +244,32 @@ export function Publications() {
                   <p className="text-[12px] text-[#68A07C] font-medium mb-6">
                     {book.audience[lang] || book.audience.en}
                   </p>
-                  <a
-                    href={book.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => window.open(book.url, '_blank')}
                     className="flex items-center justify-center gap-2 w-full py-3 bg-[#1A365D] hover:bg-[#2C5282] text-white text-[14px] font-medium rounded-xl transition-colors"
                   >
                     {t.buyButton}
                     <ExternalLink className="w-4 h-4" />
-                  </a>
+                  </button>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* View All Link */}
+          {/* Кнопка "Все публикации" - ИСПРАВЛЕНА */}
           <motion.div 
             className="text-center mt-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <a
-              href="https://ko-fi.com/erkindoc/shop"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#1A365D] text-[#1A365D] hover:bg-[#1A365D] hover:text-white font-medium rounded-xl transition-colors"
+            <button
+              onClick={() => window.open('https://ko-fi.com/erkindoc/shop', '_blank')}
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#1A365D] text-[#1A365D] hover:bg-[#1A365D] hover:text-white font-medium rounded-xl transition-colors shadow-sm"
             >
               {t.viewAll}
               <ExternalLink className="w-4 h-4" />
-            </a>
+            </button>
           </motion.div>
         </div>
       </section>
