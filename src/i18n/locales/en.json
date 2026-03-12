@@ -135,9 +135,38 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
-      { "question": "Why do I feel exhausted?", "answer": "This often stems from mitochondrial dysfunction. 6D Diagnostics helps identify metabolic or neurological roots." },
-      { "question": "Why are lab results 'normal'?", "answer": "Standard tests find acute pathology. We look for functional imbalances and the 'logic' behind symptoms." },
-      { "question": "How does an online consultation work?", "answer": "The session lasts 60 minutes via Zoom. I study your medical history in advance to find hidden connections." }
+      {
+        "question": "Why are my lab results 'normal' if I feel unwell?",
+        "answer": "Standard tests look for acute pathologies. We focus on functional imbalances and seek the underlying logic behind your symptoms."
+      },
+      {
+        "question": "How does an online consultation work?",
+        "answer": "The session lasts 60 minutes via Zoom. We create a navigational map for your recovery process."
+      },
+      {
+        "question": "What is 6D Navigation?",
+        "answer": "It is a comprehensive approach analyzing six health vectors: Diagnostics, Dysfunction, Regulation, Direction, Development, and Depth."
+      },
+      {
+        "question": "Who is 6D Diagnostics for?",
+        "answer": "For patients with chronic issues where standard medicine has failed to identify the root cause."
+      },
+      {
+        "question": "How much does a consultation cost?",
+        "answer": "The primary 6D Diagnostics session costs €100 for 60 minutes."
+      },
+      {
+        "question": "How do I book an appointment?",
+        "answer": "Fill out the form on this page or contact us via WhatsApp."
+      },
+      {
+        "question": "Do you offer in-person consultations?",
+        "answer": "Yes, in-person consultations are available in Piešťany by prior appointment."
+      },
+      {
+        "question": "In which languages are consultations conducted?",
+        "answer": "Russian, Slovak, English, and German."
+      }
     ]
   },
   "contact": {
