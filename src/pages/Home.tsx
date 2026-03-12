@@ -33,7 +33,7 @@ export function Home() {
   }, [i18n.language]);
 
   const assessmentFormLinks: Record<Lang, string> = {
-    ru: 'https://forms.gle/oDEBWUFKi6vLbTmk9',
+    ru: 'https://docs.google.com/forms/d/e/1FAIpQLSfvhsVW5kg70y1qqj0TtOQH_zA9INrea-qFR_YqCjYZhn6INQ/viewform?usp=header',
     sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
     en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en'
   };
