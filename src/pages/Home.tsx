@@ -25,29 +25,34 @@ import { toast } from 'sonner';
 type Lang = 'en' | 'ru' | 'sk';
 
 export function Home() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   
   const currentLang = useMemo(() => {
     const lang = i18n.language.split('-')[0];
     return (['en', 'ru', 'sk'].includes(lang) ? lang : 'sk') as Lang;
   }, [i18n.language]);
 
-  const assessmentFormLinks: Record<Lang, string> = {
-    ru: 'https://docs.google.com/forms/d/e/1FAIpQLSfvhsVW5kg70y1qqj0TtOQH_zA9INrea-qFR_YqCjYZhn6INQ/viewform?usp=header',
-    sk: 'https://docs.google.com/forms/d/e/1FAIpQLSedOMJH-In-P7bnyar4-MrTqoCF16ZKzhHH2xwjw7liNnHuNQ/viewform',
-    en: 'https://forms.gle/zAVdvWisrwWMbNGT7?hl=en'
-  };
-
+  // Инженерное исправление: Ссылки теперь подтягиваются из JSON (t)
+  // Это исключает потерю лидов при обновлении локализации
   const handleAssessmentClick = () => {
-    const formLink = assessmentFormLinks[currentLang] || assessmentFormLinks.sk;
-    window.open(formLink, '_blank', 'noopener,noreferrer');
+    const formLink = t('contact.form.url'); 
     
-    toast.success(currentLang === 'ru' ? 'Открываем форму диагностики' : 'Opening 6D Assessment Form', {
-      description: currentLang === 'ru' 
-        ? 'Вы будете перенаправлены на защищенную Google-форму.' 
-        : 'You will be redirected to the secure Google Form.',
-      duration: 3000,
-    });
+    if (formLink) {
+      window.open(formLink, '_blank', 'noopener,noreferrer');
+      
+      const toastMessages = {
+        ru: { title: 'Открываем форму диагностики', desc: 'Вы будете перенаправлены на защищенную Google-форму.' },
+        en: { title: 'Opening 6D Assessment Form', desc: 'You will be redirected to the secure Google Form.' },
+        sk: { title: 'Otvárame diagnostický formulár', desc: 'Budete presmerovaní na zabezpečený Google formulár.' }
+      };
+
+      const msg = toastMessages[currentLang] || toastMessages.sk;
+
+      toast.success(msg.title, {
+        description: msg.desc,
+        duration: 3000,
+      });
+    }
   };
 
   return (
