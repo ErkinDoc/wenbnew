@@ -229,6 +229,7 @@
     "subtitle": "Свяжитесь с нами",
     "email": "erkinslovakia@gmail.com",
     "whatsapp": { "label": "WhatsApp", "url": "https://wa.me/421940270511" },
+    "form": { "url": "https://forms.gle/ERWjj134FnTG1oS2A" },
     "cta": "Написать нам"
   },
   "footer": {

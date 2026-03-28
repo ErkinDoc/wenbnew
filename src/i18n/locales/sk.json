@@ -98,7 +98,7 @@
     "items": [
       {
         "title": "6D Diagnostika",
-        "description": "Hĺbková systémová analýza stavu (60 minút).",
+        "description": "Hĺbková systémová analýза stavu (60 minút).",
         "features": ["Osobná mapa zdravia", "Individuálny akčný plán"]
       },
       {
@@ -144,7 +144,7 @@
     "subtitle": "Spojte sa s nami",
     "email": "erkinslovakia@gmail.com",
     "whatsapp": { "label": "WhatsApp", "url": "https://wa.me/421940270511" },
-    "form": { "url": "https://forms.gle/84r3wpHDZxTmQQRg7" },
+    "form": { "url": "https://forms.gle/tLYgfZLeGU27efuZ6" },
     "cta": "Napíšte nám"
   },
   "footer": {
@@ -157,7 +157,7 @@
     "legal": "Právne",
     "privacy": "Ochrana súkromia",
     "terms": "Podmienky",
-    "language": "Jazyk",
+    "language": "Jazyк",
     "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
     "license": "Lekárska licencia EÚ — Slovensko",
     "disclaimerTitle": "Právne upozornenie",
