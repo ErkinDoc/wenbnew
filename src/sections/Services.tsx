@@ -1,17 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ArrowRight, ExternalLink } from 'lucide-react';
 
-// Добавляем интерфейс, чтобы App.tsx не ругался
 interface ServicesProps {
   onAssessmentClick: () => void;
 }
 
 export function Services({ onAssessmentClick }: ServicesProps) {
   const { t } = useTranslation();
-
-  // Безопасное получение массива услуг
   const services = t('services.items', { returnObjects: true }) as any[] || [];
 
   return (
@@ -60,6 +57,64 @@ export function Services({ onAssessmentClick }: ServicesProps) {
             </motion.div>
           ))}
         </div>
+
+        {/* Specializovane programy */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="mt-16 rounded-3xl border border-[#E2E8F0] bg-[#F0F7F4] p-8 md:p-12"
+        >
+          <h3 className="text-[22px] font-serif font-bold text-[#1A365D] mb-2 text-center">
+            Specializované programy Dr. Erkina
+          </h3>
+          <p className="text-[#4A5568] text-center mb-8 text-[15px]">
+            Okrem komplexnej diagnostiky ponúkame aj cielené programy pre konkrétne zdravotné ciele.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a
+              href="https://rehabilitation-seven.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#1A365D] transition-all group"
+            >
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#1A365D]/10 flex items-center justify-center">
+                <span className="text-2xl">🦴</span>
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <h4 className="text-[17px] font-bold text-[#1A365D]">System presnej rehabilitacie</h4>
+                  <ExternalLink className="w-4 h-4 text-[#4A5568] group-hover:text-[#1A365D]" />
+                </div>
+                <p className="text-[14px] text-[#4A5568]">
+                  Klinicka strategia obnovy funkcie pohyboveho aparatu. Presna diagnostika klbov a chrbtice.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://v0-presne-chudenie-website.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#1A365D] transition-all group"
+            >
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#68A07C]/10 flex items-center justify-center">
+                <span className="text-2xl">⚖️</span>
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <h4 className="text-[17px] font-bold text-[#1A365D]">Presne Chudenie</h4>
+                  <ExternalLink className="w-4 h-4 text-[#4A5568] group-hover:text-[#1A365D]" />
+                </div>
+                <p className="text-[14px] text-[#4A5568]">
+                  Individualny integrativny program trvaleho znizenia hmotnosti. Obnovujeme metabolizmus.
+                </p>
+              </div>
+            </a>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );
