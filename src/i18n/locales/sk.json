@@ -95,10 +95,22 @@
     "title": "Služby",
     "subtitle": "Programy obnovy",
     "cta": "Objednať sa",
+    "specializedBadge": "Špecializované programy",
+    "specializedTitle": "Pohybový aparát & Metabolizmus",
+    "specializedSubtitle": "Cielené programy pre konkrétne zdravotné ciele — presná diagnostika a individuálny prístup.",
+    "rehab": {
+      "title": "Systém presnej rehabilitácie",
+      "description": "Klinická stratégia obnovy funkcie pohybového aparátu. Presná diagnostika kĺbov, chrbtice a neurologických porúch pohybu."
+    },
+    "weight": {
+      "title": "Presné Chudenie",
+      "description": "Individuálny integratívny program trvalého zníženia hmotnosti. Obnovujeme metabolizmus — nie diéty, ale príčiny."
+    },
+    "learnMore": "Zistiť viac",
     "items": [
       {
         "title": "6D Diagnostika",
-        "description": "Hĺbková systémová analýза stavu (60 minút).",
+        "description": "Hĺbková systémová analýza stavu (60 minút).",
         "features": ["Osobná mapa zdravia", "Individuálny akčný plán"]
       },
       {
@@ -157,11 +169,11 @@
     "legal": "Právne",
     "privacy": "Ochrana súkromia",
     "terms": "Podmienky",
-    "language": "Jazyк",
+    "language": "Jazyk",
     "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
     "license": "Lekárska licencia EÚ — Slovensko",
     "disclaimerTitle": "Právne upozornenie",
-    "disclaimerText": "Obsah slúži len na informačné účely and nepredstavuje lekársku radu."
+    "disclaimerText": "Obsah slúži len na informačné účely a nepredstavuje lekársku radu."
   },
   "finalCta": {
     "title": "Pripravení nájsť príčinu?",
