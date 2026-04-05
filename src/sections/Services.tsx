@@ -64,14 +64,20 @@ export function Services({ onAssessmentClick }: ServicesProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mt-16 rounded-3xl border border-[#E2E8F0] bg-[#F0F7F4] p-8 md:p-12"
+          className="mt-16 rounded-3xl border-2 border-[#1A365D]/20 bg-gradient-to-br from-[#F0F7F4] to-[#EBF4FF] p-8 md:p-12"
         >
-          <h3 className="text-[22px] font-serif font-bold text-[#1A365D] mb-2 text-center">
-            Specializované programy Dr. Erkina
-          </h3>
-          <p className="text-[#4A5568] text-center mb-8 text-[15px]">
-            Okrem komplexnej diagnostiky ponúkame aj cielené programy pre konkrétne zdravotné ciele.
-          </p>
+          <div className="text-center mb-8">
+            <span className="inline-block bg-[#1A365D] text-white text-[12px] font-semibold uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+              {t('services.specializedBadge')}
+            </span>
+            <h3 className="text-[26px] font-serif font-bold text-[#1A365D] mb-2">
+              {t('services.specializedTitle')}
+            </h3>
+            <p className="text-[#4A5568] text-[15px] max-w-xl mx-auto">
+              {t('services.specializedSubtitle')}
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a
               href="https://rehabilitation-seven.vercel.app/"
@@ -79,17 +85,22 @@ export function Services({ onAssessmentClick }: ServicesProps) {
               rel="noopener noreferrer"
               className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#1A365D] transition-all group"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#1A365D]/10 flex items-center justify-center">
-                <span className="text-2xl">🦴</span>
+              <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-[#1A365D]/10 flex items-center justify-center text-3xl">
+                🦴
               </div>
               <div className="flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <h4 className="text-[17px] font-bold text-[#1A365D]">System presnej rehabilitacie</h4>
-                  <ExternalLink className="w-4 h-4 text-[#4A5568] group-hover:text-[#1A365D]" />
+                <div className="flex items-center gap-2 mb-2">
+                  <h4 className="text-[17px] font-bold text-[#1A365D]">
+                    {t('services.rehab.title')}
+                  </h4>
+                  <ExternalLink className="w-4 h-4 text-[#4A5568] group-hover:text-[#1A365D] flex-shrink-0" />
                 </div>
-                <p className="text-[14px] text-[#4A5568]">
-                  Klinicka strategia obnovy funkcie pohyboveho aparatu. Presna diagnostika klbov a chrbtice.
+                <p className="text-[14px] text-[#4A5568] leading-relaxed">
+                  {t('services.rehab.description')}
                 </p>
+                <span className="inline-block mt-3 text-[13px] font-semibold text-[#1A365D] group-hover:underline">
+                  {t('services.learnMore')} →
+                </span>
               </div>
             </a>
 
@@ -97,24 +108,28 @@ export function Services({ onAssessmentClick }: ServicesProps) {
               href="https://v0-presne-chudenie-website.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#1A365D] transition-all group"
+              className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#68A07C] transition-all group"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#68A07C]/10 flex items-center justify-center">
-                <span className="text-2xl">⚖️</span>
+              <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-[#68A07C]/10 flex items-center justify-center text-3xl">
+                ⚖️
               </div>
               <div className="flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <h4 className="text-[17px] font-bold text-[#1A365D]">Presne Chudenie</h4>
-                  <ExternalLink className="w-4 h-4 text-[#4A5568] group-hover:text-[#1A365D]" />
+                <div className="flex items-center gap-2 mb-2">
+                  <h4 className="text-[17px] font-bold text-[#1A365D]">
+                    {t('services.weight.title')}
+                  </h4>
+                  <ExternalLink className="w-4 h-4 text-[#4A5568] group-hover:text-[#68A07C] flex-shrink-0" />
                 </div>
-                <p className="text-[14px] text-[#4A5568]">
-                  Individualny integrativny program trvaleho znizenia hmotnosti. Obnovujeme metabolizmus.
+                <p className="text-[14px] text-[#4A5568] leading-relaxed">
+                  {t('services.weight.description')}
                 </p>
+                <span className="inline-block mt-3 text-[13px] font-semibold text-[#68A07C] group-hover:underline">
+                  {t('services.learnMore')} →
+                </span>
               </div>
             </a>
           </div>
         </motion.div>
-
       </div>
     </section>
   );
