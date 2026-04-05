@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, MessageCircle, Phone, ExternalLink } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
@@ -17,10 +17,11 @@ export function Footer() {
     <footer id="footer" className="w-full bg-[#1A365D] text-white/80">
       <div className="section-container py-16 lg:py-20">
         <div className="section-inner">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
-            
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
+
             {/* Brand */}
             <motion.div
+              className="lg:col-span-1"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -52,7 +53,7 @@ export function Footer() {
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.label}>
-                    <a 
+                    <a
                       href={link.href}
                       className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans"
                     >
@@ -60,6 +61,42 @@ export function Footer() {
                     </a>
                   </li>
                 ))}
+              </ul>
+            </motion.div>
+
+            {/* Specializovane programy */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+            >
+              <h4 className="text-white font-semibold text-[14px] font-sans mb-5">
+                Specializovane programy
+              </h4>
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="https://rehabilitation-seven.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans flex items-center gap-1"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    System presnej rehabilitacie
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://v0-presne-chudenie-website.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans flex items-center gap-1"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    Presne Chudenie
+                  </a>
+                </li>
               </ul>
             </motion.div>
 
@@ -75,17 +112,17 @@ export function Footer() {
               </h4>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <Mail className="w-4 h-4 text-[#68A07C] mt-0.5 flex-shrink-0" />
-                  <a 
-                    href="mailto:erkinslovakia@gmail.com"
+                  <Phone className="w-4 h-4 text-[#68A07C] mt-0.5 flex-shrink-0" />
+                  <a
+                    href="tel:+421911625792"
                     className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans"
                   >
-                    erkinslovakia@gmail.com
+                    +421 911 625 792
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <MessageCircle className="w-4 h-4 text-[#68A07C] mt-0.5 flex-shrink-0" />
-                  <a 
+                  <a
                     href="https://wa.me/421940270511"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -95,9 +132,18 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
+                  <Mail className="w-4 h-4 text-[#68A07C] mt-0.5 flex-shrink-0" />
+                  <a
+                    href="mailto:erkinslovakia@gmail.com"
+                    className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans"
+                  >
+                    erkinslovakia@gmail.com
+                  </a>
+                </li>
+                <li className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#68A07C] mt-0.5 flex-shrink-0" />
                   <span className="text-[13px] text-white/70 font-sans">
-                    {t('footer.locationValue')}
+                    Poliklinika Piestany, Rekreacna 2, 921 01 Piestany
                   </span>
                 </li>
               </ul>
@@ -130,7 +176,7 @@ export function Footer() {
                   </a>
                 </li>
               </ul>
-              
+
               <div>
                 <p className="text-[11px] text-white/40 mb-2 font-sans">{t('footer.language')}</p>
                 <LanguageSwitcher variant="dark" />
@@ -138,8 +184,8 @@ export function Footer() {
             </motion.div>
           </div>
 
-          {/* Medical Disclaimer Section (Dynamic) */}
-          <motion.div 
+          {/* Medical Disclaimer */}
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
