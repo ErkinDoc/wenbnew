@@ -48,4 +48,16 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/?lang=ru"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/?lang=en"/>
   </url>
+  <url>
+    <loc>https://www.drerkin.eu/kniha</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/kniha"/>
+    <image:image>
+      <image:loc>https://www.drerkin.eu/kniha/obalka.jpg</image:loc>
+      <image:title>Pán doktor, vy nie ste odtiaľto – obálka knihy</image:title>
+    </image:image>
+  </url>
+
 </urlset>

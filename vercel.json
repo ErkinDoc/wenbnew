@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/kniha", "destination": "/kniha/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

@@ -10,7 +10,7 @@ interface NavigationProps {
 }
 
 export function Navigation({ onAssessmentClick }: NavigationProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,12 +29,16 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     { label: t('nav.services'), href: '#services', type: 'anchor' },
     { label: t('nav.global'), href: '#global', type: 'anchor' },
     { label: 'Publications', href: '/publications', type: 'route' },
+    // Kniha je len po slovensky – odkaz sa zobrazuje iba v slovenskej verzii
+    ...(i18n.language?.startsWith('sk') ? [{ label: 'Kniha', href: '/kniha', type: 'page' }] : []),
     { label: t('nav.faq'), href: '#faq', type: 'anchor' },
     { label: t('nav.contact'), href: '#footer', type: 'anchor' },
   ];
 
   const handleNavClick = (href: string, type: string) => {
-    if (type === 'route') {
+    if (type === 'page') {
+      window.location.href = href;
+    } else if (type === 'route') {
       navigate(href);
     } else {
       // Если мы на другой странице, сначала переходим на главную
