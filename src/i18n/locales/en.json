@@ -10,9 +10,9 @@
   "hero": {
     "title": "Dr. Erkinbek Dzhamanbaev",
     "credentials": "PhD, MBA",
-    "specialty": "Physician · integrative medicine · chronic fatigue and pain",
+    "specialty": "Physician · comprehensive diagnostics · back, joints, chronic fatigue",
     "headline": "When your results are “normal” but you don’t feel well",
-    "subheadline": "Chronic fatigue, pain, burnout, unexplained symptoms. I help find the connections that get lost in a standard appointment. The first step is a free online 6D questionnaire.",
+    "subheadline": "Back and joint pain, fatigue, unexplained symptoms. I look at the whole body, not a single organ, and give you an independent third medical opinion. The first step is a free online 6D questionnaire.",
     "ctaAssessment": "Take the free 6D questionnaire",
     "ctaApply": "Message on WhatsApp",
     "badge1": "Online across the EU",
@@ -183,8 +183,8 @@
         "label": "years of practice"
       },
       {
-        "number": "6",
-        "label": "countries"
+        "number": "12",
+        "label": "Facebook recommendations (100%)"
       },
       {
         "number": "3",
@@ -281,37 +281,37 @@
     "ariaLabel": "Message Dr. Erkin on WhatsApp"
   },
   "seo": {
-    "title": "Integrative Medicine Doctor in Slovakia | Dr. Dzhamanbaev",
+    "title": "Back & Joint Pain, Comprehensive Diagnostics | Dr. Dzhamanbaev",
     "ogTitle": "Dr. Erkinbek Dzhamanbaev — when your results are “normal” but you don’t feel well",
-    "description": "Chronic fatigue, pain, burnout, long COVID — when tests come back normal. Consultations in English, Slovak and Russian across the EU. Free 6D questionnaire."
+    "description": "Integrative medicine: back, neck and joint pain, fatigue, “normal” test results, an independent third medical opinion. Online across the EU. Free 6D questionnaire."
   },
   "conditions": {
     "title": "What I help with",
     "subtitle": "For adults with long-standing symptoms who haven’t received a clear answer.",
     "items": [
       {
-        "title": "Chronic fatigue",
-        "text": "Tiredness that doesn’t go away even after sleep or a holiday."
+        "title": "Back and neck pain",
+        "text": "Lower back, neck, between the shoulder blades — pain lasting months or years."
       },
       {
-        "title": "Chronic pain",
-        "text": "Back, neck, joints, headaches — pain lasting months or years."
+        "title": "Joints",
+        "text": "Knee, shoulder, hip — when pain keeps coming back despite treatment."
+      },
+      {
+        "title": "Chronic fatigue",
+        "text": "Tiredness that doesn’t go away after sleep or a holiday, including after COVID-19."
       },
       {
         "title": "Burnout and chronic stress",
         "text": "Exhaustion, poor sleep, tension, low energy."
       },
       {
-        "title": "Long COVID",
-        "text": "Fatigue, brain fog and palpitations after COVID-19."
-      },
-      {
-        "title": "Fibromyalgia",
-        "text": "Widespread muscle and soft-tissue pain with fatigue."
-      },
-      {
         "title": "“Normal” test results",
         "text": "Many symptoms, yet the tests find nothing."
+      },
+      {
+        "title": "Third medical opinion",
+        "text": "Already have two different opinions? I review the whole picture independently and explain what it means."
       }
     ],
     "note": "Consultations in English, Slovak and Russian — in person in Piešťany or online anywhere in the EU."

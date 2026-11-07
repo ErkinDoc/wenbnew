@@ -10,9 +10,9 @@
   "hero": {
     "title": "Dr. Erkinbek Džamanbajev",
     "credentials": "PhD, MBA",
-    "specialty": "Lekár · integratívna medicína · chronická únava a bolesť",
+    "specialty": "Lekár · komplexná diagnostika · chrbát, kĺby, chronická únava",
     "headline": "Keď sú výsledky „v norme“, ale vám nie je dobre",
-    "subheadline": "Chronická únava, bolesť, vyhorenie, nevysvetliteľné ťažkosti. Pomôžem nájsť súvislosti, ktoré sa pri bežnom vyšetrení strácajú. Prvý krok je bezplatný 6D dotazník online.",
+    "subheadline": "Bolesť chrbta a kĺbov, únava, nevysvetliteľné ťažkosti. Pozriem sa na celý organizmus — nie na jeden orgán — a dám vám nezávislý tretí názor lekára. Prvý krok je bezplatný 6D dotazník online.",
     "ctaAssessment": "Vyplniť bezplatný 6D dotazník",
     "ctaApply": "Napísať na WhatsApp",
     "badge1": "Online v celej EÚ",
@@ -184,8 +184,8 @@
         "label": "rokov praxe"
       },
       {
-        "number": "6",
-        "label": "krajín praxe"
+        "number": "12",
+        "label": "odporúčaní na Facebooku (100 %)"
       },
       {
         "number": "3",
@@ -282,37 +282,37 @@
     "ariaLabel": "Napísať Dr. Erkinovi cez WhatsApp"
   },
   "seo": {
-    "title": "Lekár pre chronickú únavu a bolesť | Dr. Džamanbajev, Piešťany",
+    "title": "Bolesť chrbta a kĺbov, komplexná diagnostika | Dr. Džamanbajev",
     "ogTitle": "Dr. Erkinbek Džamanbajev — keď sú výsledky „v norme“, ale vám nie je dobre",
-    "description": "Chronická únava, bolesť, vyhorenie, post-covid — keď sú výsledky v norme. Integratívna medicína, Piešťany a online v celej EÚ. Bezplatný 6D dotazník."
+    "description": "Integratívna medicína: bolesť chrbta, krku a kĺbov, únava, výsledky „v norme“, nezávislý tretí názor lekára. Piešťany a online v EÚ. Bezplatný 6D dotazník."
   },
   "conditions": {
     "title": "S čím vám pomôžem",
     "subtitle": "Pre dospelých s dlhodobými ťažkosťami, ktorí doteraz nedostali jasnú odpoveď.",
     "items": [
       {
-        "title": "Chronická únava",
-        "text": "Únava, ktorá neprejde ani po spánku či dovolenke."
+        "title": "Bolesť chrbta a krku",
+        "text": "Krížová chrbtica, krk, medzi lopatkami — bolesť, ktorá trvá mesiace alebo roky."
       },
       {
-        "title": "Chronická bolesť",
-        "text": "Chrbát, krk, kĺby, hlava — bolesť, ktorá trvá mesiace alebo roky."
+        "title": "Kĺby",
+        "text": "Koleno, rameno, bedro — keď sa bolesť vracia napriek liečbe."
+      },
+      {
+        "title": "Chronická únava",
+        "text": "Únava, ktorá neprejde ani po spánku či dovolenke, aj po prekonanom covide."
       },
       {
         "title": "Vyhorenie a dlhodobý stres",
         "text": "Vyčerpanie, zlý spánok, napätie, nedostatok energie."
       },
       {
-        "title": "Post-covid syndróm",
-        "text": "Únava, mozgová hmla a búšenie srdca po prekonanom covide."
-      },
-      {
-        "title": "Fibromyalgia",
-        "text": "Rozšírená bolesť svalov a mäkkých tkanív spojená s únavou."
-      },
-      {
         "title": "Výsledky „v norme“",
         "text": "Viacero príznakov, no vyšetrenia nič nenašli."
+      },
+      {
+        "title": "Tretí názor lekára",
+        "text": "Máte už dve rôzne odporúčania? Pozriem sa na celý obraz nezávisle a vysvetlím, čo z toho vyplýva."
       }
     ],
     "note": "Konzultácie v slovenčine, ruštine a angličtine — osobne v Piešťanoch alebo online kdekoľvek v EÚ."

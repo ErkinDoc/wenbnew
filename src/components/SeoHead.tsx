@@ -46,7 +46,15 @@ export function SeoHead({ lang }: { lang: Lang }) {
         address: { '@type': 'PostalAddress', addressLocality: 'Piešťany', postalCode: '921 01', addressCountry: 'SK' },
         areaServed: [{ '@type': 'Country', name: 'Slovakia' }, { '@type': 'Place', name: 'European Union' }],
         availableLanguage: ['sk', 'ru', 'en'],
-        medicalSpecialty: ['Integrative Medicine', 'Pain Management'],
+        medicalSpecialty: ['Integrative Medicine', 'Pain Management', 'Physical Medicine and Rehabilitation'],
+        alumniOf: ['Kyrgyz State Medical Academy', 'S. M. Kirov Military Medical Academy'],
+        sameAs: [
+          'https://www.facebook.com/profile.php?id=100091640542114',
+          'https://www.facebook.com/drerkin.medicine/',
+          'https://www.instagram.com/pain.therapy/',
+          'https://www.youtube.com/@DoctorErkin',
+        ],
+        slogan: 'Comprehensive integrative diagnostics and an independent third medical opinion',
         knowsAbout: conditions.map((c) => c.title),
         priceRange: '0–100 €',
         makesOffer: [

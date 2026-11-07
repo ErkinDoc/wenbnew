@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Globe, Clock, Shield, GraduationCap, Briefcase, Lock, MessageCircle, Gift } from 'lucide-react';
+import { Star, Clock, Shield, GraduationCap, Briefcase, Lock, MessageCircle, Gift } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export function TrustAuthority() {
@@ -16,7 +16,7 @@ export function TrustAuthority() {
       label: t('trust.stats.0.label')    // pacientov
     },
     { 
-      icon: Globe, 
+      icon: Star, 
       number: t('trust.stats.1.number'), // 30+
       label: t('trust.stats.1.label')    // rokov praxe
     },

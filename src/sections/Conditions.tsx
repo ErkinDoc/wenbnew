@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { BatteryLow, Activity, Flame, Wind, Waves, FileSearch } from 'lucide-react';
+import { Activity, Bone, BatteryLow, Flame, FileSearch, Eye } from 'lucide-react';
 
-const ICONS = [BatteryLow, Activity, Flame, Wind, Waves, FileSearch];
+const ICONS = [Activity, Bone, BatteryLow, Flame, FileSearch, Eye];
 
 export function Conditions() {
   const { t } = useTranslation();
