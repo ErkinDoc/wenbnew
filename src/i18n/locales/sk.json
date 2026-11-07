@@ -262,7 +262,9 @@
     "license": "Medicine of Coherence · 6D navigácia",
     "disclaimerTitle": "Upozornenie",
     "disclaimerText": "Obsah stránky slúži na informačné účely a nenahrádza vyšetrenie u ošetrujúceho lekára. Pri akútnych ťažkostiach volajte 112 alebo 155.",
-    "programs": "Špecializované programy"
+    "programs": "Špecializované programy",
+    "book": "Kniha",
+    "publications": "Publikácie"
   },
   "finalCta": {
     "title": "Pripravení nájsť príčinu?",
@@ -282,7 +284,7 @@
     "ariaLabel": "Napísať Dr. Erkinovi cez WhatsApp"
   },
   "seo": {
-    "title": "Bolesť chrbta a kĺbov, komplexná diagnostika | Dr. Džamanbajev",
+    "title": "Bolesť chrbta a kĺbov, diagnostika | Dr. Džamanbajev",
     "ogTitle": "Dr. Erkinbek Džamanbajev — keď sú výsledky „v norme“, ale vám nie je dobre",
     "description": "Integratívna medicína: bolesť chrbta, krku a kĺbov, únava, výsledky „v norme“, nezávislý tretí názor lekára. Piešťany a online v EÚ. Bezplatný 6D dotazník."
   },

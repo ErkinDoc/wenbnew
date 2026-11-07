@@ -261,7 +261,9 @@
     "programs": "Specialized programs",
     "privacy": "Privacy policy (GDPR)",
     "language": "Language",
-    "disclaimerTitle": "Medical disclaimer"
+    "disclaimerTitle": "Medical disclaimer",
+    "book": "Book (SK)",
+    "publications": "Publications"
   },
   "finalCta": {
     "title": "Ready to find the cause?",
@@ -281,7 +283,7 @@
     "ariaLabel": "Message Dr. Erkin on WhatsApp"
   },
   "seo": {
-    "title": "Back & Joint Pain, Comprehensive Diagnostics | Dr. Dzhamanbaev",
+    "title": "Back & Joint Pain Diagnostics | Dr. Dzhamanbaev",
     "ogTitle": "Dr. Erkinbek Dzhamanbaev — when your results are “normal” but you don’t feel well",
     "description": "Integrative medicine: back, neck and joint pain, fatigue, “normal” test results, an independent third medical opinion. Online across the EU. Free 6D questionnaire."
   },

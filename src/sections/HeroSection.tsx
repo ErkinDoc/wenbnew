@@ -52,7 +52,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 <h1 className="font-serif font-bold text-[#1A365D]">
                   <span className="block text-[32px] sm:text-[40px] lg:text-[48px] leading-[1.1] mb-3">
                     {t('hero.title')}
-                  </span>
+                  </span><span className="sr-only"> — </span>
                   <span className="block text-[16px] lg:text-[18px] text-[#68A07C] font-sans font-semibold leading-snug">
                     {t('hero.specialty')}
                   </span>

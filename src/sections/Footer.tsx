@@ -14,6 +14,8 @@ export function Footer() {
     { label: t('nav.services'), href: `${home}#services` },
     { label: t('nav.global'), href: `${home}#global` },
     { label: t('nav.faq'), href: `${home}#faq` },
+    { label: t('footer.publications'), href: '/publications' },
+    { label: t('footer.book'), href: '/kniha' },
   ];
 
   return (
