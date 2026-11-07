@@ -4,20 +4,23 @@
     "services": "Services",
     "global": "Experience",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "publications": "Publications"
   },
   "hero": {
     "title": "Dr. Erkinbek Dzhamanbaev",
-    "credentials": "MUDr., PhD, MBA",
-    "specialty": "Complex Case Expert",
-    "headline": "Beyond Standard Diagnostics",
-    "subheadline": "Online consultations across Europe. 30+ years of clinical practice.",
-    "ctaAssessment": "Start 6D Assessment (Online)",
-    "ctaApply": "Apply",
-    "badge1": "EU License",
-    "badge2": "30+ Years",
-    "badge3": "5000+ Patients",
-    "badge4": "15 Countries"
+    "credentials": "PhD, MBA",
+    "specialty": "Physician · Integrative Medicine · Author of 6D Navigation",
+    "headline": "When your results are “normal” but you don’t feel well",
+    "subheadline": "Chronic fatigue, pain, burnout, unexplained symptoms. I help find the connections that get lost in a standard appointment. The first step is a free online 6D questionnaire.",
+    "ctaAssessment": "Take the free 6D questionnaire",
+    "ctaApply": "Message on WhatsApp",
+    "badge1": "Online across the EU",
+    "badge2": "30+ years",
+    "badge3": "EN · SK · RU",
+    "badge4": "6 countries",
+    "ctaNote": "Free, no obligation · consultations in English, Slovak and Russian",
+    "yearsLabel": "years of practice"
   },
   "problem": {
     "title": "Do these situations sound familiar?",
@@ -40,62 +43,109 @@
     "subtitle": "Six Vectors of Health",
     "description": "Individual recovery roadmap for each patient.",
     "dimensions": [
-      { "id": "D1", "name": "D1: Diagnostics", "subtitle": "EBM Analysis", "description": "Mapping system dysfunctions." },
-      { "id": "D2", "name": "D2: Dysfunction", "subtitle": "Patterns", "description": "Movement and breathing correction." },
-      { "id": "D3", "name": "D3: Disconnection", "subtitle": "Brain-Body Link", "description": "Vagus nerve activation." },
-      { "id": "D4", "name": "D4: Direction", "subtitle": "Biochemistry", "description": "Nutrition and internal environment." },
-      { "id": "D5", "name": "D5: Development", "subtitle": "Cognition", "description": "Breaking the pain cycle." },
-      { "id": "D6", "name": "D6: Depth", "subtitle": "Integration", "description": "New lifestyle." }
+      {
+        "id": "D1",
+        "name": "D1: Diagnostics",
+        "subtitle": "EBM Analysis",
+        "description": "Mapping system dysfunctions."
+      },
+      {
+        "id": "D2",
+        "name": "D2: Dysfunction",
+        "subtitle": "Patterns",
+        "description": "Movement and breathing correction."
+      },
+      {
+        "id": "D3",
+        "name": "D3: Disconnection",
+        "subtitle": "Brain-Body Link",
+        "description": "Vagus nerve activation."
+      },
+      {
+        "id": "D4",
+        "name": "D4: Direction",
+        "subtitle": "Biochemistry",
+        "description": "Nutrition and internal environment."
+      },
+      {
+        "id": "D5",
+        "name": "D5: Development",
+        "subtitle": "Cognition",
+        "description": "Breaking the pain cycle."
+      },
+      {
+        "id": "D6",
+        "name": "D6: Depth",
+        "subtitle": "Integration",
+        "description": "New lifestyle."
+      }
     ],
     "scientificBasis": {
       "label": "Scientific Basis",
       "publications": [
-        { "title": "6D Navigation Model", "url": "https://www.drerkin.eu/" }
+        {
+          "title": "6D Navigation Model",
+          "url": "https://www.drerkin.eu/"
+        }
       ]
     }
   },
-  "testimonials": {
-    "title": "Patient Stories",
-    "subtitle": "Real Results",
-    "disclaimer": "GDPR compliant. All cases anonymized.",
-    "1": { "condition": "Chronic fatigue + fibromyalgia", "quote": "Twelve doctors in eight years. Each one treated a piece. None saw the pattern. Dr. Erkin found HPA-axis exhaustion in the first session." },
-    "2": { "condition": "Medication-resistant burnout", "quote": "Antidepressants stopped working. The 6D assessment revealed what no one checked — cellular energy collapse. Three months later, I'm running my company again." },
-    "3": { "condition": "Undiagnosed autoimmune", "quote": "Rheumatologist — nothing. Neurologist — nothing. Dr. Erkin connected dots no one else saw. Finally, a diagnosis that makes sense." },
-    "4": { "condition": "Post-COVID syndrome", "quote": "Brain fog, fatigue, palpitations — doctors told me to wait. The 6D protocol addressed autonomic dysfunction directly. I got my brain back." },
-    "5": { "condition": "Chronic pain + depression", "quote": "I spent €40,000 on treatments that didn't work. €100 diagnostic showed what everyone missed: it was neuroinflammation." },
-    "6": { "condition": "Thyroid dysfunction", "quote": "TSH perfect. Couldn't get out of bed. Dr. Erkin explained T4-to-T3 conversion at cellular level. Now I understand my body." },
-    "7": { "condition": "Irritable bowel syndrome", "quote": "Six years of diets and pills. Dr. Erkin found the gut-brain connection no one was looking for. Four months later, I eat normally." },
-    "8": { "condition": "Chronic headaches", "quote": "MRI clear, pills don't help. 6D analysis revealed cervical dysfunction and dietary triggers. Finally living without fear." }
-  },
   "globalExperience": {
     "title": "Experience",
-    "subtitle": "International Practice",
+    "subtitle": "30+ years of clinical practice on three continents",
     "locations": [
-      { "country": "Germany", "details": "Systemic Medicine clinical training." },
-      { "country": "Slovakia", "details": "Current private practice in Piešťany." },
-      { "country": "Switzerland", "details": "Diagnostic center collaboration." },
-      { "country": "USA", "details": "International medical forums participant." }
+      {
+        "country": "Kyrgyzstan",
+        "details": "Where the professional journey began."
+      },
+      {
+        "country": "Moscow · St. Petersburg",
+        "details": "Clinical practice and professional growth."
+      },
+      {
+        "country": "Spain",
+        "details": "Medical specialization obtained."
+      },
+      {
+        "country": "Seoul (Korea)",
+        "details": "International professional experience."
+      },
+      {
+        "country": "Quito (Ecuador)",
+        "details": "International professional experience."
+      },
+      {
+        "country": "Slovakia",
+        "details": "Piešťany — practice and online consultations for patients across the EU."
+      }
     ],
-    "membershipsTitle": "Memberships",
+    "membershipsTitle": "Approach",
     "memberships": [
-      "European Association of Systemic Medicine",
-      "International Council for Bioresonance",
-      "Licensed Physician in Slovak Republic"
+      "Evidence-based medicine (EBM) as the foundation",
+      "A systemic view: body, nervous system, nutrition, lifestyle",
+      "Time for your story — not 7 minutes in a waiting-room rush"
     ],
-    "certificationsTitle": "Qualifications",
+    "certificationsTitle": "Education",
     "certifications": [
-      "Diplomate in Systemic Medicine (Germany)",
-      "Board Certified Functional Medicine Expert",
-      "MBA in Healthcare Management"
-    ]
+      "PhD",
+      "MBA",
+      "Medical specialization — Spain"
+    ],
+    "label": "Professional path"
   },
   "successStories": {
     "title": "Clinical Outcomes",
     "subtitle": "Recovery Examples",
-    "disclaimer": "GDPR compliant",
+    "disclaimer": "Anonymised case reports. Results are individual and not guaranteed.",
     "items": [
-      { "title": "Chronic Fatigue", "content": "8 years of unsuccessful treatment. After 6D diagnostics, energy restored to 85% within 3 months." },
-      { "title": "Complex Diagnosis", "content": "5 years of unexplained pain. Found root cause in biochemistry and movement patterns." }
+      {
+        "title": "Chronic Fatigue",
+        "content": "8 years of unsuccessful treatment. After 6D diagnostics, energy restored to 85% within 3 months."
+      },
+      {
+        "title": "Complex Diagnosis",
+        "content": "5 years of unexplained pain. Found root cause in biochemistry and movement patterns."
+      }
     ]
   },
   "services": {
@@ -104,68 +154,108 @@
     "cta": "Book Now",
     "items": [
       {
-        "title": "6D Diagnostics",
-        "description": "Deep systemic analysis of your health state (60 minutes).",
-        "features": ["Personal health roadmap", "Individual action plan"]
+        "title": "Free 6D questionnaire",
+        "description": "The first step. You fill in an online questionnaire, I review it personally and you receive a preliminary conclusion.",
+        "features": [
+          "Free, no obligation",
+          "Advice on whether to continue"
+        ],
+        "cta": "Take the questionnaire"
       },
       {
-        "title": "Mentorship",
-        "description": "Regular sessions to adjust and refine the recovery process.",
-        "features": ["Progress monitoring", "Protocol adjustments"]
+        "title": "6D Diagnostics — €100",
+        "description": "In-depth systemic analysis of your condition, 60 minutes online (Zoom) or in person in Piešťany.",
+        "features": [
+          "Personal health map",
+          "Concrete action plan"
+        ]
+      },
+      {
+        "title": "Follow-up support",
+        "description": "Regular sessions throughout your recovery.",
+        "features": [
+          "Progress monitoring",
+          "Plan adjusted to results"
+        ]
       }
-    ]
+    ],
+    "specializedBadge": "Specialised programmes",
+    "specializedTitle": "Musculoskeletal & Metabolism",
+    "specializedSubtitle": "Targeted programmes for specific health goals — precise diagnostics and an individual approach.",
+    "rehab": {
+      "title": "Precision Rehabilitation System",
+      "description": "A clinical strategy for restoring musculoskeletal function. Precise assessment of joints, spine and neurological movement disorders."
+    },
+    "weight": {
+      "title": "Precision Weight Loss",
+      "description": "An individual integrative programme for lasting weight reduction. We restore metabolism — causes, not diets."
+    },
+    "learnMore": "Learn more"
   },
   "trust": {
     "title": "Experience & Trust",
-    "badge": "Credentials",
+    "badge": "Why me",
     "credentialsTitle": "Qualifications",
     "credentials": [
-      "MUDr., PhD, MBA",
-      "EU Medical License (Slovakia)",
-      "Systemic Medicine Expert",
-      "30+ Years of Clinical Practice"
+      "PhD, MBA",
+      "Medical specialization obtained in Spain",
+      "Author of the 6D Navigation method (Medicine of Coherence)",
+      "30+ years of clinical practice"
     ],
     "stats": [
-      { "number": "5000+", "label": "patients" },
-      { "number": "30+", "label": "years of practice" },
-      { "number": "70–85%", "label": "recovery dynamics" },
-      { "number": "15", "label": "European countries" }
-    ]
+      {
+        "number": "30+",
+        "label": "years of practice"
+      },
+      {
+        "number": "6",
+        "label": "countries"
+      },
+      {
+        "number": "3",
+        "label": "consultation languages"
+      },
+      {
+        "number": "€0",
+        "label": "initial 6D questionnaire"
+      }
+    ],
+    "gdpr": "Your health data is confidential and processed under GDPR"
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
       {
+        "question": "Why am I exhausted even after sleeping?",
+        "answer": "There can be several causes — from iron deficiency or thyroid problems to sleep quality and chronic stress. The 6D questionnaire helps map where to look."
+      },
+      {
         "question": "Why are my lab results 'normal' if I feel unwell?",
-        "answer": "Standard tests look for acute pathologies. We focus on functional imbalances and seek the underlying logic behind your symptoms."
+        "answer": "Standard tests mainly look for acute pathology. I also look at the functional connections between your symptoms."
+      },
+      {
+        "question": "Is the first step paid?",
+        "answer": "No. The 6D questionnaire is free. Based on it you receive a preliminary conclusion and advice on whether to continue."
       },
       {
         "question": "How does an online consultation work?",
-        "answer": "The session lasts 60 minutes via Zoom. We create a navigational map for your recovery process."
+        "answer": "The session lasts 60 minutes via Zoom. I review your questionnaire and available results in advance."
       },
       {
         "question": "What is 6D Navigation?",
-        "answer": "It is a comprehensive approach analyzing six health vectors: Diagnostics, Dysfunction, Regulation, Direction, Development, and Depth."
-      },
-      {
-        "question": "Who is 6D Diagnostics for?",
-        "answer": "For patients with chronic issues where standard medicine has failed to identify the root cause."
+        "answer": "A comprehensive approach that assesses health in six dimensions — from diagnostics through movement, the nervous system and nutrition to lifestyle."
       },
       {
         "question": "How much does a consultation cost?",
-        "answer": "The primary 6D Diagnostics session costs €100 for 60 minutes."
-      },
-      {
-        "question": "How do I book an appointment?",
-        "answer": "Fill out the form on this page or contact us via WhatsApp."
+        "answer": "The questionnaire is free. 6D Diagnostics (60 minutes) costs €100."
       },
       {
         "question": "Do you offer in-person consultations?",
-        "answer": "Yes, in-person consultations are available in Piešťany by prior appointment."
+        "answer": "Yes, in Piešťany by prior appointment."
       },
       {
-        "question": "In which languages are consultations conducted?",
-        "answer": "Russian, Slovak, English, and German."
+        "question": "Does this replace my doctor?",
+        "answer": "No. The consultation complements care from your own physician. In an emergency call 112."
       }
     ]
   },
@@ -173,34 +263,46 @@
     "title": "Contact",
     "subtitle": "Get in Touch",
     "email": "erkinslovakia@gmail.com",
-    "whatsapp": { "label": "WhatsApp", "url": "https://wa.me/421940270511" },
-    "form": { "url": "https://forms.gle/joByycm4bB2aB2Ne7" },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "url": "https://wa.me/421940270511"
+    },
+    "form": {
+      "url": "https://forms.gle/joByycm4bB2aB2Ne7"
+    },
     "cta": "Contact Us"
   },
   "footer": {
-    "description": "Expert in integrative pain management and medicine of coherence.",
+    "description": "Integrative medicine and 6D Navigation for complex chronic conditions.",
     "email": "erkinslovakia@gmail.com",
     "phone": "+421 940 270 511",
     "locationValue": "Piešťany, Slovakia",
-    "copyright": "© 2026 Dr. Erkinbek Dzhamanbayev. All rights reserved.",
-    "license": "EU Medical License — Slovakia",
-    "disclaimerText": "Content is for informational purposes only and does not constitute medical advice."
+    "copyright": "© 2026 Dr. Erkinbek Dzhamanbaev. All rights reserved.",
+    "license": "Medicine of Coherence · 6D Navigation",
+    "disclaimerText": "Content on this site is for information only and does not replace an examination by your own physician. In an emergency call 112.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "legal": "Legal",
+    "programs": "Specialised programmes",
+    "privacy": "Privacy policy (GDPR)",
+    "language": "Language",
+    "disclaimerTitle": "Medical disclaimer"
   },
   "finalCta": {
     "title": "Ready to find the cause?",
-    "subtitle": "Book your 6D Assessment",
+    "subtitle": "Start with the free 6D questionnaire",
     "benefits": [
-      "60 minutes of deep analysis",
-      "Personal health roadmap",
-      "Concrete action plan",
-      "Online from anywhere in Europe"
+      "1. Free online 6D questionnaire",
+      "2. Preliminary conclusion and advice",
+      "3. 6D Diagnostics — 60 min, €100",
+      "4. Individual plan and follow-up"
     ],
-    "ctaAssessment": "Start 6D Assessment",
-    "ctaApply": "Apply",
+    "ctaAssessment": "Take the free questionnaire",
+    "ctaApply": "Message on WhatsApp",
     "guarantee": "Your health is our priority."
   },
-  "meta": {
-    "title": "Dr. Erkinbek Dzhamanbaev | Complex Case Expert",
-    "description": "Systemic 6D analysis and medicine of coherence. Finding causes of chronic fatigue and pain."
+  "whatsapp": {
+    "defaultMessage": "Hello Dr. Erkin, I would like to ask about a consultation.",
+    "ariaLabel": "Message Dr. Erkin on WhatsApp"
   }
 }

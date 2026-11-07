@@ -31,7 +31,9 @@ export function Services({ onAssessmentClick }: ServicesProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-8 rounded-3xl border border-[#E2E8F0] bg-[#F7F9FC] hover:shadow-xl transition-all group"
+              className={`p-8 rounded-3xl border bg-[#F7F9FC] hover:shadow-xl transition-all group flex flex-col ${
+                index === 0 ? 'border-2 border-[#68A07C] bg-[#F0F7F4]' : 'border-[#E2E8F0]'
+              }`}
             >
               <h3 className="text-[22px] font-serif font-bold text-[#1A365D] mb-4">
                 {service.title}
@@ -39,7 +41,7 @@ export function Services({ onAssessmentClick }: ServicesProps) {
               <p className="text-[#4A5568] mb-6 text-[15px] leading-relaxed">
                 {service.description}
               </p>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-1">
                 {service.features?.map((feature: string, fIndex: number) => (
                   <li key={fIndex} className="flex items-center gap-2 text-[14px] text-[#4A5568]">
                     <CheckCircle2 className="w-4 h-4 text-[#68A07C]" />
@@ -51,7 +53,7 @@ export function Services({ onAssessmentClick }: ServicesProps) {
                 onClick={onAssessmentClick}
                 className="w-full py-4 bg-white border-2 border-[#1A365D] text-[#1A365D] rounded-xl font-bold group-hover:bg-[#1A365D] group-hover:text-white transition-all flex items-center justify-center gap-2"
               >
-                {t('services.cta')}
+                {service.cta || t('services.cta')}
                 <ArrowRight className="w-4 h-4" />
               </button>
             </motion.div>

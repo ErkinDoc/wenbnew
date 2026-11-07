@@ -3,7 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { ExternalLink, CheckCircle2 } from 'lucide-react';
+import { ExternalLink, CheckCircle2, MessageCircle } from 'lucide-react';
+import { whatsappUrl } from '@/lib/contact';
 
 export function FinalCTA({ onAssessmentClick }: { onAssessmentClick: () => void }) {
   const { t } = useTranslation();
@@ -55,15 +56,17 @@ export function FinalCTA({ onAssessmentClick }: { onAssessmentClick: () => void 
               <ExternalLink className="w-5 h-5" />
             </motion.button>
 
-            <motion.button
-              onClick={onAssessmentClick}
+            <motion.a
+              href={whatsappUrl(t('whatsapp.defaultMessage'))}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-xl font-bold text-lg hover:bg-white/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
+              <MessageCircle className="w-5 h-5" />
               {t('finalCta.ctaApply')}
-              <ExternalLink className="w-5 h-5" />
-            </motion.button>
+            </motion.a>
           </div>
 
           <p className="mt-8 text-blue-200 text-sm italic">

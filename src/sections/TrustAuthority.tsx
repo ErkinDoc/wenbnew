@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Users, Globe, TrendingUp, Clock, Shield, GraduationCap, Briefcase, Lock } from 'lucide-react';
+import { Globe, Clock, Shield, GraduationCap, Briefcase, Lock, MessageCircle, Gift } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export function TrustAuthority() {
@@ -11,22 +11,22 @@ export function TrustAuthority() {
   // Статистика — берем цифры из JSON (блок stats) и сопоставляем с иконками
   const stats = [
     { 
-      icon: Users, 
+      icon: Clock, 
       number: t('trust.stats.0.number'), // 5000+
       label: t('trust.stats.0.label')    // pacientov
     },
     { 
-      icon: Clock, 
+      icon: Globe, 
       number: t('trust.stats.1.number'), // 30+
       label: t('trust.stats.1.label')    // rokov praxe
     },
     { 
-      icon: TrendingUp, 
+      icon: MessageCircle, 
       number: t('trust.stats.2.number'), // 70-85%
       label: t('trust.stats.2.label')    // zlepšenie
     },
     { 
-      icon: Globe, 
+      icon: Gift, 
       number: t('trust.stats.3.number'), // 15
       label: t('trust.stats.3.label')    // krajín Európy
     },

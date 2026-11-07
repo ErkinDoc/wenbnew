@@ -7,10 +7,10 @@ export function Footer() {
   const { t } = useTranslation();
 
   const quickLinks = [
-    { label: t('nav.method'), href: '#method6d' },
-    { label: t('nav.services'), href: '#services' },
-    { label: t('nav.global'), href: '#global' },
-    { label: t('nav.faq'), href: '#faq' },
+    { label: t('nav.method'), href: '/#method' },
+    { label: t('nav.services'), href: '/#services' },
+    { label: t('nav.global'), href: '/#global' },
+    { label: t('nav.faq'), href: '/#faq' },
   ];
 
   return (
@@ -32,7 +32,7 @@ export function Footer() {
                   Medicine of Coherence
                 </h3>
                 <p className="text-[12px] text-[#68A07C] font-sans tracking-wider uppercase">
-                  Dr. Erkinbek Dzhamanbaev, MD PhD MBA
+                  Dr. Erkinbek Dzhamanbaev, PhD, MBA
                 </p>
               </div>
               <p className="text-[13px] text-white/60 font-sans leading-relaxed">
@@ -72,7 +72,7 @@ export function Footer() {
               transition={{ duration: 0.5, delay: 0.15 }}
             >
               <h4 className="text-white font-semibold text-[14px] font-sans mb-5">
-                Specializovane programy
+                {t('footer.programs')}
               </h4>
               <ul className="space-y-3">
                 <li>
@@ -83,7 +83,7 @@ export function Footer() {
                     className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans flex items-center gap-1"
                   >
                     <ExternalLink className="w-3 h-3" />
-                    System presnej rehabilitacie
+                    {t('services.rehab.title')}
                   </a>
                 </li>
                 <li>
@@ -94,7 +94,7 @@ export function Footer() {
                     className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans flex items-center gap-1"
                   >
                     <ExternalLink className="w-3 h-3" />
-                    Presne Chudenie
+                    {t('services.weight.title')}
                   </a>
                 </li>
               </ul>
@@ -143,7 +143,7 @@ export function Footer() {
                 <li className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#68A07C] mt-0.5 flex-shrink-0" />
                   <span className="text-[13px] text-white/70 font-sans">
-                    Poliklinika Piestany, Rekreacna 2, 921 01 Piestany
+                    {t('footer.locationValue')}
                   </span>
                 </li>
               </ul>
@@ -163,16 +163,6 @@ export function Footer() {
                 <li>
                   <a href="/privacy" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
                     {t('footer.privacy')}
-                  </a>
-                </li>
-                <li>
-                  <a href="/terms" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
-                    {t('footer.terms')}
-                  </a>
-                </li>
-                <li>
-                  <a href="/gdpr" className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans">
-                    GDPR
                   </a>
                 </li>
               </ul>

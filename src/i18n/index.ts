@@ -17,6 +17,14 @@ i18n
   .init({
     resources,
     fallbackLng: 'sk',
+    supportedLngs: ['sk', 'ru', 'en'],
+    nonExplicitSupportedLngs: true,
+    detection: {
+      // hreflang URLs on the site use ?lang=ru / ?lang=en
+      order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lang',
+      caches: ['localStorage'],
+    },
     interpolation: {
       escapeValue: false
     }

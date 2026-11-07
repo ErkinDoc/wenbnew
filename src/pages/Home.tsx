@@ -10,7 +10,6 @@ import { Method6D } from '../sections/Method6D';
 import { GlobalExperience } from '../sections/GlobalExperience';
 import { Services } from '../sections/Services';
 import { SuccessStories } from '../sections/SuccessStories';
-import { Testimonials } from '../sections/Testimonials';
 import { TrustAuthority } from '../sections/TrustAuthority';
 import { FAQ } from '../sections/FAQ';
 import { FinalCTA } from '../sections/FinalCTA';
@@ -60,25 +59,27 @@ export function Home() {
       <Helmet>
         {currentLang === 'ru' && (
           <>
-            <title>Др. Эркинбек Джаманбаев | 6D-диагностика сложных случаев</title>
-            <meta name="description" content="Онлайн-консультации эксперта по системной медицине." />
+            <title>Др. Эркинбек Джаманбаев | Хроническая усталость, боль — 6D-диагностика онлайн</title>
+            <meta name="description" content="Врач с 30+ лет практики. Хроническая усталость, боль, выгорание, «анализы в норме». Первый шаг — бесплатная 6D-анкета онлайн. Консультации на русском по всему ЕС." />
           </>
         )}
         {currentLang === 'en' && (
           <>
-            <title>Dr. Erkinbek Dzhamanbayev | 6D Diagnostics</title>
-            <meta name="description" content="Online consultations with a systemic medicine expert." />
+            <title>Dr. Erkinbek Dzhamanbaev | Chronic fatigue &amp; pain — 6D Diagnostics online</title>
+            <meta name="description" content="Physician with 30+ years of practice. Chronic fatigue, pain, burnout, 'normal' test results. Start with a free online 6D questionnaire. Consultations across the EU." />
           </>
         )}
         {currentLang === 'sk' && (
           <>
-            <title>MUDr. Erkinbek Džamanbajev | 6D diagnostika</title>
-            <meta name="description" content="Online konzultácie s expertom na systémovú medicínu." />
+            <title>Dr. Erkinbek Džamanbajev | Chronická únava a bolesť — 6D diagnostika</title>
+            <meta name="description" content="Lekár s 30+ rokmi praxe. Chronická únava, bolesť, vyhorenie, výsledky „v norme“. Začnite bezplatným 6D dotazníkom online. Piešťany a online v celej EÚ." />
           </>
         )}
-        <link rel="alternate" hrefLang="sk" href="https://drerkin.eu/" />
+        <html lang={currentLang} />
+        <link rel="alternate" hrefLang="sk" href="https://drerkin.eu/?lang=sk" />
         <link rel="alternate" hrefLang="ru" href="https://drerkin.eu/?lang=ru" />
         <link rel="alternate" hrefLang="en" href="https://drerkin.eu/?lang=en" />
+        <link rel="alternate" hrefLang="x-default" href="https://drerkin.eu/" />
       </Helmet>
 
       <Navigation onAssessmentClick={handleAssessmentClick} />
@@ -89,7 +90,6 @@ export function Home() {
         <GlobalExperience />
         <Services onAssessmentClick={handleAssessmentClick} />
         <SuccessStories />
-        <Testimonials />
         <TrustAuthority />
         <FAQ />
         <FinalCTA onAssessmentClick={handleAssessmentClick} />

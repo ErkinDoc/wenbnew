@@ -27,7 +27,7 @@ export function GlobalExperience() {
             transition={{ duration: 0.5 }}
           >
             <span className="inline-block text-[12px] font-sans font-bold tracking-wider uppercase text-[#68A07C] mb-4">
-              International Practice
+              {t('globalExperience.label')}
             </span>
             <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] mb-4">
               {t('globalExperience.title')}
@@ -38,7 +38,7 @@ export function GlobalExperience() {
           </motion.div>
 
           {/* Locations Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {Array.isArray(locations) && locations.map((location, index) => (
               <motion.div
                 key={index}

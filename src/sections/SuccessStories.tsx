@@ -25,14 +25,11 @@ export function SuccessStories() {
             transition={{ duration: 0.5 }}
           >
             <span className="inline-block text-[12px] font-sans font-medium tracking-wider uppercase text-[#68A07C] mb-4">
-              Clinical Outcomes
+              {t('successStories.subtitle')}
             </span>
             <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] mb-4">
               {t('successStories.title')}
             </h2>
-            <p className="text-[16px] lg:text-[18px] text-[#4A5568] max-w-2xl mx-auto font-sans">
-              {t('successStories.subtitle')}
-            </p>
           </motion.div>
 
           {/* Stories Grid */}
@@ -72,7 +69,7 @@ export function SuccessStories() {
             <div className="flex items-center gap-2 px-4 py-2 bg-[#1A365D]/5 rounded-full">
               <Shield className="w-5 h-5 text-[#1A365D]" />
               <span className="text-[13px] font-sans font-medium text-[#1A365D]">
-                GDPR Compliant
+                GDPR
               </span>
             </div>
             <p className="text-[13px] text-[#718096] font-sans text-center sm:text-left">

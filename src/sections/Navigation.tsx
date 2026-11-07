@@ -28,7 +28,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
     { label: t('nav.method'), href: '#method', type: 'anchor' },
     { label: t('nav.services'), href: '#services', type: 'anchor' },
     { label: t('nav.global'), href: '#global', type: 'anchor' },
-    { label: 'Publications', href: '/publications', type: 'route' },
+    { label: t('nav.publications'), href: '/publications', type: 'route' },
     // Kniha je len po slovensky – odkaz sa zobrazuje iba v slovenskej verzii
     ...(i18n.language?.startsWith('sk') ? [{ label: 'Kniha', href: '/kniha', type: 'page' }] : []),
     { label: t('nav.faq'), href: '#faq', type: 'anchor' },

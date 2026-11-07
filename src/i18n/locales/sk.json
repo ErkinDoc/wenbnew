@@ -4,20 +4,23 @@
     "services": "Služby",
     "global": "Skúsenosti",
     "faq": "FAQ",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "publications": "Publikácie"
   },
   "hero": {
     "title": "Dr. Erkinbek Džamanbajev",
-    "credentials": "MUDr., PhD, MBA",
-    "specialty": "Expert na komplexné prípady",
-    "headline": "Za hranicami štandardnej diagnostiky",
-    "subheadline": "Online konzultácie v celej Európe. 30+ rokov klinickej praxe.",
-    "ctaAssessment": "Začať 6D diagnostiku (Online)",
-    "ctaApply": "Podať žiadosť",
-    "badge1": "EU Licencia",
-    "badge2": "30+ rokov",
-    "badge3": "5000+ pacientov",
-    "badge4": "15 krajín"
+    "credentials": "PhD, MBA",
+    "specialty": "Lekár · Integratívna medicína · Autor 6D navigácie",
+    "headline": "Keď sú výsledky „v norme“, ale vám nie je dobre",
+    "subheadline": "Chronická únava, bolesť, vyhorenie, nevysvetliteľné ťažkosti. Pomôžem nájsť súvislosti, ktoré sa pri bežnom vyšetrení strácajú. Prvý krok je bezplatný 6D dotazník online.",
+    "ctaAssessment": "Vyplniť bezplatný 6D dotazník",
+    "ctaApply": "Napísať na WhatsApp",
+    "badge1": "Online v celej EÚ",
+    "badge2": "30+ rokov praxe",
+    "badge3": "SK · RU · EN",
+    "badge4": "6 krajín praxe",
+    "ctaNote": "Bezplatne a nezáväzne · konzultácie v slovenčine, ruštine a angličtine",
+    "yearsLabel": "rokov praxe"
   },
   "problem": {
     "title": "Sú vám tieto situácie známe?",
@@ -40,56 +43,101 @@
     "subtitle": "Šesť vektorov zdravia",
     "description": "Individuálna cesta obnovy pre každého pacienta.",
     "dimensions": [
-      { "id": "D1", "name": "D1: Diagnostika", "subtitle": "EBM analýza", "description": "Mapa dysfunkcií systému." },
-      { "id": "D2", "name": "D2: Dysfunkcia", "subtitle": "Vzorce", "description": "Korekcia pohybu a dýchania." },
-      { "id": "D3", "name": "D3: Odpojenie", "subtitle": "Spojenie mozog-telo", "description": "Aktivácia blúdivého nervu." },
-      { "id": "D4", "name": "D4: Smer", "subtitle": "Biochémia", "description": "Výživa a vnútorné prostredie." },
-      { "id": "D5", "name": "D5: Rozvoj", "subtitle": "Kognícia", "description": "Prerušenie cyklu bolesti." },
-      { "id": "D6", "name": "D6: Hĺbka", "subtitle": "Integrácia", "description": "Nový životný štýl." }
+      {
+        "id": "D1",
+        "name": "D1: Diagnostika",
+        "subtitle": "EBM analýza",
+        "description": "Mapa dysfunkcií systému."
+      },
+      {
+        "id": "D2",
+        "name": "D2: Dysfunkcia",
+        "subtitle": "Vzorce",
+        "description": "Korekcia pohybu a dýchania."
+      },
+      {
+        "id": "D3",
+        "name": "D3: Odpojenie",
+        "subtitle": "Spojenie mozog-telo",
+        "description": "Aktivácia blúdivého nervu."
+      },
+      {
+        "id": "D4",
+        "name": "D4: Smer",
+        "subtitle": "Biochémia",
+        "description": "Výživa a vnútorné prostredie."
+      },
+      {
+        "id": "D5",
+        "name": "D5: Rozvoj",
+        "subtitle": "Kognícia",
+        "description": "Prerušenie cyklu bolesti."
+      },
+      {
+        "id": "D6",
+        "name": "D6: Hĺbka",
+        "subtitle": "Integrácia",
+        "description": "Nový životný štýl."
+      }
     ]
   },
   "globalExperience": {
     "title": "Skúsenosti",
-    "subtitle": "Medzinárodná prax",
+    "subtitle": "30+ rokov klinickej praxe na troch kontinentoch",
     "locations": [
-      { "country": "Nemecko", "details": "Stáže v oblasti systémovej medicíny." },
-      { "country": "Slovensko", "details": "Súkromná prax v Piešťanoch." },
-      { "country": "Švajčiarsko", "details": "Spolupráca s centrami." },
-      { "country": "USA", "details": "Účasť na konferenciách." }
+      {
+        "country": "Kirgizsko",
+        "details": "Začiatok profesijnej cesty."
+      },
+      {
+        "country": "Moskva · Petrohrad",
+        "details": "Klinická prax a odborný rast."
+      },
+      {
+        "country": "Španielsko",
+        "details": "Získaná lekárska špecializácia."
+      },
+      {
+        "country": "Soul (Kórea)",
+        "details": "Medzinárodná profesijná skúsenosť."
+      },
+      {
+        "country": "Quito (Ekvádor)",
+        "details": "Medzinárodná profesijná skúsenosť."
+      },
+      {
+        "country": "Slovensko",
+        "details": "Piešťany — prax a online konzultácie pre pacientov z celej EÚ."
+      }
     ],
-    "membershipsTitle": "Členstvo",
+    "membershipsTitle": "Prístup",
     "memberships": [
-      "Člen Európskej asociácie systémovej medicíny",
-      "Expert rady pre biorezonanciu",
-      "Lekárska licencia v SR"
+      "Medicína založená na dôkazoch (EBM) ako základ",
+      "Systémový pohľad: telo, nervový systém, výživa, životný štýl",
+      "Čas na váš príbeh — nie 7 minút v ambulancii"
     ],
-    "certificationsTitle": "Certifikáty",
+    "certificationsTitle": "Vzdelanie",
     "certifications": [
-      "Diplomate in Systemic Medicine (Germany)",
-      "MBA in Healthcare Management"
-    ]
+      "PhD",
+      "MBA",
+      "Lekárska špecializácia — Španielsko"
+    ],
+    "label": "Profesijná cesta"
   },
   "successStories": {
     "title": "Klinické výsledky",
     "subtitle": "Príklady obnovy",
-    "disclaimer": "GDPR compliant",
+    "disclaimer": "Anonymizované kazuistiky. Výsledky sú individuálne a nie sú zárukou.",
     "items": [
-      { "title": "Chronická únava (45 r.)", "content": "8 rokov neúspešnej liečby. Po 6D diagnostike odhalený neurozápal. Obnova energie na 85%." },
-      { "title": "Zložitá diagnóza", "content": "5 rokov bolesti bez príčiny. Nájdená súvislosť medzi biochémiou a pohybom." }
+      {
+        "title": "Chronická únava (45 r.)",
+        "content": "8 rokov neúspešnej liečby. Po 6D diagnostike odhalený neurozápal. Obnova energie na 85%."
+      },
+      {
+        "title": "Zložitá diagnóza",
+        "content": "5 rokov bolesti bez príčiny. Nájdená súvislosť medzi biochémiou a pohybom."
+      }
     ]
-  },
-  "testimonials": {
-    "title": "Príbehy pacientov",
-    "subtitle": "Skutočné výsledky",
-    "disclaimer": "GDPR compliant. Všetky údaje sú anonymizované.",
-    "1": { "condition": "Chronická únava + fibromyalgia", "quote": "Dvanásť lekárov za osem rokov. Dr. Erkin našiel vyčerpanie HPA-osi na prvej konzultácii. O šesť mesiacov neskôr žijem normálne." },
-    "2": { "condition": "Vyhorenie", "quote": "Antidepresíva prestali fungovať. 6D diagnostika odhalila kolaps bunkovej energie. O tri mesiace riadim svoju firmu." },
-    "3": { "condition": "Autoimunitné", "quote": "Reumatológ — nič. Neurológ — nič. Dr. Erkin spojil body, ktoré nikto iný nevidel. Konečne diagnóza, ktorá dáva zmysel." },
-    "4": { "condition": "Post-COVID", "quote": "Mozgová hmla, únava, palpitácie — lekári mi povedali, aby som čakal. 6D protokol priamo riešil autonómnu dysfunkciu." },
-    "5": { "condition": "Chronická bolesť", "quote": "Minul som €40,000 na liečbu, ktorá nefungovala. €100 diagnostika ukázala, čo všetci prehliadli: bola to neuroinflamácia." },
-    "6": { "condition": "Štítna žľaza", "quote": "TSH perfektné. Nemohol som vstať z postele. Dr. Erkin vysvetlil konverziu T4 na T3 na bunkovej úrovni." },
-    "7": { "condition": "Syndróm dráždivého čreva", "quote": "Šesť rokov diét a piluliek. Dr. Erkin našiel spojenie črevo-mozog. O štyri mesiace jem normálne." },
-    "8": { "condition": "Chronické bolesti hlavy", "quote": "MRI čisté, pilulky nepomáhajú. 6D analýza odhalila krčnú dysfunkciu. Konečne žijem bez strachu z bolesti." }
   },
   "services": {
     "title": "Služby",
@@ -109,87 +157,144 @@
     "learnMore": "Zistiť viac",
     "items": [
       {
-        "title": "6D Diagnostika",
-        "description": "Hĺbková systémová analýza stavu (60 minút).",
-        "features": ["Osobná mapa zdravia", "Individuálny akčný plán"]
+        "title": "Bezplatný 6D dotazník",
+        "description": "Prvý krok. Vyplníte online dotazník, ja ho osobne preštudujem a dostanete predbežný záver.",
+        "features": [
+          "Bez poplatku a záväzkov",
+          "Odporúčanie, či má zmysel pokračovať"
+        ],
+        "cta": "Vyplniť dotazník"
       },
       {
-        "title": "Mentoring",
-        "description": "Pravidelné sedenia na úpravu procesu obnovy.",
-        "features": ["Sledovanie pokroku", "Úprava protokolov"]
+        "title": "6D diagnostika — 100 €",
+        "description": "Hĺbková systémová analýza vášho stavu, 60 minút online (Zoom) alebo osobne v Piešťanoch.",
+        "features": [
+          "Osobná mapa zdravia",
+          "Konkrétny akčný plán"
+        ]
+      },
+      {
+        "title": "Sprevádzanie",
+        "description": "Pravidelné sedenia počas procesu obnovy.",
+        "features": [
+          "Sledovanie pokroku",
+          "Úprava plánu podľa výsledkov"
+        ]
       }
     ]
   },
   "trust": {
     "title": "Skúsenosti a dôvera",
-    "badge": "Kvalifikácia",
+    "badge": "Prečo ja",
     "credentialsTitle": "Kvalifikácia",
     "credentials": [
-      "MUDr., PhD, MBA",
-      "Lekárska licencia EÚ (Slovensko)",
-      "Expert na systémovú medicínu",
+      "PhD, MBA",
+      "Lekárska špecializácia získaná v Španielsku",
+      "Autor metódy 6D navigácie (Medicine of Coherence)",
       "30+ rokov klinickej praxe"
     ],
-    "gdpr": "GDPR Compliant — Vaše údaje sú v bezpečí",
+    "gdpr": "Vaše zdravotné údaje sú dôverné a spracúvajú sa podľa GDPR",
     "stats": [
-      { "number": "5000+", "label": "pacientov" },
-      { "number": "30+", "label": "rokov praxe" },
-      { "number": "70–85%", "label": "dynamika zotavenia" },
-      { "number": "15", "label": "krajín Európy" }
+      {
+        "number": "30+",
+        "label": "rokov praxe"
+      },
+      {
+        "number": "6",
+        "label": "krajín praxe"
+      },
+      {
+        "number": "3",
+        "label": "jazyky konzultácií"
+      },
+      {
+        "number": "0 €",
+        "label": "úvodný 6D dotazník"
+      }
     ]
   },
   "faq": {
     "title": "Často kladené otázky",
     "items": [
-      { "question": "Prečo sa cítim vyčerpaný?", "answer": "Príčina môže byť v mitochondriálnej dysfunkcii. 6D diagnostika ju pomáha odhaliť." },
-      { "question": "Prečo sú testy v norme?", "answer": "Štandardné testy hľadajú akútnu patológiu, my hľadáme funkčné nerovnováhy." },
-      { "question": "Ako prebieha online konzultácia?", "answer": "Sedenie trvá 60 minút cez Zoom. Vopred študujem vašu anamnézu." },
-      { "question": "Čo je 6D navigačný systém?", "answer": "Je to komplexný prístup, ktorý analyzuje šesť vektorov zdravia." },
-      { "question": "Pre koho je 6D diagnostika vhodná?", "answer": "Pre pacientov s chronickými ťažkosťami, u ktorých štandardná medicína nenašla príčinu." },
-      { "question": "Koľko stojí konzultácia?", "answer": "Úvodná 6D diagnostika stojí €100 za 60 minút." },
-      { "question": "Ako sa objednať?", "answer": "Vyplňte formulár na tejto stránke alebo napíšte na WhatsApp." },
-      { "question": "Pracujete aj osobne?", "answer": "Áno, osobné konzultácie sú možné v Piešťanoch po dohode." }
+      {
+        "question": "Prečo sa cítim vyčerpaný, aj keď spím?",
+        "answer": "Príčin môže byť viac — od nedostatku železa či poruchy štítnej žľazy cez kvalitu spánku až po dlhodobý stres. 6D dotazník pomáha zmapovať, kde hľadať."
+      },
+      {
+        "question": "Prečo sú testy v norme, keď mi nie je dobre?",
+        "answer": "Štandardné testy hľadajú najmä akútnu patológiu. Ja sa pozerám aj na funkčné súvislosti medzi príznakmi."
+      },
+      {
+        "question": "Je prvý krok platený?",
+        "answer": "Nie. 6D dotazník je bezplatný. Na jeho základe dostanete predbežný záver a odporúčanie, či má zmysel pokračovať."
+      },
+      {
+        "question": "Ako prebieha online konzultácia?",
+        "answer": "Sedenie trvá 60 minút cez Zoom. Vopred si preštudujem váš dotazník a dostupné výsledky."
+      },
+      {
+        "question": "Čo je 6D navigačný systém?",
+        "answer": "Komplexný prístup, ktorý posudzuje zdravie v šiestich dimenziách — od diagnostiky cez pohyb, nervový systém a výživu až po životný štýl."
+      },
+      {
+        "question": "Koľko stojí konzultácia?",
+        "answer": "Dotazník je zadarmo. 6D diagnostika (60 minút) stojí 100 €."
+      },
+      {
+        "question": "Pracujete aj osobne?",
+        "answer": "Áno, osobné konzultácie sú možné v Piešťanoch po dohode."
+      },
+      {
+        "question": "Nahrádza to môjho lekára?",
+        "answer": "Nie. Konzultácia dopĺňa starostlivosť vášho ošetrujúceho lekára. Pri akútnych ťažkostiach volajte 112 alebo 155."
+      }
     ]
   },
   "contact": {
     "title": "Kontakt",
     "subtitle": "Spojte sa s nami",
     "email": "erkinslovakia@gmail.com",
-    "whatsapp": { "label": "WhatsApp", "url": "https://wa.me/421940270511" },
-    "form": { "url": "https://forms.gle/tLYgfZLeGU27efuZ6" },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "url": "https://wa.me/421940270511"
+    },
+    "form": {
+      "url": "https://forms.gle/tLYgfZLeGU27efuZ6"
+    },
     "cta": "Napíšte nám"
   },
   "footer": {
-    "description": "Expert na integratívny manažment bolesti a medicínu koherencie.",
+    "description": "Integratívna medicína a 6D navigácia pre zložité chronické stavy.",
     "quickLinks": "Rýchle odkazy",
     "contact": "Kontakt",
     "email": "erkinslovakia@gmail.com",
     "phone": "+421 940 270 511",
     "locationValue": "Piešťany, Slovensko",
     "legal": "Právne",
-    "privacy": "Ochrana súkromia",
+    "privacy": "Ochrana osobných údajov (GDPR)",
     "terms": "Podmienky",
     "language": "Jazyk",
     "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
-    "license": "Lekárska licencia EÚ — Slovensko",
+    "license": "Medicine of Coherence · 6D navigácia",
     "disclaimerTitle": "Právne upozornenie",
-    "disclaimerText": "Obsah slúži len na informačné účely a nepredstavuje lekársku radu."
+    "disclaimerText": "Obsah stránky slúži na informačné účely a nenahrádza vyšetrenie u ošetrujúceho lekára. Pri akútnych ťažkostiach volajte 112 alebo 155.",
+    "programs": "Špecializované programy"
   },
   "finalCta": {
     "title": "Pripravení nájsť príčinu?",
-    "subtitle": "Objednajte sa na 6D diagnostiku",
+    "subtitle": "Začnite bezplatným 6D dotazníkom",
     "benefits": [
-      "60 minút hĺbkovej analýzy",
-      "Osobná mapa zdravia",
-      "Konkrétny akčný plán",
-      "Online odkiaľkoľvek v Európe"
+      "1. Bezplatný 6D dotazník online",
+      "2. Predbežný záver a odporúčanie",
+      "3. 6D diagnostika — 60 min, 100 €",
+      "4. Individuálny plán a sprevádzanie"
     ],
-    "ctaAssessment": "Začať 6D diagnostiku",
-    "ctaApply": "Podať žiadosť",
+    "ctaAssessment": "Vyplniť bezplatný dotazník",
+    "ctaApply": "Napísať na WhatsApp",
     "guarantee": "Vaše zdravie je naša priorita."
   },
-  "meta": {
-    "title": "Dr. Erkinbek Džamanbajev | Expert na komplexné prípady",
-    "description": "Systémová 6D analýza a medicína koherencie."
+  "whatsapp": {
+    "defaultMessage": "Dobrý deň, pán doktor, mám záujem o konzultáciu.",
+    "ariaLabel": "Napísať Dr. Erkinovi cez WhatsApp"
   }
 }

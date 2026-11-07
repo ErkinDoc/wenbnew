@@ -128,7 +128,7 @@ export function Publications() {
       backHome: 'На главную'
     },
     sk: {
-      pageTitle: 'Publikácie | MUDr. Erkinbek Džamanbajev',
+      pageTitle: 'Publikácie | Dr. Erkinbek Džamanbajev',
       heroTitle: 'Publikácie',
       heroSubtitle: 'Knihy a príručky o zvládaní chronickej bolesti a obnove zdravia',
       recommended: 'Odporúčame',

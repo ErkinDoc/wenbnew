@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Shield, Clock, Users, Globe, Award } from 'lucide-react';
+import { Shield, Clock, Users, Globe, Award, MessageCircle } from 'lucide-react';
+import { whatsappUrl } from '@/lib/contact';
 import { useTranslation } from 'react-i18next';
 
 // 1. Обязательный интерфейс для TypeScript, чтобы Vercel не ругался
@@ -9,6 +10,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
   const { t } = useTranslation();
+  const waLink = whatsappUrl(t('whatsapp.defaultMessage'));
   
   const trustBadges = [
     { icon: Shield, label: t('hero.badge1') },
@@ -91,15 +93,21 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                   {t('hero.ctaAssessment')}
                 </motion.button>
                 
-                <motion.button
-                  onClick={onAssessmentClick}
+                <motion.a
+                  href={waLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border-2 border-[#1A365D] text-[#1A365D] px-8 py-4 rounded-xl font-bold text-[14px] flex items-center justify-center gap-2 cursor-pointer hover:bg-[#1A365D] hover:text-white transition-all"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
+                  <MessageCircle className="w-4 h-4" />
                   {t('hero.ctaApply')}
-                </motion.button>
+                </motion.a>
               </div>
+              <p className="text-[13px] text-[#718096] font-sans -mt-4">
+                {t('hero.ctaNote')}
+              </p>
             </motion.div>
             
             {/* Right column - Professional Portrait */}
@@ -117,15 +125,15 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                                 rounded-xl overflow-hidden border border-[#E2E8F0] bg-gray-200">
                   <img
                     src="/dr-erkin.jpg"
-                    alt="Dr. Erkinbek Dzhamanbaev"
+                    alt={t('hero.title')}
                     className="w-full h-full object-cover"
                     loading="eager"
                   />
                   
                   <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 border border-[#E2E8F0]">
                     <div className="flex items-center justify-center gap-3">
-                      <span className="px-3 py-1 bg-[#1A365D] text-white text-[11px] font-bold rounded uppercase">MUDr.</span>
-                      <span className="px-3 py-1 bg-[#68A07C] text-white text-[11px] font-bold rounded uppercase">PhD.</span>
+                      <span className="px-3 py-1 bg-[#1A365D] text-white text-[11px] font-bold rounded ">Dr.</span>
+                      <span className="px-3 py-1 bg-[#68A07C] text-white text-[11px] font-bold rounded ">PhD</span>
                       <span className="px-3 py-1 bg-[#C9A227] text-white text-[11px] font-bold rounded uppercase">MBA</span>
                     </div>
                   </div>
@@ -141,7 +149,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                     <Clock className="w-6 h-6 text-[#68A07C]" />
                     <div>
                       <p className="text-[24px] font-serif font-bold text-white leading-none">30+</p>
-                      <p className="text-[11px] text-white/70 font-sans uppercase tracking-tighter">Rokov praxe</p>
+                      <p className="text-[11px] text-white/70 font-sans uppercase tracking-tighter">{t('hero.yearsLabel')}</p>
                     </div>
                   </div>
                 </motion.div>
