@@ -3,6 +3,21 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/gotovo",
+      "destination": "https://wa.me/421940270511?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80%21%20%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D0%B0%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B0.%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B7%D0%BE%D0%B2%D1%83%D1%82%20",
+      "permanent": false
+    },
+    {
+      "source": "/hotovo",
+      "destination": "https://wa.me/421940270511?text=Dobr%C3%BD%20de%C5%88%2C%20p%C3%A1n%20doktor%21%20Dotazn%C3%ADk%20je%20vyplnen%C3%BD.%20Vol%C3%A1m%20sa%20",
+      "permanent": false
+    },
+    {
+      "source": "/done",
+      "destination": "https://wa.me/421940270511?text=Hello%20Dr.%20Erkin%21%20My%20questionnaire%20is%20done.%20My%20name%20is%20",
+      "permanent": false
+    },
+    {
       "source": "/sk",
       "destination": "/",
       "permanent": true
