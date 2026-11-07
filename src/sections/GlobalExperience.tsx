@@ -15,7 +15,7 @@ export function GlobalExperience() {
   const certifications = t('globalExperience.certifications', { returnObjects: true }) as string[] || [];
 
   return (
-    <section id="global" className="w-full py-24 lg:py-32 bg-[#F7F9FC]">
+    <section id="global" className="w-full py-16 lg:py-32 bg-[#F7F9FC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
           {/* Header */}
@@ -38,11 +38,11 @@ export function GlobalExperience() {
           </motion.div>
 
           {/* Locations Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 mb-12 sm:mb-16">
             {Array.isArray(locations) && locations.map((location, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-xl p-6 border border-[#E2E8F0] hover:shadow-lg hover:border-[#68A07C] transition-all"
+                className="bg-white rounded-xl p-4 sm:p-6 border border-[#E2E8F0] hover:shadow-lg hover:border-[#68A07C] transition-all"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -51,7 +51,7 @@ export function GlobalExperience() {
                 <div className="w-10 h-10 bg-[#E6F0EA] rounded-lg flex items-center justify-center mb-4">
                   <MapPin className="w-5 h-5 text-[#68A07C]" />
                 </div>
-                <h3 className="text-[18px] font-serif font-semibold text-[#1A365D] mb-2">
+                <h3 className="text-[16px] sm:text-[18px] font-serif font-semibold text-[#1A365D] mb-1 sm:mb-2">
                   {location.country}
                 </h3>
                 <p className="text-[13px] text-[#4A5568] font-sans leading-relaxed">
@@ -65,7 +65,7 @@ export function GlobalExperience() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Professional Memberships */}
             <motion.div
-              className="bg-white rounded-2xl p-8 border border-[#E2E8F0] shadow-sm"
+              className="bg-white rounded-2xl p-6 sm:p-8 border border-[#E2E8F0] shadow-sm"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -91,7 +91,7 @@ export function GlobalExperience() {
 
             {/* Certifications */}
             <motion.div
-              className="bg-white rounded-2xl p-8 border border-[#E2E8F0] shadow-sm"
+              className="bg-white rounded-2xl p-6 sm:p-8 border border-[#E2E8F0] shadow-sm"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

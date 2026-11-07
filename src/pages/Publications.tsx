@@ -116,7 +116,7 @@ export function Publications() {
 
   const content = {
     ru: {
-      pageTitle: 'Публикации | Dr. Erkinbek Dzhamanbayev',
+      pageTitle: 'Публикации и книги | Др. Эркинбек Джаманбаев',
       heroTitle: 'Публикации',
       heroSubtitle: 'Книги и руководства по управлению хронической болью и восстановлению здоровья',
       recommended: 'Рекомендуем',
@@ -128,7 +128,7 @@ export function Publications() {
       backHome: 'На главную'
     },
     sk: {
-      pageTitle: 'Publikácie | Dr. Erkinbek Džamanbajev',
+      pageTitle: 'Publikácie a knihy | Dr. Erkinbek Džamanbajev',
       heroTitle: 'Publikácie',
       heroSubtitle: 'Knihy a príručky o zvládaní chronickej bolesti a obnove zdravia',
       recommended: 'Odporúčame',
@@ -140,7 +140,7 @@ export function Publications() {
       backHome: 'Domov'
     },
     en: {
-      pageTitle: 'Publications | Dr. Erkinbek Dzhamanbayev',
+      pageTitle: 'Publications and books | Dr. Erkinbek Dzhamanbaev',
       heroTitle: 'Publications',
       heroSubtitle: 'Books and guides on chronic pain management and health recovery',
       recommended: 'Recommended',
@@ -158,8 +158,10 @@ export function Publications() {
   return (
     <div className="min-h-screen bg-[#F7F9FC]">
       <Helmet>
+        <html lang={lang} />
         <title>{t.pageTitle}</title>
         <meta name="description" content={t.heroSubtitle} />
+        <link rel="canonical" href="https://www.drerkin.eu/publications" />
       </Helmet>
 
       {/* Header */}

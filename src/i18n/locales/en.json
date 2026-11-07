@@ -10,7 +10,7 @@
   "hero": {
     "title": "Dr. Erkinbek Dzhamanbaev",
     "credentials": "PhD, MBA",
-    "specialty": "Physician · Integrative Medicine · Author of 6D Navigation",
+    "specialty": "Physician · integrative medicine · chronic fatigue and pain",
     "headline": "When your results are “normal” but you don’t feel well",
     "subheadline": "Chronic fatigue, pain, burnout, unexplained symptoms. I help find the connections that get lost in a standard appointment. The first step is a free online 6D questionnaire.",
     "ctaAssessment": "Take the free 6D questionnaire",
@@ -22,26 +22,10 @@
     "ctaNote": "Free, no obligation · consultations in English, Slovak and Russian",
     "yearsLabel": "years of practice"
   },
-  "problem": {
-    "title": "Do these situations sound familiar?",
-    "problemsTitle": "When Medicine Reaches Its Limits",
-    "solutionsTitle": "Medicine of Coherence",
-    "problems": [
-      "Complex cases with 'normal' test results",
-      "Multiple symptoms without diagnosis",
-      "Chronic pain for years"
-    ],
-    "solutions": [
-      "Systematic 6D analysis",
-      "Finding causes, not masking pain",
-      "Individual recovery plan"
-    ],
-    "transition": "Restoring coherence to your body."
-  },
   "method6d": {
     "title": "6D Navigation System",
     "subtitle": "Six Vectors of Health",
-    "description": "Individual recovery roadmap for each patient.",
+    "description": "Six areas where I look for the cause of chronic symptoms — from test results to lifestyle.",
     "dimensions": [
       {
         "id": "D1",
@@ -79,16 +63,7 @@
         "subtitle": "Integration",
         "description": "New lifestyle."
       }
-    ],
-    "scientificBasis": {
-      "label": "Scientific Basis",
-      "publications": [
-        {
-          "title": "6D Navigation Model",
-          "url": "https://www.drerkin.eu/"
-        }
-      ]
-    }
+    ]
   },
   "globalExperience": {
     "title": "Experience",
@@ -136,21 +111,21 @@
   "successStories": {
     "title": "Clinical Outcomes",
     "subtitle": "Recovery Examples",
-    "disclaimer": "Anonymised case reports. Results are individual and not guaranteed.",
+    "disclaimer": "Anonymized case reports. Results are individual and not guaranteed.",
     "items": [
       {
-        "title": "Chronic Fatigue",
-        "content": "8 years of unsuccessful treatment. After 6D diagnostics, energy restored to 85% within 3 months."
+        "title": "Chronic fatigue (45 y.)",
+        "content": "8 years of unsuccessful treatment. 6D diagnostics revealed neuroinflammation; energy restored to 85% within 3 months."
       },
       {
-        "title": "Complex Diagnosis",
-        "content": "5 years of unexplained pain. Found root cause in biochemistry and movement patterns."
+        "title": "Complex diagnosis",
+        "content": "5 years of unexplained pain. The cause was found in the link between biochemistry and movement patterns."
       }
     ]
   },
   "services": {
     "title": "Services",
-    "subtitle": "Recovery Programs",
+    "subtitle": "First step free, then a clear plan",
     "cta": "Book Now",
     "items": [
       {
@@ -179,16 +154,16 @@
         ]
       }
     ],
-    "specializedBadge": "Specialised programmes",
+    "specializedBadge": "Specialized programs",
     "specializedTitle": "Musculoskeletal & Metabolism",
-    "specializedSubtitle": "Targeted programmes for specific health goals — precise diagnostics and an individual approach.",
+    "specializedSubtitle": "Targeted programs for specific health goals — precise diagnostics and an individual approach.",
     "rehab": {
       "title": "Precision Rehabilitation System",
       "description": "A clinical strategy for restoring musculoskeletal function. Precise assessment of joints, spine and neurological movement disorders."
     },
     "weight": {
       "title": "Precision Weight Loss",
-      "description": "An individual integrative programme for lasting weight reduction. We restore metabolism — causes, not diets."
+      "description": "An individual integrative program for lasting weight loss. We restore metabolism — causes, not diets."
     },
     "learnMore": "Learn more"
   },
@@ -261,7 +236,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Get in Touch",
+    "subtitle": "Write to me",
     "email": "erkinslovakia@gmail.com",
     "whatsapp": {
       "label": "WhatsApp",
@@ -270,7 +245,7 @@
     "form": {
       "url": "https://forms.gle/joByycm4bB2aB2Ne7"
     },
-    "cta": "Contact Us"
+    "cta": "Write to me"
   },
   "footer": {
     "description": "Integrative medicine and 6D Navigation for complex chronic conditions.",
@@ -283,7 +258,7 @@
     "quickLinks": "Quick links",
     "contact": "Contact",
     "legal": "Legal",
-    "programs": "Specialised programmes",
+    "programs": "Specialized programs",
     "privacy": "Privacy policy (GDPR)",
     "language": "Language",
     "disclaimerTitle": "Medical disclaimer"
@@ -299,10 +274,46 @@
     ],
     "ctaAssessment": "Take the free questionnaire",
     "ctaApply": "Message on WhatsApp",
-    "guarantee": "Your health is our priority."
+    "guarantee": "I reply personally — no call centre, no assistants."
   },
   "whatsapp": {
     "defaultMessage": "Hello Dr. Erkin, I would like to ask about a consultation.",
     "ariaLabel": "Message Dr. Erkin on WhatsApp"
+  },
+  "seo": {
+    "title": "Integrative Medicine Doctor in Slovakia | Dr. Dzhamanbaev",
+    "ogTitle": "Dr. Erkinbek Dzhamanbaev — when your results are “normal” but you don’t feel well",
+    "description": "Chronic fatigue, pain, burnout, long COVID — when tests come back normal. Consultations in English, Slovak and Russian across the EU. Free 6D questionnaire."
+  },
+  "conditions": {
+    "title": "What I help with",
+    "subtitle": "For adults with long-standing symptoms who haven’t received a clear answer.",
+    "items": [
+      {
+        "title": "Chronic fatigue",
+        "text": "Tiredness that doesn’t go away even after sleep or a holiday."
+      },
+      {
+        "title": "Chronic pain",
+        "text": "Back, neck, joints, headaches — pain lasting months or years."
+      },
+      {
+        "title": "Burnout and chronic stress",
+        "text": "Exhaustion, poor sleep, tension, low energy."
+      },
+      {
+        "title": "Long COVID",
+        "text": "Fatigue, brain fog and palpitations after COVID-19."
+      },
+      {
+        "title": "Fibromyalgia",
+        "text": "Widespread muscle and soft-tissue pain with fatigue."
+      },
+      {
+        "title": "“Normal” test results",
+        "text": "Many symptoms, yet the tests find nothing."
+      }
+    ],
+    "note": "Consultations in English, Slovak and Russian — in person in Piešťany or online anywhere in the EU."
   }
 }

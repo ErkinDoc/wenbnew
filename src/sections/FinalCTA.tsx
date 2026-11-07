@@ -27,7 +27,7 @@ export function FinalCTA({ onAssessmentClick }: { onAssessmentClick: () => void 
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-white">
             {t('finalCta.title')}
           </h2>
           <p className="text-xl text-blue-100 mb-10">

@@ -20,15 +20,15 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
   ];
 
   return (
-    <section id="hero" className="relative w-full min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
+    <section id="hero" className="relative w-full lg:min-h-screen bg-gradient-to-br from-[#F7F9FC] via-white to-[#E6F0EA] overflow-hidden pt-24">
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute top-20 right-20 w-96 h-96 border border-[#1A365D] rounded-full" />
         <div className="absolute bottom-40 left-10 w-64 h-64 border border-[#68A07C] rounded-full" />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="min-h-[calc(100vh-96px)] flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full py-12 lg:py-0">
+        <div className="lg:min-h-[calc(100vh-96px)] flex items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full py-8 lg:py-0">
             
             {/* Left column - Text content */}
             <motion.div
@@ -49,13 +49,14 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                   {t('hero.credentials')}
                 </motion.div>
                 
-                <h1 className="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-bold text-[#1A365D] leading-[1.1] mb-3">
-                  {t('hero.title')}
+                <h1 className="font-serif font-bold text-[#1A365D]">
+                  <span className="block text-[32px] sm:text-[40px] lg:text-[48px] leading-[1.1] mb-3">
+                    {t('hero.title')}
+                  </span>
+                  <span className="block text-[16px] lg:text-[18px] text-[#68A07C] font-sans font-semibold leading-snug">
+                    {t('hero.specialty')}
+                  </span>
                 </h1>
-                
-                <p className="text-[16px] lg:text-[18px] text-[#68A07C] font-sans font-semibold">
-                  {t('hero.specialty')}
-                </p>
               </div>
 
               <div>
@@ -78,7 +79,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                   >
                     <badge.icon className="w-4 h-4 text-[#68A07C]" />
-                    <span className="text-[12px] font-sans font-medium">{badge.label}</span>
+                    <span className="text-[13px] font-sans font-medium">{badge.label}</span>
                   </motion.div>
                 ))}
               </div>
@@ -121,10 +122,13 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 <div className="absolute -inset-4 border-2 border-[#68A07C]/30 rounded-2xl" />
                 <div className="absolute -inset-8 border border-[#1A365D]/10 rounded-3xl" />
                 
-                <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[480px] lg:w-[420px] lg:h-[560px]
+                <div className="relative w-[280px] h-[360px] sm:w-[360px] sm:h-[480px] lg:w-[420px] lg:h-[560px]
                                 rounded-xl overflow-hidden border border-[#E2E8F0] bg-gray-200">
                   <img
-                    src="/dr-erkin.jpg"
+                    src="/dr-erkin.webp"
+                    width={420}
+                    height={560}
+                    fetchPriority="high"
                     alt={t('hero.title')}
                     className="w-full h-full object-cover"
                     loading="eager"

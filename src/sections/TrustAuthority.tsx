@@ -34,7 +34,7 @@ export function TrustAuthority() {
 
   return (
     // Добавлен id="experience" для работы навигации
-    <section id="experience" className="w-full py-24 lg:py-32 bg-[#F7F9FC]">
+    <section id="experience" className="w-full py-16 lg:py-32 bg-[#F7F9FC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           

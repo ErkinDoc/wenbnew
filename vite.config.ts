@@ -1,12 +1,15 @@
 import path from "path"
 import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
-import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
-  plugins: [inspectAttr(), react()],
+  base: '/',
+  plugins: [react()],
+  ssr: {
+    // bundle CJS-only packages into the prerender build
+    noExternal: ['react-helmet-async'],
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

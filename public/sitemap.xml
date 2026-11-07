@@ -2,62 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
   <url>
     <loc>https://www.drerkin.eu/</loc>
     <lastmod>2026-11-07</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/?lang=sk"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/"/>
-    <image:image>
-      <image:loc>https://www.drerkin.eu/dr-erkin.webp</image:loc>
-      <image:title>Dr. Erkinbek Dzhamanbaev - Expert na chronickú bolesť</image:title>
-      <image:caption>Dr. Erkinbek Džamanbajev, PhD, MBA — integratívna medicína</image:caption>
-    </image:image>
+    <image:image><image:loc>https://www.drerkin.eu/dr-erkin.jpg</image:loc></image:image>
   </url>
-  
   <url>
-    <loc>https://www.drerkin.eu/?lang=sk</loc>
+    <loc>https://www.drerkin.eu/ru</loc>
     <lastmod>2026-11-07</lastmod>
-    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.drerkin.eu/en</loc>
+    <lastmod>2026-11-07</lastmod>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/?lang=sk"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/?lang=en"/>
-  </url>
-  
-  <url>
-    <loc>https://www.drerkin.eu/?lang=ru</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/?lang=sk"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/?lang=en"/>
-  </url>
-  
-  <url>
-    <loc>https://www.drerkin.eu/?lang=en</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/?lang=sk"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/"/>
   </url>
   <url>
     <loc>https://www.drerkin.eu/kniha</loc>
     <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/kniha"/>
-    <image:image>
-      <image:loc>https://www.drerkin.eu/kniha/obalka.jpg</image:loc>
-      <image:title>Pán doktor, vy nie ste odtiaľto – obálka knihy</image:title>
-    </image:image>
+    <image:image><image:loc>https://www.drerkin.eu/kniha/obalka.jpg</image:loc></image:image>
   </url>
-
+  <url>
+    <loc>https://www.drerkin.eu/publications</loc>
+    <lastmod>2026-11-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.drerkin.eu/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <priority>0.2</priority>
+  </url>
 </urlset>

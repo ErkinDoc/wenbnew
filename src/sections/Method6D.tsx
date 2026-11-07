@@ -22,7 +22,7 @@ export function Method6D() {
   }>;
 
   return (
-    <section id="method" className="w-full py-24 bg-white">
+    <section id="method" className="w-full py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -55,7 +55,7 @@ export function Method6D() {
         </div>
 
         {/* Dimensions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {Array.isArray(dimensions) && dimensions.map((dim, index) => (
             <motion.div
               key={dim.id}
@@ -64,21 +64,21 @@ export function Method6D() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className="group p-8 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] hover:border-[#68A07C] hover:bg-white hover:shadow-xl transition-all duration-300"
+              className="group p-4 sm:p-8 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] hover:border-[#68A07C] hover:bg-white hover:shadow-xl transition-all duration-300"
             >
-              <div className="w-12 h-12 bg-[#1A365D] text-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#68A07C] transition-colors">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#1A365D] text-white rounded-xl flex items-center justify-center mb-3 sm:mb-6 group-hover:bg-[#68A07C] transition-colors">
                 {icons[index]}
               </div>
               <span className="text-[12px] font-bold text-[#68A07C] uppercase tracking-wider mb-2 block">
                 {dim.id}
               </span>
-              <h3 className="text-[20px] font-serif font-bold text-[#1A365D] mb-3">
+              <h3 className="text-[17px] sm:text-[20px] font-serif font-bold text-[#1A365D] mb-1 sm:mb-3">
                 {dim.name.includes(': ') ? dim.name.split(': ')[1] : dim.name}
               </h3>
-              <p className="text-[14px] font-bold text-[#718096] mb-3 uppercase tracking-tight">
+              <p className="text-[12px] sm:text-[14px] font-bold text-[#718096] mb-2 sm:mb-3 uppercase tracking-tight">
                 {dim.subtitle}
               </p>
-              <p className="text-[15px] text-[#4A5568] leading-relaxed">
+              <p className="text-[14px] sm:text-[15px] text-[#4A5568] leading-relaxed">
                 {dim.description}
               </p>
             </motion.div>

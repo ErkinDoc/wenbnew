@@ -2,15 +2,18 @@ import { motion } from 'framer-motion';
 import { Mail, MapPin, MessageCircle, Phone, ExternalLink } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { homePath, isLang } from '@/i18n';
 
 export function Footer() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const code = (i18n.language || 'sk').split('-')[0];
+  const home = homePath(isLang(code) ? code : 'sk');
 
   const quickLinks = [
-    { label: t('nav.method'), href: '/#method' },
-    { label: t('nav.services'), href: '/#services' },
-    { label: t('nav.global'), href: '/#global' },
-    { label: t('nav.faq'), href: '/#faq' },
+    { label: t('nav.method'), href: `${home}#method` },
+    { label: t('nav.services'), href: `${home}#services` },
+    { label: t('nav.global'), href: `${home}#global` },
+    { label: t('nav.faq'), href: `${home}#faq` },
   ];
 
   return (
@@ -114,10 +117,10 @@ export function Footer() {
                 <li className="flex items-start gap-3">
                   <Phone className="w-4 h-4 text-[#68A07C] mt-0.5 flex-shrink-0" />
                   <a
-                    href="tel:+421911625792"
+                    href="tel:+421940270511"
                     className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans"
                   >
-                    +421 911 625 792
+                    +421 940 270 511
                   </a>
                 </li>
                 <li className="flex items-start gap-3">

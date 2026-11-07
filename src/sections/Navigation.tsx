@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { homePath, isLang } from '@/i18n';
 
 interface NavigationProps {
   onAssessmentClick: () => void;
@@ -13,6 +14,8 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+  const lang = (i18n.language || 'sk').split('-')[0];
+  const home = homePath(isLang(lang) ? lang : 'sk');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -42,8 +45,8 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
       navigate(href);
     } else {
       // Если мы на другой странице, сначала переходим на главную
-      if (location.pathname !== '/') {
-        navigate('/' + href);
+      if (location.pathname !== home) {
+        navigate(home + href);
       } else {
         const element = document.querySelector(href);
         if (element) {
@@ -71,8 +74,8 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
 
   const handleLogoClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (location.pathname !== '/') {
-      navigate('/');
+    if (location.pathname !== home) {
+      navigate(home);
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -93,7 +96,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <a 
-              href="/" 
+              href={home}
               className="flex flex-col group"
               onClick={handleLogoClick}
             >
@@ -101,7 +104,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
                 Medicine of Coherence
               </span>
               <span className="text-[10px] md:text-[11px] text-[#68A07C] font-sans tracking-wider uppercase">
-                Dr. Erkinbek Dzhamanbaev
+                {t('hero.title')}
               </span>
             </a>
 

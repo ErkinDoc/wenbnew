@@ -12,9 +12,9 @@ export function Services({ onAssessmentClick }: ServicesProps) {
   const services = t('services.items', { returnObjects: true }) as any[] || [];
 
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 lg:mb-16">
           <h2 className="text-[32px] md:text-[48px] font-serif font-bold text-[#1A365D] mb-4">
             {t('services.title')}
           </h2>
@@ -66,7 +66,7 @@ export function Services({ onAssessmentClick }: ServicesProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mt-16 rounded-3xl border-2 border-[#1A365D]/20 bg-gradient-to-br from-[#F0F7F4] to-[#EBF4FF] p-8 md:p-12"
+          className="mt-16 rounded-3xl border-2 border-[#1A365D]/20 bg-gradient-to-br from-[#F0F7F4] to-[#EBF4FF] p-4 sm:p-8 md:p-12"
         >
           <div className="text-center mb-8">
             <span className="inline-block bg-[#1A365D] text-white text-[12px] font-semibold uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
@@ -85,7 +85,7 @@ export function Services({ onAssessmentClick }: ServicesProps) {
               href="https://rehabilitation-seven.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#1A365D] transition-all group"
+              className="flex flex-col sm:flex-row items-start gap-4 p-5 sm:p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#1A365D] transition-all group"
             >
               <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-[#1A365D]/10 flex items-center justify-center text-3xl">
                 🦴
@@ -110,7 +110,7 @@ export function Services({ onAssessmentClick }: ServicesProps) {
               href="https://v0-presne-chudenie-website.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#68A07C] transition-all group"
+              className="flex flex-col sm:flex-row items-start gap-4 p-5 sm:p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#68A07C] transition-all group"
             >
               <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-[#68A07C]/10 flex items-center justify-center text-3xl">
                 ⚖️

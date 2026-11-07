@@ -12,7 +12,7 @@ export function SuccessStories() {
   }>;
 
   return (
-    <section className="w-full py-24 lg:py-32 bg-gradient-to-b from-white to-[#F7F9FC]">
+    <section className="w-full py-16 lg:py-32 bg-gradient-to-b from-white to-[#F7F9FC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           

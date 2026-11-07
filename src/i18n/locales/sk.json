@@ -3,14 +3,14 @@
     "method": "Metóda",
     "services": "Služby",
     "global": "Skúsenosti",
-    "faq": "FAQ",
+    "faq": "Otázky",
     "contact": "Kontakt",
     "publications": "Publikácie"
   },
   "hero": {
     "title": "Dr. Erkinbek Džamanbajev",
     "credentials": "PhD, MBA",
-    "specialty": "Lekár · Integratívna medicína · Autor 6D navigácie",
+    "specialty": "Lekár · integratívna medicína · chronická únava a bolesť",
     "headline": "Keď sú výsledky „v norme“, ale vám nie je dobre",
     "subheadline": "Chronická únava, bolesť, vyhorenie, nevysvetliteľné ťažkosti. Pomôžem nájsť súvislosti, ktoré sa pri bežnom vyšetrení strácajú. Prvý krok je bezplatný 6D dotazník online.",
     "ctaAssessment": "Vyplniť bezplatný 6D dotazník",
@@ -22,26 +22,10 @@
     "ctaNote": "Bezplatne a nezáväzne · konzultácie v slovenčine, ruštine a angličtine",
     "yearsLabel": "rokov praxe"
   },
-  "problem": {
-    "title": "Sú vám tieto situácie známe?",
-    "problemsTitle": "Keď medicína naráža na limity",
-    "solutionsTitle": "Medicína Koherencie",
-    "problems": [
-      "Komplexné prípady s 'normálnymi' výsledkami",
-      "Viacero symptómov bez diagnózy",
-      "Chronická bolesť roky"
-    ],
-    "solutions": [
-      "Systematická 6D analýza",
-      "Hľadanie príčin, nie maskovanie bolesti",
-      "Individuálny plán obnovy"
-    ],
-    "transition": "Obnovujeme koherenciu vášho tela."
-  },
   "method6d": {
-    "title": "6D Navigačný systém",
+    "title": "6D navigačný systém",
     "subtitle": "Šesť vektorov zdravia",
-    "description": "Individuálna cesta obnovy pre každého pacienta.",
+    "description": "Šesť oblastí, v ktorých hľadám príčinu chronických ťažkostí — od výsledkov vyšetrení až po životný štýl.",
     "dimensions": [
       {
         "id": "D1",
@@ -131,27 +115,27 @@
     "items": [
       {
         "title": "Chronická únava (45 r.)",
-        "content": "8 rokov neúspešnej liečby. Po 6D diagnostike odhalený neurozápal. Obnova energie na 85%."
+        "content": "8 rokov neúspešnej liečby. 6D diagnostika odhalila neurozápal; energia sa obnovila na 85 %."
       },
       {
         "title": "Zložitá diagnóza",
-        "content": "5 rokov bolesti bez príčiny. Nájdená súvislosť medzi biochémiou a pohybom."
+        "content": "5 rokov bolesti bez zjavnej príčiny. Našla sa súvislosť medzi biochémiou a pohybovým vzorcom."
       }
     ]
   },
   "services": {
     "title": "Služby",
-    "subtitle": "Programy obnovy",
+    "subtitle": "Prvý krok zadarmo, potom jasný plán",
     "cta": "Objednať sa",
     "specializedBadge": "Špecializované programy",
-    "specializedTitle": "Pohybový aparát & Metabolizmus",
+    "specializedTitle": "Pohybový aparát a metabolizmus",
     "specializedSubtitle": "Cielené programy pre konkrétne zdravotné ciele — presná diagnostika a individuálny prístup.",
     "rehab": {
       "title": "Systém presnej rehabilitácie",
       "description": "Klinická stratégia obnovy funkcie pohybového aparátu. Presná diagnostika kĺbov, chrbtice a neurologických porúch pohybu."
     },
     "weight": {
-      "title": "Presné Chudenie",
+      "title": "Presné chudnutie",
       "description": "Individuálny integratívny program trvalého zníženia hmotnosti. Obnovujeme metabolizmus — nie diéty, ale príčiny."
     },
     "learnMore": "Zistiť viac",
@@ -252,7 +236,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Spojte sa s nami",
+    "subtitle": "Napíšte mi",
     "email": "erkinslovakia@gmail.com",
     "whatsapp": {
       "label": "WhatsApp",
@@ -261,7 +245,7 @@
     "form": {
       "url": "https://forms.gle/tLYgfZLeGU27efuZ6"
     },
-    "cta": "Napíšte nám"
+    "cta": "Napíšte mi"
   },
   "footer": {
     "description": "Integratívna medicína a 6D navigácia pre zložité chronické stavy.",
@@ -276,7 +260,7 @@
     "language": "Jazyk",
     "copyright": "© 2026 Dr. Erkinbek Džamanbajev. Všetky práva vyhradené.",
     "license": "Medicine of Coherence · 6D navigácia",
-    "disclaimerTitle": "Právne upozornenie",
+    "disclaimerTitle": "Upozornenie",
     "disclaimerText": "Obsah stránky slúži na informačné účely a nenahrádza vyšetrenie u ošetrujúceho lekára. Pri akútnych ťažkostiach volajte 112 alebo 155.",
     "programs": "Špecializované programy"
   },
@@ -291,10 +275,46 @@
     ],
     "ctaAssessment": "Vyplniť bezplatný dotazník",
     "ctaApply": "Napísať na WhatsApp",
-    "guarantee": "Vaše zdravie je naša priorita."
+    "guarantee": "Odpovedám osobne — bez call centra a sekretárky."
   },
   "whatsapp": {
     "defaultMessage": "Dobrý deň, pán doktor, mám záujem o konzultáciu.",
     "ariaLabel": "Napísať Dr. Erkinovi cez WhatsApp"
+  },
+  "seo": {
+    "title": "Lekár pre chronickú únavu a bolesť | Dr. Džamanbajev, Piešťany",
+    "ogTitle": "Dr. Erkinbek Džamanbajev — keď sú výsledky „v norme“, ale vám nie je dobre",
+    "description": "Chronická únava, bolesť, vyhorenie, post-covid — keď sú výsledky v norme. Integratívna medicína, Piešťany a online v celej EÚ. Bezplatný 6D dotazník."
+  },
+  "conditions": {
+    "title": "S čím vám pomôžem",
+    "subtitle": "Pre dospelých s dlhodobými ťažkosťami, ktorí doteraz nedostali jasnú odpoveď.",
+    "items": [
+      {
+        "title": "Chronická únava",
+        "text": "Únava, ktorá neprejde ani po spánku či dovolenke."
+      },
+      {
+        "title": "Chronická bolesť",
+        "text": "Chrbát, krk, kĺby, hlava — bolesť, ktorá trvá mesiace alebo roky."
+      },
+      {
+        "title": "Vyhorenie a dlhodobý stres",
+        "text": "Vyčerpanie, zlý spánok, napätie, nedostatok energie."
+      },
+      {
+        "title": "Post-covid syndróm",
+        "text": "Únava, mozgová hmla a búšenie srdca po prekonanom covide."
+      },
+      {
+        "title": "Fibromyalgia",
+        "text": "Rozšírená bolesť svalov a mäkkých tkanív spojená s únavou."
+      },
+      {
+        "title": "Výsledky „v norme“",
+        "text": "Viacero príznakov, no vyšetrenia nič nenašli."
+      }
+    ],
+    "note": "Konzultácie v slovenčine, ruštine a angličtine — osobne v Piešťanoch alebo online kdekoľvek v EÚ."
   }
 }

@@ -22,7 +22,7 @@ const CONTENT: Record<Lang, { title: string; back: string; updated: string; sect
       { h: 'Kto má k údajom prístup', p: ['Iba ja. Na technické zabezpečenie používam služby Google (formuláre), WhatsApp a Zoom. Údaje nepredávam ani neposkytujem na marketing.'] },
       { h: 'Ako dlho údaje uchovávam', p: ['Po dobu nevyhnutnú na poskytnutie služby a splnenie zákonných povinností, prípadne do odvolania súhlasu.'] },
       { h: 'Vaše práva', p: ['Máte právo na prístup k údajom, ich opravu, vymazanie, obmedzenie spracúvania, prenosnosť a právo kedykoľvek odvolať súhlas — stačí napísať na erkinslovakia@gmail.com. Máte tiež právo podať sťažnosť na Úrad na ochranu osobných údajov SR (dataprotection.gov.sk).'] },
-      { h: 'Cookies', p: ['Stránka používa len nevyhnutné cookies a, s vaším súhlasom, analytické cookies. Súhlas môžete zmeniť v lište cookies.'] },
+      { h: 'Cookies a štatistika', p: ['Stránka nepoužíva reklamné ani sledovacie cookies. Návštevnosť sa meria anonymne, bez cookies (Vercel Web Analytics). Písma sú načítané priamo z tejto stránky, nie zo serverov Google.'] },
     ],
   },
   ru: {
@@ -30,13 +30,13 @@ const CONTENT: Record<Lang, { title: string; back: string; updated: string; sect
     back: 'На главную',
     updated: 'Последнее обновление: ноябрь 2026',
     sections: [
-      { h: 'Оператор данных', p: ['Dr. Erkinbek Dzhamanbaev, Пьештяни, Словакия. Контакт: erkinslovakia@gmail.com, WhatsApp +421 940 270 511.'] },
+      { h: 'Оператор данных', p: ['Др. Эркинбек Джаманбаев (Dr. Erkinbek Dzhamanbaev), Пьештяни, Словакия. Контакт: erkinslovakia@gmail.com, WhatsApp +421 940 270 511.'] },
       { h: 'Какие данные я обрабатываю', p: ['Только те, что вы сообщаете сами: имя, контакты (e-mail, телефон), ответы в 6D-анкете, включая сведения о здоровье, и переписку в WhatsApp или по e-mail.'] },
       { h: 'Цель и правовое основание', p: ['Изучение вашей анкеты, подготовка предварительного заключения и консультации, связь с вами. Данные о здоровье обрабатываются на основании вашего явного согласия (ст. 9 п. 2 «a» GDPR), которое вы даёте, заполняя и отправляя анкету. Остальные данные — в рамках преддоговорных и договорных отношений (ст. 6 п. 1 «b» GDPR).'] },
       { h: 'Кто имеет доступ', p: ['Только я. Для технической работы используются сервисы Google (формы), WhatsApp и Zoom. Данные не продаются и не передаются для рекламы.'] },
       { h: 'Срок хранения', p: ['В течение срока, необходимого для оказания услуги и выполнения требований закона, либо до отзыва согласия.'] },
       { h: 'Ваши права', p: ['Вы вправе получить доступ к своим данным, исправить, удалить их, ограничить обработку, перенести данные и в любой момент отозвать согласие — достаточно написать на erkinslovakia@gmail.com. Также можно подать жалобу в Управление по защите персональных данных Словакии (dataprotection.gov.sk).'] },
-      { h: 'Cookies', p: ['Сайт использует только необходимые cookies и, с вашего согласия, аналитические. Согласие можно изменить в панели cookies.'] },
+      { h: 'Cookies и статистика', p: ['Сайт не использует рекламные и отслеживающие cookies. Посещаемость считается анонимно, без cookies (Vercel Web Analytics). Шрифты загружаются с этого сайта, а не с серверов Google.'] },
     ],
   },
   en: {
@@ -50,7 +50,7 @@ const CONTENT: Record<Lang, { title: string; back: string; updated: string; sect
       { h: 'Who has access', p: ['Only me. Google (forms), WhatsApp and Zoom are used as technical services. Data is never sold or used for advertising.'] },
       { h: 'Retention', p: ['For as long as needed to provide the service and meet legal obligations, or until you withdraw consent.'] },
       { h: 'Your rights', p: ['You may access, correct or delete your data, restrict processing, request portability and withdraw consent at any time — just write to erkinslovakia@gmail.com. You may also lodge a complaint with the Slovak Data Protection Office (dataprotection.gov.sk).'] },
-      { h: 'Cookies', p: ['The site uses only essential cookies and, with your consent, analytics cookies. You can change your choice in the cookie banner.'] },
+      { h: 'Cookies and statistics', p: ['The site uses no advertising or tracking cookies. Visits are counted anonymously without cookies (Vercel Web Analytics). Fonts are served from this site, not from Google servers.'] },
     ],
   },
 };
@@ -66,7 +66,8 @@ export function Privacy() {
       <Helmet>
         <html lang={lang} />
         <title>{c.title} | Dr. Erkinbek Džamanbajev</title>
-        <link rel="canonical" href="https://drerkin.eu/privacy" />
+        <meta name="description" content={c.sections[2].p[0].slice(0, 155)} />
+        <link rel="canonical" href="https://www.drerkin.eu/privacy" />
       </Helmet>
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
         <Link to="/" className="inline-flex items-center gap-2 text-[14px] text-[#68A07C] hover:underline mb-8">
