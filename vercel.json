@@ -14,7 +14,7 @@
     { "source": "/en", "destination": "/en/index.html" },
     { "source": "/privacy", "destination": "/privacy/index.html" },
     { "source": "/publications", "destination": "/publications/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!_vercel/).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
