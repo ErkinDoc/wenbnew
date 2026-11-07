@@ -2,24 +2,91 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
-    { "source": "/", "has": [{ "type": "query", "key": "lang", "value": "ru" }], "destination": "/ru", "permanent": true },
-    { "source": "/", "has": [{ "type": "query", "key": "lang", "value": "en" }], "destination": "/en", "permanent": true },
-    { "source": "/publications.html", "destination": "/publications", "permanent": true },
-    { "source": "/gdpr", "destination": "/privacy", "permanent": true },
-    { "source": "/terms", "destination": "/privacy", "permanent": true }
+    {
+      "source": "/sk",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sk/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "ru"
+        }
+      ],
+      "destination": "/ru",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "en"
+        }
+      ],
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/publications.html",
+      "destination": "/publications",
+      "permanent": true
+    },
+    {
+      "source": "/gdpr",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/privacy",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/kniha", "destination": "/kniha/index.html" },
-    { "source": "/ru", "destination": "/ru/index.html" },
-    { "source": "/en", "destination": "/en/index.html" },
-    { "source": "/privacy", "destination": "/privacy/index.html" },
-    { "source": "/publications", "destination": "/publications/index.html" },
-    { "source": "/((?!_vercel/).*)", "destination": "/index.html" }
+    {
+      "source": "/kniha",
+      "destination": "/kniha/index.html"
+    },
+    {
+      "source": "/ru",
+      "destination": "/ru/index.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy/index.html"
+    },
+    {
+      "source": "/publications",
+      "destination": "/publications/index.html"
+    },
+    {
+      "source": "/((?!_vercel/).*)",
+      "destination": "/index.html"
+    }
   ],
   "headers": [
     {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ]
 }
