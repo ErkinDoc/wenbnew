@@ -82,7 +82,7 @@ export function Services({ onAssessmentClick }: ServicesProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a
-              href="https://rehabilitation-seven.vercel.app/"
+              href="https://rehabilitacia.drerkin.eu/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col sm:flex-row items-start gap-4 p-5 sm:p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#1A365D] transition-all group"
@@ -107,7 +107,7 @@ export function Services({ onAssessmentClick }: ServicesProps) {
             </a>
 
             <a
-              href="https://v0-presne-chudenie-website.vercel.app/"
+              href="https://chudnutie.drerkin.eu/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col sm:flex-row items-start gap-4 p-5 sm:p-6 bg-white rounded-2xl border border-[#E2E8F0] hover:shadow-lg hover:border-[#68A07C] transition-all group"

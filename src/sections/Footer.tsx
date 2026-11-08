@@ -88,7 +88,7 @@ export function Footer() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="https://rehabilitation-seven.vercel.app/"
+                    href="https://rehabilitacia.drerkin.eu/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans flex items-center gap-1"
@@ -99,7 +99,7 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://v0-presne-chudenie-website.vercel.app/"
+                    href="https://chudnutie.drerkin.eu/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[13px] text-white/70 hover:text-[#68A07C] transition-colors font-sans flex items-center gap-1"
