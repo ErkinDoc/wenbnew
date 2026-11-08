@@ -11,10 +11,14 @@ import '@fontsource/playfair-display/700.css';
 import App from './App';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root')!;
+const app = (
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
 );
+// Prerendered pages are hydrated (no repaint of the first screen); dev mode renders from scratch.
+if (container.hasChildNodes()) ReactDOM.hydrateRoot(container, app);
+else ReactDOM.createRoot(container).render(app);

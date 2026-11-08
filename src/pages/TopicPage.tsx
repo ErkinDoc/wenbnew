@@ -89,7 +89,7 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
           href={formUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#68A07C] hover:bg-[#5a8f6d] rounded-xl font-semibold text-[15px] transition-colors"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#4A7F5E] hover:bg-[#3F7354] rounded-xl font-semibold text-[15px] transition-colors"
         >
           {ui.ctaForm} <ArrowRight className="w-4 h-4" />
         </a>
@@ -133,7 +133,7 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
 
       <main className="pt-28 pb-16">
         <article className="max-w-3xl mx-auto px-4 sm:px-6">
-          <nav aria-label="breadcrumb" className="mb-6 text-[13px] font-sans text-[#718096]">
+          <nav aria-label="breadcrumb" className="mb-6 text-[13px] font-sans text-[#5A6577]">
             <ol className="flex items-center gap-1 flex-wrap">
               <li>
                 <Link to={homePath(lang)} className="hover:text-[#1A365D]">{ui.home}</Link>
@@ -145,7 +145,7 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
 
           <h1 className="text-[32px] sm:text-[42px] leading-tight font-serif font-bold text-[#1A365D] mb-5">{c.h1}</h1>
           <p className="text-[18px] sm:text-[20px] leading-relaxed text-[#2D3748] font-sans mb-4">{c.lead}</p>
-          <p className="text-[13px] text-[#718096] font-sans mb-10">
+          <p className="text-[13px] text-[#5A6577] font-sans mb-10">
             {ui.authorName} · {ui.reviewed}: <time dateTime={LAST_REVIEWED}>{ui.reviewedDate}</time>
           </p>
 
@@ -205,7 +205,7 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
               className="w-[72px] h-[72px] rounded-full object-cover shrink-0"
             />
             <div>
-              <p className="flex items-center gap-1.5 text-[12px] uppercase tracking-wider text-[#68A07C] font-sans font-medium mb-1">
+              <p className="flex items-center gap-1.5 text-[12px] uppercase tracking-wider text-[#3F7354] font-sans font-medium mb-1">
                 <UserRound className="w-3.5 h-3.5" /> {ui.author}
               </p>
               <p className="text-[17px] font-serif font-bold text-[#1A365D] mb-1">{ui.authorName}</p>
@@ -229,7 +229,7 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
             </ul>
           </nav>
 
-          <p className="text-[13px] text-[#718096] font-sans leading-relaxed">{t('footer.disclaimerText')}</p>
+          <p className="text-[13px] text-[#5A6577] font-sans leading-relaxed">{t('footer.disclaimerText')}</p>
         </article>
       </main>
 

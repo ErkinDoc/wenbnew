@@ -103,7 +103,7 @@ export function Navigation({ onAssessmentClick }: NavigationProps) {
               <span className="text-[18px] md:text-[20px] font-serif font-bold text-[#1A365D] leading-tight group-hover:text-[#68A07C] transition-colors">
                 Medicine of Coherence
               </span>
-              <span className="text-[10px] md:text-[11px] text-[#68A07C] font-sans tracking-wider uppercase">
+              <span className="text-[10px] md:text-[11px] text-[#4A7F5E] font-sans tracking-wider uppercase">
                 {t('hero.title')}
               </span>
             </a>

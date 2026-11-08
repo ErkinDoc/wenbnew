@@ -33,7 +33,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
             {/* Left column - Text content */}
             <motion.div
               className="space-y-8"
-              initial={{ opacity: 0, x: -30 }}
+              initial={false}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
             >
@@ -41,7 +41,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                 <motion.div
                   className="inline-flex items-center gap-2 bg-[#1A365D]/5 text-[#1A365D]
                              px-4 py-2 rounded-full text-[12px] font-sans font-medium tracking-wider uppercase mb-4"
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
                 >
@@ -74,7 +74,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                   <motion.div
                     key={badge.label}
                     className="flex items-center gap-2 text-[#4A5568]"
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={false}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                   >
@@ -87,7 +87,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.button
                   onClick={onAssessmentClick}
-                  className="bg-[#68A07C] text-white px-8 py-4 rounded-xl font-bold text-[14px] flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:bg-[#5a8c6b] transition-all"
+                  className="bg-[#4A7F5E] text-white px-8 py-4 rounded-xl font-bold text-[14px] flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:bg-[#5a8c6b] transition-all"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -114,7 +114,7 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
             {/* Right column - Professional Portrait */}
             <motion.div
               className="flex justify-center lg:justify-end"
-              initial={{ opacity: 0, x: 30 }}
+              initial={false}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
             >
@@ -126,6 +126,8 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                                 rounded-xl overflow-hidden border border-[#E2E8F0] bg-gray-200">
                   <img
                     src="/dr-erkin.webp"
+                    srcSet="/dr-erkin-420.webp 420w, /dr-erkin.webp 638w"
+                    sizes="(min-width: 1024px) 420px, (min-width: 640px) 360px, 280px"
                     width={420}
                     height={560}
                     fetchPriority="high"
@@ -137,15 +139,15 @@ export function HeroSection({ onAssessmentClick }: HeroSectionProps) {
                   <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 border border-[#E2E8F0]">
                     <div className="flex items-center justify-center gap-3">
                       <span className="px-3 py-1 bg-[#1A365D] text-white text-[11px] font-bold rounded ">Dr.</span>
-                      <span className="px-3 py-1 bg-[#68A07C] text-white text-[11px] font-bold rounded ">PhD</span>
-                      <span className="px-3 py-1 bg-[#C9A227] text-white text-[11px] font-bold rounded uppercase">MBA</span>
+                      <span className="px-3 py-1 bg-[#4A7F5E] text-white text-[11px] font-bold rounded ">PhD</span>
+                      <span className="px-3 py-1 bg-[#C9A227] text-[#1A365D] text-[11px] font-bold rounded uppercase">MBA</span>
                     </div>
                   </div>
                 </div>
 
                 <motion.div
                   className="relative mt-8 mx-auto w-fit md:absolute md:-bottom-6 md:-right-6 bg-[#1A365D] rounded-xl shadow-xl p-4"
-                  initial={{ opacity: 0, scale: 0.8 }}
+                  initial={false}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 0.5 }}
                 >

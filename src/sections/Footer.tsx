@@ -204,10 +204,10 @@ export function Footer() {
           {/* Bottom Bar */}
           <div className="mt-8 pt-6 border-t border-white/10">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              <p className="text-[12px] text-white/50 font-sans">
+              <p className="text-[12px] text-white/70 font-sans">
                 {t('footer.copyright')}
               </p>
-              <p className="text-[12px] text-white/50 font-sans">
+              <p className="text-[12px] text-white/70 font-sans">
                 {t('footer.license')}
               </p>
             </div>

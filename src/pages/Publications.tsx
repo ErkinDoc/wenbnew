@@ -293,7 +293,7 @@ export function Publications() {
             </p>
             <Link
               to="/#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#68A07C] hover:bg-[#5A8F6E] text-white font-medium rounded-xl transition-colors shadow-lg"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#4A7F5E] hover:bg-[#5A8F6E] text-white font-medium rounded-xl transition-colors shadow-lg"
             >
               {t.ctaButton}
               <ArrowLeft className="w-4 h-4 rotate-180" />
