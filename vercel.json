@@ -65,6 +65,61 @@
       "source": "/terms",
       "destination": "/privacy",
       "permanent": true
+    },
+    {
+      "source": "/fb",
+      "destination": "/ru?utm_source=fb",
+      "permanent": false
+    },
+    {
+      "source": "/fbsk",
+      "destination": "/?utm_source=fbsk",
+      "permanent": false
+    },
+    {
+      "source": "/grp",
+      "destination": "/ru/diagnostika?utm_source=fbgroup",
+      "permanent": false
+    },
+    {
+      "source": "/yt",
+      "destination": "/ru/diagnostika?utm_source=yt",
+      "permanent": false
+    },
+    {
+      "source": "/ig",
+      "destination": "/ru?utm_source=ig",
+      "permanent": false
+    },
+    {
+      "source": "/spina",
+      "destination": "/ru/bol-v-spine?utm_source=fb",
+      "permanent": false
+    },
+    {
+      "source": "/ustalost",
+      "destination": "/ru/hronicheskaya-ustalost?utm_source=fb",
+      "permanent": false
+    },
+    {
+      "source": "/mnenie",
+      "destination": "/ru/vtoroe-mnenie-vracha?utm_source=fb",
+      "permanent": false
+    },
+    {
+      "source": "/chrbat",
+      "destination": "/bolest-chrbta?utm_source=fbsk",
+      "permanent": false
+    },
+    {
+      "source": "/unava",
+      "destination": "/chronicka-unava?utm_source=fbsk",
+      "permanent": false
+    },
+    {
+      "source": "/nazor",
+      "destination": "/druhy-nazor-lekara?utm_source=fbsk",
+      "permanent": false
     }
   ],
   "rewrites": [
