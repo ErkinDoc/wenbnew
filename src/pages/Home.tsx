@@ -64,8 +64,8 @@ export function Home({ lang }: { lang: Lang }) {
       <main>
         <HeroSection onAssessmentClick={handleAssessmentClick} />
         <Conditions />
-        <Method6D />
         <Services onAssessmentClick={handleAssessmentClick} />
+        <Method6D />
         <GlobalExperience />
         <SuccessStories />
         <TrustAuthority />

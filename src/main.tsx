@@ -10,7 +10,10 @@ import '@fontsource/playfair-display/600.css';
 import '@fontsource/playfair-display/700.css';
 import App from './App';
 import './index.css';
+import { initLeadSource } from './lib/leadSource';
 
+
+initLeadSource();
 const container = document.getElementById('root')!;
 const app = (
   <React.StrictMode>

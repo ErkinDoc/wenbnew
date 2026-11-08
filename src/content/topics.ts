@@ -76,9 +76,9 @@ export const TOPIC_UI: Record<
     reviewedDate: '8. 11. 2026',
     ctaTitle: 'Prvý krok: bezplatný 6D dotazník',
     ctaText:
-      'Vyplníte ho online. Osobne ho preštudujem a odpíšem, či má zmysel pokračovať 6D klinickým zhodnotením (60 min, 100 €).',
+      'Vyplníte ho online. Do 48 hodín ho osobne preštudujem a odpíšem, či má zmysel pokračovať 6D klinickým zhodnotením (60 min, 100 € vopred prevodom).',
     ctaForm: 'Vyplniť 6D dotazník',
-    ctaWa: 'Napísať na WhatsApp',
+    ctaWa: 'Opýtať sa pred objednaním',
     faq: 'Časté otázky',
     related: 'Súvisiace témy',
     more: 'Viac o téme',
@@ -96,9 +96,9 @@ export const TOPIC_UI: Record<
     reviewedDate: '08.11.2026',
     ctaTitle: 'Первый шаг: бесплатная 6D-анкета',
     ctaText:
-      'Заполняется онлайн. Я лично изучу её и отвечу, есть ли смысл переходить к 6D-оценке (60 мин, 100 €).',
+      'Заполняется онлайн. В течение 48 часов я лично изучу её и отвечу, есть ли смысл переходить к 6D-оценке (60 мин, 100 € заранее переводом).',
     ctaForm: 'Заполнить 6D-анкету',
-    ctaWa: 'Написать в WhatsApp',
+    ctaWa: 'Задать вопрос до записи',
     faq: 'Частые вопросы',
     related: 'Связанные темы',
     more: 'Подробнее',
@@ -116,9 +116,9 @@ export const TOPIC_UI: Record<
     reviewedDate: '8 Nov 2026',
     ctaTitle: 'First step: the free 6D questionnaire',
     ctaText:
-      'You fill it in online. I review it personally and reply whether it makes sense to continue with the 6D clinical assessment (60 min, €100).',
+      'You fill it in online. Within 48 hours I review it personally and reply whether it makes sense to continue with the 6D clinical assessment (60 min, €100 paid in advance by bank transfer).',
     ctaForm: 'Fill in the 6D questionnaire',
-    ctaWa: 'Message on WhatsApp',
+    ctaWa: 'Ask a question first',
     faq: 'Frequently asked questions',
     related: 'Related topics',
     more: 'Read more',
@@ -561,6 +561,10 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           p: ['Posúdenie dostupných lekárskych správ, porovnanie diagnóz a výsledkov vyšetrení, zhodnotenie možných súvislostí a rozhovor o ďalšom postupe. Druhý názor neruší predchádzajúce diagnózy ani nenahrádza starostlivosť vášho ošetrujúceho lekára.'],
         },
         {
+          h: 'Aké dokumenty poslať',
+          list: ['Lekárske správy a prepúšťacie správy', 'Výsledky krvi a ďalších vyšetrení', 'Popisy snímok (MR, CT, RTG, USG)', 'Zoznam liekov a doplnkov', 'Stačia fotky alebo PDF — v slovenčine, češtine, ruštine či angličtine'],
+        },
+        {
           h: 'Kedy má zmysel',
           list: [
             'Rôzni lekári vám povedali rôzne veci',
@@ -575,7 +579,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           list: [
             'Vyplníte bezplatný 6D dotazník a pripravíte dostupné správy a výsledky',
             'Preštudujem ich a odpíšem, či má konzultácia zmysel',
-            '60-minútová konzultácia online alebo v Piešťanoch (100 €)',
+            '60-minútová konzultácia online alebo v Piešťanoch po dohode (100 €)',
             'Osobná mapa zdravia a konkrétny plán: čo vyplýva z doterajších nálezov, čo chýba a aké sú možnosti',
           ],
         },
@@ -604,8 +608,8 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           a: 'Nie. Ide o súkromnú konzultáciu, ktorú zdravotná poisťovňa nehradí.',
         },
         {
-          q: 'Aké dokumenty mám pripraviť?',
-          a: 'Lekárske správy, výsledky krvi, popisy snímok (MR, CT, RTG), zoznam liekov. Stačia fotky alebo PDF.',
+          q: 'Ako zaplatím?',
+          a: '100 € vopred prevodom na účet. Údaje pošlem po potvrdení termínu.',
         },
         {
           q: 'Môžem poslať správy v inom jazyku?',
@@ -628,6 +632,10 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           p: ['Анализ имеющихся медицинских заключений, сопоставление диагнозов и результатов обследований, оценка возможных взаимосвязей и обсуждение дальнейших вариантов. Второе мнение не отменяет предыдущие диагнозы и не заменяет наблюдение у лечащего врача.'],
         },
         {
+          h: 'Какие документы прислать',
+          list: ['Выписки и заключения врачей', 'Анализы крови и другие результаты', 'Описания снимков (МРТ, КТ, рентген, УЗИ)', 'Список препаратов и БАДов', 'Достаточно фото или PDF — на словацком, чешском, английском или русском. Объясню всё по-русски'],
+        },
+        {
           h: 'Когда это имеет смысл',
           list: [
             'Разные врачи сказали вам разное',
@@ -642,7 +650,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           list: [
             'Вы заполняете бесплатную 6D-анкету и готовите имеющиеся выписки и анализы',
             'Я изучаю их и отвечаю, есть ли смысл в консультации',
-            'Консультация 60 минут онлайн или очно в Пьештяни (100 €)',
+            'Консультация 60 минут онлайн или очно в Пьештяни по договорённости (100 €)',
             'Персональная карта здоровья и конкретный план: что следует из имеющихся данных, чего не хватает и какие есть варианты',
           ],
         },
@@ -671,8 +679,8 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           a: 'Нет. Это частная консультация, страховка её не покрывает.',
         },
         {
-          q: 'Какие документы подготовить?',
-          a: 'Выписки, анализы крови, описания снимков (МРТ, КТ, рентген), список препаратов. Достаточно фото или PDF.',
+          q: 'Как оплатить?',
+          a: '100 € заранее переводом на счёт. Реквизиты пришлю после подтверждения времени.',
         },
         {
           q: 'Документы на словацком, чешском или английском — это проблема?',
@@ -695,6 +703,10 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           p: ['A review of your existing medical records, comparison of diagnoses and test results, assessment of possible connections and a discussion of next steps. A second opinion does not invalidate previous diagnoses or replace care from your treating physician.'],
         },
         {
+          h: 'What documents to send',
+          list: ['Medical reports and discharge letters', 'Blood and other test results', 'Imaging reports (MRI, CT, X-ray, ultrasound)', 'A list of medication and supplements', 'Photos or PDFs are fine — in English, Slovak, Czech or Russian'],
+        },
+        {
           h: 'When it makes sense',
           list: [
             'Different doctors have told you different things',
@@ -709,7 +721,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           list: [
             'You fill in the free 6D questionnaire and prepare your reports and results',
             'I review them and reply whether a consultation makes sense',
-            '60-minute consultation online or in Piešťany (€100)',
+            '60-minute consultation online or in Piešťany by arrangement (€100)',
             'A personal health map and a concrete plan: what follows from existing findings, what is missing, and what the options are',
           ],
         },
@@ -738,8 +750,8 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           a: 'No. This is a private consultation and is not covered by health insurance.',
         },
         {
-          q: 'What documents should I prepare?',
-          a: 'Medical reports, blood results, imaging reports (MRI, CT, X-ray), a list of medication. Photos or PDFs are fine.',
+          q: 'How do I pay?',
+          a: '€100 in advance by bank transfer. I send the details once the time is confirmed.',
         },
         {
           q: 'Can I send reports in another language?',
@@ -777,7 +789,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           list: [
             'Bezplatný 6D dotazník online — osobne ho preštudujem',
             'Predbežná odpoveď: či má zmysel pokračovať',
-            'Konzultácia 60 minút (Zoom alebo osobne v Piešťanoch) — 100 €',
+            'Konzultácia 60 minút (Zoom alebo osobne v Piešťanoch po dohode) — 100 €',
             'Osobná mapa zdravia a konkrétny akčný plán',
             'Podľa potreby sprevádzanie — rozsah a cenu dohodneme vopred',
           ],
@@ -843,7 +855,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           list: [
             'Бесплатная 6D-анкета онлайн — я лично её изучаю',
             'Предварительный ответ: есть ли смысл продолжать',
-            'Консультация 60 минут (Zoom или очно в Пьештяни) — 100 €',
+            'Консультация 60 минут (Zoom или очно в Пьештяни по договорённости) — 100 €',
             'Персональная карта здоровья и конкретный план действий',
             'При необходимости — сопровождение; объём и стоимость согласуем заранее',
           ],
@@ -909,7 +921,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           list: [
             'Free online 6D questionnaire — I review it personally',
             'A preliminary reply: whether it makes sense to continue',
-            '60-minute consultation (Zoom or in person in Piešťany) — €100',
+            '60-minute consultation (Zoom or in person in Piešťany by arrangement) — €100',
             'A personal health map and a concrete action plan',
             'Follow-up support if needed — scope and price agreed in advance',
           ],

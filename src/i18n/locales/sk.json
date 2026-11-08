@@ -14,12 +14,12 @@
     "headline": "Keď každá diagnóza sedí, ale vám stále nie je dobre",
     "subheadline": "Bolesť chrbta a kĺbov, únava, viacero diagnóz od rôznych špecialistov. Pozriem sa, ako spolu súvisia, a dám vám nezávislý názor lekára. Prvý krok je bezplatný 6D dotazník online.",
     "ctaAssessment": "Vyplniť bezplatný 6D dotazník",
-    "ctaApply": "Napísať na WhatsApp",
+    "ctaApply": "Opýtať sa pred objednaním",
     "badge1": "Online v celej EÚ",
     "badge2": "30+ rokov praxe",
     "badge3": "SK · RU · EN",
     "badge4": "6 krajín praxe",
-    "ctaNote": "Dotazník je bezplatný · konzultácia 60 min: 100 € · po slovensky, rusky a anglicky",
+    "ctaNote": "Dotazník je bezplatný · konzultácia 60 min: 100 € · po slovensky, rusky a anglicky · odpoveď do 48 hodín",
     "yearsLabel": "rokov praxe"
   },
   "method6d": {
@@ -152,7 +152,7 @@
       },
       {
         "title": "6D klinické zhodnotenie — 100 €",
-        "description": "Komplexné klinické zhodnotenie vášho stavu, 60 minút online (Zoom) alebo osobne v Piešťanoch.",
+        "description": "Komplexné klinické zhodnotenie vášho stavu, 60 minút online (Zoom) alebo osobne v Piešťanoch po dohode.",
         "features": [
           "Osobná mapa zdravia",
           "Konkrétny akčný plán"
@@ -214,6 +214,14 @@
         "answer": "Nie. 6D dotazník je bezplatný. Na jeho základe dostanete predbežný záver a odporúčanie, či má zmysel pokračovať."
       },
       {
+        "question": "Ako sa objednám a ako zaplatím?",
+        "answer": "Vyplníte bezplatný dotazník. Do 48 hodín vám odpíšem, či má konzultácia zmysel, a navrhnem termín. 100 € uhradíte vopred prevodom na účet — údaje pošlem po potvrdení termínu."
+      },
+      {
+        "question": "Ako rýchlo odpoviete na dotazník?",
+        "answer": "Do 48 hodín. Každý dotazník čítam osobne."
+      },
+      {
         "question": "Ako prebieha online konzultácia?",
         "answer": "Sedenie trvá 60 minút cez Zoom. Vopred si preštudujem váš dotazník a dostupné výsledky."
       },
@@ -272,12 +280,12 @@
     "subtitle": "Začnite bezplatným 6D dotazníkom",
     "benefits": [
       "1. Bezplatný 6D dotazník online",
-      "2. Predbežný záver a odporúčanie",
-      "3. 6D klinické zhodnotenie — 60 min, 100 €",
-      "4. Individuálny plán a sprevádzanie"
+      "2. Do 48 hodín osobne odpíšem, či má konzultácia zmysel",
+      "3. Dohodneme termín, 100 € uhradíte vopred prevodom na účet",
+      "4. 6D klinické zhodnotenie 60 min — online alebo osobne po dohode"
     ],
     "ctaAssessment": "Vyplniť bezplatný dotazník",
-    "ctaApply": "Napísať na WhatsApp",
+    "ctaApply": "Opýtať sa pred objednaním",
     "guarantee": "Odpovedám osobne — bez call centra a sekretárky."
   },
   "whatsapp": {
@@ -318,6 +326,6 @@
         "text": "Máte rôzne odporúčania od rôznych lekárov? Pozriem sa na celý obraz nezávisle a vysvetlím, čo z toho vyplýva."
       }
     ],
-    "note": "Konzultácie v slovenčine, ruštine a angličtine — osobne v Piešťanoch alebo online kdekoľvek v EÚ."
+    "note": "Konzultácie v slovenčine, ruštine a angličtine — osobne v Piešťanoch po dohode alebo online kdekoľvek v EÚ."
   }
 }

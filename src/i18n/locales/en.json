@@ -14,12 +14,12 @@
     "headline": "When every diagnosis is right — and you still don’t feel well",
     "subheadline": "Back and joint pain, fatigue, several diagnoses from different specialists. I look at how they connect and give you an independent medical opinion. The first step is a free online 6D questionnaire.",
     "ctaAssessment": "Take the free 6D questionnaire",
-    "ctaApply": "Message on WhatsApp",
+    "ctaApply": "Ask a question first",
     "badge1": "Online across the EU",
     "badge2": "30+ years",
     "badge3": "EN · SK · RU",
     "badge4": "6 countries",
-    "ctaNote": "The questionnaire is free · 60-min consultation: €100 · in English, Russian and Slovak",
+    "ctaNote": "The questionnaire is free · 60-min consultation: €100 · in English, Russian and Slovak · reply within 48 hours",
     "yearsLabel": "years of practice"
   },
   "method6d": {
@@ -140,7 +140,7 @@
       },
       {
         "title": "6D clinical assessment — €100",
-        "description": "A comprehensive clinical assessment of your condition, 60 minutes online (Zoom) or in person in Piešťany.",
+        "description": "A comprehensive clinical assessment of your condition, 60 minutes online (Zoom) or in person in Piešťany by arrangement.",
         "features": [
           "Personal health map",
           "Concrete action plan"
@@ -214,6 +214,14 @@
         "answer": "No. The 6D questionnaire is free. Based on it you receive a preliminary conclusion and advice on whether to continue."
       },
       {
+        "question": "How do I book and pay?",
+        "answer": "Fill in the free questionnaire. Within 48 hours I reply whether a consultation makes sense and suggest a time. The €100 is paid in advance by bank transfer — I send the details once the time is confirmed."
+      },
+      {
+        "question": "How quickly do you reply to the questionnaire?",
+        "answer": "Within 48 hours. I read every questionnaire personally."
+      },
+      {
         "question": "How does an online consultation work?",
         "answer": "The session lasts 60 minutes via Zoom. I review your questionnaire and available results in advance."
       },
@@ -271,12 +279,12 @@
     "subtitle": "Start with the free 6D questionnaire",
     "benefits": [
       "1. Free online 6D questionnaire",
-      "2. Preliminary conclusion and advice",
-      "3. 6D clinical assessment — 60 min, €100",
-      "4. Individual plan and follow-up"
+      "2. Within 48 hours I reply personally whether a consultation makes sense",
+      "3. We agree a time; the €100 is paid in advance by bank transfer",
+      "4. 6D clinical assessment, 60 min — online or in person by arrangement"
     ],
     "ctaAssessment": "Take the free questionnaire",
-    "ctaApply": "Message on WhatsApp",
+    "ctaApply": "Ask a question first",
     "guarantee": "I reply personally — no call centre, no assistants."
   },
   "whatsapp": {
@@ -317,6 +325,6 @@
         "text": "Different doctors, different recommendations? I look at the whole picture independently and explain what follows from it."
       }
     ],
-    "note": "Consultations in English, Slovak and Russian — in person in Piešťany or online anywhere in the EU."
+    "note": "Consultations in English, Slovak and Russian — in person in Piešťany by arrangement or online anywhere in the EU."
   }
 }
