@@ -11,8 +11,8 @@
     "title": "Dr. Erkinbek Džamanbajev",
     "credentials": "PhD, MBA",
     "specialty": "Lekár · komplexná diagnostika · chrbát, kĺby, chronická únava",
-    "headline": "Keď sú výsledky „v norme“, ale vám nie je dobre",
-    "subheadline": "Bolesť chrbta a kĺbov, únava, nevysvetliteľné ťažkosti. Pozriem sa na celý organizmus — nie na jeden orgán — a dám vám nezávislý tretí názor lekára. Prvý krok je bezplatný 6D dotazník online.",
+    "headline": "Keď každá diagnóza sedí, ale vám stále nie je dobre",
+    "subheadline": "Bolesť chrbta a kĺbov, únava, viacero diagnóz od rôznych špecialistov. Pozriem sa, ako spolu súvisia, a dám vám nezávislý názor lekára. Prvý krok je bezplatný 6D dotazník online.",
     "ctaAssessment": "Vyplniť bezplatný 6D dotazník",
     "ctaApply": "Napísať na WhatsApp",
     "badge1": "Online v celej EÚ",
@@ -109,17 +109,17 @@
     "label": "Profesijná cesta"
   },
   "successStories": {
-    "title": "Klinické výsledky",
-    "subtitle": "Príklady obnovy",
-    "disclaimer": "Anonymizované kazuistiky. Výsledky sú individuálne a nie sú zárukou.",
+    "title": "S čím ľudia prichádzajú",
+    "subtitle": "Typické situácie",
+    "disclaimer": "Zovšeobecnené situácie bez osobných údajov. Nejde o kazuistiky ani prísľub výsledku.",
     "items": [
       {
-        "title": "Chronická únava (45 r.)",
-        "content": "8 rokov neúspešnej liečby. 6D diagnostika odhalila neurozápal; energia sa obnovila na 85 %."
+        "title": "Únava, ktorá trvá roky",
+        "content": "Niekoľko rokov vyšetrení, viacero čiastkových diagnóz, každá liečená zvlášť. Chýba odpoveď na otázku, ako spolu súvisia. Tu začína 6D analýza."
       },
       {
-        "title": "Zložitá diagnóza",
-        "content": "5 rokov bolesti bez zjavnej príčiny. Našla sa súvislosť medzi biochémiou a pohybovým vzorcom."
+        "title": "Bolesť chrbta, ktorá sa vracia",
+        "content": "Fyzioterapia, lieky, opakované snímky. Krátke zlepšenie, potom návrat. Hľadám, čo bolesť udržiava — pohybový vzorec, spánok, stres, metabolizmus."
       }
     ]
   },
@@ -151,7 +151,7 @@
       },
       {
         "title": "6D diagnostika — 100 €",
-        "description": "Hĺbková systémová analýza vášho stavu, 60 minút online (Zoom) alebo osobne v Piešťanoch.",
+        "description": "Komplexné klinické zhodnotenie vášho stavu, 60 minút online (Zoom) alebo osobne v Piešťanoch.",
         "features": [
           "Osobná mapa zdravia",
           "Konkrétny akčný plán"
@@ -205,8 +205,8 @@
         "answer": "Príčin môže byť viac — od nedostatku železa či poruchy štítnej žľazy cez kvalitu spánku až po dlhodobý stres. 6D dotazník pomáha zmapovať, kde hľadať."
       },
       {
-        "question": "Prečo sú testy v norme, keď mi nie je dobre?",
-        "answer": "Štandardné testy hľadajú najmä akútnu patológiu. Ja sa pozerám aj na funkčné súvislosti medzi príznakmi."
+        "question": "Mám viacero diagnóz od rôznych lekárov. Prečo sa necítim lepšie?",
+        "answer": "Každá diagnóza môže byť správna a liečba podľa odporúčaní. Každý špecialista však rieši svoj orgán. Ja hľadám súvislosti medzi nimi — napríklad medzi bolesťou chrbta, spánkom, stresom a metabolizmom."
       },
       {
         "question": "Je prvý krok platený?",
@@ -285,8 +285,8 @@
   },
   "seo": {
     "title": "Bolesť chrbta a kĺbov, diagnostika | Dr. Džamanbajev",
-    "ogTitle": "Dr. Erkinbek Džamanbajev — keď sú výsledky „v norme“, ale vám nie je dobre",
-    "description": "Integratívna medicína: bolesť chrbta, krku a kĺbov, únava, výsledky „v norme“, nezávislý tretí názor lekára. Piešťany a online v EÚ. Bezplatný 6D dotazník."
+    "ogTitle": "Dr. Erkinbek Džamanbajev — keď každá diagnóza sedí, ale vám stále nie je dobre",
+    "description": "Integratívna medicína: chronická bolesť chrbta a kĺbov, únava, viacero diagnóz bez celkového obrazu, druhý názor lekára. Piešťany a online v EÚ."
   },
   "conditions": {
     "title": "S čím vám pomôžem",
@@ -309,8 +309,8 @@
         "text": "Vyčerpanie, zlý spánok, napätie, nedostatok energie."
       },
       {
-        "title": "Výsledky „v norme“",
-        "text": "Viacero príznakov, no vyšetrenia nič nenašli."
+        "title": "Viacero diagnóz, žiadny celok",
+        "text": "Ortopéd, neurológ, endokrinológ — každý rieši svoju časť. Chýba pohľad, ktorý ich spojí."
       },
       {
         "title": "Tretí názor lekára",

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { TrendingUp, Shield } from 'lucide-react';
+import { FileSearch, Shield } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export function SuccessStories() {
@@ -45,7 +45,7 @@ export function SuccessStories() {
               >
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#68A07C] rounded-xl flex items-center justify-center">
-                    <TrendingUp className="w-6 h-6 text-white" />
+                    <FileSearch className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-[18px] font-serif font-semibold text-[#1A365D]">
                     {item.title}

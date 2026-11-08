@@ -89,6 +89,54 @@
       "destination": "/publications/index.html"
     },
     {
+      "source": "/bolest-chrbta",
+      "destination": "/bolest-chrbta/index.html"
+    },
+    {
+      "source": "/ru/bol-v-spine",
+      "destination": "/ru/bol-v-spine/index.html"
+    },
+    {
+      "source": "/en/chronic-back-pain",
+      "destination": "/en/chronic-back-pain/index.html"
+    },
+    {
+      "source": "/chronicka-unava",
+      "destination": "/chronicka-unava/index.html"
+    },
+    {
+      "source": "/ru/hronicheskaya-ustalost",
+      "destination": "/ru/hronicheskaya-ustalost/index.html"
+    },
+    {
+      "source": "/en/chronic-fatigue",
+      "destination": "/en/chronic-fatigue/index.html"
+    },
+    {
+      "source": "/druhy-nazor-lekara",
+      "destination": "/druhy-nazor-lekara/index.html"
+    },
+    {
+      "source": "/ru/vtoroe-mnenie-vracha",
+      "destination": "/ru/vtoroe-mnenie-vracha/index.html"
+    },
+    {
+      "source": "/en/second-medical-opinion",
+      "destination": "/en/second-medical-opinion/index.html"
+    },
+    {
+      "source": "/diagnostika",
+      "destination": "/diagnostika/index.html"
+    },
+    {
+      "source": "/ru/diagnostika",
+      "destination": "/ru/diagnostika/index.html"
+    },
+    {
+      "source": "/en/diagnostics",
+      "destination": "/en/diagnostics/index.html"
+    },
+    {
       "source": "/((?!_vercel/).*)",
       "destination": "/index.html"
     }

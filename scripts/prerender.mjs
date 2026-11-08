@@ -7,7 +7,7 @@ import { pathToFileURL } from 'node:url';
 const dist = path.resolve('dist');
 const ssrDir = path.resolve('dist-ssr');
 const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
-const { render } = await import(pathToFileURL(path.join(ssrDir, 'entry-server.js')).href);
+const { render, topicRoutes } = await import(pathToFileURL(path.join(ssrDir, 'entry-server.js')).href);
 
 const routes = [
   { url: '/', lang: 'sk', file: 'index.html' },
@@ -15,6 +15,7 @@ const routes = [
   { url: '/en', lang: 'en', file: 'en/index.html' },
   { url: '/publications', lang: 'sk', file: 'publications/index.html' },
   { url: '/privacy', lang: 'sk', file: 'privacy/index.html' },
+  ...topicRoutes,
 ];
 
 for (const r of routes) {

@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import ru from './locales/ru.json';
 import en from './locales/en.json';
 import sk from './locales/sk.json';
+import { findTopic } from '../content/slugs';
 
 export const LANGS = ['sk', 'ru', 'en'] as const;
 export type Lang = (typeof LANGS)[number];
@@ -28,6 +29,8 @@ function initialLang(): Lang {
   const { pathname, search } = window.location;
   const fromPath = langFromPath(pathname);
   if (fromPath) return fromPath;
+  const topic = findTopic(pathname);
+  if (topic) return topic.lang;
   const q = new URLSearchParams(search).get('lang');
   if (isLang(q)) return q;
   // The Slovak home page "/" is always Slovak (so search engines index it correctly)

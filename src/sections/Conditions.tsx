@@ -1,11 +1,20 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Activity, Bone, BatteryLow, Flame, FileSearch, Eye } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Activity, Bone, BatteryLow, Flame, FileSearch, Eye, ArrowRight } from 'lucide-react';
+import { isLang } from '@/i18n';
+import { topicPath, type TopicId } from '@/content/slugs';
+import { TOPIC_UI } from '@/content/topics';
+
+// Which topic page each condition card links to (same order as conditions.items)
+const CARD_TOPIC: (TopicId | null)[] = ['back-pain', null, 'fatigue', 'fatigue', 'second-opinion', 'second-opinion'];
 
 const ICONS = [Activity, Bone, BatteryLow, Flame, FileSearch, Eye];
 
 export function Conditions() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const code = (i18n.language || 'sk').split('-')[0];
+  const lang = isLang(code) ? code : 'sk';
   const items = (t('conditions.items', { returnObjects: true }) as { title: string; text: string }[]) || [];
 
   return (
@@ -39,6 +48,14 @@ export function Conditions() {
                   <div>
                     <h3 className="text-[17px] font-serif font-bold text-[#1A365D] mb-1">{item.title}</h3>
                     <p className="text-[15px] leading-relaxed text-[#4A5568] font-sans">{item.text}</p>
+                    {CARD_TOPIC[i] && (
+                      <Link
+                        to={topicPath(CARD_TOPIC[i]!, lang)}
+                        className="inline-flex items-center gap-1 mt-2 text-[14px] font-medium text-[#68A07C] hover:text-[#1A365D] font-sans"
+                      >
+                        {TOPIC_UI[lang].more} <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    )}
                   </div>
                 </motion.div>
               );
@@ -47,6 +64,14 @@ export function Conditions() {
 
         <p className="mt-8 text-center text-[15px] text-[#4A5568] font-sans max-w-3xl mx-auto">
           {t('conditions.note')}
+        </p>
+        <p className="mt-4 text-center">
+          <Link
+            to={topicPath('diagnostics', lang)}
+            className="inline-flex items-center gap-1.5 text-[15px] font-semibold text-[#1A365D] hover:text-[#68A07C] font-sans underline underline-offset-4"
+          >
+            {TOPIC_UI[lang].method} <ArrowRight className="w-4 h-4" />
+          </Link>
         </p>
       </div>
     </section>

@@ -3,6 +3,8 @@ import { Mail, MapPin, MessageCircle, Phone, ExternalLink } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import { homePath, isLang } from '@/i18n';
+import { TOPIC_IDS, topicPath } from '@/content/slugs';
+import { TOPICS } from '@/content/topics';
 
 export function Footer() {
   const { t, i18n } = useTranslation();
@@ -14,6 +16,10 @@ export function Footer() {
     { label: t('nav.services'), href: `${home}#services` },
     { label: t('nav.global'), href: `${home}#global` },
     { label: t('nav.faq'), href: `${home}#faq` },
+    ...TOPIC_IDS.map((id) => {
+      const l = isLang(code) ? code : 'sk';
+      return { label: TOPICS[id][l].short, href: topicPath(id, l) };
+    }),
     { label: t('footer.publications'), href: '/publications' },
     { label: t('footer.book'), href: '/kniha' },
   ];

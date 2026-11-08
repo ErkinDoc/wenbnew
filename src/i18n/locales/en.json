@@ -11,8 +11,8 @@
     "title": "Dr. Erkinbek Dzhamanbaev",
     "credentials": "PhD, MBA",
     "specialty": "Physician · comprehensive diagnostics · back, joints, chronic fatigue",
-    "headline": "When your results are “normal” but you don’t feel well",
-    "subheadline": "Back and joint pain, fatigue, unexplained symptoms. I look at the whole body, not a single organ, and give you an independent third medical opinion. The first step is a free online 6D questionnaire.",
+    "headline": "When every diagnosis is right — and you still don’t feel well",
+    "subheadline": "Back and joint pain, fatigue, several diagnoses from different specialists. I look at how they connect and give you an independent medical opinion. The first step is a free online 6D questionnaire.",
     "ctaAssessment": "Take the free 6D questionnaire",
     "ctaApply": "Message on WhatsApp",
     "badge1": "Online across the EU",
@@ -109,17 +109,17 @@
     "label": "Professional path"
   },
   "successStories": {
-    "title": "Clinical Outcomes",
-    "subtitle": "Recovery Examples",
-    "disclaimer": "Anonymized case reports. Results are individual and not guaranteed.",
+    "title": "What people come to me with",
+    "subtitle": "Typical situations",
+    "disclaimer": "Generalised situations without personal data. These are not case reports and not a promise of results.",
     "items": [
       {
-        "title": "Chronic fatigue (45 y.)",
-        "content": "8 years of unsuccessful treatment. 6D diagnostics revealed neuroinflammation; energy restored to 85% within 3 months."
+        "title": "Fatigue that has lasted for years",
+        "content": "Several years of tests, several partial diagnoses, each treated separately. No answer to how they connect. This is where 6D analysis starts."
       },
       {
-        "title": "Complex diagnosis",
-        "content": "5 years of unexplained pain. The cause was found in the link between biochemistry and movement patterns."
+        "title": "Back pain that keeps coming back",
+        "content": "Physiotherapy, medication, repeated imaging. Brief improvement, then relapse. I look for what keeps the pain going — movement pattern, sleep, stress, metabolism."
       }
     ]
   },
@@ -139,7 +139,7 @@
       },
       {
         "title": "6D Diagnostics — €100",
-        "description": "In-depth systemic analysis of your condition, 60 minutes online (Zoom) or in person in Piešťany.",
+        "description": "A comprehensive clinical assessment of your condition, 60 minutes online (Zoom) or in person in Piešťany.",
         "features": [
           "Personal health map",
           "Concrete action plan"
@@ -205,8 +205,8 @@
         "answer": "There can be several causes — from iron deficiency or thyroid problems to sleep quality and chronic stress. The 6D questionnaire helps map where to look."
       },
       {
-        "question": "Why are my lab results 'normal' if I feel unwell?",
-        "answer": "Standard tests mainly look for acute pathology. I also look at the functional connections between your symptoms."
+        "question": "I have several diagnoses from different doctors. Why am I not getting better?",
+        "answer": "Each diagnosis may be correct and each treatment guideline-based. But every specialist covers one organ. I look for the links between them — for example between back pain, sleep, stress and metabolism."
       },
       {
         "question": "Is the first step paid?",
@@ -284,8 +284,8 @@
   },
   "seo": {
     "title": "Back & Joint Pain Diagnostics | Dr. Dzhamanbaev",
-    "ogTitle": "Dr. Erkinbek Dzhamanbaev — when your results are “normal” but you don’t feel well",
-    "description": "Integrative medicine: back, neck and joint pain, fatigue, “normal” test results, an independent third medical opinion. Online across the EU. Free 6D questionnaire."
+    "ogTitle": "Dr. Erkinbek Dzhamanbaev — when every diagnosis is right and you still don’t feel well",
+    "description": "Integrative medicine: chronic back and joint pain, fatigue, several diagnoses without the whole picture, a second medical opinion. Online across the EU."
   },
   "conditions": {
     "title": "What I help with",
@@ -308,8 +308,8 @@
         "text": "Exhaustion, poor sleep, tension, low energy."
       },
       {
-        "title": "“Normal” test results",
-        "text": "Many symptoms, yet the tests find nothing."
+        "title": "Many diagnoses, no whole picture",
+        "text": "Orthopaedist, neurologist, endocrinologist — each treats one part. What’s missing is a view that connects them."
       },
       {
         "title": "Third medical opinion",
