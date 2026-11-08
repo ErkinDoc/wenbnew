@@ -18,8 +18,8 @@ export function initLeadSource() {
       try { src = sessionStorage.getItem(KEY) || ''; } catch { /* ignore */ }
       const page = window.location.pathname.replace(/\/+$/, '') || '/';
       const tag = `\n\n[${page}${src ? ' · ' + src : ''}]`;
-      url.searchParams.set('text', (url.searchParams.get('text') || '') + tag);
-      a.href = url.toString();
+      const text = (url.searchParams.get('text') || '') + tag;
+      a.href = `${url.origin}${url.pathname}?text=${encodeURIComponent(text)}`;
       a.dataset.tagged = '1';
     } catch { /* leave link unchanged */ }
   }, true);
