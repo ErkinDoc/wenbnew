@@ -54,7 +54,7 @@ export function SeoHead({ lang }: { lang: Lang }) {
           'https://www.instagram.com/pain.therapy/',
           'https://www.youtube.com/@DoctorErkin',
         ],
-        slogan: 'Comprehensive integrative diagnostics and an independent third medical opinion',
+        slogan: 'Comprehensive clinical assessment and an independent second medical opinion',
         knowsAbout: conditions.map((c) => c.title),
         priceRange: '0–100 €',
         makesOffer: [
