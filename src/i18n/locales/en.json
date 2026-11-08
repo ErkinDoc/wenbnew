@@ -19,7 +19,7 @@
     "badge2": "30+ years",
     "badge3": "EN · SK · RU",
     "badge4": "6 countries",
-    "ctaNote": "Free, no obligation · consultations in English, Slovak and Russian",
+    "ctaNote": "The questionnaire is free · 60-min consultation: €100 · in English, Russian and Slovak",
     "yearsLabel": "years of practice"
   },
   "method6d": {
@@ -43,7 +43,7 @@
         "id": "D3",
         "name": "D3: Disconnection",
         "subtitle": "Brain-Body Link",
-        "description": "Vagus nerve activation."
+        "description": "Autonomic nervous system regulation."
       },
       {
         "id": "D4",
@@ -133,12 +133,13 @@
         "description": "The first step. You fill in an online questionnaire, I review it personally and you receive a preliminary conclusion.",
         "features": [
           "Free, no obligation",
-          "Advice on whether to continue"
+          "Advice on whether to continue",
+          "Not a diagnosis and not urgent care"
         ],
         "cta": "Take the questionnaire"
       },
       {
-        "title": "6D Diagnostics — €100",
+        "title": "6D clinical assessment — €100",
         "description": "A comprehensive clinical assessment of your condition, 60 minutes online (Zoom) or in person in Piešťany.",
         "features": [
           "Personal health map",
@@ -163,7 +164,7 @@
     },
     "weight": {
       "title": "Precision Weight Loss",
-      "description": "An individual integrative program for lasting weight loss. We restore metabolism — causes, not diets."
+      "description": "An individual medical weight-loss program: we look for causes, not just calories."
     },
     "learnMore": "Learn more"
   },
@@ -183,8 +184,8 @@
         "label": "years of practice"
       },
       {
-        "number": "12",
-        "label": "Facebook recommendations (100%)"
+        "number": "20+",
+        "label": "books and publications"
       },
       {
         "number": "3",
@@ -222,7 +223,7 @@
       },
       {
         "question": "How much does a consultation cost?",
-        "answer": "The questionnaire is free. 6D Diagnostics (60 minutes) costs €100."
+        "answer": "The questionnaire is free. The 6D clinical assessment (60 minutes) costs €100."
       },
       {
         "question": "Do you offer in-person consultations?",
@@ -271,7 +272,7 @@
     "benefits": [
       "1. Free online 6D questionnaire",
       "2. Preliminary conclusion and advice",
-      "3. 6D Diagnostics — 60 min, €100",
+      "3. 6D clinical assessment — 60 min, €100",
       "4. Individual plan and follow-up"
     ],
     "ctaAssessment": "Take the free questionnaire",
@@ -312,8 +313,8 @@
         "text": "Orthopaedist, neurologist, endocrinologist — each treats one part. What’s missing is a view that connects them."
       },
       {
-        "title": "Third medical opinion",
-        "text": "Already have two different opinions? I review the whole picture independently and explain what it means."
+        "title": "Second medical opinion",
+        "text": "Different doctors, different recommendations? I look at the whole picture independently and explain what follows from it."
       }
     ],
     "note": "Consultations in English, Slovak and Russian — in person in Piešťany or online anywhere in the EU."

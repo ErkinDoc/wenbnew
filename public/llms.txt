@@ -20,7 +20,7 @@ Education: Kyrgyz State Medical Academy (Doctor of Medicine); S. M. Kirov Milita
 - [Chronic back and neck pain (EN)](https://www.drerkin.eu/en/chronic-back-pain) · [SK](https://www.drerkin.eu/bolest-chrbta) · [RU](https://www.drerkin.eu/ru/bol-v-spine)
 - [Chronic fatigue and burnout (EN)](https://www.drerkin.eu/en/chronic-fatigue) · [SK](https://www.drerkin.eu/chronicka-unava) · [RU](https://www.drerkin.eu/ru/hronicheskaya-ustalost)
 - [Second medical opinion (EN)](https://www.drerkin.eu/en/second-medical-opinion) · [SK](https://www.drerkin.eu/druhy-nazor-lekara) · [RU](https://www.drerkin.eu/ru/vtoroe-mnenie-vracha)
-- [6D assessment: process and price (EN)](https://www.drerkin.eu/en/diagnostics) · [SK](https://www.drerkin.eu/diagnostika) · [RU](https://www.drerkin.eu/ru/diagnostika)
+- [6D clinical assessment: process and price (EN)](https://www.drerkin.eu/en/diagnostics) · [SK](https://www.drerkin.eu/diagnostika) · [RU](https://www.drerkin.eu/ru/diagnostika)
 
 ## Specialized programs
 - [Precise rehabilitation (SK)](https://rehabilitacia.drerkin.eu/): spine, joints, musculoskeletal function

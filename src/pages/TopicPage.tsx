@@ -9,7 +9,7 @@ import { Navigation } from '../sections/Navigation';
 import { Footer } from '../sections/Footer';
 import { WhatsAppButton } from '../components/WhatsAppButton';
 import { SITE_URL, homePath, type Lang } from '@/i18n';
-import { TOPICS, TOPIC_UI, LAST_REVIEWED } from '@/content/topics';
+import { TOPICS, TOPIC_UI, TOPIC_SOURCES, LAST_REVIEWED } from '@/content/topics';
 import { topicPath, type TopicId } from '@/content/slugs';
 import { WHATSAPP_NUMBER, whatsappUrl } from '@/lib/contact';
 
@@ -55,6 +55,7 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
         inLanguage: lang,
         lastReviewed: LAST_REVIEWED,
         dateModified: LAST_REVIEWED,
+        citation: TOPIC_SOURCES[id].map((src) => ({ '@type': 'CreativeWork', name: src.title, url: src.url })),
         author: { '@id': `${SITE_URL}/#physician` },
         reviewedBy: { '@id': `${SITE_URL}/#physician` },
         isPartOf: { '@id': `${SITE_URL}/#website` },
@@ -228,6 +229,20 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
               ))}
             </ul>
           </nav>
+
+          <section className="mb-8">
+            <h2 className="text-[18px] font-serif font-bold text-[#1A365D] mb-2">{ui.sources}</h2>
+            <ul className="list-disc pl-5 space-y-1 text-[14px] text-[#4A5568] font-sans">
+              {TOPIC_SOURCES[id].map((src) => (
+                <li key={src.url}>
+                  <a href={src.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#1A365D]">{src.title}</a>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-[13px] text-[#5A6577] font-sans">
+              {ui.reviewed}: {ui.reviewedDate} · {ui.nextReview}
+            </p>
+          </section>
 
           <p className="text-[13px] text-[#5A6577] font-sans leading-relaxed">{t('footer.disclaimerText')}</p>
         </article>

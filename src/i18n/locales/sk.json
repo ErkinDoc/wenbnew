@@ -19,7 +19,7 @@
     "badge2": "30+ rokov praxe",
     "badge3": "SK · RU · EN",
     "badge4": "6 krajín praxe",
-    "ctaNote": "Bezplatne a nezáväzne · konzultácie v slovenčine, ruštine a angličtine",
+    "ctaNote": "Dotazník je bezplatný · konzultácia 60 min: 100 € · po slovensky, rusky a anglicky",
     "yearsLabel": "rokov praxe"
   },
   "method6d": {
@@ -43,7 +43,7 @@
         "id": "D3",
         "name": "D3: Odpojenie",
         "subtitle": "Spojenie mozog-telo",
-        "description": "Aktivácia blúdivého nervu."
+        "description": "Regulácia autonómneho nervového systému."
       },
       {
         "id": "D4",
@@ -136,7 +136,7 @@
     },
     "weight": {
       "title": "Presné chudnutie",
-      "description": "Individuálny integratívny program trvalého zníženia hmotnosti. Obnovujeme metabolizmus — nie diéty, ale príčiny."
+      "description": "Individuálny lekársky program zníženia hmotnosti: hľadáme príčiny, nielen kalórie."
     },
     "learnMore": "Zistiť viac",
     "items": [
@@ -145,12 +145,13 @@
         "description": "Prvý krok. Vyplníte online dotazník, ja ho osobne preštudujem a dostanete predbežný záver.",
         "features": [
           "Bez poplatku a záväzkov",
-          "Odporúčanie, či má zmysel pokračovať"
+          "Odporúčanie, či má zmysel pokračovať",
+          "Nie je to diagnóza ani urgentná pomoc"
         ],
         "cta": "Vyplniť dotazník"
       },
       {
-        "title": "6D diagnostika — 100 €",
+        "title": "6D klinické zhodnotenie — 100 €",
         "description": "Komplexné klinické zhodnotenie vášho stavu, 60 minút online (Zoom) alebo osobne v Piešťanoch.",
         "features": [
           "Osobná mapa zdravia",
@@ -184,8 +185,8 @@
         "label": "rokov praxe"
       },
       {
-        "number": "12",
-        "label": "odporúčaní na Facebooku (100 %)"
+        "number": "20+",
+        "label": "kníh a publikácií"
       },
       {
         "number": "3",
@@ -222,7 +223,7 @@
       },
       {
         "question": "Koľko stojí konzultácia?",
-        "answer": "Dotazník je zadarmo. 6D diagnostika (60 minút) stojí 100 €."
+        "answer": "Dotazník je zadarmo. 6D klinické zhodnotenie (60 minút) stojí 100 €."
       },
       {
         "question": "Pracujete aj osobne?",
@@ -272,7 +273,7 @@
     "benefits": [
       "1. Bezplatný 6D dotazník online",
       "2. Predbežný záver a odporúčanie",
-      "3. 6D diagnostika — 60 min, 100 €",
+      "3. 6D klinické zhodnotenie — 60 min, 100 €",
       "4. Individuálny plán a sprevádzanie"
     ],
     "ctaAssessment": "Vyplniť bezplatný dotazník",
@@ -313,8 +314,8 @@
         "text": "Ortopéd, neurológ, endokrinológ — každý rieši svoju časť. Chýba pohľad, ktorý ich spojí."
       },
       {
-        "title": "Tretí názor lekára",
-        "text": "Máte už dve rôzne odporúčania? Pozriem sa na celý obraz nezávisle a vysvetlím, čo z toho vyplýva."
+        "title": "Druhý názor lekára",
+        "text": "Máte rôzne odporúčania od rôznych lekárov? Pozriem sa na celý obraz nezávisle a vysvetlím, čo z toho vyplýva."
       }
     ],
     "note": "Konzultácie v slovenčine, ruštine a angličtine — osobne v Piešťanoch alebo online kdekoľvek v EÚ."

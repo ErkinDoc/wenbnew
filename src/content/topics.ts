@@ -25,6 +25,26 @@ export interface TopicContent {
 
 export const LAST_REVIEWED = '2026-11-08';
 
+/** Clinical guidelines behind each page (verified links). */
+export const TOPIC_SOURCES: Record<TopicId, { title: string; url: string }[]> = {
+  'back-pain': [
+    { title: 'WHO (2023): Guideline for non-surgical management of chronic primary low back pain in adults', url: 'https://www.who.int/publications/i/item/9789240081789' },
+    { title: 'NICE NG59: Low back pain and sciatica in over 16s', url: 'https://www.nice.org.uk/guidance/ng59' },
+    { title: 'NICE NG193: Chronic pain in over 16s — assessment and management', url: 'https://www.nice.org.uk/guidance/ng193' },
+  ],
+  fatigue: [
+    { title: 'NICE NG206: ME/CFS — diagnosis and management', url: 'https://www.nice.org.uk/guidance/ng206' },
+    { title: 'NICE NG188: Managing the long-term effects of COVID-19', url: 'https://www.nice.org.uk/guidance/ng188' },
+  ],
+  'second-opinion': [
+    { title: 'Directive 2011/24/EU on patients’ rights in cross-border healthcare', url: 'https://eur-lex.europa.eu/eli/dir/2011/24/oj' },
+  ],
+  diagnostics: [
+    { title: 'WHO: International Classification of Functioning, Disability and Health (ICF)', url: 'https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health' },
+    { title: 'NICE NG193: Chronic pain in over 16s — assessment and management', url: 'https://www.nice.org.uk/guidance/ng193' },
+  ],
+};
+
 export const TOPIC_UI: Record<
   TopicLang,
   {
@@ -42,6 +62,8 @@ export const TOPIC_UI: Record<
     related: string;
     more: string;
     method: string;
+    sources: string;
+    nextReview: string;
   }
 > = {
   sk: {
@@ -54,13 +76,15 @@ export const TOPIC_UI: Record<
     reviewedDate: '8. 11. 2026',
     ctaTitle: 'Prvý krok: bezplatný 6D dotazník',
     ctaText:
-      'Vyplníte ho online. Osobne ho preštudujem a odpíšem, či má zmysel pokračovať 6D diagnostikou (60 min, 100 €).',
+      'Vyplníte ho online. Osobne ho preštudujem a odpíšem, či má zmysel pokračovať 6D klinickým zhodnotením (60 min, 100 €).',
     ctaForm: 'Vyplniť 6D dotazník',
     ctaWa: 'Napísať na WhatsApp',
     faq: 'Časté otázky',
     related: 'Súvisiace témy',
     more: 'Viac o téme',
-    method: 'Ako prebieha 6D diagnostika',
+    method: 'Ako prebieha 6D klinické zhodnotenie',
+    sources: 'Zdroje a odborné odporúčania',
+    nextReview: 'Ďalšia revízia: 11/2027',
   },
   ru: {
     home: 'Главная',
@@ -72,13 +96,15 @@ export const TOPIC_UI: Record<
     reviewedDate: '08.11.2026',
     ctaTitle: 'Первый шаг: бесплатная 6D-анкета',
     ctaText:
-      'Заполняется онлайн. Я лично изучу её и отвечу, есть ли смысл переходить к 6D-диагностике (60 мин, 100 €).',
+      'Заполняется онлайн. Я лично изучу её и отвечу, есть ли смысл переходить к 6D-оценке (60 мин, 100 €).',
     ctaForm: 'Заполнить 6D-анкету',
     ctaWa: 'Написать в WhatsApp',
     faq: 'Частые вопросы',
     related: 'Связанные темы',
     more: 'Подробнее',
-    method: 'Как проходит 6D-диагностика',
+    method: 'Как проходит 6D-оценка',
+    sources: 'Источники и клинические рекомендации',
+    nextReview: 'Следующая редакция: 11/2027',
   },
   en: {
     home: 'Home',
@@ -90,13 +116,15 @@ export const TOPIC_UI: Record<
     reviewedDate: '8 Nov 2026',
     ctaTitle: 'First step: the free 6D questionnaire',
     ctaText:
-      'You fill it in online. I review it personally and reply whether it makes sense to continue with the 6D assessment (60 min, €100).',
+      'You fill it in online. I review it personally and reply whether it makes sense to continue with the 6D clinical assessment (60 min, €100).',
     ctaForm: 'Fill in the 6D questionnaire',
     ctaWa: 'Message on WhatsApp',
     faq: 'Frequently asked questions',
     related: 'Related topics',
     more: 'Read more',
-    method: 'How the 6D assessment works',
+    method: 'How the 6D clinical assessment works',
+    sources: 'Sources and clinical guidelines',
+    nextReview: 'Next review: 11/2027',
   },
 };
 
@@ -130,6 +158,10 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
             'Lieky, ktoré užívate, a ich vedľajšie účinky',
             'Čo už bolo vyskúšané a prečo to nefungovalo',
           ],
+        },
+        {
+          h: 'Kedy vyhľadať lekára pre bolesť chrbta',
+          p: ['Ak bolesť chrbta pretrváva viac ako niekoľko týždňov, opakovane sa vracia alebo obmedzuje každodenné fungovanie, je vhodné lekárske zhodnotenie. Pri varovných príznakoch nižšie nečakajte.'],
         },
         {
           h: 'Čo dostanete',
@@ -192,6 +224,10 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           ],
         },
         {
+          h: 'Когда обращаться к врачу при боли в спине',
+          p: ['Если боль сохраняется дольше нескольких недель, регулярно возвращается или ограничивает повседневную активность, нужна врачебная оценка. При тревожных симптомах ниже — не ждите.'],
+        },
+        {
           h: 'Что вы получаете',
           p: [
             'Не новый диагноз любой ценой. Карту: что, вероятно, поддерживает боль, в каком порядке с этим работать и что ещё обследовать, если чего-то не хватает. Если вам нужен другой специалист — скажу прямо.',
@@ -252,6 +288,10 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           ],
         },
         {
+          h: 'When to see a doctor for back pain',
+          p: ['Back pain that lasts more than a few weeks, keeps coming back or limits daily activities deserves a medical assessment. With the warning signs below, do not wait.'],
+        },
+        {
           h: 'What you get',
           p: [
             'Not a new diagnosis at any cost. A map: what most likely keeps the pain going, in what order to address it, and what else to test if something is missing. If you need a different specialist, I will tell you directly.',
@@ -289,18 +329,25 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
   fatigue: {
     sk: {
       short: 'Chronická únava a vyhorenie',
-      title: 'Chronická únava a vyčerpanie | Dr. Džamanbajev',
+      title: 'Chronická únava: príčiny a vyšetrenie | Dr. Džamanbajev',
       description:
         'Únava, ktorá neprejde ani po spánku? Možné príčiny, čo skontrolovať, kedy nečakať a ako prebieha komplexné lekárske zhodnotenie. Online v EÚ.',
-      h1: 'Chronická únava a vyčerpanie',
+      h1: 'Chronická únava: príčiny a lekárske zhodnotenie',
       lead:
-        'Únava, ktorá trvá mesiace a neustúpi ani po odpočinku, má takmer vždy viac ako jednu príčinu. Úlohou je zistiť, ktoré sa u vás stretli.',
+        'Chronická únava môže mať jednu hlavnú príčinu alebo vzniknúť súhrou viacerých faktorov. Dôležité je rozlíšiť, čo sa na vašich ťažkostiach skutočne podieľa.',
       condition: 'Fatigue',
       sections: [
         {
-          h: 'Najčastejšie súvislosti',
-          p: [
-            'Chronická únava nie je diagnóza, ale príznak. Za ňou môže byť nedostatok železa, porucha štítnej žľazy, cukrovka, spánkové apnoe, vedľajšie účinky liekov, depresia, dlhodobý stres, stav po infekcii vrátane covidu — alebo niekoľko menších faktorov, ktoré sa navzájom posilňujú.',
+          h: 'Príčiny chronickej únavy',
+          p: ['Chronická únava nie je diagnóza, ale príznak. Najčastejšie skupiny príčin:'],
+          list: [
+            'Krvné — chudokrvnosť, nedostatok železa',
+            'Hormonálne a metabolické — štítna žľaza, cukrovka',
+            'Poruchy spánku — spánkové apnoe, nespavosť',
+            'Lieky a ich vedľajšie účinky',
+            'Psychické a psychosociálne — depresia, úzkosť, dlhodobý stres',
+            'Stavy po infekcii vrátane postcovidového syndrómu',
+            'ME/CFS — so zhoršením stavu po námahe',
           ],
         },
         {
@@ -354,18 +401,25 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
     },
     ru: {
       short: 'Хроническая усталость и выгорание',
-      title: 'Хроническая усталость и истощение | Др. Джаманбаев',
+      title: 'Хроническая усталость: причины | Др. Джаманбаев',
       description:
         'Усталость, которая не проходит даже после сна? Возможные причины, что проверить, когда не ждать и как проходит врачебная оценка. Онлайн по ЕС.',
-      h1: 'Хроническая усталость и истощение',
+      h1: 'Хроническая усталость: причины и обследование',
       lead:
-        'Усталость, которая длится месяцами и не проходит после отдыха, почти всегда имеет больше одной причины. Задача — понять, какие из них сошлись у вас.',
+        'Хроническая усталость может иметь одну основную причину или быть результатом сочетания нескольких факторов. Важно разобраться, какие из них действительно влияют на ваше состояние.',
       condition: 'Fatigue',
       sections: [
         {
-          h: 'Частые связи',
-          p: [
-            'Хроническая усталость — не диагноз, а симптом. За ней может стоять дефицит железа, нарушение функции щитовидной железы, диабет, апноэ сна, побочные эффекты препаратов, депрессия, хронический стресс, состояние после инфекции, включая ковид, — или несколько небольших факторов, которые усиливают друг друга.',
+          h: 'Причины хронической усталости',
+          p: ['Хроническая усталость — не диагноз, а симптом. Основные группы причин:'],
+          list: [
+            'Гематологические — анемия, дефицит железа',
+            'Эндокринные и обменные — щитовидная железа, диабет',
+            'Нарушения сна — апноэ сна, бессонница',
+            'Препараты и их побочные эффекты',
+            'Психические и психосоциальные — депрессия, тревога, хронический стресс',
+            'Состояния после инфекций, включая постковидный синдром',
+            'ME/CFS — с ухудшением после нагрузки',
           ],
         },
         {
@@ -419,18 +473,25 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
     },
     en: {
       short: 'Chronic fatigue and burnout',
-      title: 'Chronic Fatigue and Exhaustion | Dr. Dzhamanbaev',
+      title: 'Chronic Fatigue: Causes and Assessment | Dr. Dzhamanbaev',
       description:
         'Tired even after sleep? Possible causes, what to check, when not to wait, and how a comprehensive medical assessment works. Online across the EU.',
-      h1: 'Chronic fatigue and exhaustion',
+      h1: 'Chronic fatigue: causes and medical assessment',
       lead:
-        'Fatigue that lasts for months and does not lift with rest almost always has more than one cause. The task is to find which ones have come together in your case.',
+        'Chronic fatigue may have one underlying cause or result from several contributing factors. The aim is to identify which factors are relevant to your situation.',
       condition: 'Fatigue',
       sections: [
         {
-          h: 'Common links',
-          p: [
-            'Chronic fatigue is a symptom, not a diagnosis. Behind it may be iron deficiency, a thyroid disorder, diabetes, sleep apnoea, medication side effects, depression, long-term stress, a post-infection state including after COVID — or several smaller factors reinforcing each other.',
+          h: 'Causes of chronic fatigue',
+          p: ['Chronic fatigue is a symptom, not a diagnosis. The main groups of causes:'],
+          list: [
+            'Haematological — anaemia, iron deficiency',
+            'Endocrine and metabolic — thyroid disorders, diabetes',
+            'Sleep disorders — sleep apnoea, insomnia',
+            'Medication and its side effects',
+            'Mental health and psychosocial — depression, anxiety, long-term stress',
+            'Post-infection states, including post-COVID syndrome',
+            'ME/CFS — with worsening after exertion',
           ],
         },
         {
@@ -487,14 +548,18 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
   // ───────────────────────────── SECOND OPINION ─────────────────────────────
   'second-opinion': {
     sk: {
-      short: 'Druhý a tretí názor lekára',
-      title: 'Druhý a tretí názor lekára online | Dr. Džamanbajev',
+      short: 'Druhý názor lekára',
+      title: 'Druhý názor lekára online | Dr. Džamanbajev',
       description:
         'Nezávislý druhý alebo tretí názor lekára na vaše diagnózy, výsledky a liečbu. Po slovensky, rusky a anglicky. V Piešťanoch alebo online v EÚ.',
-      h1: 'Druhý a tretí názor lekára',
+      h1: 'Druhý názor lekára online',
       lead:
         'Máte niekoľko diagnóz, rôzne odporúčania alebo liečbu, ktorá nefunguje, ako ste čakali? Nezávislý názor lekára pomôže pochopiť celok a rozhodnúť sa.',
       sections: [
+        {
+          h: 'Čo zahŕňa nezávislý druhý názor lekára',
+          p: ['Posúdenie dostupných lekárskych správ, porovnanie diagnóz a výsledkov vyšetrení, zhodnotenie možných súvislostí a rozhovor o ďalšom postupe. Druhý názor neruší predchádzajúce diagnózy ani nenahrádza starostlivosť vášho ošetrujúceho lekára.'],
+        },
         {
           h: 'Kedy má zmysel',
           list: [
@@ -554,10 +619,14 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
       title: 'Второе мнение врача онлайн на русском | Др. Джаманбаев',
       description:
         'Независимое второе или третье мнение врача о ваших диагнозах, анализах и лечении. На русском языке, онлайн по всему ЕС или очно в Словакии.',
-      h1: 'Второе и третье мнение врача',
+      h1: 'Второе мнение врача онлайн',
       lead:
         'У вас несколько диагнозов, разные рекомендации или лечение работает не так, как ожидалось? Независимое мнение врача помогает увидеть целое и принять решение.',
       sections: [
+        {
+          h: 'Что включает независимое второе мнение врача',
+          p: ['Анализ имеющихся медицинских заключений, сопоставление диагнозов и результатов обследований, оценка возможных взаимосвязей и обсуждение дальнейших вариантов. Второе мнение не отменяет предыдущие диагнозы и не заменяет наблюдение у лечащего врача.'],
+        },
         {
           h: 'Когда это имеет смысл',
           list: [
@@ -617,10 +686,14 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
       title: 'Second Medical Opinion Online | Dr. Dzhamanbaev',
       description:
         'An independent second or third medical opinion on your diagnoses, test results and treatment. In English, Russian or Slovak — online across the EU.',
-      h1: 'Second and third medical opinion',
+      h1: 'Second medical opinion online',
       lead:
         'Several diagnoses, conflicting recommendations, or treatment that is not working as expected? An independent medical opinion helps you see the whole picture and decide.',
       sections: [
+        {
+          h: 'What an independent second medical opinion includes',
+          p: ['A review of your existing medical records, comparison of diagnoses and test results, assessment of possible connections and a discussion of next steps. A second opinion does not invalidate previous diagnoses or replace care from your treating physician.'],
+        },
         {
           h: 'When it makes sense',
           list: [
@@ -680,11 +753,11 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
   // ───────────────────────────── 6D DIAGNOSTICS ─────────────────────────────
   diagnostics: {
     sk: {
-      short: '6D diagnostika',
-      title: '6D diagnostika: komplexné zhodnotenie | Dr. Džamanbajev',
+      short: '6D klinické zhodnotenie',
+      title: '6D klinické zhodnotenie zdravia | Dr. Džamanbajev',
       description:
-        'Ako prebieha 6D diagnostika: bezplatný dotazník, konzultácia 60 minút za 100 €, osobná mapa zdravia a plán. Online v EÚ alebo v Piešťanoch.',
-      h1: '6D diagnostika — komplexné zhodnotenie zdravia',
+        'Ako prebieha 6D klinické zhodnotenie: bezplatný dotazník, konzultácia 60 minút za 100 €, osobná mapa zdravia a plán. Online v EÚ alebo v Piešťanoch.',
+      h1: '6D klinické zhodnotenie zdravia',
       lead:
         '6D je môj spôsob klinického uvažovania: systematicky prejdem šesť oblastí, v ktorých sa chronické ťažkosti najčastejšie udržiavajú, a spojím ich do jedného plánu. Nenahrádza štandardnú diagnostiku — nadväzuje na ňu.',
       sections: [
@@ -732,7 +805,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
       faq: [
         {
           q: 'Koľko to stojí?',
-          a: 'Dotazník je bezplatný. 6D diagnostika (60 minút) stojí 100 €. Cenu sprevádzania dohodneme vopred podľa rozsahu.',
+          a: 'Dotazník je bezplatný. 6D klinické zhodnotenie (60 minút) stojí 100 €. Cenu sprevádzania dohodneme vopred podľa rozsahu.',
         },
         {
           q: 'Hradí to zdravotná poisťovňa?',
@@ -746,11 +819,11 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
       related: ['back-pain', 'fatigue', 'second-opinion'],
     },
     ru: {
-      short: '6D-диагностика',
-      title: '6D-диагностика: комплексная оценка | Др. Джаманбаев',
+      short: '6D-оценка',
+      title: '6D-оценка: комплексный взгляд | Др. Джаманбаев',
       description:
-        'Как проходит 6D-диагностика: бесплатная анкета, консультация 60 минут за 100 €, персональная карта здоровья и план. Онлайн на русском по ЕС.',
-      h1: '6D-диагностика — комплексная оценка здоровья',
+        'Как проходит 6D-оценка: бесплатная анкета, консультация 60 минут за 100 €, персональная карта здоровья и план. Онлайн на русском по ЕС.',
+      h1: '6D-оценка — комплексная клиническая оценка здоровья',
       lead:
         '6D — это мой способ клинического мышления: я системно прохожу шесть областей, в которых хронические проблемы чаще всего поддерживаются, и свожу их в один план. Она не заменяет стандартную диагностику — она продолжает её.',
       sections: [
@@ -798,7 +871,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
       faq: [
         {
           q: 'Сколько это стоит?',
-          a: 'Анкета бесплатна. 6D-диагностика (60 минут) стоит 100 €. Стоимость сопровождения согласуем заранее в зависимости от объёма.',
+          a: 'Анкета бесплатна. 6D-оценка (60 минут) стоит 100 €. Стоимость сопровождения согласуем заранее в зависимости от объёма.',
         },
         {
           q: 'Покрывает ли это страховка?',
@@ -812,11 +885,11 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
       related: ['back-pain', 'fatigue', 'second-opinion'],
     },
     en: {
-      short: '6D assessment',
-      title: '6D Assessment: Comprehensive Review | Dr. Dzhamanbaev',
+      short: '6D clinical assessment',
+      title: '6D Clinical Assessment | Dr. Dzhamanbaev',
       description:
-        'How the 6D assessment works: free questionnaire, a 60-minute consultation for €100, a personal health map and plan. Online across the EU.',
-      h1: '6D assessment — a comprehensive health review',
+        'How the 6D clinical assessment works: free questionnaire, a 60-minute consultation for €100, a personal health map and plan. Online across the EU.',
+      h1: '6D clinical assessment — a comprehensive health review',
       lead:
         '6D is my way of clinical reasoning: I systematically go through six areas where chronic problems are most often maintained and bring them into one plan. It does not replace standard diagnostics — it builds on them.',
       sections: [
@@ -864,7 +937,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
       faq: [
         {
           q: 'How much does it cost?',
-          a: 'The questionnaire is free. The 6D assessment (60 minutes) costs €100. The price of follow-up support is agreed in advance depending on scope.',
+          a: 'The questionnaire is free. The 6D clinical assessment (60 minutes) costs €100. The price of follow-up support is agreed in advance depending on scope.',
         },
         {
           q: 'Is it covered by health insurance?',
