@@ -64,6 +64,7 @@ export const TOPIC_UI: Record<
     method: string;
     sources: string;
     nextReview: string;
+    books: string;
   }
 > = {
   sk: {
@@ -85,6 +86,7 @@ export const TOPIC_UI: Record<
     method: 'Ako prebieha 6D klinické zhodnotenie',
     sources: 'Zdroje a odborné odporúčania',
     nextReview: 'Ďalšia revízia: 11/2027',
+    books: 'Knihy a publikácie autora',
   },
   ru: {
     home: 'Главная',
@@ -105,6 +107,7 @@ export const TOPIC_UI: Record<
     method: 'Как проходит 6D-оценка',
     sources: 'Источники и клинические рекомендации',
     nextReview: 'Следующая редакция: 11/2027',
+    books: 'Книги и публикации автора',
   },
   en: {
     home: 'Home',
@@ -125,6 +128,7 @@ export const TOPIC_UI: Record<
     method: 'How the 6D clinical assessment works',
     sources: 'Sources and clinical guidelines',
     nextReview: 'Next review: 11/2027',
+    books: 'Books and publications by the author',
   },
 };
 

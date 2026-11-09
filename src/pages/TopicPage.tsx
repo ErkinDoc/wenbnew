@@ -211,6 +211,9 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
               </p>
               <p className="text-[17px] font-serif font-bold text-[#1A365D] mb-1">{ui.authorName}</p>
               <p className="text-[14px] leading-relaxed text-[#4A5568] font-sans">{ui.authorBio}</p>
+              <Link to="/publications" className="inline-flex items-center gap-1 mt-2 text-[14px] font-medium text-[#3F7354] hover:text-[#1A365D] font-sans underline underline-offset-2">
+                {ui.books} <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
           </section>
 

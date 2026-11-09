@@ -30,7 +30,11 @@ for (const r of routes) {
   }
   const target = path.join(dist, r.file);
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  fs.writeFileSync(target, out);
+  // Legal page: keep crawlable for links, but out of the index.
+  const finalOut = r.url === '/privacy'
+    ? out.replace(/<meta name="robots" content="[^"]*"\s*\/?>/, '<meta name="robots" content="noindex, follow" />')
+    : out;
+  fs.writeFileSync(target, finalOut);
   console.log(`prerendered ${r.url} -> dist/${r.file} (${(out.length / 1024).toFixed(0)} kB)`);
 }
 
