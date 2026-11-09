@@ -125,6 +125,31 @@
       "source": "/nazor",
       "destination": "/druhy-nazor-lekara?utm_source=fbsk",
       "permanent": false
+    },
+    {
+      "source": "/li",
+      "destination": "/en/second-medical-opinion?utm_source=li",
+      "permanent": false
+    },
+    {
+      "source": "/lisk",
+      "destination": "/druhy-nazor-lekara?utm_source=li",
+      "permanent": false
+    },
+    {
+      "source": "/gbp",
+      "destination": "/?utm_source=gbp",
+      "permanent": false
+    },
+    {
+      "source": "/ytsk",
+      "destination": "/?utm_source=yt",
+      "permanent": false
+    },
+    {
+      "source": "/igsk",
+      "destination": "/?utm_source=ig",
+      "permanent": false
     }
   ],
   "rewrites": [
