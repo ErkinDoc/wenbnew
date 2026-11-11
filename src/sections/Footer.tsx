@@ -201,6 +201,11 @@ export function Footer() {
             </p>
           </motion.div>
 
+          {/* Provider identification */}
+          <p className="mt-8 text-[12px] leading-relaxed text-white/60 font-sans text-center">
+            {t('footer.business')}
+          </p>
+
           {/* Bottom Bar */}
           <div className="mt-8 pt-6 border-t border-white/10">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
