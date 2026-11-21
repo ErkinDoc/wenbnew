@@ -3,7 +3,7 @@ import { Mail, MapPin, MessageCircle, Phone, ExternalLink } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import { homePath, isLang } from '@/i18n';
-import { TOPIC_IDS, topicPath } from '@/content/slugs';
+import { TOPIC_IDS, topicPath, hasTopic } from '@/content/slugs';
 import { TOPICS } from '@/content/topics';
 
 export function Footer() {
@@ -16,9 +16,9 @@ export function Footer() {
     { label: t('nav.services'), href: `${home}#services` },
     { label: t('nav.global'), href: `${home}#global` },
     { label: t('nav.faq'), href: `${home}#faq` },
-    ...TOPIC_IDS.map((id) => {
+    ...TOPIC_IDS.filter((id) => hasTopic(id, isLang(code) ? code : 'sk')).map((id) => {
       const l = isLang(code) ? code : 'sk';
-      return { label: TOPICS[id][l].short, href: topicPath(id, l) };
+      return { label: TOPICS[id][l]!.short, href: topicPath(id, l) };
     }),
     { label: t('footer.publications'), href: '/publications' },
     { label: t('footer.book'), href: '/kniha' },

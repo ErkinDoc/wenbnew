@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { homePath, langFromPath, type Lang } from '@/i18n';
-import { findTopic, topicPath } from '@/content/slugs';
+import { findTopic, topicPath, hasTopic } from '@/content/slugs';
 
 const languages: { code: Lang; label: string; name: string }[] = [
   { code: 'sk', label: 'SK', name: 'Slovenčina' },
@@ -35,7 +35,7 @@ export function LanguageSwitcher({ variant = 'dark' }: LanguageSwitcherProps) {
               : 'text-[#4A5568] hover:text-[#1A365D] hover:bg-[#1A365D]/10'
         }`;
         // On the home page each language has its own URL (/, /ru, /en) — real links help search engines.
-        const to = topic ? topicPath(topic.id, lang.code) : onHome ? homePath(lang.code) + (hash || '') : null;
+        const to = topic ? (hasTopic(topic.id, lang.code) ? topicPath(topic.id, lang.code) : homePath(lang.code)) : onHome ? homePath(lang.code) + (hash || '') : null;
         return to ? (
           <Link
             key={lang.code}

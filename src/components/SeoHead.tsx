@@ -56,7 +56,7 @@ export function SeoHead({ lang }: { lang: Lang }) {
         ],
         slogan: 'Comprehensive clinical assessment and an independent second medical opinion',
         knowsAbout: conditions.map((c) => c.title),
-        priceRange: '0–100 €',
+        priceRange: '0–50 €',
         makesOffer: [
           {
             '@type': 'Offer',
@@ -67,7 +67,7 @@ export function SeoHead({ lang }: { lang: Lang }) {
           {
             '@type': 'Offer',
             name: t('services.items.1.title'),
-            price: '100',
+            price: '50',
             priceCurrency: 'EUR',
           },
         ],

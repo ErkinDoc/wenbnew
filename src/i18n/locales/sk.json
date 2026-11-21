@@ -19,7 +19,7 @@
     "badge2": "30+ rokov praxe",
     "badge3": "SK · RU · EN",
     "badge4": "6 krajín praxe",
-    "ctaNote": "Dotazník je bezplatný · konzultácia 60 min: 100 € · po slovensky, rusky a anglicky · odpoveď do 48 hodín",
+    "ctaNote": "Dotazník je bezplatný · konzultácia 60 min: 50 € · po slovensky, rusky a anglicky · odpoveď do 48 hodín",
     "yearsLabel": "rokov praxe"
   },
   "method6d": {
@@ -151,7 +151,7 @@
         "cta": "Vyplniť dotazník"
       },
       {
-        "title": "6D klinické zhodnotenie — 100 €",
+        "title": "6D klinické zhodnotenie — 50 €",
         "description": "Komplexné klinické zhodnotenie vášho stavu, 60 minút online (Zoom) alebo osobne v Piešťanoch po dohode.",
         "features": [
           "Osobná mapa zdravia",
@@ -215,7 +215,7 @@
       },
       {
         "question": "Ako sa objednám a ako zaplatím?",
-        "answer": "Vyplníte bezplatný dotazník. Do 48 hodín vám odpíšem, či má konzultácia zmysel, a navrhnem termín. 100 € uhradíte vopred prevodom na účet — údaje pošlem po potvrdení termínu."
+        "answer": "Vyplníte bezplatný dotazník. Do 48 hodín vám odpíšem, či má konzultácia zmysel, a navrhnem termín. 50 € uhradíte vopred prevodom na účet — údaje pošlem po potvrdení termínu."
       },
       {
         "question": "Ako rýchlo odpoviete na dotazník?",
@@ -231,7 +231,7 @@
       },
       {
         "question": "Koľko stojí konzultácia?",
-        "answer": "Dotazník je zadarmo. 6D klinické zhodnotenie (60 minút) stojí 100 €."
+        "answer": "Dotazník je zadarmo. 6D klinické zhodnotenie (60 minút) stojí 50 €."
       },
       {
         "question": "Pracujete aj osobne?",
@@ -282,7 +282,7 @@
     "benefits": [
       "1. Bezplatný 6D dotazník online",
       "2. Do 48 hodín osobne odpíšem, či má konzultácia zmysel",
-      "3. Dohodneme termín, 100 € uhradíte vopred prevodom na účet",
+      "3. Dohodneme termín, 50 € uhradíte vopred prevodom na účet",
       "4. 6D klinické zhodnotenie 60 min — online alebo osobne po dohode"
     ],
     "ctaAssessment": "Vyplniť bezplatný dotazník",

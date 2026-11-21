@@ -198,6 +198,18 @@
       "destination": "/en/diagnostics/index.html"
     },
     {
+      "source": "/chiropraktik-piestany",
+      "destination": "/chiropraktik-piestany/index.html"
+    },
+    {
+      "source": "/akupunktura-piestany",
+      "destination": "/akupunktura-piestany/index.html"
+    },
+    {
+      "source": "/liecba-bolesti",
+      "destination": "/liecba-bolesti/index.html"
+    },
+    {
       "source": "/((?!_vercel/).*)",
       "destination": "/index.html"
     }
