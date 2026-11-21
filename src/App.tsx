@@ -6,8 +6,7 @@ import { Home } from './pages/Home';
 import { Publications } from './pages/Publications';
 import { Privacy } from './pages/Privacy';
 import { TopicPage } from './pages/TopicPage';
-import { TOPIC_IDS, topicPath } from './content/slugs';
-import { LANGS } from './i18n';
+import { TOPIC_IDS, topicPath, topicLangs } from './content/slugs';
 
 export function AppRoutes() {
   return (
@@ -16,7 +15,7 @@ export function AppRoutes() {
       <Route path="/ru" element={<Home lang="ru" />} />
       <Route path="/en" element={<Home lang="en" />} />
       {TOPIC_IDS.flatMap((id) =>
-        LANGS.map((lang) => (
+        topicLangs(id).map((lang) => (
           <Route key={`${id}-${lang}`} path={topicPath(id, lang)} element={<TopicPage id={id} lang={lang} />} />
         ))
       )}

@@ -39,6 +39,18 @@ export const TOPIC_SOURCES: Record<TopicId, { title: string; url: string }[]> = 
   'second-opinion': [
     { title: 'Directive 2011/24/EU on patients’ rights in cross-border healthcare', url: 'https://eur-lex.europa.eu/eli/dir/2011/24/oj' },
   ],
+  chiropractic: [
+    { title: 'WHO (2023): Guidelines on chronic low back pain — news release', url: 'https://www.who.int/news/item/07-12-2023-who-releases-guidelines-on-chronic-low-back-pain' },
+    { title: 'NICE NG59: Low back pain and sciatica in over 16s', url: 'https://www.nice.org.uk/guidance/ng59' },
+  ],
+  acupuncture: [
+    { title: 'NICE NG193: Chronic pain in over 16s — assessment and management', url: 'https://www.nice.org.uk/guidance/ng193' },
+    { title: 'NICE NG59: Low back pain and sciatica in over 16s', url: 'https://www.nice.org.uk/guidance/ng59' },
+  ],
+  'pain-treatment': [
+    { title: 'WHO (2023): Guidelines on chronic low back pain — news release', url: 'https://www.who.int/news/item/07-12-2023-who-releases-guidelines-on-chronic-low-back-pain' },
+    { title: 'NICE NG193: Chronic pain in over 16s — assessment and management', url: 'https://www.nice.org.uk/guidance/ng193' },
+  ],
   diagnostics: [
     { title: 'WHO: International Classification of Functioning, Disability and Health (ICF)', url: 'https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health' },
     { title: 'NICE NG193: Chronic pain in over 16s — assessment and management', url: 'https://www.nice.org.uk/guidance/ng193' },
@@ -132,7 +144,7 @@ export const TOPIC_UI: Record<
   },
 };
 
-export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
+export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> = {
   // ───────────────────────────── BACK PAIN ─────────────────────────────
   'back-pain': {
     sk: {
@@ -197,7 +209,7 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
           a: 'Nie. Dávam nezávislý pohľad na celok a vysvetlím, ako spolu súvisia jednotlivé nálezy. Vaši ošetrujúci lekári zostávajú.',
         },
       ],
-      related: ['second-opinion', 'diagnostics'],
+      related: ['pain-treatment', 'chiropractic', 'second-opinion', 'diagnostics'],
     },
     ru: {
       short: 'Боль в спине и шее',
@@ -974,6 +986,223 @@ export const TOPICS: Record<TopicId, Record<TopicLang, TopicContent>> = {
         },
       ],
       related: ['back-pain', 'fatigue', 'second-opinion'],
+    },
+  },
+
+  // ---- Local Slovak search pages (Piešťany); added 2026-11 ----
+  chiropractic: {
+    sk: {
+      short: 'Chiropraktik a manuálna terapia',
+      title: 'Chiropraktik Piešťany | Dr. Erkin – vyšetrenie a manuálna terapia',
+      description:
+        'Bolesť chrbtice, krku alebo kĺbov? Funkčné vyšetrenie lekárom a manuálna terapia v Piešťanoch, po dohode. Najprv vyšetrenie, potom rozhodnutie o liečbe.',
+      h1: 'Chiropraktik a manuálna terapia v Piešťanoch',
+      lead:
+        'Manuálna terapia u mňa nezačína manipuláciou. Začína vyšetrením. Až z neho vyplýva, či vám manipulácia, jemná mobilizácia, práca s mäkkými tkanivami alebo cvičenie pomôže, alebo či treba iný postup.',
+      condition: 'Back pain',
+      sections: [
+        {
+          h: 'S čím ľudia prichádzajú',
+          list: [
+            'Bolesť v krížoch, medzi lopatkami alebo v krku',
+            'Stuhnutosť a obmedzený rozsah pohybu',
+            'Bolesť po dlhom sedení alebo po záťaži',
+            'Svalové napätie a bolestivé body vo svaloch',
+            'Bolesť po športe alebo po úraze (až po klinickom posúdení)',
+          ],
+        },
+        {
+          h: 'Ako prebieha prvá návšteva',
+          p: [
+            'Vstupná konzultácia s funkčným vyšetrením: anamnéza, analýza vašej dokumentácie, klinické vyšetrenie, hodnotenie pohybových funkcií, držania tela, dýchania a biomechaniky. Výsledkom je individuálny plán ďalšieho postupu.',
+            'Liečbu vyberám až po vyšetrení, podľa toho, čo sa nájde. Súčasťou plánu je aj cvičenie a pokyny pre domov, pretože samotné ošetrenie zvyčajne nestačí.',
+          ],
+        },
+        {
+          h: 'Aké techniky používam',
+          list: [
+            'Chiropraktické manipulácie (HVLA): rýchle pohyby s malým rozsahom na chrbtici a kĺboch končatín, až po posúdení indikácií a kontraindikácií',
+            'Jemná mobilizácia kĺbov bez prudkých pohybov',
+            'Myofasciálne uvoľňovanie a ošetrenie spúšťových bodov',
+            'Integračná manuálna terapia: v jednom sedení sa podľa potreby kombinuje viac metód',
+            'Korekcia držania tela a dýchacej mechaniky',
+          ],
+        },
+        {
+          h: 'Čo hovoria odporúčania a kde sú hranice',
+          p: [
+            'Odporúčanie WHO (2023) pre chronickú primárnu bolesť krížov podmienečne podporuje spinálnu manipuláciu a masáž ako súčasť starostlivosti, pričom istota dôkazov je nízka. Britské odporúčanie NICE pre bolesť krížov navrhuje manuálnu terapiu len ako súčasť balíka, ktorý zahŕňa cvičenie.',
+            'Preto manipuláciu neponúkam ako samostatný zázrak. Je to jeden z nástrojov a nie je vhodná pre každého. Ak vyšetrenie ukáže, že nie je správnou voľbou, použijem jemnejšie techniky alebo odporučím ďalšie vyšetrenie či iného špecialistu.',
+          ],
+        },
+      ],
+      redFlagsTitle: 'Kedy manuálnu terapiu nepodstupovať a ísť k lekárovi hneď',
+      redFlags: [
+        'Náhla silná bolesť krku alebo hlavy, ktorú ste nikdy predtým nemali',
+        'Slabosť ruky alebo nohy, znecitlivenie, poruchy reči alebo videnia',
+        'Porucha močenia alebo stolice, znecitlivenie v oblasti genitálií',
+        'Bolesť po úraze alebo páde, horúčka, nevysvetliteľný úbytok hmotnosti',
+        'Pri akútnych ťažkostiach volajte 155 alebo 112.',
+      ],
+      faq: [
+        {
+          q: 'Je manipulácia chrbtice bezpečná?',
+          a: 'Pri správnom výbere pacienta a po vyšetrení je to zaužívaná technika, ale nie je bez rizika a nie je pre každého. Preto je prvým krokom vždy vyšetrenie a posúdenie kontraindikácií, nie samotný zákrok.',
+        },
+        {
+          q: 'Bolí ošetrenie?',
+          a: 'Manipulácia trvá okamih a mnohí ju vnímajú ako uvoľnenie. Po ošetrení sa môže objaviť svalová únava. Ak sa vám manipulácia nepáči, existujú jemnejšie techniky.',
+        },
+        {
+          q: 'Koľko sedení budem potrebovať?',
+          a: 'Závisí od problému. Po prvom vyšetrení dostanete plán a po kontrole ho podľa vývoja upravíme. Výsledok sa nedá zaručiť.',
+        },
+        {
+          q: 'Kde prebieha konzultácia a ako sa objednať?',
+          a: 'Osobne v Piešťanoch po dohode, konzultácie a rozbor dokumentácie aj online. Prvým krokom je bezplatný 6D dotazník alebo správa cez WhatsApp.',
+        },
+        {
+          q: 'Nahrádza to lekárske vyšetrenie alebo štandardnú liečbu?',
+          a: 'Nie. Manuálna terapia dopĺňa medicínsku diagnostiku a štandardnú liečbu, nenahrádza ich.',
+        },
+      ],
+      related: ['pain-treatment', 'back-pain', 'acupuncture'],
+    },
+  },
+  acupuncture: {
+    sk: {
+      short: 'Akupunktúra a suchá ihla',
+      title: 'Akupunktúra Piešťany | Dr. Erkin – suchá ihla, bankovanie',
+      description:
+        'Akupunktúra, suchá ihlová technika a bankovanie pri bolesti svalov a chrbta. Najprv lekárske vyšetrenie, ošetrenie s vaším súhlasom. Piešťany, po dohode.',
+      h1: 'Akupunktúra a suchá ihlová technika v Piešťanoch',
+      lead:
+        'Ihly používam ako jeden z nástrojov, nie ako náhradu vyšetrenia. Pred ošetrením vás vyšetrím, vysvetlím postup, riziká a alternatívy. Ošetrenie robím až s vaším súhlasom.',
+      sections: [
+        {
+          h: 'Čo ponúkam',
+          list: [
+            'Klasická akupunktúra: zavedenie špeciálnych ihiel do vybraných akupunktúrnych bodov',
+            'Pohybová akupunktúra (Motor Acupuncture): akupunktúra kombinovaná s aktívnym pohybom pacienta',
+            'Suchá ihlová technika (dry needling): tenké ihly na ošetrenie vybraných svalových spúšťových bodov',
+            'Bankovanie (cupping, hidžáma): vákuová technika na mäkké tkanivo; suché prebieha bez porušenia kože, mokré zahŕňa aj povrchové narušenie kože',
+          ],
+        },
+        {
+          h: 'Ako prebieha ošetrenie',
+          p: [
+            'Pri prvej návšteve začíname vyšetrením. Opýtam sa na zdravotný stav, lieky (najmä na riedenie krvi), tehotenstvo a kožné problémy. Pri niektorých stavoch ihly alebo bankovanie nepoužijem.',
+            'Po ošetrení vyhodnotíme, ako ste reagovali, a plán upravíme. Súčasťou plánu bývajú aj cvičenia a pokyny pre domov.',
+          ],
+        },
+        {
+          h: 'Čo hovoria odporúčania a kde sú hranice',
+          p: [
+            'Britské odporúčanie NICE pre chronickú primárnu bolesť navrhuje zvážiť jeden cyklus akupunktúry alebo suchej ihly. Pre bolesť krížov však NICE akupunktúru neodporúča. Dôkazy v tejto oblasti sú zmiešané a výsledok sa nedá zaručiť.',
+            'Preto ihlové techniky nepovažujem za samostatnú liečbu bolesti chrbta. Dopĺňajú vyšetrenie, cvičenie a prácu s dýchaním a stresom, kde majú podľa vyšetrenia zmysel.',
+          ],
+        },
+      ],
+      redFlagsTitle: 'Kedy ihly neskúšať a ísť k lekárovi hneď',
+      redFlags: [
+        'Užívate lieky na riedenie krvi alebo máte poruchu zrážania krvi (povedzte to pred ošetrením)',
+        'Ste tehotná, máte infekciu kože v mieste ošetrenia alebo horúčku',
+        'Náhla silná bolesť, slabosť ruky alebo nohy, znecitlivenie, poruchy reči alebo videnia',
+        'Pri akútnych ťažkostiach volajte 155 alebo 112.',
+      ],
+      faq: [
+        {
+          q: 'Bolí akupunktúra?',
+          a: 'Ihly sú veľmi tenké. Väčšina ľudí cíti krátke štípnutie alebo tlak, pri suchej ihle môže byť svalový záškub. Po ošetrení sa môže objaviť citlivosť alebo malý podliatok.',
+        },
+        {
+          q: 'Čím sa líši suchá ihla od klasickej akupunktúry?',
+          a: 'Klasická akupunktúra pracuje s vybranými akupunktúrnymi bodmi. Suchá ihla cieli na bolestivé svalové spúšťové body.',
+        },
+        {
+          q: 'Koľko ošetrení potrebujem?',
+          a: 'Závisí od problému. Po vyšetrení dostanete plán a po kontrole ho upravíme. Výsledok sa nedá zaručiť.',
+        },
+        {
+          q: 'Nahrádza akupunktúra štandardnú liečbu?',
+          a: 'Nie. Tradičné a doplnkové metódy dopĺňajú medicínsku diagnostiku a štandardnú liečbu, nenahrádzajú ich.',
+        },
+      ],
+      related: ['pain-treatment', 'chiropractic', 'back-pain'],
+    },
+  },
+  'pain-treatment': {
+    sk: {
+      short: 'Liečba bolesti',
+      title: 'Liečba bolesti Piešťany | Dr. Erkin – vyšetrenie a plán',
+      description:
+        'Chronická bolesť chrbta, kĺbov alebo svalov? Funkčné vyšetrenie, manuálna terapia, rehabilitácia a plán obnovy v Piešťanoch a online.',
+      h1: 'Liečba bolesti v Piešťanoch: najprv vyšetrenie, potom plán',
+      lead:
+        'Bolesť, ktorá trvá mesiace, málokedy má jednu príčinu. Začínam funkčným vyšetrením a z neho vzniká individuálny plán, nie univerzálny balík.',
+      condition: 'Chronic pain',
+      sections: [
+        {
+          h: 'Ako to funguje',
+          list: [
+            'Vstupná konzultácia s funkčným vyšetrením: anamnéza, analýza dokumentácie, klinické vyšetrenie, hodnotenie pohybových funkcií',
+            'Plán s cieľmi, krokmi a kontrolnými bodmi, aby ste vedeli, čo sa deje a prečo',
+            'Liečba podľa vyšetrenia: manuálna terapia, rehabilitácia, cvičenie, ihlové techniky alebo ich kombinácia',
+            'Kontrola a úprava plánu podľa klinických a funkčných ukazovateľov',
+          ],
+        },
+        {
+          h: 'Čo môže byť súčasťou plánu',
+          list: [
+            'Manuálna terapia: mobilizácia, myofasciálne uvoľňovanie, spúšťové body, chiropraktické techniky',
+            'Ihlové techniky a bankovanie: akupunktúra, suchá ihla',
+            'Rehabilitácia a cvičenie: individuálny program, kinezioterapia, domáce cvičenia s inštrukciami a videami',
+            'Dýchanie a sebaregulácia: pri dlhodobej bolesti zohráva rolu aj napätie a stres',
+            'Pochopenie bolesti: vysvetlenie, prečo bolesť vzniká a prečo pretrváva',
+            'Programy pri chronickej bolesti zostavené podľa miesta a charakteru bolesti a rozsahu funkčných obmedzení',
+          ],
+        },
+        {
+          h: 'Pre koho je lekárska konzultácia vhodná',
+          p: [
+            'Pre ľudí s bolesťou chrbtice, krku, bedier, kĺbov alebo svalov, ktorá sa vracia, po úraze či operácii, alebo keď je situácia po viacerých vyšetreniach nejasná. V takom prípade ponúkam aj druhý odborný názor a interpretáciu laboratórnych výsledkov.',
+            'Ak vyšetrenie ukáže, že potrebujete ďalšie vyšetrenie alebo iný typ starostlivosti, poviem vám to priamo.',
+          ],
+        },
+        {
+          h: 'Čo hovoria odporúčania',
+          p: [
+            'Odporúčania WHO a NICE pre chronickú bolesť kladú dôraz na edukáciu, cvičenie a psychologické prístupy, pričom niektoré manuálne a ihlové metódy pripúšťajú podmienečne a s nízkou istotou dôkazov. Podľa toho plán skladám: základom je cvičenie, vysvetlenie a samoregulácia, ostatné metódy sú doplnok.',
+          ],
+        },
+      ],
+      redFlagsTitle: 'Kedy nečakať a ísť k lekárovi hneď',
+      redFlags: [
+        'Porucha močenia alebo stolice, znecitlivenie v oblasti genitálií a konečníka',
+        'Narastajúca slabosť nohy alebo ruky',
+        'Horúčka, nevysvetliteľný úbytok hmotnosti, nočná bolesť, ktorá neustupuje v pokoji',
+        'Bolesť po úraze alebo páde, onkologické ochorenie v anamnéze',
+        'Pri akútnych ťažkostiach volajte 155 alebo 112.',
+      ],
+      faq: [
+        {
+          q: 'Je toto ambulancia chronickej bolesti?',
+          a: 'Pod týmto názvom nájdete rôzne zariadenia. Ja robím funkčné vyšetrenie a individuálny plán obnovy. Ak vyšetrenie ukáže, že potrebujete iný typ starostlivosti, poviem to priamo.',
+        },
+        {
+          q: 'Ako poznám, že liečba funguje?',
+          a: 'Ciele a kontrolné ukazovatele určíme na začiatku, napríklad rozsah pohybu, intenzitu bolesti alebo schopnosť robiť bežné činnosti.',
+        },
+        {
+          q: 'Dá sa to riešiť online?',
+          a: 'Konzultáciu, rozbor dokumentácie a plán áno. Manuálne a ihlové techniky len osobne v Piešťanoch po dohode.',
+        },
+        {
+          q: 'Nahrádza to lekárske vyšetrenie?',
+          a: 'Nie. Doplnkové metódy dopĺňajú medicínsku diagnostiku a štandardnú liečbu.',
+        },
+      ],
+      related: ['chiropractic', 'acupuncture', 'back-pain', 'second-opinion'],
     },
   },
 };

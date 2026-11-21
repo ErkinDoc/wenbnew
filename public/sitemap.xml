@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.drerkin.eu/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/"/>
-    <image:image><image:loc>https://www.drerkin.eu/dr-erkin.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.drerkin.eu/ru</loc>
-    <lastmod>2026-11-08</lastmod>
-    <priority>1.0</priority>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/en"/>
@@ -23,27 +20,16 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/en</loc>
-    <lastmod>2026-11-08</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/"/>
   </url>
   <url>
-    <loc>https://www.drerkin.eu/kniha</loc>
-    <lastmod>2026-10-21</lastmod>
-    <priority>0.8</priority>
-    <image:image><image:loc>https://www.drerkin.eu/kniha/obalka.jpg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://www.drerkin.eu/publications</loc>
-    <lastmod>2026-11-07</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.drerkin.eu/bolest-chrbta</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/bolest-chrbta"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/bol-v-spine"/>
@@ -52,7 +38,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/ru/bol-v-spine</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/bolest-chrbta"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/bol-v-spine"/>
@@ -61,7 +47,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/en/chronic-back-pain</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/bolest-chrbta"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/bol-v-spine"/>
@@ -70,7 +56,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/chronicka-unava</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/chronicka-unava"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/hronicheskaya-ustalost"/>
@@ -79,7 +65,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/ru/hronicheskaya-ustalost</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/chronicka-unava"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/hronicheskaya-ustalost"/>
@@ -88,7 +74,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/en/chronic-fatigue</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/chronicka-unava"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/hronicheskaya-ustalost"/>
@@ -97,7 +83,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/druhy-nazor-lekara</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/druhy-nazor-lekara"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/vtoroe-mnenie-vracha"/>
@@ -106,7 +92,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/ru/vtoroe-mnenie-vracha</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/druhy-nazor-lekara"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/vtoroe-mnenie-vracha"/>
@@ -115,7 +101,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/en/second-medical-opinion</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/druhy-nazor-lekara"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/vtoroe-mnenie-vracha"/>
@@ -124,7 +110,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/diagnostika</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/diagnostika"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/diagnostika"/>
@@ -133,7 +119,7 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/ru/diagnostika</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/diagnostika"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/diagnostika"/>
@@ -142,11 +128,42 @@
   </url>
   <url>
     <loc>https://www.drerkin.eu/en/diagnostics</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/diagnostika"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.drerkin.eu/ru/diagnostika"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.drerkin.eu/en/diagnostics"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/diagnostika"/>
+  </url>
+  <url>
+    <loc>https://www.drerkin.eu/chiropraktik-piestany</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/chiropraktik-piestany"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/chiropraktik-piestany"/>
+  </url>
+  <url>
+    <loc>https://www.drerkin.eu/akupunktura-piestany</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/akupunktura-piestany"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/akupunktura-piestany"/>
+  </url>
+  <url>
+    <loc>https://www.drerkin.eu/liecba-bolesti</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.drerkin.eu/liecba-bolesti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drerkin.eu/liecba-bolesti"/>
+  </url>
+  <url>
+    <loc>https://www.drerkin.eu/publications</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.drerkin.eu/kniha</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>

@@ -10,7 +10,7 @@ import { Footer } from '../sections/Footer';
 import { WhatsAppButton } from '../components/WhatsAppButton';
 import { SITE_URL, homePath, type Lang } from '@/i18n';
 import { TOPICS, TOPIC_UI, TOPIC_SOURCES, LAST_REVIEWED } from '@/content/topics';
-import { topicPath, type TopicId } from '@/content/slugs';
+import { topicPath, topicLangs, hasTopic, type TopicId } from '@/content/slugs';
 import { WHATSAPP_NUMBER, whatsappUrl } from '@/lib/contact';
 
 const OG_LOCALE: Record<Lang, string> = { sk: 'sk_SK', ru: 'ru_RU', en: 'en_GB' };
@@ -19,7 +19,7 @@ const abs = (p: string) => `${SITE_URL}${p === '/' ? '/' : p}`;
 export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
   const { i18n, t } = useTranslation();
   const [, force] = useState(0);
-  const c = TOPICS[id][lang];
+  const c = TOPICS[id][lang]!;
   const ui = TOPIC_UI[lang];
   const url = abs(topicPath(id, lang));
   const formUrl = t('contact.form.url');
@@ -113,9 +113,9 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
         <title>{c.title}</title>
         <meta name="description" content={c.description} />
         <link rel="canonical" href={url} />
-        <link rel="alternate" hrefLang="sk" href={abs(topicPath(id, 'sk'))} />
-        <link rel="alternate" hrefLang="ru" href={abs(topicPath(id, 'ru'))} />
-        <link rel="alternate" hrefLang="en" href={abs(topicPath(id, 'en'))} />
+        {topicLangs(id).map((l) => (
+          <link key={l} rel="alternate" hrefLang={l} href={abs(topicPath(id, l))} />
+        ))}
         <link rel="alternate" hrefLang="x-default" href={abs(topicPath(id, 'sk'))} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Medicine of Coherence — Dr. Erkin" />
@@ -220,13 +220,13 @@ export function TopicPage({ id, lang }: { id: TopicId; lang: Lang }) {
           <nav className="mb-10">
             <h2 className="text-[20px] font-serif font-bold text-[#1A365D] mb-3">{ui.related}</h2>
             <ul className="flex flex-wrap gap-3">
-              {c.related.map((r) => (
+              {c.related.filter((r) => hasTopic(r, lang)).map((r) => (
                 <li key={r}>
                   <Link
                     to={topicPath(r, lang)}
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#1A365D]/20 text-[14px] text-[#1A365D] hover:bg-[#1A365D] hover:text-white transition-colors font-sans"
                   >
-                    {TOPICS[r][lang].short} <ArrowRight className="w-3.5 h-3.5" />
+                    {TOPICS[r][lang]!.short} <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </li>
               ))}
