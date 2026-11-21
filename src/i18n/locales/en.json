@@ -19,7 +19,7 @@
     "badge2": "30+ years",
     "badge3": "EN · SK · RU",
     "badge4": "6 countries",
-    "ctaNote": "The questionnaire is free · 60-min consultation: €100 · in English, Russian and Slovak · reply within 48 hours",
+    "ctaNote": "The questionnaire is free · 60-min consultation: €50 · in English, Russian and Slovak · reply within 48 hours",
     "yearsLabel": "years of practice"
   },
   "method6d": {
@@ -139,7 +139,7 @@
         "cta": "Take the questionnaire"
       },
       {
-        "title": "6D clinical assessment — €100",
+        "title": "6D clinical assessment — €50",
         "description": "A comprehensive clinical assessment of your condition, 60 minutes online (Zoom) or in person in Piešťany by arrangement.",
         "features": [
           "Personal health map",
@@ -215,7 +215,7 @@
       },
       {
         "question": "How do I book and pay?",
-        "answer": "Fill in the free questionnaire. Within 48 hours I reply whether a consultation makes sense and suggest a time. The €100 is paid in advance by bank transfer — I send the details once the time is confirmed."
+        "answer": "Fill in the free questionnaire. Within 48 hours I reply whether a consultation makes sense and suggest a time. The €50 is paid in advance by bank transfer — I send the details once the time is confirmed."
       },
       {
         "question": "How quickly do you reply to the questionnaire?",
@@ -231,7 +231,7 @@
       },
       {
         "question": "How much does a consultation cost?",
-        "answer": "The questionnaire is free. The 6D clinical assessment (60 minutes) costs €100."
+        "answer": "The questionnaire is free. The 6D clinical assessment (60 minutes) costs €50."
       },
       {
         "question": "Do you offer in-person consultations?",
@@ -281,7 +281,7 @@
     "benefits": [
       "1. Free online 6D questionnaire",
       "2. Within 48 hours I reply personally whether a consultation makes sense",
-      "3. We agree a time; the €100 is paid in advance by bank transfer",
+      "3. We agree a time; the €50 is paid in advance by bank transfer",
       "4. 6D clinical assessment, 60 min — online or in person by arrangement"
     ],
     "ctaAssessment": "Take the free questionnaire",

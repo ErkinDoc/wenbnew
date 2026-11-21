@@ -89,7 +89,7 @@ export const TOPIC_UI: Record<
     reviewedDate: '8. 11. 2026',
     ctaTitle: 'Prvý krok: bezplatný 6D dotazník',
     ctaText:
-      'Vyplníte ho online. Do 48 hodín ho osobne preštudujem a odpíšem, či má zmysel pokračovať 6D klinickým zhodnotením (60 min, 100 € vopred prevodom).',
+      'Vyplníte ho online. Do 48 hodín ho osobne preštudujem a odpíšem, či má zmysel pokračovať 6D klinickým zhodnotením (60 min, 50 € vopred prevodom).',
     ctaForm: 'Vyplniť 6D dotazník',
     ctaWa: 'Opýtať sa pred objednaním',
     faq: 'Časté otázky',
@@ -110,7 +110,7 @@ export const TOPIC_UI: Record<
     reviewedDate: '08.11.2026',
     ctaTitle: 'Первый шаг: бесплатная 6D-анкета',
     ctaText:
-      'Заполняется онлайн. В течение 48 часов я лично изучу её и отвечу, есть ли смысл переходить к 6D-оценке (60 мин, 100 € заранее переводом).',
+      'Заполняется онлайн. В течение 48 часов я лично изучу её и отвечу, есть ли смысл переходить к 6D-оценке (60 мин, 50 € заранее переводом).',
     ctaForm: 'Заполнить 6D-анкету',
     ctaWa: 'Задать вопрос до записи',
     faq: 'Частые вопросы',
@@ -131,7 +131,7 @@ export const TOPIC_UI: Record<
     reviewedDate: '8 Nov 2026',
     ctaTitle: 'First step: the free 6D questionnaire',
     ctaText:
-      'You fill it in online. Within 48 hours I review it personally and reply whether it makes sense to continue with the 6D clinical assessment (60 min, €100 paid in advance by bank transfer).',
+      'You fill it in online. Within 48 hours I review it personally and reply whether it makes sense to continue with the 6D clinical assessment (60 min, €50 paid in advance by bank transfer).',
     ctaForm: 'Fill in the 6D questionnaire',
     ctaWa: 'Ask a question first',
     faq: 'Frequently asked questions',
@@ -595,7 +595,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
           list: [
             'Vyplníte bezplatný 6D dotazník a pripravíte dostupné správy a výsledky',
             'Preštudujem ich a odpíšem, či má konzultácia zmysel',
-            '60-minútová konzultácia online alebo v Piešťanoch po dohode (100 €)',
+            '60-minútová konzultácia online alebo v Piešťanoch po dohode (50 €)',
             'Osobná mapa zdravia a konkrétny plán: čo vyplýva z doterajších nálezov, čo chýba a aké sú možnosti',
           ],
         },
@@ -625,7 +625,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
         },
         {
           q: 'Ako zaplatím?',
-          a: '100 € vopred prevodom na účet. Údaje pošlem po potvrdení termínu.',
+          a: '50 € vopred prevodom na účet. Údaje pošlem po potvrdení termínu.',
         },
         {
           q: 'Môžem poslať správy v inom jazyku?',
@@ -675,7 +675,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
           list: [
             'Вы заполняете бесплатную 6D-анкету и готовите имеющиеся выписки и анализы',
             'Я изучаю их и отвечаю, есть ли смысл в консультации',
-            'Консультация 60 минут онлайн или очно в Пьештяни по договорённости (100 €)',
+            'Консультация 60 минут онлайн или очно в Пьештяни по договорённости (50 €)',
             'Персональная карта здоровья и конкретный план: что следует из имеющихся данных, чего не хватает и какие есть варианты',
           ],
         },
@@ -705,7 +705,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
         },
         {
           q: 'Как оплатить?',
-          a: '100 € заранее переводом на счёт. Реквизиты пришлю после подтверждения времени.',
+          a: '50 € заранее переводом на счёт. Реквизиты пришлю после подтверждения времени.',
         },
         {
           q: 'Документы на словацком, чешском или английском — это проблема?',
@@ -746,7 +746,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
           list: [
             'You fill in the free 6D questionnaire and prepare your reports and results',
             'I review them and reply whether a consultation makes sense',
-            '60-minute consultation online or in Piešťany by arrangement (€100)',
+            '60-minute consultation online or in Piešťany by arrangement (€50)',
             'A personal health map and a concrete plan: what follows from existing findings, what is missing, and what the options are',
           ],
         },
@@ -776,7 +776,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
         },
         {
           q: 'How do I pay?',
-          a: '€100 in advance by bank transfer. I send the details once the time is confirmed.',
+          a: '€50 in advance by bank transfer. I send the details once the time is confirmed.',
         },
         {
           q: 'Can I send reports in another language?',
@@ -793,7 +793,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
       short: '6D klinické zhodnotenie',
       title: '6D klinické zhodnotenie zdravia | Dr. Džamanbajev',
       description:
-        'Ako prebieha 6D klinické zhodnotenie: bezplatný dotazník, konzultácia 60 minút za 100 €, osobná mapa zdravia a plán. Online v EÚ alebo v Piešťanoch.',
+        'Ako prebieha 6D klinické zhodnotenie: bezplatný dotazník, konzultácia 60 minút za 50 €, osobná mapa zdravia a plán. Online v EÚ alebo v Piešťanoch.',
       h1: '6D klinické zhodnotenie zdravia',
       lead:
         '6D je môj spôsob klinického uvažovania: systematicky prejdem šesť oblastí, v ktorých sa chronické ťažkosti najčastejšie udržiavajú, a spojím ich do jedného plánu. Nenahrádza štandardnú diagnostiku — nadväzuje na ňu.',
@@ -814,7 +814,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
           list: [
             'Bezplatný 6D dotazník online — osobne ho preštudujem',
             'Predbežná odpoveď: či má zmysel pokračovať',
-            'Konzultácia 60 minút (Zoom alebo osobne v Piešťanoch po dohode) — 100 €',
+            'Konzultácia 60 minút (Zoom alebo osobne v Piešťanoch po dohode) — 50 €',
             'Osobná mapa zdravia a konkrétny akčný plán',
             'Podľa potreby sprevádzanie — rozsah a cenu dohodneme vopred',
           ],
@@ -842,7 +842,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
       faq: [
         {
           q: 'Koľko to stojí?',
-          a: 'Dotazník je bezplatný. 6D klinické zhodnotenie (60 minút) stojí 100 €. Cenu sprevádzania dohodneme vopred podľa rozsahu.',
+          a: 'Dotazník je bezplatný. 6D klinické zhodnotenie (60 minút) stojí 50 €. Cenu sprevádzania dohodneme vopred podľa rozsahu.',
         },
         {
           q: 'Hradí to zdravotná poisťovňa?',
@@ -859,7 +859,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
       short: '6D-оценка',
       title: '6D-оценка: комплексный взгляд | Др. Джаманбаев',
       description:
-        'Как проходит 6D-оценка: бесплатная анкета, консультация 60 минут за 100 €, персональная карта здоровья и план. Онлайн на русском по ЕС.',
+        'Как проходит 6D-оценка: бесплатная анкета, консультация 60 минут за 50 €, персональная карта здоровья и план. Онлайн на русском по ЕС.',
       h1: '6D-оценка — комплексная клиническая оценка здоровья',
       lead:
         '6D — это мой способ клинического мышления: я системно прохожу шесть областей, в которых хронические проблемы чаще всего поддерживаются, и свожу их в один план. Она не заменяет стандартную диагностику — она продолжает её.',
@@ -880,7 +880,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
           list: [
             'Бесплатная 6D-анкета онлайн — я лично её изучаю',
             'Предварительный ответ: есть ли смысл продолжать',
-            'Консультация 60 минут (Zoom или очно в Пьештяни по договорённости) — 100 €',
+            'Консультация 60 минут (Zoom или очно в Пьештяни по договорённости) — 50 €',
             'Персональная карта здоровья и конкретный план действий',
             'При необходимости — сопровождение; объём и стоимость согласуем заранее',
           ],
@@ -908,7 +908,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
       faq: [
         {
           q: 'Сколько это стоит?',
-          a: 'Анкета бесплатна. 6D-оценка (60 минут) стоит 100 €. Стоимость сопровождения согласуем заранее в зависимости от объёма.',
+          a: 'Анкета бесплатна. 6D-оценка (60 минут) стоит 50 €. Стоимость сопровождения согласуем заранее в зависимости от объёма.',
         },
         {
           q: 'Покрывает ли это страховка?',
@@ -925,7 +925,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
       short: '6D clinical assessment',
       title: '6D Clinical Assessment | Dr. Dzhamanbaev',
       description:
-        'How the 6D clinical assessment works: free questionnaire, a 60-minute consultation for €100, a personal health map and plan. Online across the EU.',
+        'How the 6D clinical assessment works: free questionnaire, a 60-minute consultation for €50, a personal health map and plan. Online across the EU.',
       h1: '6D clinical assessment — a comprehensive health review',
       lead:
         '6D is my way of clinical reasoning: I systematically go through six areas where chronic problems are most often maintained and bring them into one plan. It does not replace standard diagnostics — it builds on them.',
@@ -946,7 +946,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
           list: [
             'Free online 6D questionnaire — I review it personally',
             'A preliminary reply: whether it makes sense to continue',
-            '60-minute consultation (Zoom or in person in Piešťany by arrangement) — €100',
+            '60-minute consultation (Zoom or in person in Piešťany by arrangement) — €50',
             'A personal health map and a concrete action plan',
             'Follow-up support if needed — scope and price agreed in advance',
           ],
@@ -974,7 +974,7 @@ export const TOPICS: Record<TopicId, Partial<Record<TopicLang, TopicContent>>> =
       faq: [
         {
           q: 'How much does it cost?',
-          a: 'The questionnaire is free. The 6D clinical assessment (60 minutes) costs €100. The price of follow-up support is agreed in advance depending on scope.',
+          a: 'The questionnaire is free. The 6D clinical assessment (60 minutes) costs €50. The price of follow-up support is agreed in advance depending on scope.',
         },
         {
           q: 'Is it covered by health insurance?',
